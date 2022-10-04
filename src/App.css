@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container::before{
+    background-image: url('i2.png');
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    padding-top: 25px;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+.title1{
+    text-align: center;
+    padding-top: 100px;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+.btn-box{
+    margin-left: 643px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 27px;
+    font-size: 23px;
+    background-color: #141E61;
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+    width: 148px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.about{
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about h3{
+    padding-bottom: 32px;
+    text-align: center;
+    font-size: 35px;
+    color: #141E61;
+    width: 600px;
+    text-decoration: underline;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 20px;
+    color: #eeeeee;
+    padding-left: 50px;
+    width: 600px;
+    color: #0F044C;
+}
+
+.intro-img{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 270px;
+}
+
+.i1{
+    width: 500px;
+    height: 300px;
+}
+
+.i3{
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+}
+
+.ce-firstbox{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 27px;
+    height: 30vh;
+}
+
+.caption1 {
+    background-color: #141E61;
+    color: white;
+    width: 10vh;
+    text-align: center;
+}
+
+.caption2 {
+    color: white;
+}
+
+.main-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+}
+
+#Wrapper{
+    background:url(../src/Images/i3.png); 
+    width:300px; 
+    height:300px;
+}
+
+#Wrapper:hover #Content{
+    background-color:rgba(46, 46, 37, 0.7); 
+    width:100%; 
+    /* height:120%; */
+    transition: ease-in;
+    animation-name: bgIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bgIn {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 120%;
+    }
+}
