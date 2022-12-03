@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Text, VStack, Code, useColorModeValue, Flex } from "@chakra-ui/react";
-import { ReactComponent as DiceOutlineDarkAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Dark_animated.svg";
-import { ReactComponent as DiceOutlineLightAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Light_animated.svg";
-
-import CustomBox from "../../shared/CustomBox";
+//import { useColorModeValue } from "@chakra-ui/react";
+//import { ReactComponent as DiceOutlineDarkAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Dark_animated.svg";
+//import { ReactComponent as DiceOutlineLightAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Light_animated.svg";
 import "../../../styles/Team_styles/Team.css";
 import Card from "./Card";
 import SliderImgBox from "./SliderImgBox";
@@ -13,12 +11,11 @@ import { FaFilter, FaTimes } from "react-icons/fa";
 interface Props {}
 
 const Team = (props: Props) => {
-  const colorTheme = useColorModeValue("light", "dark");
+  //const colorTheme = useColorModeValue("light", "dark");
 
-  const Logo = useColorModeValue(
-    DiceOutlineDarkAnimated,
-    DiceOutlineLightAnimated
-  );
+  //const Logo = useColorModeValue(
+    //DiceOutlineDarkAnimated,
+    //DiceOutlineLightAnimated);
 
   let Profiles = [
     {
@@ -337,7 +334,6 @@ const Team = (props: Props) => {
   };
 
   return (
-    <CustomBox>
       <div
         style={{
           display: "flex",
@@ -435,7 +431,7 @@ const Team = (props: Props) => {
             }
           </div>
         </div>
-        <div className={`DetailCards ${colorTheme}`}>
+        <div className="DetailCards">
           {navbar ? (
             <button onClick={handleFilter} className="FilterBtn">
               <FaTimes /> CLOSE
@@ -589,7 +585,6 @@ const Team = (props: Props) => {
           </div>
         </div>
       </div>
-    </CustomBox>
   );
 };
 

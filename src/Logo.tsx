@@ -1,4 +1,5 @@
-import * as React from "react"
+export {}
+/*import * as React from "react"
 import {
   chakra,
   keyframes,
@@ -22,3 +23,4 @@ export const Logo = forwardRef<ImageProps, "img">((props, ref) => {
 
   return <chakra.img animation={animation} src={logo} ref={ref} {...props} />
 })
+*/
