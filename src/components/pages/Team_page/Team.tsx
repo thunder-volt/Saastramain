@@ -336,6 +336,11 @@ const Team = (props: Props) => {
   return (
       <div
         style={{
+          backgroundImage: "url('https://www.wallpaperup.com/uploads/wallpapers/2014/03/18/301510/e88533431a5e0caa6e8bd055bc60fbd1.jpg')",
+          backgroundRepeat: "no-repeat",backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          width: '100vw',
+          // height: '100vh',
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
