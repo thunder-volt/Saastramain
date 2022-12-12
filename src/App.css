@@ -1115,3 +1115,13 @@ color: #FFFFFF;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+.password-alert {
+  margin-bottom: 20px;
+  color: white;
+}
+
+#log-out {
+  margin-top: 20px;
+}
