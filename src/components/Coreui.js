@@ -2,9 +2,9 @@ import React from 'react'
 import { CCarousel, CCarouselItem, CImage, CCarouselCaption } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css';
 import "../styles/env-carousal.css"
-import img1 from "../images/bg2.jpg";
-import img2 from "../images/bg3.jpg";
-import img3 from "../images/bg4.jpg";
+import img1 from "../Images/bg2.jpg";
+import img2 from "../Images/bg3.jpg";
+import img3 from "../Images/bg4.jpg";
 const Coreui = () => {
     return (
         <CCarousel controls indicators dark>

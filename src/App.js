@@ -6,12 +6,13 @@ import Envisage from './components/Envisage'
 import Exhibition from './components/Exhibition';
 
 import "./components/profile.css"
+import Tif from './components/TIF';
 function App() {
   return (
     <div className="App">
-    < Exhibition />
-    </div>
-  );
-}
+    <Tif/>
+    </div> 
+  )
+  }
 
-export default App;
+export default App

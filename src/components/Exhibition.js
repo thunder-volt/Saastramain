@@ -1,12 +1,4 @@
 import React from 'react';
-import i1 from '../images/i1.png';
-import i3 from '../images/i2.png';
-import i2 from '../images/i3.png';
-import i4 from '../images/i4.png';
-import i5 from '../images/i5.png';
-import i6 from '../images/i6.png';
-import i7 from '../images/i7.png';
-import i8 from '../images/i8.png';
 import Card from './Card'
 
 function Exhibition() {

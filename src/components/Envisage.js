@@ -1,7 +1,7 @@
 import React from 'react'
 // import Carausal from '../components/Carousal'
 import '../styles/env-styles.css'
-import games from '../images/games-logo.jpeg'
+import games from '../Images/games-logo.jpeg'
 import Coreui from './Coreui'
 // import Antd from './Antd'
 const Envisage = () => {
