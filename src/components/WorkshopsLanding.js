@@ -1,21 +1,10 @@
-<<<<<<< HEAD
-import './App.css';
-import Spons from "./components/Spons";
-import "./styles/styles.css"
-
-function App() {
-  return (
-    <div className="App">
-      <Spons />
-    </div>
-=======
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import cardData from "./components/cardData";
-import CardComponent from "./components/Card";
+import "../App.css";
+import cardData from "./cardData";
+import CardComponent from "./Card";
 
-function App() {
+function WorkshopsLanding() {
   let cardElements = cardData.map((data) => {
     return <CardComponent data={data} key={data.id} />;
   });
@@ -35,8 +24,7 @@ function App() {
         </div>
       </div>
     </>
->>>>>>> workshops
   );
 }
 
-export default App;
+export default WorkshopsLanding;

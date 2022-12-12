@@ -979,3 +979,139 @@ border-radius: 1vh;
     --i : 35px; 
   }
 }
+body 
+{
+  background-repeat: no-repeat;
+  background-color: #103EB3;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.workshops-landing{
+  height: 100vh;
+}
+.title
+{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+text-align: center;
+font-size: 20vh;
+
+color: #FFFFFF;
+}
+
+
+     
+.explore
+{
+   
+    color:#FEF1F1;
+    background-color: transparent;
+    margin-left: 45vw;
+    border-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 2vw;
+}
+
+
+/* .glassmorphic2
+{
+  box-sizing: border-box;
+  width: 70vw;
+  height: fit-content;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-left: 15vw;
+  background: linear-gradient(117.5deg, rgba(255, 255, 255, 0.15) -69.92%, rgba(255, 255, 255, 0.17) -69.92%, rgba(255, 255, 255, 0.21) -69.9%, rgba(255, 255, 255, 0.13) -48.83%, rgba(255, 255, 255, 0.09) 82.65%);
+  box-shadow: 4px -4px 24px -1px rgba(24, 30, 97, 0.2);
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  /* border-radius: 2vh;
+  
+}  */
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20vw;
+    margin-right: 20vw;
+    gap: 2vh;
+    overflow: hidden;
+
+}
+.card 
+{
+  box-sizing: border-box;
+  color: whitesmoke;
+  
+  background: linear-gradient(117.5deg, rgba(255, 255, 255, 0.15) -69.92%, rgba(255, 255, 255, 0.17) -69.92%, rgba(255, 255, 255, 0.21) -69.9%, rgba(255, 255, 255, 0.13) -48.83%, rgba(255, 255, 255, 0.09) 82.65%);
+  box-shadow: 4px -4px 24px -1px rgba(24, 30, 97, 0.2);
+  backdrop-filter: blur(40px);
+ 
+
+}
+
+.cardButtonsContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.cardKnowMoreButton{
+  background-color: transparent;
+  color: white;
+  border: transparent;
+}
+.cardKnowMoreButton :hover{
+  background-color: none;
+}
+
+.nextIcon{
+  max-width: 20px;
+  margin-left: 10px;
+}
+.card-img-top{
+  width:100%;
+  height:auto;
+}
+
+
+/* .cardButtonsContainer :hover{
+  background-color: purple;
+} */
+.modal-content{
+  background-color: #1263D6 ;
+  color: white;
+}
+/* .btn-primary{
+  background-color: purple;
+} */
+/* .register {
+  background-color: white;
+  color: purple;
+} */
+
+@media screen and (max-width: 450px) {
+  .title{
+    font-size: 10vh;
+    margin-left: 9vh;
+  }
+  .card{
+    width: max-content;
+    margin-bottom: 5vh;
+  }
+  .glassmorphic2{
+    width: fit-content;
+      }
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
