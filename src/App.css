@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.password-alert {
+  margin-bottom: 20px;
+  color: white;
+}
+
+#log-out {
+  margin-top: 20px;
+}
