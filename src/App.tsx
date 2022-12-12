@@ -3,6 +3,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./styles/themes/theme";
 import "./styles/App.css";
 import Team from "./components/pages/Team_page/Team";
+import TopBar from "./components/TopBar";
+import NavBar from "./components/navigation/NavBar";
 import { Global, css } from '@emotion/react'
 
 const GlobalStyles = css`
@@ -16,7 +18,9 @@ export const App = () => {
   return (
       <ChakraProvider theme={theme}>
         <Global styles={GlobalStyles} />
+        <TopBar/>
         <Team/>
+        <NavBar/>
       </ChakraProvider>
   );
 };
