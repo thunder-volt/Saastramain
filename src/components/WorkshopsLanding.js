@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "../App.css";
 import cardData from "./cardData";
-import CardComponent from "./components/Card";
+import CardComponent from "./Card";
 
-function App() {
+function WorkshopsLanding() {
   let cardElements = cardData.map((data) => {
     return <CardComponent data={data} key={data.id} />;
   });
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default WorkshopsLanding;

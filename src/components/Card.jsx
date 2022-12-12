@@ -1,4 +1,4 @@
-import Card from "react-bootstrap/Card";
+import Card from 'react-bootstrap/Card'
 import Button from "react-bootstrap/Button";
 import {useState } from "react";
 import KnowMoreModal from "./Modal";
