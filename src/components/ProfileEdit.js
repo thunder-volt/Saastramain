@@ -11,7 +11,6 @@ const Profile = () => {
                         <div className='profile-img'></div>
                         <div className='id-title'>SHAASTRA ID</div>
                         <div className='shaastra-id'>{data.id}</div>
-                        <button className='save'>Save</button>
                     </div>
                 })}
                 <div className='container-info1'>
@@ -21,7 +20,7 @@ const Profile = () => {
                     <input className='college-edit'>{data.address}</input>
                     <div className='address'>ADDRESS</div>
                     <input className='address-edit'></input>
-
+                    <button className='save'>Save</button>
                 </div>
             </div></div>
 
