@@ -6,7 +6,7 @@ import Team from "./components/pages/Team_page/Team";
 import TopBar from "./components/TopBar";
 import NavBar from "./components/navigation/NavBar";
 import { Global, css } from '@emotion/react';
-import Footer from "./components/Footer.js"
+import Footer from "./components/Footer.js";
 
 const GlobalStyles = css`
 .js-focus-visible :focus:not([data-focus-visible-added]) {
