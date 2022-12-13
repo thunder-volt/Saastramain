@@ -1,8 +1,10 @@
-import Login from "./Components/login";
-import Signup from "./Components/signup";
+import Login from "./components/login"
+import Signup from "./components/signup";
 import "./App.css";
-import EditUser from "./Components/EditUser";
+import EditUser from "./components/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Envisage from './components/Envisage'
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route exact path="/" element={<Login />} />
           <Route path="/edit" element={<EditUser />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path='/envisage' element={<Envisage />} />
         </Routes>
       </Router>
     </div>
