@@ -26,23 +26,31 @@ const Signup = () => {
 
   const [confirm, setConfirm] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    signup({
-      variables: {
-        data: {
-          name: user.name,
-          email: user.email,
-          mobile: user.mobile,
-          password: user.password,
-          college: user.college,
-          department: user.department,
-          city: user.city,
-          state: user.state,
-          address: user.address,
+    try {
+      await signup({
+        variables: {
+          data: {
+            name: user.name,
+            email: user.email,
+            mobile: user.mobile,
+            password: user.password,
+            college: user.college,
+            department: user.department,
+            city: user.city,
+            state: user.state,
+            address: user.address,
+          },
         },
-      },
-    });
+      }).then((res) => {
+        if (res.data?.createUser) {
+          navigate("/verify");
+        }
+      });
+    } catch (err) {
+      console.log(`error--->${err}`);
+    }
   };
 
   if (error) {

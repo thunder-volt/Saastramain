@@ -1,5 +1,9 @@
 import Login from "./Components/login";
 import Signup from "./Components/signup";
+import ForgotPassword from "./Components/ForgotPassword";
+import ResetPassword from "./Components/ResetPassword";
+import Verify from "./Components/Verify";
+import Admin from "./Components/Admin";
 import "./App.css";
 import EditUser from "./Components/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -22,6 +26,13 @@ function App() {
           <Route exact path="/" element={<Login />} />
           <Route path="/edit" element={<EditUser />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route
+            path="/forgotpassword/resetpassword"
+            element={<ResetPassword />}
+          />
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </div>

@@ -1,62 +1,42 @@
 import React, { useState } from "react";
-import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
+import { useMutation, gql } from "@apollo/client";
 
-const LOGIN_MUTATION = gql`
-  mutation Login($data: LoginInput!) {
-    login(data: $data) {
-      id
-      isVerified
-      role
-    }
+const RESET = gql`
+  mutation ResetPassword($data: ResetPasswordInput!) {
+    resetPassword(data: $data)
   }
 `;
 
-const Login = () => {
-  const [loginFunction, { data, loading, error }] = useMutation(LOGIN_MUTATION);
-  const [user, setUser] = useState({ email: "", password: "" });
+const ResetPassword = () => {
+  const [resetFunction, { data, loading, error }] = useMutation(RESET);
+  const [user, setUser] = useState({ email: "", password: "", otp: "" });
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(user);
-    loginFunction({
-      variables: { data: { email: user.email, password: user.password } },
+    // console.log(user);
+    resetFunction({
+      variables: {
+        data: { email: user.email, newPassword: user.password, otp: user.otp },
+      },
     });
-  };
-
-  const handleForgot = () => {
-    navigate("/forgotpassword");
   };
 
   if (loading) {
     return <p>Loading</p>;
   }
   if (error) {
-    if (error.message === "Account Not Found") {
-      navigate("/signup");
-    }
     return <p>{error.message}</p>;
   }
   if (data) {
-    if (!data.login?.isVerified) {
-      navigate("/verify");
-    } else {
-      if (data.login?.role === "ADMIN") {
-        localStorage.setItem("role", "admin");
-        navigate("/admin");
-      } else {
-        localStorage.setItem("role", "user");
-        navigate("/edit");
-      }
-    }
+    navigate("/");
   }
   return (
     <section id="login">
       <center>
         <div className="login-signup">
-          <h1>LOGIN</h1>
+          <h2>RESET PASSWORD</h2>
         </div>
       </center>
       <center>
@@ -68,6 +48,13 @@ const Login = () => {
             value={user.email}
             onChange={(e) => setUser({ ...user, email: e.target.value })}
           ></input>
+          <input
+            className="type-1 email"
+            placeholder="OTP"
+            outline="none"
+            value={user.otp}
+            onChange={(e) => setUser({ ...user, otp: e.target.value })}
+          ></input>
           <div className="password">
             <input
               className="type-1 password"
@@ -76,12 +63,9 @@ const Login = () => {
               value={user.password}
               onChange={(e) => setUser({ ...user, password: e.target.value })}
             ></input>
-            <div id="forgot-pwd" onClick={handleForgot}>
-              Forgot password?
-            </div>
           </div>
           <button type="submit" className="type-2">
-            LOG IN
+            CONFIRM RESET
           </button>
         </form>
       </center>
@@ -89,4 +73,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ResetPassword;
