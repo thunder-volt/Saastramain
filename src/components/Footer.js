@@ -5,23 +5,17 @@ import Logo from "./../images/23_white logo-02.png";
 
 const Footer = (props) => {
 
+    const emails =[
+        {mail:"sec_cocur@smail.iitm.ac.in",link:"mailto:sec_cocur@smail.iitm.ac.in"},
+        {mail:"outreach@shaastra.org",link:"mailto:outreach@shaastra.org"},
+        {mail:"sponsorship@shaastra.org",link:"mailto:sponsorship@shaastra.org"},
+        {mail:"webops@shaastra.org",link:"mailto:webops@shaastra.org"}
+    ]
     const quickLinks =[
-        {
-            name:"About",
-            link:"./",
-        },
-        {
-            name:"Events",
-            link:"./",
-        },
-        {
-            name:"Team",
-            link:"./",
-        },
-        {
-            name:"Contact Us",
-            link:"./",
-        }
+        {name:"About",link:"./"},
+        {name:"Events",link:"./"},
+        {name:"Team",link:"./"},
+        {name:"Contact Us",link:"./"}
     ]
 
     return(
@@ -49,10 +43,9 @@ const Footer = (props) => {
                 <div className="col">
                     <h1>Contact Us</h1>
                     <ul className='emails'>
-                        <li><a href="mailto:sec_cocur@smail.iitm.ac.in">sec_cocur@smail.iitm.ac.in</a></li>
-                        <li><a href="mailto:outreach@shaastra.org">outreach@shaastra.org</a></li>
-                        <li><a href="mailto:sponsorship@shaastra.org">sponsorship@shaastra.org</a></li>
-                        <li><a href="mailto:webops@shaastra.org">webops@shaastra.org</a></li>
+                        {emails.map((item) =>{
+                            return(<li><a href={item.link}>{item.mail}</a></li>)
+                        })}
                     </ul>
                 </div>
                 {/* <!-- Useful links  --> */}
@@ -68,10 +61,18 @@ const Footer = (props) => {
                 <div className="col follow">
                     <h1>Follow Us</h1>
                     <ul className='followUs'>
-                        <li><a href="./"><FaInstagramSquare size={24} color={"#999999"}/></a></li>
-                        <li><a href="./"><FaLinkedin size={24} color={"#999999"}/></a></li>
-                        <li><a href="./"><FaYoutubeSquare size={24} color={"#999999"}/></a></li>
-                        <li><a href="./"><FaFacebookSquare size={24} color={"#999999"}/></a></li>
+                        <li><a  href="https://www.instagram.com/shaastra_iitm/?hl=en" target="_blank" rel="noreferrer">
+                            <FaInstagramSquare size={24} color={"#999999"}/>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/company/shaastra-iit-madras/?originalSubdomain=in" target="_blank" rel="noreferrer">
+                            <FaLinkedin size={24} color={"#999999"}/>
+                            </a></li>
+                        <li><a href="https://www.youtube.com/channel/UCgY2ugmW-BV2nMRFu-0qPZA" target="_blank" rel="noreferrer">
+                            <FaYoutubeSquare size={24} color={"#999999"}/>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/Shaastra/" target="_blank" rel="noreferrer">
+                            <FaFacebookSquare size={24} color={"#999999"}/>
+                            </a></li>
                     </ul>
                 </div>
                 <div className="clearfix"></div>

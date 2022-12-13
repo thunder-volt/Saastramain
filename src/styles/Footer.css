@@ -85,11 +85,11 @@
             text-decoration: none;
         }
 
-        .emails .quickLinks .follow .footer .colBottom a:visited {
+        .emails .quickLinks .followUs .footer .colBottom a:visited {
             color: #999999;
         }
 
-        .emails .quickLinks .follow .footer .colBottom a:hover {
+        .emails .quickLinks .followUs .footer .colBottom a:hover {
             color: #ffffff;
             transition: .1s;
             -webkit-transition: .1s;
