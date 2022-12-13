@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import cardData from "./cardData";
@@ -15,7 +15,7 @@ function EventsLanding() {
       <h1 className="title">EVENTS</h1>
       
       <div>
-        <button className="explore" onclick="explore()">Explore Events </button>{" "}
+        <button className="explore" onClick="explore()">Explore Events </button>{" "}
       </div>
       </div>
       <div className="glassmorphic2">

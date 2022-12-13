@@ -3,8 +3,13 @@ import Signup from "./components/signup";
 import "./App.css";
 import EditUser from "./components/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import Exhibition from "./components/Exhibition"
 import Envisage from './components/Envisage'
+import TIF from "./components/TIF"
+import Profile from "./components/Profile"
+import Events from "./components/EventsLanding"
+import EventsLanding from "./components/EventsLanding";
+import WorkshopsLanding from "./components/WorkshopsLanding"
 
 function App() {
   return (
@@ -25,6 +30,11 @@ function App() {
           <Route path="/edit" element={<EditUser />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/envisage' element={<Envisage />} />
+          <Route path='/exhibition' element={<Exhibition />} />
+          <Route path='/tif' element={<TIF />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/events' element={<EventsLanding />} />
+          <Route path='/workshops' element={<WorkshopsLanding />} />
         </Routes>
       </Router>
     </div>
