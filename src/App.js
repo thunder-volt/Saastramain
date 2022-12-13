@@ -1,15 +1,15 @@
-import Login from "./components/login"
-import Signup from "./components/signup";
+import Login from "./Components/login"
+import Signup from "./Components/signup";
 import "./App.css";
-import EditUser from "./components/EditUser";
+import EditUser from "./Components/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Exhibition from "./components/Exhibition"
-import Envisage from './components/Envisage'
-import TIF from "./components/TIF"
-import Profile from "./components/Profile"
-import Events from "./components/EventsLanding"
-import EventsLanding from "./components/EventsLanding";
-import WorkshopsLanding from "./components/WorkshopsLanding"
+import Exhibition from "./Components/Exhibition"
+import Envisage from './Components/Envisage'
+import TIF from "./Components/TIF"
+import Profile from "./Components/Profile"
+import Events from "./Components/EventsLanding"
+import EventsLanding from "./Components/EventsLanding";
+import WorkshopsLanding from "./Components/WorkshopsLanding"
 
 function App() {
   return (
