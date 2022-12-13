@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        /* Footer styles */
+
+        .footer {
+            width: 100%;
+            position: relative;
+            height: auto;
+            background-color: #090521;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .footer .col {
+            width: 225px;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            padding: 0px 20px 20px 20px;
+        }
+        
+        .footer .col h1 {
+            margin: 0;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 17px;
+            padding: 20px 0px 10px 0px;
+            color: rgba(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.165em;
+        }
+
+        .footer .col ul {
+            list-style-type: none;
+            position: relative;
+            top: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer .col ul li {
+            color: #999999;
+            font-size: 13px;
+            font-family: inherit;
+            font-weight: normal;
+            padding: 5px 0px 5px 0px;
+            cursor: pointer;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+        }
+
+        /* General settings  */
+        .footer .col ul li:hover {
+            color: #ffffff;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+        }
+
+        /* Making address & bottom not transition on hover */
+        .add {
+            color: #999999 !important;
+            transition: 0s !important;
+            -webkit-transition: 0s;
+            -moz-transition: 0s;
+        }
+
+        .add:hover {
+            cursor: text !important;
+            color: #999999 !important;
+            transition: 0s !important;
+            -webkit-transition: 0s;
+            -moz-transition: 0s;
+        }
+
+        /* Dealing with links */
+        .emails .quickLinks .follow .footer .colBottom a:link {
+            color: #999999;
+            cursor: pointer;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+            text-decoration: none;
+        }
+
+        .emails .quickLinks .follow .footer .colBottom a:visited {
+            color: #999999;
+        }
+
+        .emails .quickLinks .follow .footer .colBottom a:hover {
+            color: #ffffff;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+        }
+
+        /* This is the bottommost text */
+        .colBottom {
+            padding: 10px;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+            font-size: 10px;
+            text-align: center;
+            background-color: #080519;
+            color: #999999;
+            height: 130px;
+        }
+
+        /* For the follow stuff  */
+        .follow ul li {
+            display: inline-block;
+            padding-right: 5px !important;
+        }
+
+
+
+        .clearfix {
+            clear: both;
+        }
+
+        .contain {
+            margin: 0px !important;
+        }
+
+        /* This is for responsiveness */
+        @media only screen and (min-width: 1200px) {
+            .footer .contain{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-evenly;
+                }
+            .logoFooter img {
+                position: relative;
+                top: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .contain .follow {
+                width: 25%;
+                display: block;
+            }
+            .follow h1 {
+                margin: 0px;
+            }
+            .logoFooter img {
+                position: relative;
+                top: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .footer .col {
+                width: 50%;
+            }
+
+            .footer .col h1 {
+                font-size: 14px;
+            }
+
+            .footer .col ul li {
+                font-size: 13px;
+            }
+            .logoFooter img {
+                position: relative;
+                top: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 616px) {
+            .contain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer .col {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                position: relative;
+                margin: 0% auto;
+                left: 0;
+                right: 0;
+            }
+
+            .footer .col h1 {
+                font-size: 14px;
+            }
+
+            .footer .col ul li {
+                font-size: 13px;
+            }
+
+            .logoFooter img {
+                position: relative;
+                top: 15px;
+                margin: 0% auto;
+                left: 0;
+                right: 0;
+            }
+            
+        }
