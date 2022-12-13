@@ -40,12 +40,12 @@ const Login = () => {
   }
   return (
     <section id="login">
-      <center>
+      <center className=".center">
         <div className="login-signup">
           <h1>LOGIN</h1>
         </div>
       </center>
-      <center>
+      <center className=".center">
         <form className="login_form" onSubmit={handleSubmit}>
           <input
             className="type-1 email"

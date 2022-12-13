@@ -1,11 +1,13 @@
-*{
+* {
     width: 100vw;
 }
-html{
+
+html {
     height: 100vh;
     width: 100vw;
 }
-#login{
+
+#login {
     height: 100vh;
     width: 100%;
     background: url(../public/meta-1\ 1.png) no-repeat center center fixed;
@@ -15,7 +17,8 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
-#signup{
+
+#signup {
     height: 100vh;
     width: 100%;
     background: url(../public/meta-1\ 1.png) no-repeat center center fixed;
@@ -25,76 +28,90 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
-.login-signup{
+
+.login-signup {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5.5rem;
+    padding-top: 1.5rem;
 }
-.login-signup h1{
+
+.login-signup h1 {
     font-size: 6.5rem;
     color: white;
 }
-.login_form{
+
+.login_form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     margin-top: 5rem;
 }
-.signup_form{
+
+.signup_form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     margin-top: 2rem;
-    width: 80%;
+    width: 90%;
+    height: 565px;
 }
-.signup_form div{
+
+.signup_form div {
     width: 100%;
 }
-.signup_form input{
+
+.signup_form input {
     width: 100%;
-    height:3rem;
+    height: 3rem;
     border-radius: 15px;
     border: none;
-    background: rgba(198, 177, 211, 0.69);
+    background: rgba(198, 177, 211, 0.9);
     margin-bottom: 1rem;
     border: none;
     padding-left: 1rem;
     color: white;
     font-size: 1.2rem;
 }
-.type-3{
+
+.type-3 {
     width: 48% !important;
 }
-.type-3-1{
+
+.type-3-1 {
     margin-left: 0rem;
     margin-right: 3vw;
 }
-.login_form input{
-    min-width: 360px;
+
+.login_form input {
+    min-width: 317px;
     width: 30%;
-    height:3rem;
+    height: 3rem;
     border-radius: 15px;
     border: none;
-    background: rgba(198, 177, 211, 0.69);
+    background: rgba(198, 177, 211, 0.9);
     margin-bottom: 2rem;
     border: none;
     padding-left: 1rem;
     color: white;
     font-size: 1.2rem;
 }
-::placeholder{
+
+::placeholder {
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     /* padding-left: 1rem; */
 }
-input:focus,button:focus{
+
+input:focus,
+button:focus {
     outline: none;
 }
-.type-2{
+
+.type-2 {
     min-width: 200px;
     width: 15%;
     height: 2rem;
@@ -105,29 +122,44 @@ input:focus,button:focus{
     font-size: 1.2rem;
     font-weight: 600;
 }
-.type-2:hover{
+
+.type-2:hover {
     background-color: #ff00d3;
     color: black;
     outline: none;
 }
 
 @media (max-width:1000px) {
-    .login-signup h1{
+    .login-signup h1 {
         font-size: 4.5rem;
     }
 }
 
 @media (max-width:700px) {
-    .signup_form input{
+    .signup_form input {
         font-size: 0.8rem;
-        height:2rem;
+        height: 3rem;
         border-radius: 10px;
         margin-bottom: 0.6rem;
     }
-    .login_form input{
+
+    .login_form input {
         font-size: 0.8rem;
-        height:2rem;
+        height: rem;
         border-radius: 10px;
         margin-bottom: 0.6rem;
     }
+}
+
+.center {
+    height: 260px;
+    display: flex;
+}
+
+.type-2 {
+    min-width: 317px;
+    border-radius: 10px;
+    color: #fff;
+    height: 45px;
+    width: 28%;
 }
