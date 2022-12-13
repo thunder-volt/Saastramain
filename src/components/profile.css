@@ -36,7 +36,7 @@
 
 .heading {
     padding: 32px;
-    font-size: 64px;
+    font-size: 5rem;
     font-weight: 700;
     color: #fff;
 }
@@ -54,70 +54,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width:910px) {
-    .container {
-        height: fit-content;
-    }
-
-    .container-image {
-        width: 80vw;
-        height: 50vh;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    .college-info {
-        width: 80%;
-    }
-
-    .address-info {
-        width: 80%;
-    }
-
-    .events-info {
-        width: 80%;
-    }
-
-    .container-info {
-        width: 80vw;
-        border-radius: 0px 0px 10px 10px;
-
-    }
-
-    .container-info1 {
-        height: 55vh;
-        width: 80vw;
-        border-radius: 0px 0px 10px 10px;
-    }
-
-    .name-edit {
-        width: 90%;
-    }
-
-    .college-edit {
-        width: 90%;
-    }
-
-    .address-edit {
-        width: 90%;
-    }
-
-}
-
-@media(max-width:500px) {
-    .name-edit {
-        width: 90%;
-    }
-
-    .college-edit {
-        width: 90%;
-    }
-
-    .address-edit {
-        width: 90%;
-    }
-}
-
 
 .profile-img {
     background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png');
@@ -280,4 +216,78 @@ li {
     padding: 15px;
     cursor: pointer;
     width: 115px;
+}
+
+@media (max-width:910px) {
+    .container {
+        height: fit-content;
+    }
+
+    .container-image {
+        width: 80vw;
+        height: 50vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .college-info {
+        width: 80%;
+    }
+
+    .address-info {
+        width: 80%;
+    }
+
+    .events-info {
+        width: 80%;
+    }
+
+    .container-info {
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .container-info1 {
+        height: 55vh;
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:500px) {
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .save{
+        height: 40px;
+        padding: 10px;
+    }
+    .edit{
+        height: 40px;
+        padding: 10px;
+    }
 }
