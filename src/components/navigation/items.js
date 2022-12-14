@@ -8,12 +8,16 @@ export const items = [
         url:'./',
         subitems: [
             {
-                title: 'Events & Workshops',
-                url:'./',
+                title: 'Events',
+                url:'/events',
+            },
+            {
+                title: 'Workshops',
+                url:'/workshops',
             },
             {
                 title: 'Exhibitions',
-                url:'./',
+                url:'/exhibition',
             },
             {
                 title: 'Blitz Chess',
@@ -21,11 +25,11 @@ export const items = [
             },
             {
                 title: 'Summit',
-                url:'./',
+                url:'https://summit.shaastra.org',
             },
             {
                 title: 'Tech & Innovation Fair',
-                url:'./',
+                url:'/tif',
             }
         ]
     },
@@ -39,12 +43,12 @@ export const items = [
             },
             {
                 title: 'Envisage',
-                url:'./',
+                url:'/envisage',
             },
-            {
-                title: 'Envisage games',
-                url:'./',
-            }
+            // {
+            //     title: 'Envisage games',
+            //     url:'./',
+            // }
         ]
     },
     {
@@ -55,35 +59,35 @@ export const items = [
                 title: 'Social Endeavors',
                 url:'./',
             },
-            {
-                title: 'Debunk',
-                url:'./',
-            },
-            {
-                title: 'Schools',
-                url:'./',
-            },
-            {
-                title: 'Campaign',
-                url:'./',
-            }
+            // {
+            //     title: 'Debunk',
+            //     url:'./',
+            // },
+            // {
+            //     title: 'Schools',
+            //     url:'./',
+            // },
+            // {
+            //     title: 'Campaign',
+            //     url:'./',
+            // }
         ]
     },
     {
         title: 'Sales',
-        url:'./',
+        url:'https://sales.shaastra.org',
     },
     {
         title: 'Sponsors',
-        url:'./',
+        url:'/sponsors',
     },
     {
         title: 'Team',
-        url:'./',
+        url:'/team',
     },
     {
         title: 'Contact Us',
-        url:'./',
+        url:'/contact',
     }
 
 ]

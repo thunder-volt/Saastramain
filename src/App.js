@@ -2,7 +2,7 @@ import Login from "./Components/login"
 import Signup from "./Components/signup";
 import "./App.css";
 import EditUser from "./Components/EditUser";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Exhibition from "./Components/Exhibition"
 import Envisage from './Components/Envisage'
@@ -12,6 +12,7 @@ import Events from "./Components/EventsLanding"
 import EventsLanding from "./Components/EventsLanding";
 import WorkshopsLanding from "./Components/WorkshopsLanding"
 import Team from "./Components/pages/Team_page/Team";
+import Spons from "./Components/Spons"
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='/events' element={<EventsLanding />} />
           <Route path='/workshops' element={<WorkshopsLanding />} />
           <Route path='/team' element={<Team />} />
+          <Route path='/sponsors' element={<Spons />} />
         </Routes>
       </Router>
     </div>
