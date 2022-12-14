@@ -6,9 +6,9 @@ const Profile = () => {
         <section className='profilecont'>
         <div>
             <div className='heading'>EDIT PROFILE</div>
-            <div className='container'>
+            <div className='pcontainer'>
                 {data.map((data) => {
-                    return <div className='container-image'>
+                    return <div className='pcontainer-image'>
                         <div className='profile-img'></div>
                         <div className='id-title'>SHAASTRA ID</div>
                         <div className='shaastra-id'>{data.id}</div>
