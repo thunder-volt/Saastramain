@@ -150,6 +150,7 @@
 }
 
 .events {
+    width: 80%;
     margin: 10px;
     color: #fff;
     font-size: 20px;
@@ -309,6 +310,6 @@ li {
     }
     .edit{
         height: 40px;
-        padding: 10px;
+        padding: 5px 10px;
     }
 }
