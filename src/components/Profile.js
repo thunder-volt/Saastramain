@@ -5,9 +5,9 @@ const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
         <section className='profilecont'>
-        <div className='container'>
+        <div className='pcontainer'>
             {data.map((data) => {
-                return <div className='container-image'>
+                return <div className='pcontainer-image'>
                     <div className='profile-img'></div>
                     <div className='name'>{data.name}</div>
                     <div className='id-title'>SHAASTRA ID</div>
@@ -16,7 +16,7 @@ const Profile = () => {
             })}
             {
                 data.map((data) => {
-                    return <div className='container-info'>
+                    return <div className='pcontainer-info'>
                         <div className='college'>COLLEGE/OCCUPATION</div>
                         <div className='college-info'>{data.college}</div>
                         <div className='address'>ADDRESS</div>
