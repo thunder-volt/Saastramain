@@ -2,7 +2,8 @@ import Login from "./Components/login"
 import Signup from "./Components/signup";
 import "./App.css";
 import EditUser from "./Components/EditUser";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import Exhibition from "./Components/Exhibition"
 import Envisage from './Components/Envisage'
 import TIF from "./Components/TIF"
@@ -10,6 +11,7 @@ import Profile from "./Components/Profile"
 import Events from "./Components/EventsLanding"
 import EventsLanding from "./Components/EventsLanding";
 import WorkshopsLanding from "./Components/WorkshopsLanding"
+import Team from "./Components/pages/Team_page/Team";
 
 function App() {
   return (
@@ -35,6 +37,7 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/events' element={<EventsLanding />} />
           <Route path='/workshops' element={<WorkshopsLanding />} />
+          <Route path='/team' element={<Team />} />
         </Routes>
       </Router>
     </div>

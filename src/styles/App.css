@@ -1,0 +1,31 @@
+:root{
+    --chakra-shadows-outline: none !important;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.menu-text {
+    width: fit-content;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier();
+}
+
+.menu-text:hover{
+    padding-left: 70px;
+}
+
+.menu-desc a:hover {
+    background-color: #00000035 !important;
+}
