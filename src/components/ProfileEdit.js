@@ -3,6 +3,7 @@ import React from 'react'
 const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
+        <section className='profilecont'>
         <div>
             <div className='heading'>EDIT PROFILE</div>
             <div className='container'>
@@ -23,6 +24,7 @@ const Profile = () => {
                     <button className='save'>Save</button>
                 </div>
             </div></div>
+            </section>
 
     )
 }
