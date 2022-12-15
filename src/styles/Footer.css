@@ -19,7 +19,7 @@
     padding: 0px 20px 20px 20px;
 }
 
-.footer .col h1 {
+.footer .col .heady {
     margin: 0;
     font-family: inherit;
     font-size: 16px;
@@ -76,7 +76,7 @@
 }
 
 /* Dealing with links */
-.emails .quickLinks .follow .footer .colBottom a:link {
+.emails .quickLinks .follow .footer .colBottom .linkylinks:link {
     color: #999999;
     cursor: pointer;
     transition: .1s;
@@ -85,11 +85,11 @@
     text-decoration: none;
 }
 
-.emails .quickLinks .followUs .footer .colBottom a:visited {
+.emails .quickLinks .followUs .footer .colBottom .linkylinks:visited {
     color: #999999;
 }
 
-.emails .quickLinks .followUs .footer .colBottom a:hover {
+.emails .quickLinks .followUs .footer .colBottom .linkylinks:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
@@ -145,7 +145,7 @@
         display: block;
     }
 
-    .follow h1 {
+    .follow .heady {
         margin: 0px;
     }
 
@@ -160,7 +160,7 @@
         width: 50%;
     }
 
-    .footer .col h1 {
+    .footer .col .heady {
         font-size: 14px;
     }
 
@@ -193,7 +193,7 @@
         right: 0;
     }
 
-    .footer .col h1 {
+    .footer .col .heady {
         font-size: 14px;
     }
 
