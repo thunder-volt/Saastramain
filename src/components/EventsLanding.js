@@ -3,24 +3,55 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import cardData from "./cardData";
 import CardComponent from "./Card";
+import { useState } from "react";
+import { useQuery } from "@chakra-ui/react";
+import { gql } from "@apollo/client";
 
+
+const EVENTS = gql`
+  query getEvents($vertical: Vertical, $skip: number, $take: number){
+    getEvents(vertical: $vertical, skip: $skip, take: $take){
+      events,
+      count
+    }
+  }
+`
+  
 function EventsLanding() {
-  let cardElements = cardData.map((data) => {
-    return <CardComponent data={data} key={data.id} />;
-  });
+
+  const [vertical, setVertical] = useState()
+
+  const {data, loading, error} = useQuery(EVENTS)
+
 
   return (
     <>
     <div className="workshops-landing">
-      <h1 className="title">EVENTS</h1>
+      <h1 className="wstitle">EVENTS</h1>
       
       <div>
-        <button className="explore" onClick="explore()">Explore Events </button>{" "}
+        <button className="explore" oncCick="explore()">Explore Events </button>{" "}
       </div>
       </div>
       <div className="glassmorphic2">
+        <select name="Vertical" className="select-events" onChange={(e) => setVertical(e.target.value)}>
+          <option value="AEROFEST">AEROFEST</option>
+          <option value="BIOGEN">BIOGEN</option>
+          <option value="BEVENTS">BUISNESS EVENTS</option>
+          <option value="CL">CODING & LOGIC</option>
+          <option value="DB">DB</option>
+          <option value="IGNITE">IGNITE</option>
+          <option value="STRATEGISTS">STRATEGISTS</option>
+          <option value="WORKSHOPS">WORKSHOPS</option>
+          <option value="OTHER">OTHER</option>
+        </select>
         <div className="wrapper">
-        {cardElements}
+        {
+          data?.events.map((data) => {
+            console.log(data)
+            return <CardComponent data={data} key={data.id} />;
+          })
+        }
         </div>
       </div>
     </>

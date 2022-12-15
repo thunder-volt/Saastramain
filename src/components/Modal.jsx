@@ -16,14 +16,14 @@ function KnowMoreModal(props) {
         </Modal.Header>
         <Modal.Body>
           <h4>Centered Modal</h4>
-          <p>
+          <p className="ws-modal-p">
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
             consectetur ac, vestibulum at eros.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button onClick={props.onHide} className="close-ws-btn">Close</Button>
         </Modal.Footer>
       </Modal>
     );

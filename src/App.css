@@ -979,28 +979,41 @@ border-radius: 1vh;
     --i : 35px; 
   }
 }
-body 
+/* body 
 {
   background-repeat: no-repeat;
   background-color: #103EB3;
   background-size: cover;
   box-sizing: border-box;
   overflow-x: hidden;
-}
+} */
 .workshops-landing{
   height: 100vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-.title
+.wstitle
 {
 font-family: 'PT Sans';
 font-style: normal;
 font-weight: 700;
 text-align: center;
-font-size: 20vh;
+font-size: 15vh;
+margin-top: 40vh;
 
 color: #FFFFFF;
 }
 
+.select-events{
+  margin-top: 4vh;
+  width: 25vw;
+  margin-left: 4vw;
+  margin-bottom: 4vh;
+  padding: 0.5vw;
+}
 
      
 .explore
@@ -1008,7 +1021,7 @@ color: #FFFFFF;
    
     color:#FEF1F1;
     background-color: transparent;
-    margin-left: 45vw;
+    margin-left: auto;
     border-color: transparent;
     font-family: 'Inter';
     font-style: normal;
@@ -1039,13 +1052,13 @@ color: #FFFFFF;
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
     gap: 2vh;
     overflow: hidden;
 
 }
-.card 
+.workshops-landing .card 
 {
   box-sizing: border-box;
   color: whitesmoke;
@@ -1057,27 +1070,45 @@ color: #FFFFFF;
 
 }
 
-.cardButtonsContainer{
+.workshops-landing .cardButtonsContainer{
   display: flex;
   justify-content: space-between;
 }
 
-
-
+.glassmorphic2 .card-text{
+  width: 20vw !important;
+}
+.glassmorphic2 .modal-content p, .close-ws-btn{
+  width: 20vw !important;
+}
+.ws-modal-p{
+  width: 50vw;
+}
+.close-ws-btn{
+  margin-left: 0;
+}
+.modal-footer{
+  width: fit-content;
+}
+.cardButtonsContainer .register{
+  width: 10vw;
+}
 .cardKnowMoreButton{
   background-color: transparent;
   color: white;
   border: transparent;
+  width: 10vw;
+  margin-right: 2vw;
 }
 .cardKnowMoreButton :hover{
   background-color: none;
 }
 
 .nextIcon{
-  max-width: 20px;
-  margin-left: 10px;
+  max-width: 20px !important;
+  margin-left: 10px !important;
 }
-.card-img-top{
+ .card-img-top{
   width:100%;
   height:auto;
 }
@@ -1099,7 +1130,7 @@ color: #FFFFFF;
 } */
 
 @media screen and (max-width: 450px) {
-  .title{
+  .wstitle{
     font-size: 10vh;
     margin-left: 9vh;
   }
