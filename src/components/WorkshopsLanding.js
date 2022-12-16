@@ -7,6 +7,9 @@ import { useState } from "react";
 import { useQuery } from "@chakra-ui/react";
 import { gql } from "@apollo/client";
 
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
+
 const EVENTS = gql`
   query getEvents($vertical: Vertical, $skip: number, $take: number){
     getEvents(vertical: $vertical, skip: $skip, take: $take){
@@ -22,7 +25,8 @@ async function WorkshopsLanding() {
 
 
   return (
-    <>
+    <body>
+      <NavBar />
     <div className="workshops-landing">
       <h1 className="wstitle">WORKSHOPS</h1>
       
@@ -40,7 +44,8 @@ async function WorkshopsLanding() {
         }
         </div>
       </div>
-    </>
+      <Footer />
+    </body>
   );
 }
 

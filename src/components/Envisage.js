@@ -3,10 +3,13 @@ import React from 'react'
 import '../styles/env-styles.css'
 import games from '../Images/games-logo.jpeg'
 import Coreui from './Coreui'
-// import Antd from './Antd'
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
+
 const Envisage = () => {
   return (
-    <>
+    <body>
+      <NavBar />
       <div className='env-container'>
         <div className='env-heading'>ENVISAGE</div>
         <div className='env-vision'>
@@ -68,7 +71,8 @@ const Envisage = () => {
           <Coreui />
         </div>
       </div>
-    </>
+      <Footer />
+    </body>
   )
 }
 

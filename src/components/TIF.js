@@ -11,9 +11,15 @@ import i8 from "../Images/i8.png";
 import i9 from "../Images/i9.png";
 import Card from "./cards";
 
+import NavBar from "./navigation/NavBar";
+
+import Footer from "./Footer";
+
 function Tif() {
   return (
-    <div className="App">
+    <body>
+      <NavBar></NavBar>
+      <div className="App">
       <div className="first-box">
         <div className="title">
           <h1 className="headers">
@@ -111,6 +117,8 @@ function Tif() {
         </div>
       </div>
     </div>
+    <Footer />
+    </body>
   );
 }
 

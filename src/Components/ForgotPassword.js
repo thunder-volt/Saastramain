@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
 const GET_OTP = gql`
   mutation GetPasswordOTP($email: String!) {
     getPasswordOTP(email: $email)
@@ -32,7 +33,9 @@ const ForgotPassword = () => {
   }
 
   return (
-    <section id="login">
+    <body>
+      <NavBar />  
+      <section id="login">
       <center>
         <div className="login-signup">
           <h2>FORGOT PASSWORD</h2>
@@ -53,6 +56,8 @@ const ForgotPassword = () => {
         </form>
       </center>
     </section>
+    <Footer />
+      </body>
   );
 };
 

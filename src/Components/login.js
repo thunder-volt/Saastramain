@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
 const LOGIN_MUTATION = gql`
   mutation Login($data: LoginInput!) {
     login(data: $data) {
@@ -53,7 +54,9 @@ const Login = () => {
     }
   }
   return (
-    <section id="login">
+   <body>
+    <NavBar />
+     <section id="login">
       <center className=".center">
         <div className="login-signup">
           <h1>LOGIN</h1>
@@ -86,6 +89,8 @@ const Login = () => {
         </form>
       </center>
     </section>
+    <Footer />
+    </body> 
   );
 };
 

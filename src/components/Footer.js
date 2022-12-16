@@ -36,7 +36,7 @@ const Footer = (props) => {
                             <li className="add">1st Floor, O/o Dean Of Students Office,</li>
                             <li className="add">IIT Madras, Guindy, Chennai,</li>
                             <li className="add">Tamil Nadu, India - 600036</li>
-                            <li className="add">Mobile : +91 9952729095</li>
+                            {/* <li className="add">Mobile : +91 9952729095</li> */}
                         </ul>
                     </div>
                     {/* <!-- Contact Us  --> */}
