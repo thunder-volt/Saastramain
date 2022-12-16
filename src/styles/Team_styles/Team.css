@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+body{
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.DetailCards .navbar button{
+  background-color: transparent;
+  border: none;
+}
+
 .ContentBox {
   width: 100%;
   display: flex;
@@ -13,9 +23,11 @@
   font-size: 4em;
   font-family: 'Rubik', sans-serif;
   font-weight: 650;
+  color: white;
 }
 .ContentBox p {
   max-width: 700px;
+  color: white;
 }
 .imageContainer {
   position: relative;
@@ -199,6 +211,7 @@
 .DetailCards .CardBox .Card {
   margin: 20px 30px;
 }
+
 .imageSlider .col:nth-of-type(2) .sliderImgBox .profileCard,
 .imageSlider .col:nth-of-type(8) .sliderImgBox .profileCard,
 .imageSlider .col:nth-of-type(14) .sliderImgBox .profileCard,
@@ -261,6 +274,9 @@
   background-color: #b84cc2;
 }
 @media screen and (max-width: 700px) {
+  .ContentBox p{
+    width: 80vw;
+  }
   .FilterBtn {
     position: relative;
     display: flex;
@@ -274,7 +290,7 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #fff;
+    color: black;
     outline: none;
     border: 2px solid #8210b0e0;
     border-radius: 5px;
@@ -282,11 +298,11 @@
   }
 
   .DetailCards .FilterBtn {
-    color: #fff;
+    color: white;
   }
   .FilterBtn:hover,
   .FilterBtn:active {
-    color: #fff !important;
+    color: white !important;
     background: #8210b0e0;
     background: linear-gradient(
       224.52deg,

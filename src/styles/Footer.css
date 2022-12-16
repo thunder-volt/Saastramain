@@ -19,6 +19,10 @@
     padding: 0px 20px 20px 20px;
 }
 
+.footer .col:nth-child(2){
+    width: 300px;
+}
+
 .footer .col .heady {
     margin: 0;
     font-family: inherit;
@@ -115,7 +119,12 @@
     padding-right: 5px !important;
 }
 
-
+.followUs a{
+    color: #ffffff !important;
+}
+.followUs svg{
+    width: fit-content;
+}
 
 .clearfix {
     clear: both;
@@ -181,6 +190,9 @@
         justify-content: center;
         align-items: center;
     }
+    .footer{
+        padding: 0%;
+    }
 
     .footer .col {
         width: 100%;
@@ -192,13 +204,22 @@
         left: 0;
         right: 0;
     }
+    .footer .col:nth-child(2){
+        margin: auto;
+    }
 
     .footer .col .heady {
         font-size: 14px;
+        width: 100%;
     }
 
     .footer .col ul li {
         font-size: 13px;
+        width: 100%;
+    }
+
+    .footer ul{
+        width: 100%;
     }
 
     .logoFooter img {

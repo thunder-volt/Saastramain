@@ -13,7 +13,7 @@
   transition: 0.5s;
   transform-origin: bottom;
   display: block;
-  width: 200px;
+  width: 30vw;
   height: 180px;
   justify-content:space-between;
   padding: 20px 30px;
@@ -25,6 +25,7 @@
 }
 .sliderImgBox .profileCard h2 {
   font-weight: 500;
+  width: 20vw;
 }
 .sliderImgBox .profileCard p {
   font-size: 12px;
@@ -40,7 +41,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.sliderImgBox .profileCard .profileCard_header::after {
+/* .sliderImgBox .profileCard .profileCard_header::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -48,7 +49,7 @@
   height: 2px;
   width: 50%;
   border-radius: 2px;
-}
+} */
 .sliderImgBox .imgCover {
   position: relative;
   width: 140px;

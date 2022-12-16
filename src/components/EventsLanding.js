@@ -6,7 +6,8 @@ import CardComponent from "./Card";
 import { useState } from "react";
 import { useQuery } from "@chakra-ui/react";
 import { gql } from "@apollo/client";
-
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
 
 const EVENTS = gql`
   query getEvents($vertical: Vertical, $skip: number, $take: number){
@@ -26,6 +27,7 @@ function EventsLanding() {
 
   return (
     <>
+    <NavBar />
     <div className="workshops-landing">
       <h1 className="wstitle">EVENTS</h1>
       
@@ -54,6 +56,7 @@ function EventsLanding() {
         }
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -36,7 +36,7 @@ const SliderImgBox = (props: Props) => {
             <p>{props.profile.dept}</p>
           </div>
         </div>
-          <Flex
+          {/* <Flex
             width="100px"
             fontSize="20px"
             color="rgba(255,255,255)"
@@ -54,7 +54,7 @@ const SliderImgBox = (props: Props) => {
             <a href={props.profile.social_links.shastraMailId}>
               <FaEnvelope />
             </a>
-          </Flex>
+          </Flex> */}
         {/*<div className="profileDescription">{props.profile.desc}</div>*/}
       </div>
       <div className="imgCover">

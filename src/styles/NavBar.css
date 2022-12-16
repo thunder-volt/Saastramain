@@ -5,7 +5,7 @@
 }
 .navBar{
     position: fixed;
-    width: 770px;
+    width: fit-content;
     margin: 0% auto;
     left: 0;
     right: 0;
@@ -19,18 +19,24 @@
     height: 57px;
     bottom: 20px;
     background: rgba(15, 4, 76, 0.95);
-    box-shadow: 0px 4px 4px #ffffff80;
+    box-shadow: 10px 2px 25px -10px #ffffff6f;
     border-radius: 5px;
     z-index: 1000;
+    width: 95vw;
 }
 .navItems {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 90vw;
 }
 .logo {
     width: 45px;
     object-fit: contain;
     margin: 10px;
+}
+.navBar a{
+    color: #FFFFFF !important;
 }
 .items{
     justify-content: space-around;
@@ -41,12 +47,25 @@
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
-    color: #FFFFFF;
+    color: white;
+    border: none;
+    width: 11vw;
+    height: fit-content;
+    margin: auto;
+    margin-left:2vw;
+    background-color: transparent;
 }
 /* .items .items {
     align-items: center;
     justify-content: center;
 } */
+.items #text{
+    text-align: center;
+}
+.items button{
+    height: fit-content !important;
+    margin: auto;
+}
 .dropdown.false {
     display: none;
 }
@@ -71,11 +90,13 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    width: fit-content;
 }
 
 .dropup{
     position: absolute;
     top: 5px;
+    width: fit-content;
 }
 .items :hover {
     font-size: 18px;
@@ -91,7 +112,7 @@
 
 @media screen and (max-width: 780px) {
     .navBar{
-        width: 100px;
+        width: 90vw;
         margin: 2.5% auto;
         bottom: 15px;
     }
@@ -100,9 +121,18 @@
     }
     .smallNav{
         display: block;
+        width: fit-content;
     }
     .menu{
         padding: 10px;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+    }
+    .menu svg{
+        width: 10vw;
+        background-color: transparent;
+        color: #FFFFFF;
     }
     .menuItems{
         box-sizing: border-box;
@@ -110,6 +140,7 @@
         bottom: 80px;
         width: 140px;
         margin: 0% auto;
+        margin-left: 14vw;
         left:-40px;
         padding: 10px;
         background: rgba(15, 4, 76, 0.75);
@@ -127,6 +158,9 @@
         font-weight: 500;
         font-size: 17px;
         color: #FFFFFF;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
     }
     .itemsmob .itemsmob {
         display: flex;
@@ -161,6 +195,11 @@
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
+        width: fit-content;
+        text-align: left;
+    }
+    .subitemsmob a{
+        width: fit-content;
     }
     .itemsmob :hover {
         font-size: 18px;

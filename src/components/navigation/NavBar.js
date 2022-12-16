@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Logo from"./../../images/logo cropped.png";
+import Logo from"../../Images/23_white logo-02.png";
 import "./../../styles/NavBar.css";
 import { items } from './items';
 import {MainItems, MainItemsMob} from "./MainItems";

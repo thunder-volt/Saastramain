@@ -7,7 +7,8 @@ import Card from "./Card";
 import SliderImgBox from "./SliderImgBox";
 import photos from "./photos";
 import { FaFilter, FaTimes } from "react-icons/fa";
-
+import NavBar from "../../navigation/NavBar";
+import Footer from "../../Footer";
 interface Props {}
 
 const Team = (props: Props) => {
@@ -334,7 +335,9 @@ const Team = (props: Props) => {
   };
 
   return (
-      <div
+     <body>
+     <NavBar></NavBar>
+     <div
         style={{
           backgroundImage: "url('https://www.wallpaperup.com/uploads/wallpapers/2014/03/18/301510/e88533431a5e0caa6e8bd055bc60fbd1.jpg')",
           backgroundRepeat: "no-repeat",backgroundPosition: 'center',
@@ -590,6 +593,8 @@ const Team = (props: Props) => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
+     </body>
   );
 };
 
