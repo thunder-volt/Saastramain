@@ -3,7 +3,7 @@ import Signup from "./Components/signup";
 import "./App.css";
 import EditUser from "./Components/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import Envisage from "./Components/Envisage";
 function App() {
   return (
     <div>
@@ -19,9 +19,10 @@ function App() {
       </header>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<EditUser />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/envisage" element={<Envisage />} />
         </Routes>
       </Router>
     </div>
