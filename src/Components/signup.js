@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
 const SIGN_UP = gql`
   mutation Mutation($data: CreateUserInput!) {
     createUser(data: $data)
@@ -26,23 +27,31 @@ const Signup = () => {
 
   const [confirm, setConfirm] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    signup({
-      variables: {
-        data: {
-          name: user.name,
-          email: user.email,
-          mobile: user.mobile,
-          password: user.password,
-          college: user.college,
-          department: user.department,
-          city: user.city,
-          state: user.state,
-          address: user.address,
+    try {
+      await signup({
+        variables: {
+          data: {
+            name: user.name,
+            email: user.email,
+            mobile: user.mobile,
+            password: user.password,
+            college: user.college,
+            department: user.department,
+            city: user.city,
+            state: user.state,
+            address: user.address,
+          },
         },
-      },
-    });
+      }).then((res) => {
+        if (res.data?.createUser) {
+          navigate("/verify");
+        }
+      });
+    } catch (err) {
+      console.log(`error--->${err}`);
+    }
   };
 
   if (error) {
@@ -56,6 +65,8 @@ const Signup = () => {
   }
 
   return (
+   <body>
+    <NavBar />
     <section id="signup">
       <center>
         <div className="login-signup">
@@ -157,6 +168,8 @@ const Signup = () => {
         </form>
       </center>
     </section>
+    <Footer />
+   </body>
   );
 };
 

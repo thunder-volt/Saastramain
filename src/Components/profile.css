@@ -1,4 +1,23 @@
-.container {
+.profilecont {
+    text-align: center;
+    background: linear-gradient(224.52deg, #0B0454 1.63%, #7E10B3 70.6%, rgba(130, 16, 176, 0.88) 90.31%, rgba(162, 17, 156, 0.82) 101.2%);
+    /* height: 100vh; */
+  }
+  
+  .profilecont-header {
+    /* background-color: #282c34; */
+    background: linear-gradient(224.52deg, #0B0454 1.63%, #7E10B3 70.6%, rgba(130, 16, 176, 0.88) 90.31%, rgba(162, 17, 156, 0.82) 101.2%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+
+.pcontainer {
     height: 100vh;
     display: flex;
     /* justify-content: center; */
@@ -7,7 +26,7 @@
     align-items: center;
 }
 
-.container-image {
+.pcontainer-image {
     background-color: rgba(238, 245, 245, 0.12);
     width: 41%;
     height: 90vh;
@@ -20,7 +39,7 @@
     align-items: center;
 }
 
-.container-info {
+.pcontainer-info {
     background-color: rgba(238, 245, 245, 0.12);
     width: 53%;
     height: 90vh;
@@ -36,7 +55,7 @@
 
 .heading {
     padding: 32px;
-    font-size: 64px;
+    font-size: 5rem;
     font-weight: 700;
     color: #fff;
 }
@@ -54,70 +73,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width:910px) {
-    .container {
-        height: fit-content;
-    }
-
-    .container-image {
-        width: 80vw;
-        height: 50vh;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    .college-info {
-        width: 80%;
-    }
-
-    .address-info {
-        width: 80%;
-    }
-
-    .events-info {
-        width: 80%;
-    }
-
-    .container-info {
-        width: 80vw;
-        border-radius: 0px 0px 10px 10px;
-
-    }
-
-    .container-info1 {
-        height: 55vh;
-        width: 80vw;
-        border-radius: 0px 0px 10px 10px;
-    }
-
-    .name-edit {
-        width: 90%;
-    }
-
-    .college-edit {
-        width: 90%;
-    }
-
-    .address-edit {
-        width: 90%;
-    }
-
-}
-
-@media(max-width:500px) {
-    .name-edit {
-        width: 90%;
-    }
-
-    .college-edit {
-        width: 90%;
-    }
-
-    .address-edit {
-        width: 90%;
-    }
-}
-
 
 .profile-img {
     background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png');
@@ -195,6 +150,7 @@
 }
 
 .events {
+    width: 80%;
     margin: 10px;
     color: #fff;
     font-size: 20px;
@@ -210,6 +166,7 @@
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
+    text-align: left;
 }
 
 .edit {
@@ -224,6 +181,7 @@
     z-index: 1;
     padding: 15px;
     cursor: pointer;
+    width: fit-content;
 }
 
 .name-edit {
@@ -280,4 +238,78 @@ li {
     padding: 15px;
     cursor: pointer;
     width: 115px;
+}
+
+@media (max-width:910px) {
+    .pcontainer {
+        height: fit-content;
+    }
+
+    .pcontainer-image {
+        width: 80vw;
+        height: 50vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .college-info {
+        width: 80%;
+    }
+
+    .address-info {
+        width: 80%;
+    }
+
+    .events-info {
+        width: 80%;
+    }
+
+    .pcontainer-info {
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .container-info1 {
+        height: 55vh;
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:500px) {
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .save{
+        height: 40px;
+        padding: 10px;
+    }
+    .edit{
+        height: 40px;
+        padding: 5px 10px;
+    }
 }

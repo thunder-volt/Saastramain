@@ -1,6 +1,6 @@
 .cont-corousal {
     padding: 20px;
-    width: 80%;
+    width: 80vw;
 }
 
 @media(max-width: 850px) {

@@ -277,11 +277,11 @@
     align-items: center;
 }
 
-.cards {
+.cards-envisage {
     font-family: Rubik;
     background-color: rgba(242, 170, 241, 0.24);
     width: 242px;
-    height: 400px;
+    height: 408px;
     margin: 10px;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
@@ -290,13 +290,13 @@
 
 .card-img {
     background-color: aqua;
-    height: 150px;
+    height: 161px;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
 }
 
-.cards:hover {
+.cards-envisage:hover {
     transform: scale(1.05);
 }
 

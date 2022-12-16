@@ -34,6 +34,11 @@ import img32 from "../Images/YB.7eb906bd.png"
 import img33 from "../Images/wrapcart.e8a02718.jpg"
 import img34 from "../Images/NEW.c706d957.png"
 
+import "../styles/styles.css"
+
+import NavBar from './navigation/NavBar'
+import Footer from './Footer'
+
 const Spons = () => {
     const cards = document.querySelectorAll('.cards');
     window.addEventListener("scroll", checkBoxes);
@@ -62,6 +67,8 @@ const Spons = () => {
 
     // reloadP()
     return (
+       <body>
+        <NavBar />
         <div className='body'>
             <div className='spons-intro'>
                 <h2 className='spons-heading'>Our Sponssor</h2>
@@ -301,6 +308,8 @@ const Spons = () => {
             </div>
 
         </div>
+        <Footer />
+    </body>
     )
 }
 

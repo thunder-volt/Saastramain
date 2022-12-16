@@ -1,11 +1,16 @@
 import React from 'react'
-
+import './profile.css'
+import NavBar from './navigation/NavBar'
+import Footer from './Footer'
 const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
-        <div className='container'>
+        <body>
+            <NavBar />
+            <section className='profilecont'>
+        <div className='pcontainer'>
             {data.map((data) => {
-                return <div className='container-image'>
+                return <div className='pcontainer-image'>
                     <div className='profile-img'></div>
                     <div className='name'>{data.name}</div>
                     <div className='id-title'>SHAASTRA ID</div>
@@ -14,7 +19,7 @@ const Profile = () => {
             })}
             {
                 data.map((data) => {
-                    return <div className='container-info'>
+                    return <div className='pcontainer-info'>
                         <div className='college'>COLLEGE/OCCUPATION</div>
                         <div className='college-info'>{data.college}</div>
                         <div className='address'>ADDRESS</div>
@@ -30,6 +35,9 @@ const Profile = () => {
 
 
         </div>
+        </section>
+        <Footer />
+    </body>
     )
 }
 

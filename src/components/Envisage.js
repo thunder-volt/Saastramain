@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 // import Antd from './Antd'
 const Envisage = () => {
   return (
-    <>
+    <body>
       <div className='env-container'>
         <div className='env-heading'>ENVISAGE</div>
         <div className='env-vision'>
@@ -46,11 +46,11 @@ const Envisage = () => {
         </div>
         <div className='cont-corousal'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={20}
             slidesPerView={3}
             navigation
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            // autoplay={{ delay: 2500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             onSlideChange={() => console.log('slide change')}
@@ -70,7 +70,7 @@ const Envisage = () => {
             }}
           >
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img1"></div>
                 <h2 class="env-title">Robbery Rush</h2>
                 <p class="quotes">A Two phase game in which a robber is chased by a police and he has to evade
@@ -81,7 +81,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img2"></div>
                 <h2 class="env-title">Robbery Rush</h2>
                 <p class="quotes">and has to find the safe and loot it and escape through the back door before
@@ -91,7 +91,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img3"></div>
                 <h2 class="env-title">Deviant</h2>
                 <p class="quotes">An unique AR experience.Wake up.You've been chosen.Join your robot companion
@@ -101,14 +101,14 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             {/* <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img4"></div>
                 <h2 class="env-title">DAIRY</h2>
                 <p class="quotes">"Nothing soothes an upset Indian like dairy products."</p>
               </div>
             </SwiperSlide> */}
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img5"></div>
                 <h2 class="env-title">Reboot</h2>
                 <p class="quotes">It's a 3D space shooter game with three different environments, engaging storyline
@@ -120,7 +120,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img6"></div>
                 <h2 class="env-title">Reboot</h2>
                 <p class="quotes">with head movements
@@ -171,7 +171,7 @@ const Envisage = () => {
             }}
           >
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img7"></div>
                 <h2 class="env-title">AR Painting</h2>
                 <p class="quotes">Into making gestures to meaningful actions? AR painting does that.It understands our hand gestures  by observing it via a camera and allows us to draw sketches.With further improvements, it can be deployed for teaching purposes and more importantly Entertainment</p>
@@ -179,7 +179,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img8"></div>
                 <h2 class="env-title">AR Painting</h2>
                 <p class="quotes">AR painter was created using AI. Given the real time webcam data, this paint-like python application uses OpenCV library to track an object-of-interest (like the fingers of your hand).</p>
@@ -187,7 +187,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img9"></div>
                 <h2 class="env-title">FaceAI bot</h2>
                 <p class="quotes" style={{ "overflow": "scroll" }}>Face AI bot is the humanoid version of Alexa. The bot is capable of face detection and speech recognition. This way the bot can interact with different persons and recognize each person.
@@ -196,7 +196,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img10"></div>
                 <h2 class="env-title">XY Plotter</h2>
                 <p class="quotes">
@@ -209,7 +209,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img11"></div>
                 <h2 class="env-title">XY Plotter</h2>
                 <p class="quotes">It uses motor drivers to control the stepper motors to move
@@ -255,7 +255,7 @@ const Envisage = () => {
             }}
           >
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img12"></div>
                 <h2 class="env-title">Infinity Dodecahedron</h2>
                 <p class="quotes">It gives the user the experience of living in a 3D space using the 3D effects generated by  multiple LEDs to outline a complex and perfect spiral area. It is the 3D model of 12 faces, which shows the infinite reflection of the LED light. </p>
@@ -263,7 +263,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img13"></div>
                 <h2 class="env-title">Kinect DJ</h2>
                 <p class="quotes">As the name implies, Virtual Dj with Kinect focuses on building a virtual DJ atmosphere integrating Microsoft kinect as a controller and unity3d as a platform to generate spectacular images.</p>
@@ -271,7 +271,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img14"></div>
                 <h2 class="env-title">Kinect DJ</h2>
                 <p class="quotes">To create the DJ, we utilized Unity 3D software and Kinect. Unity is also used to create an avatar that resembles our mirror appearance. Kinect has been used to create this motion of the mirror image.</p>
@@ -279,7 +279,7 @@ const Envisage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="cards">
+              <div class="cards-envisage">
                 <div class="card-img env-img15"></div>
                 <h2 class="env-title">LED Mirror</h2>
                 <p class="quotes">Let's change the traditional mirror, how about a pixelated one. This project builds
@@ -294,7 +294,7 @@ const Envisage = () => {
           </Swiper>
         </div>
       </div>
-    </>
+    </body>
   )
 }
 

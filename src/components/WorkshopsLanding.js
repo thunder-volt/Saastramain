@@ -1,29 +1,51 @@
-import logo from "./logo.svg";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import cardData from "./cardData";
-import CardComponent from "./Card";
+import CardComponent from "./Card.jsx";
+import { useState } from "react";
+import { useQuery } from "@chakra-ui/react";
+import { gql } from "@apollo/client";
 
-function WorkshopsLanding() {
-  let cardElements = cardData.map((data) => {
-    return <CardComponent data={data} key={data.id} />;
-  });
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
+
+const EVENTS = gql`
+  query getEvents($vertical: Vertical, $skip: number, $take: number){
+    getEvents(vertical: $vertical, skip: $skip, take: $take){
+      events,
+      count
+    }
+  }
+`;
+
+async function WorkshopsLanding() {
+
+  const {data, loading, error} = useQuery(EVENTS)
+
 
   return (
-    <>
+    <body>
+      <NavBar />
     <div className="workshops-landing">
-      <h1 className="title">WORKSHOPS</h1>
+      <h1 className="wstitle">WORKSHOPS</h1>
       
       <div>
-        <button className="explore" onclick="explore()">Explore Workshops </button>{" "}
+        <button className="explore" oncCick="explore()">Explore Workshops </button>{" "}
       </div>
       </div>
       <div className="glassmorphic2">
         <div className="wrapper">
-        {cardElements}
+        {
+          data?.events.map((data) => {
+            console.log(data)
+            return <CardComponent data={data} key={data.id} />;
+          })
+        }
         </div>
       </div>
-    </>
+      <Footer />
+    </body>
   );
 }
 

@@ -1,17 +1,21 @@
 import React from 'react'
+import NavBar from './navigation/NavBar'
+import Footer from './Footer'
 
 const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
+       <body>
+        <NavBar></NavBar>
+        <section className='profilecont'>
         <div>
             <div className='heading'>EDIT PROFILE</div>
-            <div className='container'>
+            <div className='pcontainer'>
                 {data.map((data) => {
-                    return <div className='container-image'>
+                    return <div className='pcontainer-image'>
                         <div className='profile-img'></div>
                         <div className='id-title'>SHAASTRA ID</div>
                         <div className='shaastra-id'>{data.id}</div>
-                        <button className='save'>Save</button>
                     </div>
                 })}
                 <div className='container-info1'>
@@ -21,9 +25,12 @@ const Profile = () => {
                     <input className='college-edit'>{data.address}</input>
                     <div className='address'>ADDRESS</div>
                     <input className='address-edit'></input>
-
+                    <button className='save'>Save</button>
                 </div>
             </div></div>
+            </section>
+        <Footer></Footer>
+       </body>
 
     )
 }

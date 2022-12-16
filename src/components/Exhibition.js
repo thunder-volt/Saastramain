@@ -1,9 +1,10 @@
 import React from 'react';
-import Card from './Card'
+import Card from './CardEx'
 
 function Exhibition() {
   return (
-    <div className="container">
+    <body>
+      <div className="container">
       <div className='title'>
         <h1>EXHIBITIONS</h1>
       </div>
@@ -122,6 +123,7 @@ function Exhibition() {
       </div>
       </div>
       </div>
+    </body>
     // </div>
   );
 }
