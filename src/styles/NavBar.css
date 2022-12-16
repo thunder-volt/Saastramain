@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.smallNav {
+    display: none;
+}
+.navBar{
+    position: fixed;
+    width: fit-content;
+    margin: 0% auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    height: 57px;
+    bottom: 20px;
+    background: rgba(15, 4, 76, 0.95);
+    box-shadow: 10px 2px 25px -10px #ffffff6f;
+    border-radius: 5px;
+    z-index: 1000;
+    width: 95vw;
+}
+.navItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90vw;
+}
+.logo {
+    width: 45px;
+    object-fit: contain;
+    margin: 10px;
+}
+.navBar a{
+    color: #FFFFFF !important;
+}
+.items{
+    justify-content: space-around;
+    padding-inline: 10px;
+    align-items: center;
+    justify-items: center ;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    border: none;
+    width: 11vw;
+    height: fit-content;
+    margin: auto;
+    margin-left:2vw;
+    background-color: transparent;
+}
+/* .items .items {
+    align-items: center;
+    justify-content: center;
+} */
+.items #text{
+    text-align: center;
+}
+.items button{
+    height: fit-content !important;
+    margin: auto;
+}
+.dropdown.false {
+    display: none;
+}
+.dropdown.true {
+    display: block;
+    position: absolute;
+    width: 160px;
+    padding: 10px;
+    /* height: 175px; */
+    bottom: 80px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(15, 4, 76, 0.75);
+    box-shadow: 0px 4px 4px #ffffff70;
+    /* border: 1px solid #570080; */
+    border-radius: 5px;
+}
+.subitems {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.dropup{
+    position: absolute;
+    top: 5px;
+    width: fit-content;
+}
+.items :hover {
+    font-size: 18px;
+}
+/* .subitems :hover {
+    font-size: 16px;
+} */
+
+/* .navItems :hover {
+    background: rgba(87, 0, 128, 0.5);
+    border-radius: 5px;
+} */
+
+@media screen and (max-width: 780px) {
+    .navBar{
+        width: 90vw;
+        margin: 2.5% auto;
+        bottom: 15px;
+    }
+    .navItems {
+        display: none;
+    }
+    .smallNav{
+        display: block;
+        width: fit-content;
+    }
+    .menu{
+        padding: 10px;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+    }
+    .menu svg{
+        width: 10vw;
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+    .menuItems{
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 80px;
+        width: 140px;
+        margin: 0% auto;
+        margin-left: 14vw;
+        left:-40px;
+        padding: 10px;
+        background: rgba(15, 4, 76, 0.75);
+        box-shadow: 0px 4px 4px #ffffff70;
+        /* border: 2.33333px solid #570080; */
+        border-radius: 5px;
+    }
+    .itemsmob{
+        justify-content: space-around;
+        text-align:left;
+        align-items: center;
+        justify-items: center ;
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #FFFFFF;
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+    }
+    .itemsmob .itemsmob {
+        display: flex;
+        flex-direction: row;
+    }
+    .dropupmob{
+        position: absolute;
+        right: 5px;
+    }
+    .dropdownmob.false {
+        display: none;
+    }
+    .dropdownmob.true {
+        display: block;
+        position: absolute;
+        margin-left: 140px;
+        width: 130px;
+        padding: 10px;
+        /* height: 175px; */
+        bottom: 80px;
+        color: #FFFFFF;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        background: rgba(15, 4, 76, 0.75);
+        box-shadow: 0px 4px 4px #ffffff70;
+        /* border: 1px solid #570080; */
+        border-radius: 5px;
+    }
+    .subitemsmob {
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        width: fit-content;
+        text-align: left;
+    }
+    .subitemsmob a{
+        width: fit-content;
+    }
+    .itemsmob :hover {
+        font-size: 18px;
+    }
+}
