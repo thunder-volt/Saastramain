@@ -10,9 +10,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // import Antd from './Antd'
+
+import NavBar from './navigation/NavBar';
+import Footer from './Footer';
+import TopBar from './TopBar';
+
 const Envisage = () => {
   return (
     <body>
+      <TopBar />
+      <NavBar />  
       <div className='env-container'>
         <div className='env-heading'>ENVISAGE</div>
         <div className='env-vision'>
@@ -294,6 +301,7 @@ const Envisage = () => {
           </Swiper>
         </div>
       </div>
+      <Footer />
     </body>
   )
 }

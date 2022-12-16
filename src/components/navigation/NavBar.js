@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return(
       <div className="navBar">
-         <img className="logo" src={Logo} alt="Logo"/>
+         {/* <img className="logo" src={Logo} alt="Logo"/> */}
          <nav>
             <ul className="navItems">
                {items.map((items,index) =>{
