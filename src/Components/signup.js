@@ -164,6 +164,20 @@ const Signup = () => {
           )}
         </form>
       </center>
+      <div class="circle-wrapperAcc">
+        <div class="circleAcc1 circleAcc"/>
+        <div class="circleAcc2 circleAcc"/>
+        <div class="circleAcc3 circleAcc"/>
+        <div class="circleAcc4 circleAcc"/>
+        <div class="circleAcc5 circleAcc"/>
+        <div class="circleAcc6 circleAcc"/>
+        <div class="circleAcc7 circleAcc"/>
+        <div class="circleAcc8 circleAcc"/>
+        <div class="circleAcc9 circleAcc"/>
+        <div class="circleAcc10 circleAcc"/>
+        <div class="circleAcc11 circleAcc"/>
+        <div class="circleAcc12 circleAcc"/>
+      </div>
     </section>
   );
 };
