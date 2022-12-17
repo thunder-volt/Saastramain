@@ -557,72 +557,68 @@ const Edit = () => {
                 className="confirm"
                 onClick={async (e) => {
                   e.preventDefault();
-                  if (event.fee === 0) {
-                    alert("Registration Fee is invalid");
-                  } else {
-                    try {
-                      // console.log(Date.parse(data.getEvent.eventTimeto));
-                      // console.log(event);
-                      await editevent({
-                        variables: {
-                          eventId: id,
-                          data: {
-                            name: event.name ? event.name : data.getEvent.name,
-                            description: event.desc
-                              ? event.desc
-                              : data.getEvent.description,
-                            eventTimeFrom: event.evStart
-                              ? new Date(event.evStart).toDateString()
-                              : Date.parse(data.getEvent.eventTimeFrom),
-                            eventTimeTo: event.evEnd
-                              ? new Date(event.evEnd).toDateString()
-                              : data.getEvent.eventTimeTo,
-                            registrationType: event.participation
-                              ? event.participation
-                              : data.getEvent.registrationType,
-                            platform: event.platform
-                              ? event.platform
-                              : data.getEvent.platform,
-                            requirements: event.requirements
-                              ? event.requirements
-                              : data.getEvent.requirements,
-                            vertical: event.vertical
-                              ? event.vertical
-                              : data.getEvent.vertical,
-                            pic: container,
-                            finalists: data.getEvent.finalists,
-                            firstplace: event.winner_points
-                              ? event.winner_points.toString()
-                              : data.getEvent.firstplace,
-                            participation: event.participation_points
-                              ? event.participation_points.toString()
-                              : data.getEvent.secondPlace,
-                            secondplace: event.runner_up_points
-                              ? event.runner_up_points.toString()
-                              : data.getEvent.secondplace,
-                            thirdplace: event.third_pos_points
-                              ? event.third_pos_points.toString()
-                              : data.getEvent.thirdplace,
-                            teamSize: event.teamSize
-                              ? parseInt(event.teamSize)
-                              : data.getEvent.teamSize,
-                            registrationCloseTime: event.regEnd
-                              ? new Date(event.regEnd).toDateString()
-                              : data.getEvent.registrationCloseTime,
-                            registrationOpenTime: event.regStart
-                              ? new Date(event.regStart).toDateString()
-                              : data.getEvent.registrationOpenTime,
-                            registrationfee: event.fee
-                              ? event.fee.toString()
-                              : data.getEvent.registrationfee,
-                          },
+                  try {
+                    // console.log(Date.parse(data.getEvent.eventTimeto));
+                    // console.log(event);
+                    await editevent({
+                      variables: {
+                        eventId: id,
+                        data: {
+                          name: event.name ? event.name : data.getEvent.name,
+                          description: event.desc
+                            ? event.desc
+                            : data.getEvent.description,
+                          eventTimeFrom: event.evStart
+                            ? new Date(event.evStart).toDateString()
+                            : Date.parse(data.getEvent.eventTimeFrom),
+                          eventTimeTo: event.evEnd
+                            ? new Date(event.evEnd).toDateString()
+                            : data.getEvent.eventTimeTo,
+                          registrationType: event.participation
+                            ? event.participation
+                            : data.getEvent.registrationType,
+                          platform: event.platform
+                            ? event.platform
+                            : data.getEvent.platform,
+                          requirements: event.requirements
+                            ? event.requirements
+                            : data.getEvent.requirements,
+                          vertical: event.vertical
+                            ? event.vertical
+                            : data.getEvent.vertical,
+                          pic: container,
+                          finalists: data.getEvent.finalists,
+                          firstplace: event.winner_points
+                            ? event.winner_points.toString()
+                            : data.getEvent.firstplace,
+                          participation: event.participation_points
+                            ? event.participation_points.toString()
+                            : data.getEvent.secondPlace,
+                          secondplace: event.runner_up_points
+                            ? event.runner_up_points.toString()
+                            : data.getEvent.secondplace,
+                          thirdplace: event.third_pos_points
+                            ? event.third_pos_points.toString()
+                            : data.getEvent.thirdplace,
+                          teamSize: event.teamSize
+                            ? parseInt(event.teamSize)
+                            : data.getEvent.teamSize,
+                          registrationCloseTime: event.regEnd
+                            ? new Date(event.regEnd).toDateString()
+                            : data.getEvent.registrationCloseTime,
+                          registrationOpenTime: event.regStart
+                            ? new Date(event.regStart).toDateString()
+                            : data.getEvent.registrationOpenTime,
+                          registrationfee: event.fee
+                            ? event.fee.toString()
+                            : data.getEvent.registrationfee,
                         },
-                      })
-                        .then((res) => console.log(res.data))
-                        .catch((error) => console.log(`error--->${error}`));
-                    } catch (error) {
-                      console.log(`error-->${error}`);
-                    }
+                      },
+                    })
+                      .then((res) => console.log(res.data))
+                      .catch((error) => console.log(`error--->${error}`));
+                  } catch (error) {
+                    console.log(`error-->${error}`);
                   }
                 }}
               >

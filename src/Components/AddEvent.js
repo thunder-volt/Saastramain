@@ -536,62 +536,58 @@ const Add = () => {
               className="confirm"
               onClick={async (e) => {
                 e.preventDefault();
-                if (event.fee === 0) {
-                  alert("Registration Fee is invalid");
-                } else {
-                  try {
-                    console.log(new Date(event.regEnd).toDateString());
-                    await addEventMutation({
-                      variables: {
-                        data: {
-                          name: event.name,
-                          description: event.desc,
-                          eventTimeFrom: event.evStart
-                            ? new Date(event.evStart).toDateString()
-                            : null,
-                          eventTimeTo: event.evEnd
-                            ? new Date(event.evEnd).toDateString()
-                            : null,
-                          registrationType: event.participation,
-                          platform: event.platform,
-                          requirements: event.requirements,
-                          vertical: event.vertical,
-                          pic: container,
-                          finalists: "",
-                          firstplace: event.winner_points.toString(),
-                          participation: event.participation_points.toString(),
-                          secondplace: event.runner_up_points.toString(),
-                          thirdplace: event.third_pos_points.toString(),
-                          teamSize: parseInt(event.teamSize),
-                          registrationCloseTime: event.regEnd
-                            ? new Date(event.regEnd).toDateString()
-                            : null,
-                          registrationOpenTime: event.regStart
-                            ? new Date(event.regStart).toDateString()
-                            : null,
-                          registrationfee: event.fee.toString(),
-                        },
+                try {
+                  console.log(new Date(event.regEnd).toDateString());
+                  await addEventMutation({
+                    variables: {
+                      data: {
+                        name: event.name,
+                        description: event.desc,
+                        eventTimeFrom: event.evStart
+                          ? new Date(event.evStart).toDateString()
+                          : null,
+                        eventTimeTo: event.evEnd
+                          ? new Date(event.evEnd).toDateString()
+                          : null,
+                        registrationType: event.participation,
+                        platform: event.platform,
+                        requirements: event.requirements,
+                        vertical: event.vertical,
+                        pic: container,
+                        finalists: "",
+                        firstplace: event.winner_points.toString(),
+                        participation: event.participation_points.toString(),
+                        secondplace: event.runner_up_points.toString(),
+                        thirdplace: event.third_pos_points.toString(),
+                        teamSize: parseInt(event.teamSize),
+                        registrationCloseTime: event.regEnd
+                          ? new Date(event.regEnd).toDateString()
+                          : null,
+                        registrationOpenTime: event.regStart
+                          ? new Date(event.regStart).toDateString()
+                          : null,
+                        registrationfee: event.fee.toString(),
                       },
-                    })
-                      .then((res) => {
-                        if (res.data?.addEvent.id) {
-                          faqs.map(async (faq) => {
-                            await addfaq({
-                              variables: {
-                                eventId: res.data?.addEvent.id,
-                                data: {
-                                  question: faq.question,
-                                  answer: faq.answer,
-                                },
+                    },
+                  })
+                    .then((res) => {
+                      if (res.data?.addEvent.id) {
+                        faqs.map(async (faq) => {
+                          await addfaq({
+                            variables: {
+                              eventId: res.data?.addEvent.id,
+                              data: {
+                                question: faq.question,
+                                answer: faq.answer,
                               },
-                            });
+                            },
                           });
-                        }
-                      })
-                      .catch((error) => console.log(`error---->${error}`));
-                  } catch (error) {
-                    console.log(`error--->${error}`);
-                  }
+                        });
+                      }
+                    })
+                    .catch((error) => console.log(`error---->${error}`));
+                } catch (error) {
+                  console.log(`error--->${error}`);
                 }
               }}
             >

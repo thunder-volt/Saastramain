@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from "@apollo/client";
 import "../App.css";
+import {
+  ChakraProvider,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+} from "@chakra-ui/react";
 
 const VERIFY = gql`
   mutation VerifyUser($otp: String!) {
@@ -16,6 +25,7 @@ const RESEND = gql`
 `;
 
 const Verify = () => {
+  var { isOpen, onOpen, onClose } = useDisclosure();
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [resend, setResend] = useState(false);
@@ -54,10 +64,36 @@ const Verify = () => {
     navigate("/");
   }
   if (verifyError) {
-    return <p>{verifyError.message}</p>;
+    onClose = () => {
+      window.location.reload();
+    };
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="red" color="black">
+            <ModalHeader>{verifyError.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (verifyLoading) {
-    return <p>Loading....</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
 
   return (
