@@ -1,24 +1,71 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/Logo';
+import Square from './components/Square';
+import './styles.css';
+import React, { useState, useEffect } from 'react';
+import Circle from './components/Circles';
+import BlackScreen from './components/BlackScreen';
+import Spiral from './components/Spiral';
+import Theme from './components/Theme';
+import Countdown from './components/Countdownpage';
+// import './styles/theme.css';
 
-function App() {
+
+const App=()=> {
+
+  
+  const [cpCount, setCpCount]=useState(0);
+  const [cp, setCp]=useState([10000,13800]);
+  const [depth, setDepth]=useState(cp[cpCount]);
+  const [envStyle, setEnvStyle]=useState({
+
+    height: '100vh',
+    width: '100vw',
+    transition: '10s',
+    transformStyle: 'preserve-3d',
+    transform: 'translateZ(0px)',
+    
+ });
+   const handleNavigation = (e) => {
+     
+    
+    
+    setCpCount(cpCount+1);
+    setDepth(cp[cpCount]);
+    
+
+     setEnvStyle({
+
+      height: '100vh',
+      width: '100vw',
+      transition: '5s',
+      transformStyle: 'preserve-3d',
+      transform: 'translateZ('+depth+'px)',
+  
+    });
+
+   };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      {/* <Theme /> */}
+      <Countdown />
+      
+          
+          
+          
+
+          
+        
+
+
+
+          
+
+
+        </div>
+      
   );
 }
 

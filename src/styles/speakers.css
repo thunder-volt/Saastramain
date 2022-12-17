@@ -1,0 +1,110 @@
+.speakers-cont {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.speakers-slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.speakers-slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*60deg)) translateZ(350px);
+}
+
+.speakers-slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+@media screen and (max-width: 826px) {
+    .speakers-slider span {
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(250px);
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .speakers-slider span {
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(200px);
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .speakers-slider span {
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(150px);
+    }
+
+    .speakers-slider {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* .speakers-slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+} */
+
+.speakers-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    /* background: linear-gradient(45deg, #03a9f4, rgba(3, 169, 244, 0.5)); */
+    color: #fff;
+    opacity: 0;
+    transition: 2s;
+    border-radius: 50%;
+}
+
+.speakers-slider:hover .speakers-content {
+    /* transform: translateY(-50px) scale(1.2); */
+    opacity: 1;
+}
+
+.speakers-info {
+    font-size: 8px;
+}
+
+.speaker-heading {
+    /* margin-bottom: 80px; */
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}

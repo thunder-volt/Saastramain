@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.theme-body {
+    position: absolute;
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent;
+}
+.theme-body{
+    background-color: transparent;
+}
+.theme-wrapper{
+    height: 110vh;
+}
+.theme-wrapper h2{
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    animation: ani2 0.75s ease-out 0.5s forwards;
+    
+    font-size: 4.5vw;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+
+.neon {
+    color: #fff;
+    font-size: 10vw;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #f008e9,
+      0 0 40px #f008e9,
+      0 0 80px #f008e9,
+      0 0 90px #9124c2,
+      0 0 100px #9124c2,
+      0 0 150px #9124c2;
+      animation: ani2 0.75s ease-out 0.5s forwards;
+      transition: 0.5s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* general styling */
+  :root {
+    font-size: calc(3vw + 1vh + 1vmin);
+  }
+  
+ 
+  
+  .heading {
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+    font-size: 1rem;
+  }
+  
+  h1 {
+   
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.theme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    opacity: 0;
+    animation: ani1 1s ease-out forwards;
+    /* flex-wrap: wrap; */
+    padding: 0px 34px;
+    /* flex-wrap: wrap; */
+
+}
+.about-img {
+    height: 20vh;
+    display: block;
+    margin: auto;
+    opacity: 0;
+    animation: ani2 0.75s ease-out 0.5s forwards;
+}
+
+@media screen and (max-width: 1078px) {
+    .theme {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 620px) {
+    .theme-img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .theme-img {
+        height: 150px;
+    }
+    .theme-title h1 {
+    font-size: 7vh;
+    }
+}
+
+@keyframes ani2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ani1 {
+    100% {
+        opacity: 1;
+    }
+}
