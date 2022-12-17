@@ -1,18 +1,22 @@
 import React from 'react';
 import Card from './CardEx'
-
+import NavBar from './navigation/NavBar';
+import Footer from './Footer';
+import TopBar from './TopBar';
 function Exhibition() {
   return (
     <body>
-      <div className="container">
-      <div className='title'>
+      <TopBar />
+      <NavBar />
+      <div className="container-ex">
+      <div className='title-ex'>
         <h1>EXHIBITIONS</h1>
       </div>
-      <div className='btn-box'>
+      {/* <div className='btn-box'>
         <button className='btn'>Register</button>
-      </div>
+      </div> */}
 
-      <div className='about'>
+      <div className='about-ex'>
         {/* <h3>About Us</h3> */}
         <p>Shaastra Exhibitions is a platform to showcase cutting-edge technology.
 
@@ -57,7 +61,7 @@ function Exhibition() {
           />
         </div>
       </div>
-      <div className='title'>
+      <div className='title-ex-small'>
         <h1>PREVIOUS EXHIBITIONS</h1>
       </div>
 
@@ -123,6 +127,7 @@ function Exhibition() {
       </div>
       </div>
       </div>
+      <Footer />
     </body>
     // </div>
   );
