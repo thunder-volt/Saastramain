@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from "@apollo/client";
+import {
+  ChakraProvider,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+} from "@chakra-ui/react";
 
 const RESET = gql`
   mutation ResetPassword($data: ResetPasswordInput!) {
@@ -22,18 +31,52 @@ const ResetPassword = () => {
       },
     });
   };
+  var { isOpen, onOpen, onClose } = useDisclosure();
 
   if (loading) {
-    return <p>Loading</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (error) {
-    return <p>{error.message}</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="red" color="black">
+            <ModalHeader>{error.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (data) {
     navigate("/");
   }
   return (
     <section id="login">
+      <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Shaastra 2023</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/static/styles/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
+      </header>
       <center>
         <div className="login-signup">
           <h2>RESET PASSWORD</h2>

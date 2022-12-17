@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
+import {
+  ChakraProvider,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+} from "@chakra-ui/react";
 
 const LOGIN_MUTATION = gql`
   mutation Login($data: LoginInput!) {
@@ -26,18 +35,47 @@ const Login = () => {
     });
   };
 
+  var { isOpen, onOpen, onClose } = useDisclosure();
+
   const handleForgot = () => {
     navigate("/forgotpassword");
   };
 
   if (loading) {
-    return <p>Loading</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (error) {
-    if (error.message === "Account Not Found") {
-      navigate("/signup");
-    }
-    return <p>{error.message}</p>;
+    onClose = () => {
+      if (error.message === "Account Not Found") navigate("/signup");
+      else {
+        navigate("/");
+        window.location.reload();
+      }
+    };
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="red" color="black">
+            <ModalHeader>{error.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (data) {
     if (!data.login?.isVerified) {
@@ -54,6 +92,16 @@ const Login = () => {
   }
   return (
     <section id="login">
+      <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Shaastra 2023</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/static/styles/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
+      </header>
       <center>
         <div className="login-signup">
           <h1>LOGIN</h1>
