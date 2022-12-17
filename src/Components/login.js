@@ -4,6 +4,16 @@ import { useNavigate } from "react-router-dom";
 import "../App.css";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+import {
+  ChakraProvider,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+} from "@chakra-ui/react";
+
 const LOGIN_MUTATION = gql`
   mutation Login($data: LoginInput!) {
     login(data: $data) {
@@ -27,18 +37,47 @@ const Login = () => {
     });
   };
 
+  var { isOpen, onOpen, onClose } = useDisclosure();
+
   const handleForgot = () => {
     navigate("/forgotpassword");
   };
 
   if (loading) {
-    return <p>Loading</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (error) {
-    if (error.message === "Account Not Found") {
-      navigate("/signup");
-    }
-    return <p>{error.message}</p>;
+    onClose = () => {
+      if (error.message === "Account Not Found") navigate("/signup");
+      else {
+        navigate("/");
+        window.location.reload();
+      }
+    };
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="red" color="black">
+            <ModalHeader>{error.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (data) {
     if (!data.login?.isVerified) {
@@ -56,12 +95,14 @@ const Login = () => {
   return (
    <body>
     <NavBar />
-     <section id="login">
-      <center className=".center">
-        <div className="login-signup">
-          <h1>LOGIN</h1>
-        </div>
-      </center>
+      <header>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/static/styles/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
+      </header>
       <center className=".center">
         <form className="login_form" onSubmit={handleSubmit}>
           <input
@@ -88,7 +129,6 @@ const Login = () => {
           </button>
         </form>
       </center>
-    </section>
     <Footer />
     </body> 
   );
