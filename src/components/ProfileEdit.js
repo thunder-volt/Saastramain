@@ -1,8 +1,12 @@
 import React from 'react'
+import NavBar from './navigation/NavBar'
+import Footer from './Footer'
 
 const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
+       <body>
+        <NavBar></NavBar>
         <section className='profilecont'>
         <div>
             <div className='heading'>EDIT PROFILE</div>
@@ -25,6 +29,8 @@ const Profile = () => {
                 </div>
             </div></div>
             </section>
+        <Footer></Footer>
+       </body>
 
     )
 }

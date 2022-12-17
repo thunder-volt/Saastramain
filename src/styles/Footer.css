@@ -2,15 +2,15 @@
 /* Footer styles */
 
 .footer {
-    width: 100%;
+    width: 100vw;
     position: relative;
     height: auto;
-    background-color: #090521;
+    background-color: #090521 !important;
     font-family: 'Rubik', sans-serif;
 }
 
 .footer .col {
-    width: 225px;
+    width: 20%;
     height: auto;
     float: left;
     box-sizing: border-box;

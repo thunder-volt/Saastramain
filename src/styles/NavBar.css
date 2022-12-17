@@ -16,13 +16,14 @@
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
-    height: 57px;
+    height: 67px;
     bottom: 20px;
     background: rgba(15, 4, 76, 0.95);
     box-shadow: 10px 2px 25px -10px #ffffff6f;
     border-radius: 5px;
     z-index: 1000;
     width: 95vw;
+    padding-top: 15px;
 }
 .navItems {
     display: flex;
@@ -46,7 +47,7 @@
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.2vw;
     color: white;
     border: none;
     width: 11vw;
@@ -112,9 +113,12 @@
 
 @media screen and (max-width: 780px) {
     .navBar{
-        width: 90vw;
+        width: 18vw;
         margin: 2.5% auto;
         bottom: 15px;
+        height: 50px;
+        left: -240px;
+        padding-top: 0%;
     }
     .navItems {
         display: none;
@@ -122,6 +126,7 @@
     .smallNav{
         display: block;
         width: fit-content;
+        margin-right: 0;
     }
     .menu{
         padding: 10px;

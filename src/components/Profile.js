@@ -1,10 +1,13 @@
 import React from 'react'
 import './profile.css'
-
+import NavBar from './navigation/NavBar'
+import Footer from './Footer'
 const Profile = () => {
     const data = [{ name: "Akshay", id: 123456, college: "IIM", address: "Chennaicfvbjkghfvhjhgfklv b,c;kjhvjbjkhg", events: ["ertyui", "dfghjk", "edrtfgy"] }]
     return (
-        <section className='profilecont'>
+        <body>
+            <NavBar />
+            <section className='profilecont'>
         <div className='pcontainer'>
             {data.map((data) => {
                 return <div className='pcontainer-image'>
@@ -33,6 +36,8 @@ const Profile = () => {
 
         </div>
         </section>
+        <Footer />
+    </body>
     )
 }
 

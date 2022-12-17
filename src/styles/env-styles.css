@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
 .env-container {
+    font-family: Rubik;
     background-image: url('../Images/bg6.jpg');
     background-repeat: repeat;
     background-size: auto;
-    /* height: 100vh; */
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -10,9 +13,13 @@
     align-items: center;
     flex-direction: column;
     /* background: rgba(0, 0, 0, 0.5); */
+    padding-top: 8vh;
+    padding-bottom: 5vh;
 }
 
+
 .container-in {
+    font-family: Rubik;
     background-repeat: repeat;
     background-size: auto;
     /* height: 100vh; */
@@ -32,20 +39,23 @@
 }
 
 .env-games-content {
+    font-family: Rubik;
     padding: 27px;
+    font-size: 1.2vw;
 }
 
 .env-heading {
     color: white;
-    font-size: 466%;
+    font-size: 432%;
     font-weight: 700;
 }
 
 .env-vision {
+    font-family: Rubik;
     /* height: 40%; */
     color: white;
     width: 80%;
-    background-color: rgba(158, 135, 221, 0.47);
+    background-color: rgba(158, 135, 221, 0.49);
     display: flex;
     align-items: center;
     border-radius: 23px;
@@ -69,9 +79,14 @@
     padding: 20px;
     /* width: 67%; */
     line-height: 27px;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 
 .env-about {
+    font-family: Rubik;
     color: white;
     width: 80%;
     background-color: rgba(158, 135, 221, 0.47);
@@ -183,12 +198,14 @@
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.2vw;
 }
 
 .env-ambience-heading {
     color: #fff;
     font-size: 49px;
     font-weight: 700;
+    text-align: center;
 }
 
 .env-games-heading {
@@ -205,6 +222,10 @@
 }
 
 @media(max-width: 573px) {
+    .env-container{
+        padding-top: 10vh;
+        height: fit-content;
+    }
     .env-games-container {
         flex-direction: column;
     }
@@ -215,5 +236,162 @@
 
     .env-shows {
         flex-direction: column;
+    }
+    .vision-content, .env-games-content{
+        font-size: 4vw;
+        width: 95vw;
+    }
+}
+
+.carousel-dark .carousel-caption {
+    color: #fff;
+}
+
+.swiper-container {
+    width: 480px;
+}
+
+.swiper-slide {
+    width: 300px;
+}
+
+@media screen and (min-width: 300px) {
+    .swiper-container {
+        width: 390px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1222px) {
+    .swiper-container {
+        width: 1222px;
+    }
+}
+
+.swiper-slide.swiper-slide-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide.swiper-slide-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-envisage {
+    font-family: Rubik;
+    background-color: rgba(242, 170, 241, 0.24);
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+
+.card-img {
+    background-color: aqua;
+    height: 161px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cards-envisage:hover {
+    transform: scale(1.05);
+}
+
+.env-img1 {
+    background-image: url("../Images/Gamedev1.jpg");
+}
+
+.env-img2 {
+    background-image: url("../Images/Gamedev2.jpg");
+}
+
+.env-img3 {
+    background-image: url("../Images/Gamedev3.jpg");
+}
+
+.env-img4 {
+    background-image: url("../Images/Gamedev4.jpg");
+}
+
+.env-img5 {
+    background-image: url("../Images/Gamedev5.jpg");
+}
+
+.env-img6 {
+    background-image: url("../Images/Ambience8.jpg");
+}
+
+.env-img7 {
+    background-image: url("../Images/Ambience1.jpg");
+}
+
+.env-img8 {
+    background-image: url("../Images/Ambience2.jpg");
+}
+
+.env-img9 {
+    background-image: url("../Images/Ambience3.jpg");
+}
+
+.env-img10 {
+    background-image: url("../Images/Ambience7.jpg");
+}
+
+.env-img11 {
+    background-image: url("../Images/Gamedev6.jpg");
+}
+
+.env-img12 {
+    background-image: url("../Images/Ambience4.jpg");
+}
+
+.env-img13 {
+    background-image: url("../Images/Ambience5.jpg");
+}
+
+.env-img14 {
+    background-image: url("../Images/Ambience6.jpg");
+}
+
+.env-img15 {
+    background-image: url("../Images/Amibence9.jpg");
+}
+
+.quotes {
+    font-family: Rubik;
+    padding: 5px;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.env-title {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .quotes{
+        font-size: 4vw;
+    }
+    .cards-envisage{
+        height: 75vh;
     }
 }

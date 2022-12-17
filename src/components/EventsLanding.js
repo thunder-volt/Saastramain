@@ -26,7 +26,7 @@ function EventsLanding() {
 
 
   return (
-    <>
+    <body>
     <NavBar />
     <div className="workshops-landing">
       <h1 className="wstitle">EVENTS</h1>
@@ -57,7 +57,7 @@ function EventsLanding() {
         </div>
       </div>
       <Footer />
-    </>
+    </body>
   );
 }
 

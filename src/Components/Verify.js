@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from "@apollo/client";
 import "../App.css";
 
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
+
 const VERIFY = gql`
   mutation VerifyUser($otp: String!) {
     verifyUser(otp: $otp)
@@ -61,6 +64,8 @@ const Verify = () => {
   }
 
   return (
+   <body>
+    <NavBar></NavBar>
     <section id="login">
       <center>
         <div className="login-signup">
@@ -101,6 +106,8 @@ const Verify = () => {
         ) : null}
       </center>
     </section>
+    <Footer />
+   </body>
   );
 };
 

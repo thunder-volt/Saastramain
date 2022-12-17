@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from "@apollo/client";
-
+import NavBar from "./navigation/NavBar";
+import Footer from "./Footer";
 const RESET = gql`
   mutation ResetPassword($data: ResetPasswordInput!) {
     resetPassword(data: $data)
@@ -33,7 +34,9 @@ const ResetPassword = () => {
     navigate("/");
   }
   return (
-    <section id="login">
+    <body>
+      <NavBar></NavBar>
+      <section id="login">
       <center>
         <div className="login-signup">
           <h2>RESET PASSWORD</h2>
@@ -70,6 +73,8 @@ const ResetPassword = () => {
         </form>
       </center>
     </section>
+    <Footer />
+    </body>
   );
 };
 

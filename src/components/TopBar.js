@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from"./../images/23_white logo-02.png";
+import Logo from"./../Images/23_white logo-02.png";
 import "./../styles/TopBar.css";
 // import {useHistory} from 'react-router-dom'
 import { FaUserCircle } from "react-icons/fa";

@@ -33,7 +33,7 @@ function App() {
       </header>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<EditUser />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/envisage' element={<Envisage />} />
