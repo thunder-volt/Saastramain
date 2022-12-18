@@ -1,6 +1,6 @@
-* {
-    /* width: 100vw; */
-}
+/* * {
+    width: 100vw;
+} */
 
 html {
     height: 100vh;
@@ -19,8 +19,11 @@ html {
 }
 
 #signup {
+    position: relative;
     height: 100vh;
     width: 100%;
+    z-index: 999;
+    background-color: transparent;
     /* background: url(../public/meta-1\ 1.png) no-repeat center center fixed;
     box-shadow: inset 0 0 0 2000px rgb(123 30 101 / 61%);
     -webkit-background-size: cover;
@@ -129,6 +132,11 @@ button:focus {
     outline: none;
 }
 
+/* #section center{
+    height: 260px;
+    display: flex;
+    z-index: 1;
+} */
 
 .circle-wrapperAcc{
     overflow: hidden;

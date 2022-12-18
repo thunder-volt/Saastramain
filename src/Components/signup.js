@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
+import "../style.css";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
 const SIGN_UP = gql`
@@ -68,12 +68,12 @@ const Signup = () => {
    <body>
     <NavBar />
     <section id="signup">
-      <center>
+      <center className=".center">
         <div className="login-signup">
           <h1>SIGNUP</h1>
         </div>
       </center>
-      <center>
+      <center className=".center">
         <form className="signup_form" onSubmit={handleSubmit}>
           <input
             className="type-1 name"
