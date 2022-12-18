@@ -23,14 +23,14 @@ const Footer = (props) => {
             <div className="footer">
                 <div className="contain">
                     {/* <!-- Shaastra Logo --> */}
-                    <div className="coly">
+                    <div className="coly logothing">
                         <div className="logoFooter">
-                            <a className="linkylinks" href="./"><img src={Logo} alt="Shaastra 2022 Logo" style={{ width: "205px", padding: "20px" }} /></a>
+                            <a className="linkylinks" href="./"><img src={Logo} alt="Shaastra 2022 Logo" style={{ width: "250px", padding: "20px" }} /></a>
                         </div>
                     </div>
 
                     {/* <!-- Address  --> */}
-                    <div className="coly">
+                    <div className="coly" style={{ marginRight: 50 }}>
                         <h1 className="heady">Address</h1>
                         <ul>
                             <li className="add">IITM Students Activities Trust Shaastra,</li>
