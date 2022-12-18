@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from "@apollo/client";
 import "../App.css";
+import {
+  ChakraProvider,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+} from "@chakra-ui/react";
 
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
@@ -19,6 +28,7 @@ const RESEND = gql`
 `;
 
 const Verify = () => {
+  var { isOpen, onOpen, onClose } = useDisclosure();
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [resend, setResend] = useState(false);
@@ -57,16 +67,52 @@ const Verify = () => {
     navigate("/");
   }
   if (verifyError) {
-    return <p>{verifyError.message}</p>;
+    onClose = () => {
+      window.location.reload();
+    };
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="red" color="black">
+            <ModalHeader>{verifyError.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
   if (verifyLoading) {
-    return <p>Loading....</p>;
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
   }
 
   return (
    <body>
     <NavBar></NavBar>
     <section id="login">
+      <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Shaastra 2023</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/static/styles/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
+      </header>
       <center>
         <div className="login-signup">
           <h1>VERIFICATION</h1>

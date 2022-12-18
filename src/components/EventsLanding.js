@@ -4,27 +4,57 @@ import "../App.css";
 import cardData from "./cardData";
 import CardComponent from "./Card";
 import { useState } from "react";
-import { useQuery } from "@chakra-ui/react";
+import { useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
 
-const EVENTS = gql`
-  query getEvents($vertical: Vertical, $skip: number, $take: number){
-    getEvents(vertical: $vertical, skip: $skip, take: $take){
-      events,
-      count
+const GET_EVENTS = gql`
+  query GetEvents($filter: String) {
+    getEvents(filter: $filter) {
+      events {
+        name
+        id
+        description
+        vertical
+        pic,
+        registrationOpenTime,
+        registrationCloseTime,
+        eventTimeFrom,
+        eventTimeTo,
+        registrationType,
+        registrationfee,
+        teamSize,
+        requirements,
+        platform,
+        faqs {
+        id
+        answer
+        question
+      }
+      }
     }
   }
 `
   
 function EventsLanding() {
 
-  const [vertical, setVertical] = useState()
+  const [vertical, setVertical] = useState("")
 
-  const {data, loading, error} = useQuery(EVENTS)
+  const { data, error, loading, refetch } = useQuery(GET_EVENTS, {
+    variables: {
+      filter: '',
+    },
+  });
+  console.log(data?.events, vertical)
 
-
+  if (loading) return "Loading...";
+  if (error) return <pre>{error.message}</pre>
+  if (data){
+    let searchedEvents = data?.getEvents.events.filter((event) =>
+    event.name.toLowerCase().includes('BIOGEN'.toLowerCase())
+  );
+  console.log(data)
   return (
     <body>
     <NavBar />
@@ -36,12 +66,15 @@ function EventsLanding() {
       </div>
       </div>
       <div className="glassmorphic2">
-        <select name="Vertical" className="select-events" onChange={(e) => setVertical(e.target.value)}>
+        <select name="Vertical" className="select-events" onChange={(e) => {
+          setVertical(e.target.value)
+          refetch({filter: vertical})
+        }}>
           <option value="AEROFEST">AEROFEST</option>
           <option value="BIOGEN">BIOGEN</option>
           <option value="BEVENTS">BUISNESS EVENTS</option>
           <option value="CL">CODING & LOGIC</option>
-          <option value="DB">DB</option>
+          <option value="DB">DESIGN & BUILD</option>
           <option value="IGNITE">IGNITE</option>
           <option value="STRATEGISTS">STRATEGISTS</option>
           <option value="WORKSHOPS">WORKSHOPS</option>
@@ -49,9 +82,9 @@ function EventsLanding() {
         </select>
         <div className="wrapper">
         {
-          data?.events.map((data) => {
-            console.log(data)
-            return <CardComponent data={data} key={data.id} />;
+          data?.getEvents?.events?.map((el) => {
+            console.log(el)
+            return <CardComponent data={el} key={el.id} />;
           })
         }
         </div>
@@ -59,6 +92,7 @@ function EventsLanding() {
       <Footer />
     </body>
   );
+  }else <></>
 }
 
 export default EventsLanding;

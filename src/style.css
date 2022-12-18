@@ -1,4 +1,4 @@
-/* * {
+/* {
     width: 100vw;
 } */
 
@@ -38,7 +38,6 @@ html {
     justify-content: center;
     padding-top: 1.5rem;
 }
-
 .login-signup h1 {
     font-size: 6.5rem;
     color: white;
@@ -107,11 +106,11 @@ html {
     font-size: 1.2rem;
     font-weight: 500;
     /* padding-left: 1rem; */
-}
 
-input:focus,
+
+/* input:focus,
 button:focus {
-    outline: none;
+    outline: none; */
 }
 
 .type-2 {
