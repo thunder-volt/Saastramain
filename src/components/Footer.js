@@ -12,7 +12,7 @@ const Footer = (props) => {
         { mail: "webops@shaastra.org", link: "mailto:webops@shaastra.org" }
     ]
     const quickLinks = [
-        { name: "About", link: "./" },
+        { name: "About", link: "./EventsLanding" },
         { name: "Events", link: "./" },
         { name: "Team", link: "./" },
         { name: "Contact Us", link: "./" }
@@ -23,24 +23,25 @@ const Footer = (props) => {
             <div className="footer">
                 <div className="contain">
                     {/* <!-- Shaastra Logo --> */}
-                    <div className="col">
+                    <div className="coly">
                         <div className="logoFooter">
                             <a className="linkylinks" href="./"><img src={Logo} alt="Shaastra 2022 Logo" style={{ width: "205px", padding: "20px" }} /></a>
                         </div>
                     </div>
+
                     {/* <!-- Address  --> */}
-                    <div className="col">
+                    <div className="coly">
                         <h1 className="heady">Address</h1>
                         <ul>
                             <li className="add">IITM Students Activities Trust Shaastra,</li>
                             <li className="add">1st Floor, O/o Dean Of Students Office,</li>
                             <li className="add">IIT Madras, Guindy, Chennai,</li>
                             <li className="add">Tamil Nadu, India - 600036</li>
-                            {/* <li className="add">Mobile : +91 9952729095</li> */}
+                            <li className="add">Mobile : +91 9952729095</li>
                         </ul>
                     </div>
                     {/* <!-- Contact Us  --> */}
-                    <div className="col">
+                    <div className="coly">
                         <h1 className="heady">Contact Us</h1>
                         <ul className='emails'>
                             {emails.map((item) => {
@@ -49,7 +50,7 @@ const Footer = (props) => {
                         </ul>
                     </div>
                     {/* <!-- Useful links  --> */}
-                    <div className="col">
+                    <div className="coly">
                         <h1 className="heady">Useful Links</h1>
                         <ul className='quickLinks'>
                             {quickLinks.map((item) => {
@@ -58,7 +59,7 @@ const Footer = (props) => {
                         </ul>
                     </div>
                     {/* Follow Us */}
-                    <div className="col follow">
+                    <div className="coly follow">
                         <h1 className="heady">Follow Us</h1>
                         <ul className='followUs'>
                             <li><a href="https://www.instagram.com/shaastra_iitm/?hl=en" target="_blank" rel="noreferrer">
@@ -75,7 +76,6 @@ const Footer = (props) => {
                             </a></li>
                         </ul>
                     </div>
-                    <div className="clearfix"></div>
                 </div>
             </div>
             {/* <hr width="80%"/> */}
@@ -83,12 +83,12 @@ const Footer = (props) => {
             <div className="colBottom" style={{ paddingBottom: "2px" }}>
                 <p>
                     <span className="add">Ⓒ DEVELOPED BY {props.name} | WEB OPERATIONS | SHAASTRA | IIT MADRAS. ALL RIGHTS RESERVED
-                        •</span> <a className="linkylinks" href="./">PRIVACY
-                            POLICY</a> • <a className="linkylinks" href="./">TERMS &
-                                CONDITION</a> • <a className="linkylinks" href="./">SHIPPING POLICY</a> • <a className="linkylinks" href="./">RETURN & REFUND POLICY</a>
+                        •</span> <a className="linkylinks" href="./policies/Privacy" target="_blank">PRIVACY
+                            POLICY</a> • <a className="linkylinks" href="./policies/TermsConditions" target="_blank">TERMS &
+                                CONDITION</a> • <a className="linkylinks" href="./policies/Shipping" target="_blank">SHIPPING POLICY</a> • <a className="linkylinks" href="./policies/Refund" target="_blank">RETURN & REFUND POLICY</a>
                 </p>
             </div>
-        </div>
+        </div >
     );
 };
 
