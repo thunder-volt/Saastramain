@@ -84,7 +84,7 @@ const Footer = (props) => {
                 <p>
                     <span className="add">Ⓒ DEVELOPED BY {props.name} | WEB OPERATIONS | SHAASTRA | IIT MADRAS. ALL RIGHTS RESERVED
                         •</span> <a className="linkylinks" href="./policies/Privacy" target="_blank">PRIVACY
-                            POLICY</a> • <a className="linkylinks" href="./policies/TermsConditions" target="_blank">TERMS &
+                            POLICY</a> • <a className="linkylinks" href="./policies/Terms" target="_blank">TERMS &
                                 CONDITION</a> • <a className="linkylinks" href="./policies/Shipping" target="_blank">SHIPPING POLICY</a> • <a className="linkylinks" href="./policies/Refund" target="_blank">RETURN & REFUND POLICY</a>
                 </p>
             </div>
