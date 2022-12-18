@@ -113,9 +113,14 @@ const Signup = () => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
       </header>
       <center className=".center">
-        <div className="login-signup">
+        {/* <div className="signup-heading">
           <h1>SIGNUP</h1>
-        </div>
+        </div> */}
+        <svg   class="signup-heading" >
+                <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                    SIGNUP
+                </text>
+            </svg>
       </center>
       <center className=".center">
         <form className="signup_form" onSubmit={handleSubmit}>

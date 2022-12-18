@@ -257,6 +257,8 @@ body {
 }
 
 .text-line {
+    /* position: relative;
+    top: 15px; */
     width: 100%;
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
@@ -369,9 +371,13 @@ body {
 }
 
 .bg-login {
-    background: url(https://images.unsplash.com/photo-1526169882751-ed7a04feac73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80) no-repeat;
+    /* background: url(https://img.freepik.com/free-vector/endless-tunnel-optical-illusion_33099-1062.jpg?w=1800&t=st=1671389508~exp=1671390108~hmac=856f27132247bbfd7ca5aa1767cd72d4ed3586f11e5d9e6148d3c5adfdece7b0) no-repeat; */
+    /* background: url(https://i.pinimg.com/564x/3f/21/88/3f218892c88b7396e283128fb64d75ae.jpg) no-repeat; */
+    /* background: url(https://i.pinimg.com/564x/4d/9f/43/4d9f436a1814bd5d2034d1bbda9bec3e.jpg) no-repeat; */
+    background: url(https://4kwallpapers.com/images/walls/thumbs_3t/7038.jpg) no-repeat;
     background-size: cover;
-    height: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.408);
+    height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
