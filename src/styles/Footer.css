@@ -2,28 +2,29 @@
 /* Footer styles */
 
 .footer {
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: auto;
     background-color: #090521 !important;
     font-family: 'Rubik', sans-serif;
 }
 
-.footer .col {
-    width: 20%;
+
+.footer .coly {
+    width: 225px;
     height: auto;
     float: left;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 0px 0px 0px;
 }
 
-.footer .col:nth-child(2){
+.footer .coly {
     width: 300px;
 }
 
-.footer .col .heady {
+.footer .coly .heady {
     margin: 0;
     font-family: inherit;
     font-size: 16px;
@@ -35,7 +36,7 @@
     letter-spacing: 0.165em;
 }
 
-.footer .col ul {
+.footer .coly ul {
     list-style-type: none;
     position: relative;
     top: 5px;
@@ -43,40 +44,43 @@
     padding: 0;
 }
 
-.footer .col ul li {
+.footer .coly ul li {
     color: #999999;
     font-size: 13px;
     font-family: inherit;
     font-weight: normal;
     padding: 5px 0px 5px 0px;
-    cursor: pointer;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
 }
 
 /* General settings  */
-.footer .col ul li:hover {
+.footer .coly ul li:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
 }
 
+/* logoshit */
+.logothing {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
 /* Making address & bottom not transition on hover */
 .add {
     color: #999999 !important;
-    transition: 0s !important;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
+
 }
 
 .add:hover {
     cursor: text !important;
     color: #999999 !important;
     transition: 0s !important;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
+
 }
 
 /* Dealing with links */
@@ -93,7 +97,7 @@
     color: #999999;
 }
 
-.emails .quickLinks .followUs .footer .colBottom .linkylinks:hover {
+.emails .quickLinks .followUs .footer .colBottom:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
@@ -116,18 +120,14 @@
 /* For the follow stuff  */
 .follow ul li {
     display: inline-block;
-    padding-right: 5px !important;
 }
 
-.followUs a{
-    color: #ffffff !important;
-}
-.followUs svg{
+.followUs svg {
     width: fit-content;
 }
 
-.clearfix {
-    clear: both;
+.followUs li {
+    margin-right: 5px;
 }
 
 .contain {
@@ -165,15 +165,15 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .footer .col {
+    .footer .coly {
         width: 50%;
     }
 
-    .footer .col .heady {
+    .footer .coly .heady {
         font-size: 14px;
     }
 
-    .footer .col ul li {
+    .footer .coly ul li {
         font-size: 13px;
     }
 
@@ -190,11 +190,12 @@
         justify-content: center;
         align-items: center;
     }
-    .footer{
+
+    .footer {
         padding: 0%;
     }
 
-    .footer .col {
+    .footer .coly {
         width: 100%;
         align-items: center;
         text-align: center;
@@ -204,21 +205,22 @@
         left: 0;
         right: 0;
     }
-    .footer .col:nth-child(2){
+
+    .footer .coly:nth-child(2) {
         margin: auto;
     }
 
-    .footer .col .heady {
+    .footer .coly .heady {
         font-size: 14px;
         width: 100%;
     }
 
-    .footer .col ul li {
+    .footer .coly ul li {
         font-size: 13px;
         width: 100%;
     }
 
-    .footer ul{
+    .footer ul {
         width: 100%;
     }
 

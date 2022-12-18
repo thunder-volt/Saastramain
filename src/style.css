@@ -1,6 +1,6 @@
-/* *{
+/* {
     width: 100vw;
-}
+} */
 
 html {
     height: 100vh;
@@ -19,22 +19,25 @@ html {
 }
 
 #signup {
+    position: relative;
     height: 100vh;
     width: 100%;
+    z-index: 999;
+    background-color: transparent;
     /* background: url(../public/meta-1\ 1.png) no-repeat center center fixed;
     box-shadow: inset 0 0 0 2000px rgb(123 30 101 / 61%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
+}
 
-/* .login-signup {
+.login-signup {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 1.5rem;
-} */
-
+}
 .login-signup h1 {
     font-size: 6.5rem;
     color: white;
@@ -128,6 +131,11 @@ button:focus {
     outline: none;
 }
 
+/* #section center{
+    height: 260px;
+    display: flex;
+    z-index: 1;
+} */
 
 .circle-wrapperAcc{
     overflow: hidden;

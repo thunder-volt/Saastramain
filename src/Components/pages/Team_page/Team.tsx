@@ -3,9 +3,9 @@ import * as React from "react";
 //import { ReactComponent as DiceOutlineDarkAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Dark_animated.svg";
 //import { ReactComponent as DiceOutlineLightAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Light_animated.svg";
 import "../../../styles/Team_styles/Team.css";
-import Card from "./Card";
+import Card from '../../../Components/pages/Team_page/Card'
 import SliderImgBox from "./SliderImgBox";
-import photos from "./photos";
+import photos from "../Team_page/photos";
 import { FaFilter, FaTimes } from "react-icons/fa";
 import NavBar from "../../navigation/NavBar";
 import Footer from "../../Footer";

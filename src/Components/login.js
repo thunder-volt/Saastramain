@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
+import "../styles/login.css";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+
 import {
   ChakraProvider,
   Modal,
@@ -13,6 +14,7 @@ import {
   useDisclosure,
   ModalCloseButton,
 } from "@chakra-ui/react";
+import Signup from "./signup";
 
 const LOGIN_MUTATION = gql`
   mutation Login($data: LoginInput!) {
@@ -93,16 +95,128 @@ const Login = () => {
     }
   }
   return (
-   <body>
-    <NavBar />
-      <header>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="/static/styles/styles.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
-      </header>
+   
+    <body >
+    {/* <NavBar /> */}
+      {/* <header>
+      <meta charset="UTF-8"/>
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      </header> */}
+      <div className="bg-login">
+
+      <div class="star-field"/>
+      <div class="layer-login"></div>
+      <div class="layer-login"></div>
+      <div class="layer-login"></div>
+      <div class="shaastra">
+            <svg   class="text-line" >
+                <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                    SHAASTRA2023
+                </text>
+            </svg>
+            
+      </div>
+
+      <div class="main-login">
+
+            <div class="cube">
+
+                
+                <div class="right-login">
+                    <div class="left-login">
+                        <h2>EMAIL<br/>ID</h2>
+                        
+                        <div class="dot-login-cont-left">
+                            <div class="dot-login"></div>
+                            <div class="dot-login"></div>
+                        </div>
+                    </div>
+                    <div class="input-login" type="text">
+                        <input 
+                        class="field-login" 
+                        type="text" 
+                        value={user.email} 
+                        placeholder=" " 
+                        onChange={(e) => setUser({ ...user, email: e.target.value })}
+                        />
+                    </div>
+                    <div class="dot-login-cont-right">
+                        <div class="dot-login"></div>
+                        <div class="dot-login"></div>
+                    </div>
+                    <div class="top-login">
+                        <h2 class="title-login">SPECTRAL</h2>
+                        <div class="dot-login-cont-top">
+                            <div class="dot-login"></div>
+                            <div class="dot-login"></div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <div class="cube">
+
+                
+                <div class="right-login">
+                    <div class="left-login">
+                        <h2>PASS<br/>WORD</h2>
+                        
+                        <div class="dot-login-cont-left" style={{transform: 'rotateZ(45deg)'}}>
+                            <div class="dot-login"></div>
+                            <div class="dot-login"></div>
+                        </div>
+                    </div>
+                    <div class="input-login" type="password">
+                        <input 
+                        class="field-login" 
+                        type="password" 
+                        placeholder=" " 
+                        value={user.password} 
+                        onChange={(e) => setUser({ ...user, password: e.target.value })}
+                        />
+                    </div>
+                    <div class="dot-login-cont-right">
+                        <div class="dot-login"></div>
+                        <div class="dot-login"></div>
+                    </div>
+                    <div class="top-login">
+                        <h2 class="title-login">SPLENDORS</h2>
+                        <div class="dot-login-cont-top">
+                            <div class="dot-login"></div>
+                            <div class="dot-login"></div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+        <div class="controls-login">
+
+            <input type="submit" value="LOGIN" class="login-btn" onClick={handleSubmit}/>
+            
+            <div class="links-login">
+            <a id="forgot-pwd" href={handleForgot}>Forgot Password ?</a>
+            
+            <a href={Signup} style={{color: "aliceblue"}}>Sign Up</a>
+            </div>
+        </div>
+      </div>
+    {/* <NavBar />
+     <section id="login">
+      <center className=".center">
+        <div className="login-signup">
+          <h1>LOGIN</h1>
+        </div>
+      </center>
       <center className=".center">
         <form className="login_form" onSubmit={handleSubmit}>
           <input
@@ -129,7 +243,8 @@ const Login = () => {
           </button>
         </form>
       </center>
-    <Footer />
+    </section>
+    <Footer /> */}
     </body> 
   );
 };

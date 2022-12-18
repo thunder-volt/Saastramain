@@ -19,7 +19,10 @@ import EventsLanding from "./Components/EventsLanding";
 import WorkshopsLanding from "./Components/WorkshopsLanding"
 import Team from "./Components/pages/Team_page/Team.tsx";
 import Spons from "./Components/Spons"
-
+import Privacy from './Components/policies/Privacy'
+import Refund from './Components/policies/Refund'
+import Shipping from './Components/policies/Shipping'
+import Terms from './Components/policies/TermsConditions'
 function App() {
   return (
     <div>
@@ -41,6 +44,10 @@ function App() {
             path="/forgotpassword/resetpassword"
             element={<ResetPassword />}
           />
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/policies/Privacy" element={<Privacy />} />
+          <Route path="/policies/Shipping" element={<Shipping />} />
+          <Route path="/policies/Terms" element={<Terms />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/admin" element={<Admin />} />
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}

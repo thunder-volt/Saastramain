@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-import "../App.css";
+import "../style.css";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
 import {
@@ -102,7 +102,7 @@ const Signup = () => {
    <body>
     <NavBar />
     <section id="signup">
-      <header>
+    <header>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Shaastra 2023</title>
         <link
@@ -112,12 +112,12 @@ const Signup = () => {
         <link rel="stylesheet" href="/static/styles/styles.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
       </header>
-      <center>
+      <center className=".center">
         <div className="login-signup">
           <h1>SIGNUP</h1>
         </div>
       </center>
-      <center>
+      <center className=".center">
         <form className="signup_form" onSubmit={handleSubmit}>
           <input
             className="type-1 name"
