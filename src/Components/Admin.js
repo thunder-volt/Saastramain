@@ -4,8 +4,7 @@ import {
   Flex,
   SimpleGrid,
   Modal,
-  ModalOverlay,
-  ModalContent,
+  ModalOverlay,  ModalContent,
   ModalHeader,
   useDisclosure,
   ModalCloseButton,
@@ -41,87 +40,7 @@ function EditEvents() {
   const [buttonText, setButtonText] = useState("Add Filter");
   const [subbuttonText, setsubButtonText] = useState("Events");
   const [eorw, seteorw] = useState("Events");
-  // console.log(window.innerWidth);
-
-  // console.log(search, filtered);
-  // const [events, setEvents] = useState([
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Aerofest",
-  //     status: "upcoming",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Intege",
-  //   },
-  //   {
-  //     name: "Elecfest",
-  //     status: "ongoing",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Techfest",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "shaastra",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "saarang",
-  //     status: "upcoming",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Gentech",
-  //     status: "ongoing",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  //   {
-  //     name: "Biogen",
-  //     status: "completed",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattisaugue mi, sit amet tempor velit gravida sed. Integer bibendum arcuvitae nulla finibus hendrerit. Duis venenatis vitae augue nonaccumsan. Proin luctus mollis sollicitudin. Donec fermentum ante ligula cursus molestie.",
-  //   },
-  // ]);
-
+ 
   const { data, error, loading, refetch } = useQuery(GET_EVENTS, {
     variables: {
       filter: vertical,

@@ -80,6 +80,7 @@ const ThirdRow = ({
                 <Radio value="ELECFEST">ElecFest</Radio>
                 <Radio value="IGNITE">Ignite</Radio>
                 <Radio value="STRATEGISTS">Strategists</Radio>
+                <Radio value="OTHERS">Others</Radio>
               </Stack>
             </RadioGroup>
           </ModalBody>

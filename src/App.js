@@ -17,7 +17,7 @@ import Profile from "./Components/Profile"
 import Events from "./Components/EventsLanding"
 import EventsLanding from "./Components/EventsLanding";
 import WorkshopsLanding from "./Components/WorkshopsLanding"
-import Team from "./Components/pages/Team_page/Team";
+import Team from "./Components/pages/Team_page/Team.tsx";
 import Spons from "./Components/Spons"
 
 function App() {

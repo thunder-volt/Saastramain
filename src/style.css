@@ -27,14 +27,13 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
-}
 
-.login-signup {
+/* .login-signup {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 1.5rem;
-}
+} */
 
 .login-signup h1 {
     font-size: 6.5rem;
@@ -106,9 +105,9 @@ html {
     /* padding-left: 1rem; */
 
 
-input:focus,
+/* input:focus,
 button:focus {
-    outline: none;
+    outline: none; */
 }
 
 .type-2 {
