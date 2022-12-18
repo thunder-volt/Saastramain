@@ -9,7 +9,7 @@ import AddEvent from "./Components/AddEvent";
 import EditEvent from "./Components/EditEvent";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import PayRegister from './Components/payRegister'
 import Exhibition from "./Components/Exhibition"
 import Envisage from './Components/Envisage'
 import TIF from "./Components/TIF"
@@ -43,6 +43,7 @@ function App() {
           />
           <Route path="/verify" element={<Verify />} />
           <Route path="/admin" element={<Admin />} />
+          {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
           <Route path="/admin/addevent" element={<AddEvent />} />
           <Route path="/admin/edit/:id" element={<EditEvent />} />
         </Routes>
