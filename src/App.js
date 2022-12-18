@@ -48,6 +48,7 @@ function App() {
           <Route path="/policies/Privacy" element={<Privacy />} />
           <Route path="/policies/Shipping" element={<Shipping />} />
           <Route path="/policies/Terms" element={<Terms />} />
+          <Route path="/policies/Refund" element={<Refund />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/admin" element={<Admin />} />
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
