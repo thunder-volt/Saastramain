@@ -5,7 +5,7 @@ section{
 .banner{
     background: url(../../public/banner.jpg) no-repeat center center;
     background-size: cover;
-    height: 30vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ section{
         top: 0;
         left: 0;
         width: 100%;
-        height: 30vh;
+        height: 45vh;
     }
     h1{
         color: #F182EB;
@@ -25,7 +25,7 @@ section{
         font-weight: 700;
         letter-spacing: 2px;
         z-index: 2;
-        text-shadow: calc(10px + 0.5vw) calc(10px + 0.5vw) 0px #993094;
+        text-shadow: calc(6px + 0.5vw) calc(6px + 0.5vw) 0px #993094;
     }
 }
 
@@ -39,7 +39,7 @@ section{
         margin: 0;
     }
     h2{
-        color: #67C8FF;
+        color: #993094;
         font-size: 3rem;
         margin-bottom: -20px;
     }
@@ -51,7 +51,7 @@ section{
     width: 75%;
     margin: auto;
     h2{
-        color: #67C8FF;
+        color: #993094;
         font-size: 3rem;
     }
     .vasin{
@@ -128,6 +128,12 @@ section{
     }
 }
 @media (max-width: 650px){
+    .banner{
+        height: 30vh;
+        &::after{
+            height: 30vh;
+        }
+    }
     .vasin{
         margin-bottom: 20px !important;
         flex-direction: column !important;
