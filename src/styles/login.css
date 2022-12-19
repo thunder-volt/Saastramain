@@ -255,14 +255,14 @@ body {
     margin: auto;
     margin-top: 5%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     height: fit-content;
     background: none;
     
 }
-
 .text-line {
     /* position: relative;
     top: 15px; */
@@ -272,12 +272,20 @@ body {
     stroke-width: 1px;
     stroke: aliceblue;
     animation: dash 7.2s linear forwards, filling 3s ease-in forwards, infinite;
-    font-size: 35px;
+    font-size: 50px;
     justify-content: center;
     align-items: center;
-  }
-  
-  .text-line text {
+}
+.hovertext{
+    position: relative;
+    top: -47px;
+    font-family: 'Rubik', sans-serif;
+    color: #d4d4d4 !important;
+    font-size: 12px !important;
+    transition: 0.5s;
+}
+
+.text-line text {
     font-family: 'Rubik',sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -285,7 +293,6 @@ body {
     width: fit-content;
     animation: pulse 2s  infinite;
     animation-delay: 4s;
-    
 }
 
 @keyframes pulse {
@@ -469,3 +476,9 @@ body {
 .star-field .layer-login:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
 }
+
+@media  (max-width: 500px) {
+    .text-line {
+      font-size: 28px;
+    }
+  }

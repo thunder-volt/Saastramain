@@ -112,9 +112,10 @@ const Login = () => {
         <div class="shaastra">
           <svg class="text-line">
             <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
-              SHAASTRA 2023
+              LOGIN
             </text>
           </svg>
+            <div className="hovertext">Hover to enter the fields</div>
 
         </div>
 

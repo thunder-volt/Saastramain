@@ -208,125 +208,127 @@ button:focus {
     user-select: none;
     /* filter: drop-shadow(0px 0px 3px white); */
   }
+
+
 .circleAcc1 {
     border: 5px solid #7E10B2;
     filter: drop-shadow(0px 0px 3px #bd77de);
-    animation: circleAcc1-motion 10s ease-in 1;
+    animation: circleAcc1-motion 10s ease-in 1 forwards;
 }
 .circleAcc2 {
     border: 5px solid #02198B;
     filter: drop-shadow(0px 0px 3px #4a5fca);
-    animation: circleAcc2-motion 10s ease-in 1;
+    animation: circleAcc2-motion 10s ease-in 1 forwards;
 }
 .circleAcc3 {
     border: 5px solid #7E10B2;
     filter: drop-shadow(0px 0px 3px #bd77de);
-    animation: circleAcc3-motion 10s ease-in 1;
+    animation: circleAcc3-motion 10s ease-in 1 forwards;
 }
 .circleAcc4 {
     border: 5px solid #02198B;
     filter: drop-shadow(0px 0px 3px #4a5fca);
-    animation: circleAcc4-motion 10s ease-in 1;
+    animation: circleAcc4-motion 10s ease-in 1 forwards;
 }
 .circleAcc5 {
     border: 5px solid #7E10B2;
     filter: drop-shadow(0px 0px 3px #bd77de);
-    animation: circleAcc5-motion 10s ease-in 1;
+    animation: circleAcc5-motion 10s ease-in 1 forwards;
 }
 .circleAcc6 {
     border: 5px solid #02198B;
     filter: drop-shadow(0px 0px 3px #4a5fca);
-    animation: circleAcc6-motion 10s ease-in 1;
+    animation: circleAcc6-motion 10s ease-in 1 forwards;
 }
 .circleAcc7 {
     border: 5px solid #7E10B2;
     filter: drop-shadow(0px 0px 3px #bd77de);
-    animation: circleAcc7-motion 10s ease-in 1;
+    animation: circleAcc7-motion 10s ease-in 1 forwards;
 }
 .circleAcc8 {
   border: 5px solid #02198B;
   filter: drop-shadow(0px 0px 3px #4a5fca);
-  animation: circleAcc8-motion 10s ease-in 1;
+  animation: circleAcc8-motion 10s ease-in 1 forwards;
 }
 .circleAcc9 {
   border: 5px solid #7E10B2;
   filter: drop-shadow(0px 0px 3px #bd77de);
-  animation: circleAcc9-motion 10s ease-in 1;
+  animation: circleAcc9-motion 10s ease-in 1 forwards;
 }
 .circleAcc10 {
   border: 5px solid #02198B;
   filter: drop-shadow(0px 0px 3px #4a5fca);
-  animation: circleAcc10-motion 10s ease-in 1;
+  animation: circleAcc10-motion 10s ease-in 1 forwards;
 }
 .circleAcc11 {
   border: 5px solid #7E10B2;
   filter: drop-shadow(0px 0px 3px #bd77de);
-  animation: circleAcc11-motion 10s ease-in 1
+  animation: circleAcc11-motion 10s ease-in 1 forwards;
 }
 .circleAcc12 {
   border: 5px solid #02198B;
   filter: drop-shadow(0px 0px 3px #4a5fca);
-  animation: circleAcc12-motion 10s ease-in 1;
+  animation: circleAcc12-motion 10s ease-in 1 forwards;
 }
 @keyframes circleAcc1-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 650px; height: 650px; opacity: 1 }
-    100% { width: 13000px; height: 13000px; opacity: 0 }
+    100% { width: 13000px; height: 13000px; opacity: 0;display: none;}
   }
 @keyframes circleAcc2-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 600px; height: 600px; opacity: 1 }
-    100% { width: 12000px; height: 12000px; opacity: 0 }
+    100% { width: 12000px; height: 12000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc3-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 550px; height: 550px; opacity: 1 }
-    100% { width: 11000px; height: 11000px; opacity: 0 }
+    100% { width: 11000px; height: 11000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc4-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 500px; height: 500px; opacity: 1 }
-    100% { width: 10000px; height: 10000px; opacity: 0 }
+    100% { width: 10000px; height: 10000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc5-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 450px; height: 450px; opacity: 1 }
-    100% { width: 9000px; height: 9000px; opacity: 0 }
+    100% { width: 9000px; height: 9000px; opacity: 0 ;display: none;}
   }
 @keyframes circleAcc6-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 400px; height: 400px; opacity: 1 }
-    100% { width: 8000px; height: 8000px; opacity: 0 }
+    100% { width: 8000px; height: 8000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc7-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 350px; height: 350px; opacity: 1 }
-    100% { width: 7000px; height: 7000px; opacity: 0 }
+    100% { width: 7000px; height: 7000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc8-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 300px; height: 300px; opacity: 1 }
-    100% { width: 6000px; height: 6000px; opacity: 0 }
+    100% { width: 6000px; height: 6000px; opacity: 0 ;display: none;}
   }
 @keyframes circleAcc9-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 250px; height: 250px; opacity: 1 }
-    100% { width: 5000px; height: 5000px; opacity: 0 }
+    100% { width: 5000px; height: 5000px; opacity: 0 ;display: none;}
   }
 @keyframes circleAcc10-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 200px; height: 200px; opacity: 1 }
-    100% { width: 4000px; height: 4000px; opacity: 0 }
+    100% { width: 4000px; height: 4000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc11-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 150px; height: 150px; opacity: 1 }
-    100% { width: 3000px; height: 3000px; opacity: 0 }
+    100% { width: 3000px; height: 3000px; opacity: 0;display: none; }
   }
 @keyframes circleAcc12-motion {
     0% { width: 0; height: 0; opacity: 0 }
     56% { width: 100px; height: 100px; opacity: 1 }
-    100% { width: 2000px; height: 2000px; opacity: 0 }
+    100% { width: 2000px; height: 2000px; opacity: 0;display: none; }
   }
 
 
