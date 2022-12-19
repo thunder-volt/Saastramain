@@ -23,6 +23,9 @@ import Privacy from './Components/policies/Privacy'
 import Refund from './Components/policies/Refund'
 import Shipping from './Components/policies/Shipping'
 import Terms from './Components/policies/TermsConditions'
+
+import Contact from "./Contact";
+
 function App() {
   return (
     <div>
@@ -30,6 +33,7 @@ function App() {
         <Routes>
           <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<EditUser />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/envisage' element={<Envisage />} />
           <Route path='/exhibition' element={<Exhibition />} />
