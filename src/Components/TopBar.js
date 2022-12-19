@@ -22,13 +22,13 @@ const TopBar = () => {
             {
                localStorage.getItem('user-info')?
                <>
-               <a className="logout" href="./">Logout</a>
-               <a className="profile" href="./"><FaUserCircle size={30}/></a>
+               <a className="logout-topbar" href="./lo">Logout</a>
+               <a className="profile-topbar" href="./Profile"><FaUserCircle size={30}/></a>
                </>
                :
                <>
-               <a className="login" href="./">Login</a>
-               <a className="signup" href="./">Signup</a>
+               <a className="login-topbar" href="./login">Login</a>
+               <a className="signup-topbar" href="./signup">Signup</a>
                </>
             }
          </div>
