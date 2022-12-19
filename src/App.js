@@ -23,6 +23,7 @@ import Privacy from './Components/policies/Privacy'
 import Refund from './Components/policies/Refund'
 import Shipping from './Components/policies/Shipping'
 import Terms from './Components/policies/TermsConditions'
+import Vastra from "./Components/vastra";
 
 import Contact from "./Contact";
 
@@ -58,6 +59,7 @@ function App() {
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
           <Route path="/admin/addevent" element={<AddEvent />} />
           <Route path="/admin/edit/:id" element={<EditEvent />} />
+          <Route path='/socialendeavours' element={<Vastra />} />
         </Routes>
       </Router>
     </div>

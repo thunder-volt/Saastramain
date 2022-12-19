@@ -32,6 +32,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
+    "sass": "^1.57.0",
     "swiper": "^8.4.3",
     "typescript": "^3.9.5",
     "vanilla-tilt": "^1.7.2",
@@ -44,7 +45,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
