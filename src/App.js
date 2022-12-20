@@ -107,7 +107,7 @@ const App=()=> {
           
           <div className='control-btns'>
           <div className='forward-btn' onClick={(e)=>handleNavigationForward(e)}></div>
-          <div className='back-btn' onClick={(e)=>handleNavigationBackward(e)}></div>
+          <div className='back-btn' onClick={(e)=>handleNavigationBackward(e)}>back</div>
           </div>
 
         <div className='env' style={envStyle} >

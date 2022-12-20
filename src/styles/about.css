@@ -35,8 +35,7 @@
     align-items: center;
     margin-top: 50px;
     opacity: 0;
-    /* animation: ani1 1s ease-out forwards;
-    flex-wrap: wrap; */
+    
     padding: 0px 34px;
     /* flex-wrap: wrap; */
 
@@ -44,26 +43,26 @@
 
 .about p{
     position: relative;
+    color: #fff;
+
 }
 .about-img {
+    margin-top: 5vh;
+    align-items: center;
     height: 20vh;
     display: block;
     opacity: 0;
-    /* animation: ani2 0.75s ease-out 0.5s forwards; */
 }
 .about-article {
     width: 90%;
     margin: 30px;
-    /* animation: ani1 0.5s ease-out forwards; */
 }
 
 .about-article p {
     color: #fff;
     font-size: 17px;
     text-transform: uppercase;
-    /* margin-top: 35vh; */
-    /* animation: ani2 0.75s ease-out 1.5s forwards;
-    opacity: 0; */
+    
     position: relative;
 }
 
