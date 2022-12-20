@@ -121,7 +121,7 @@ const Verify = () => {
             </text>
           </svg>
       </center>
-      <center className="misc-login-signup" style={{top: "100px"}}>
+      <center className="misc-login-signup" >
         <form className="login_form" onSubmit={handleSubmit}>
           <input
             className="type-1 email"
