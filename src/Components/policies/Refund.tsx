@@ -7,7 +7,7 @@ const Refund = (props: Props) => {
   return (
     <body>
       <VStack p={10} alignItems={"stretch"}>
-        <Heading alignSelf={"center"} fontSize={40} fontWeight={"bold"} pb={10}>RETURN POLICY</Heading>
+        <Heading alignSelf={"center"} fontSize={40} fontWeight={"bold"} pb={10}>RETURN AND REFUND POLICY</Heading>
         <Text>Last updated on December 21, 2022</Text>
         <Text>
           Thank you for your purchase. We hope you are happy with your purchase.

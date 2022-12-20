@@ -117,13 +117,15 @@ const TermsConditions = (props: Props) => {
         </Text>
 
         <ul>
-          <li>commonly-known consumer and/or business information sources;</li>
-          <li>dot.com community sites;</li>
-          <li>associations or other groups representing charities;</li>
-          <li>online directory distributors;</li>
-          <li>internet portals;</li>
-          <li>accounting, law and consulting firms; and</li>
-          <li>educational institutions and trade associations.</li>
+          <Text>
+            <li>commonly-known consumer and/or business information sources;</li>
+            <li>dot.com community sites;</li>
+            <li>associations or other groups representing charities;</li>
+            <li>online directory distributors;</li>
+            <li>internet portals;</li>
+            <li>accounting, law and consulting firms; and</li>
+            <li>educational institutions and trade associations.</li>
+          </Text>
         </ul>
 
         <Text>
