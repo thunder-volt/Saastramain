@@ -202,7 +202,7 @@
 
     .logoFooter img {
         position: relative;
-        top: 50px;
+        top: 20px;
     }
     .logothing{
         width: fit-content !important;
@@ -240,6 +240,7 @@
     }
     .colBottom{
         padding-bottom: 8vh !important;
+        top: 5px !important;
     }
 }
 
@@ -286,7 +287,7 @@
 
     .logoFooter img {
         position: relative;
-        top: 15px;
+        top: 5px;
         margin: 0% auto;
         left: 0;
         right: 0;
