@@ -399,9 +399,9 @@ width: 24%;
 
 .envelope{
   --i: 30px;
-  width: 42%;
+  width: 47%;
   min-height: 30vh;
-  height: 100vh;
+  height: 118vh;
   /* background-color: #EEEEEE; */
   border: 4px solid #fff;
   background-color: #141E61;
@@ -824,14 +824,14 @@ a {
     padding: 40px 0px;
     width: 46%;
     position: relative;
-    top: 78.5%;
+    top: 83%;
     left: -3%;
     border: 4px solid #fff;
     /* background-color: #EEEEEE; */
     background-color: #141E61;
     z-index: 3;
     color: #EEEEEE;
-    font-size: 11.19vh;
+    font-size: 11.41vh;
     line-height: 15vh;
 }
 
