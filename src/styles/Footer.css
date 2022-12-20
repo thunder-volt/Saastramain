@@ -2,11 +2,14 @@
 /* Footer styles */
 
 .footer {
-    width: 100%;
     position: relative;
+    /* top:-1px; */
+    width: 100%;
     height: auto;
     background-color: #090521 !important;
     font-family: 'Rubik', sans-serif;
+    z-index: 999;
+    padding-bottom: 2vh !important; 
 }
 
 
@@ -82,10 +85,30 @@
     transition: 0s !important;
 
 }
+.linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 0.9vw;
+}
+.linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
+
+.link-footer-div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2vh;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
 
 /* Dealing with links */
-.emails .quickLinks .follow .footer .colBottom .linkylinks:link {
-    color: #999999;
+/* .emails .quickLinks .follow .footer .colBottom .linkylinks:link {
+    color: #999999 !important;
     cursor: pointer;
     transition: .1s;
     -webkit-transition: .1s;
@@ -94,27 +117,31 @@
 }
 
 .emails .quickLinks .followUs .footer .colBottom .linkylinks:visited {
-    color: #999999;
+    color: #999999 !important;
 }
 
 .emails .quickLinks .followUs .footer .colBottom:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-}
+} */
 
 /* This is the bottommost text */
 .colBottom {
+    top:-1px;
+    position: relative;
     padding: 10px;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
     font-size: 10px;
     text-align: center;
-    background-color: #080519;
-    color: #999999;
-    height: 130px;
+    background-color: #080519 !important;
+    color: #999999 !important ;
+    height: fit-content;
+    bottom: -10px;
+    padding-bottom: 14vh !important;
 }
 
 /* For the follow stuff  */
@@ -128,6 +155,12 @@
 
 .followUs li {
     margin-right: 5px;
+}
+.followUs{
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contain {
@@ -144,14 +177,23 @@
 
     .logoFooter img {
         position: relative;
-        top: 50px;
+        top: 20px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
+    .contain{
+        width: 95vw;
+        margin: auto;
+    }
     .contain .follow {
         width: 25%;
         display: block;
+        margin: auto;
+    }
+    .coly{
+        width: fit-content !important;
+        margin-right: 50px;
     }
 
     .follow .heady {
@@ -161,6 +203,12 @@
     .logoFooter img {
         position: relative;
         top: 50px;
+    }
+    .logothing{
+        width: fit-content !important;
+    }
+    .linkylinks{
+        font-size: 1vw;
     }
 }
 
@@ -180,6 +228,15 @@
     .logoFooter img {
         position: relative;
         top: 50px;
+        width: 20vw !important;
+        padding: 0 !important;
+    }
+    .logothing{
+        margin-right: 2vw;
+        margin-left: 0;
+    }
+    .add{
+        font-size: 1vw;
     }
 }
 
@@ -230,6 +287,23 @@
         margin: 0% auto;
         left: 0;
         right: 0;
+        margin-bottom: 5vh;
+        width: 50vw !important;
+    }
+
+    .linkylinks{
+        font-size: 4vw;
+        margin: auto;
+        text-align: center;
+    }
+    .colBottom .linkylinks{
+        font-size: 2vw;
+    }
+    .link-footer-div{
+        width: 80vw;
+    }
+    .colBottom span{
+        font-size: 2vw
     }
 
 }
