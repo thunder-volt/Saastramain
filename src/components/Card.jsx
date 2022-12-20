@@ -100,9 +100,9 @@ function CardComponent({data: el}){
 
    const handleProceed= async(e)=> {
     e.preventDefault();
+    console.log(members);
     if (members) {
       let memberList=members.filter((member)=> member!=="");
-      if (el?.registrationFee!=='0'){
         await teamRegistrationMutation( {
           variables: {
             data: {
@@ -111,38 +111,7 @@ function CardComponent({data: el}){
               members: memberList
             }
           }
-        }).then((res)=> {
-          if (res.data){
-            onClose = () => {
-              window.location.reload()
-            }
-            return (
-              <ChakraProvider>
-                <Modal isOpen={true} onClose={onClose}>
-                  <ModalOverlay />
-                  <ModalContent
-                    color="black"
-                  >
-                    <ModalHeader>Registered successfully.</ModalHeader>
-                    <ModalCloseButton />
-                  </ModalContent>
-                </Modal>
-              </ChakraProvider>
-            );
-          }
         })
-      }
-      else {
-        await teamRegistrationMutation( {
-          variables: {
-            data: {
-              eventId: el?.id,
-              name: teamname,
-              members: members
-            }
-          }
-        })
-      }
     }}
 
    const navigate = useNavigate()
@@ -211,8 +180,9 @@ function CardComponent({data: el}){
     rzp1.open();
   };
 
-  if(el?.registrationFee === '0')
+  if(el?.registrationFee === '0' || el.registrationType==="TEAM")
    if (data || team) {
+    console.log(team, "from success");
     onClose = () => {
       window.location.reload()
     }
