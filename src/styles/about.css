@@ -46,7 +46,7 @@
     height: 20vh;
     display: block;
     opacity: 0;
-    animation: ani2 0.75s ease-out 0.5s forwards;
+    /* animation: ani2 0.75s ease-out 0.5s forwards; */
 }
 .about-article {
     width: 90%;

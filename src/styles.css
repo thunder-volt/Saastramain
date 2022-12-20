@@ -73,7 +73,7 @@ body
     position: absolute;
     height: 100vh;
     width: 100vw;
-
+    
     border-width: 2vw;
     border-style: solid;
     opacity: 100%;
@@ -333,8 +333,8 @@ body
 .circle
 {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+    width: 50vw;
     display: flex;
     transform-style: preserve-3d;
     justify-content: center;
@@ -343,9 +343,10 @@ body
 .circle div
 {
     position: absolute;
-    height: 150vw;
-    width: 150vw;
-
+    height: 50vw;
+    width: 50vw;
+    left: 50%;
+    top: 5%;
     border-width: 2vw;
     border-style: solid;
     border-radius: 50%;
@@ -618,7 +619,7 @@ body
     justify-content: center;
     align-items: center;
     font-size: 5vh;
-    color: aliceblue;
+    color: black;
     font-family: 'Russo One', sans-serif;
     letter-spacing: 0.2em;
     transform: translateZ(0);
@@ -793,3 +794,10 @@ body
     animation: sf-fly-by-4 5s linear infinite;
 }
 */
+
+
+@media screen and (max-width: 1000px) {
+    .square div, .spiral-sqr div, .circle div{
+        top: 30%;
+    }
+}
