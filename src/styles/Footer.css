@@ -2,11 +2,13 @@
 /* Footer styles */
 
 .footer {
-    width: 100%;
     position: relative;
+    /* top:-1px; */
+    width: 100%;
     height: auto;
     background-color: #090521 !important;
     font-family: 'Rubik', sans-serif;
+    z-index: 999;
 }
 
 
@@ -82,10 +84,19 @@
     transition: 0s !important;
 
 }
+.linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+}
+.linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
+
 
 /* Dealing with links */
-.emails .quickLinks .follow .footer .colBottom .linkylinks:link {
-    color: #999999;
+/* .emails .quickLinks .follow .footer .colBottom .linkylinks:link {
+    color: #999999 !important;
     cursor: pointer;
     transition: .1s;
     -webkit-transition: .1s;
@@ -94,27 +105,30 @@
 }
 
 .emails .quickLinks .followUs .footer .colBottom .linkylinks:visited {
-    color: #999999;
+    color: #999999 !important;
 }
 
 .emails .quickLinks .followUs .footer .colBottom:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-}
+} */
 
 /* This is the bottommost text */
 .colBottom {
+    top:-1px;
+    position: relative;
     padding: 10px;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
     font-size: 10px;
     text-align: center;
-    background-color: #080519;
-    color: #999999;
+    background-color: #080519 !important;
+    color: #999999 !important ;
     height: 130px;
+    bottom: -10px;
 }
 
 /* For the follow stuff  */

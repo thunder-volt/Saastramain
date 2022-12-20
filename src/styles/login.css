@@ -5,9 +5,11 @@
 }
 
 body {
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 ::-webkit-scrollbar{
     display: none !important;
@@ -174,6 +176,11 @@ body {
     display: flex;
     
 }
+.input-login ::placeholder{
+    color: #e7e6e6;
+    font-size: 17px;
+    font-weight: 100;
+}
 .field-login
 {
     opacity: 0;
@@ -248,14 +255,14 @@ body {
     margin: auto;
     margin-top: 5%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 75%;
+    width: 90%;
     height: fit-content;
     background: none;
     
 }
-
 .text-line {
     /* position: relative;
     top: 15px; */
@@ -265,12 +272,20 @@ body {
     stroke-width: 1px;
     stroke: aliceblue;
     animation: dash 7.2s linear forwards, filling 3s ease-in forwards, infinite;
-    font-size: 30px;
+    font-size: 50px;
     justify-content: center;
     align-items: center;
-  }
-  
-  .text-line text {
+}
+.hovertext{
+    position: relative;
+    top: -47px;
+    font-family: 'Rubik', sans-serif;
+    color: #d4d4d4 !important;
+    font-size: 12px !important;
+    transition: 0.5s;
+}
+
+.text-line text {
     font-family: 'Rubik',sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -278,7 +293,6 @@ body {
     width: fit-content;
     animation: pulse 2s  infinite;
     animation-delay: 4s;
-    
 }
 
 @keyframes pulse {
@@ -316,7 +330,7 @@ body {
     align-items: center;
     
     margin-top: 72px;
-    width: 270px;
+    width: 320px;
     background:none;
   }
 
@@ -341,9 +355,6 @@ body {
 {
     color: aliceblue !important;
 }
-
-
-
 
 .login-btn
 {
@@ -376,20 +387,22 @@ body {
     /* background: url(https://i.pinimg.com/564x/4d/9f/43/4d9f436a1814bd5d2034d1bbda9bec3e.jpg) no-repeat; */
     background: url(https://4kwallpapers.com/images/walls/thumbs_3t/7038.jpg) no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.408);
-    height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.524);
+    min-height: 100vh;
     width: 100%;
-    position: fixed;
+      z-index: 999;
+
     top: 0;
     left: 0;
-    z-index: -3;
+    right:0;
+    /* z-index: -3; */
 }
 .bg-login:before {
     content: "";
     width: 100%;
     height: 100%;
     background: #000;
-    position: fixed;
+    /* position: fixed; */
     z-index: -1;
     top: 0;
     left: 0;
@@ -463,3 +476,9 @@ body {
 .star-field .layer-login:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
 }
+
+@media  (max-width: 500px) {
+    .text-line {
+      font-size: 28px;
+    }
+  }
