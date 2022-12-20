@@ -7,6 +7,7 @@ import { useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+import TopBar from './TopBar'
 
 const GET_EVENTS = gql`
   query GetEvents($filter: String) {
@@ -55,7 +56,9 @@ function EventsLanding() {
     console.log(data);
     return (
       <body>
+        <TopBar />
         <NavBar />
+        <div>
         <div className="workshops-landing">
           <h1 className="wstitle">EVENTS</h1>
 
@@ -90,6 +93,7 @@ function EventsLanding() {
               return <CardComponent data={el} key={el.id} />;
             })}
           </div>
+        </div>
         </div>
         <Footer />
       </body>

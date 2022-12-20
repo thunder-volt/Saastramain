@@ -50,15 +50,18 @@ ul {
     color: #FFFFFF !important;
     text-decoration: none;
 }
+.items a{
+    font-size: 17px;
+}
 .items{
     justify-content: space-around;
     padding-inline: 10px;
     align-items: center;
     justify-items: center ;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif !important;
     font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: 500 !important;
+    font-size: 17px !important;
     /* font-size: 1.2vw; */
     color: white;
     /* border: none;
