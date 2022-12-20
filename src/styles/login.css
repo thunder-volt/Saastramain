@@ -31,6 +31,7 @@ body {
     position: relative;
     transform: skewY(-27deg);
     background-color: #351c4a;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -46,6 +47,7 @@ body {
     top: 72;
     left: -72px;
     background:  #59316f;
+    border-radius: 5px;
     transform-origin: right;
     transform: skewY(45deg);
     display: flex;
@@ -63,6 +65,7 @@ body {
     top: -72px;
     left: 0;
     background: #704f89;
+    border-radius: 5px;
     transform-origin: bottom;
     transform: skewX(45deg);
     display: flex;
