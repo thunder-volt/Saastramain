@@ -2,9 +2,13 @@ import React from 'react'
 import "../styles/footer.css"
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({pos}) => {
     return (
-        <div className='footer-body'>
+        <div className='footer-body' style={ {
+        
+            transform: 'translateZ('+pos+'px)',
+            
+            }}>
             <div className="footer-cards">
                 <div className="footer-card">
                     <h3>Address</h3>
@@ -59,4 +63,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

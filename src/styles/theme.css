@@ -8,17 +8,20 @@
 }
 
 .theme-body {
-    position: absolute;
 
-    width: 100%;
+   
+    width: 100vw;
     min-height: 100vh;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.theme-body{
-    background-color: transparent;
-}
+
 .theme-wrapper{
-    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .theme-wrapper h2{
     color: whitesmoke;

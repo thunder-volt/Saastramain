@@ -4,68 +4,151 @@ import Square from './components/Square';
 import './styles.css';
 import React, { useState, useEffect } from 'react';
 import Circle from './components/Circles';
+import Dummy from './components/Eventsdummy';
 import BlackScreen from './components/BlackScreen';
 import Spiral from './components/Spiral';
-import Theme from './components/Theme';
 import Countdown from './components/Countdownpage';
-// import './styles/theme.css';
+import About from './components/About';
+import Theme from './components/Theme';
+
+
 
 
 const App=()=> {
 
+
   
-  const [cpCount, setCpCount]=useState(0);
-  const [cp, setCp]=useState([10000,13800]);
-  const [depth, setDepth]=useState(cp[cpCount]);
+  
+  const [cpCount, setCpCount]=useState(1);
+  const [checkPoint, setCheckPoint]=useState([0,7480,14480,21480,30580,37480,44480]);
+  const [depth, setDepth]=useState(checkPoint[cpCount]);
   const [envStyle, setEnvStyle]=useState({
 
     height: '100vh',
     width: '100vw',
-    transition: '10s',
+    transition: '5s',
     transformStyle: 'preserve-3d',
-    transform: 'translateZ(0px)',
+    transform: 'translateZ('+checkPoint[cpCount]+')',
     
  });
-   const handleNavigation = (e) => {
+ 
+
+ 
+ 
+
+
+   const handleNavigationForward = (e) => {
      
     
-    
-    setCpCount(cpCount+1);
-    setDepth(cp[cpCount]);
-    
+    if (cpCount<=7 && cpCount>-1)
+    {
+          setCpCount(cpCount+1);
+          console.log(cpCount);
 
-     setEnvStyle({
+          setEnvStyle({
 
-      height: '100vh',
-      width: '100vw',
-      transition: '5s',
-      transformStyle: 'preserve-3d',
-      transform: 'translateZ('+depth+'px)',
+            height: '100vh',
+            width: '100vw',
+            transition: '5s',
+            transformStyle: 'preserve-3d',
+            transform: 'translateZ('+checkPoint[cpCount]+'px)',
+            
+          });
+    }
+
   
-    });
-
    };
 
-  return (
-    <div className="App">
 
-      {/* <Theme /> */}
-      <Countdown />
-      
-          
-          
+   const handleNavigationBackward = (e) => {
+     
+    
+     if(cpCount>-1 && cpCount<=7)
+    {
+          setCpCount(cpCount-1);
+          console.log(cpCount);
           
 
-          
+          setEnvStyle({
+
+            height: '100vh',
+            width: '100vw',
+            transition: '5s',
+            transformStyle: 'preserve-3d',
+            transform: 'translateZ('+checkPoint[cpCount]+'px)',
         
+          });
+        }
+    
+     
+     
+   };
+ 
 
 
+
+
+
+
+
+
+
+  return (
+    <div className="App"  >
+      
+
+
+      
+      <div className='uni'>
+      
+
+                <div class="star-field">
+          <div class="layer"></div>
+          <div class="layer"></div>
+          <div class="layer"></div>
+          <div class="layer"></div>
+          </div>
+          
+          <div className='control-btns'>
+          <div className='forward-btn' onClick={(e)=>handleNavigationForward(e)}></div>
+          <div className='back-btn' onClick={(e)=>handleNavigationBackward(e)}></div>
+          </div>
+
+        <div className='env' style={envStyle} >
 
           
+          
+          <Logo pos={0}/>
 
+          <Spiral colour={'#ff0579'} colour2={'#fee'} pos={0} />
+
+          <Theme pos={-7500}/>
+
+          <Circle colour={'#fee'} colour2={'#fee'} pos={-9750}/>
+
+          <Countdown pos={-14500}/>
+
+          <Square colour={'#fee'} colour2={'#fee'} pos={-17000}/>
+
+          <About pos={-21500}/>
+
+          <Spiral colour={'#ff0579'} colour2={'#fee'} pos={-23000} />
+
+          <Dummy pos={-30600}/>
+
+          <Circle colour={'#fee'} colour2={'#fee'} pos={-33000}/>
+
+          <Dummy pos={-37500}/>
+
+          <Square colour={'#fee'} colour2={'#fee'} pos={-40000}/>
+
+          <Dummy pos={-44500}/>
+         
+          
 
         </div>
-      
+      </div>
+    </div>
   );
 }
 

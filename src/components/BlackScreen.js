@@ -1,13 +1,17 @@
-const BlackScreen = ({}) =>
+const BlackScreen = ({pos}) =>
 {
 
     return(
 
         <>
-            <div className="black-screen" >
+            <div className="black-screen-wrapper" style={ {
+        
+        transform: 'translateZ('+pos+'px)',
+        
+        }}>
                
                
-               
+               <div ></div>
 
             </div>
         </>

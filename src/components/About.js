@@ -1,9 +1,13 @@
 import React from 'react'
 import "../styles/about.css"
 import imgabout from "../images/23_white logo-01.png"
-const About = () => {
+const About = ({pos}) => {
     return (
-        <div className="about-body">
+        <div className="about-body" style={ {
+        
+            transform: 'translateZ('+pos+'px)',
+            
+            }}>
             <div className="about-wrapper">
             <img src={imgabout} alt="" className='about-img' />
 

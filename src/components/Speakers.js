@@ -1,8 +1,12 @@
 import React from 'react'
 import "../styles/speakers.css"
-const Speakers = () => {
+const Speakers = ({pos}) => {
     return (
-        <div className='speakers-cont'>
+        <div className='speakers-cont' style={ {
+        
+            transform: 'translateZ('+pos+'px)',
+            
+            }}>
             <div className="speaker-heading">Speakers</div>
             <div className=''>
 
@@ -75,4 +79,4 @@ const Speakers = () => {
     )
 }
 
-export default Speakers
+export default Speakers;

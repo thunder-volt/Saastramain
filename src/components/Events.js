@@ -6,9 +6,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-const Events = () => {
+const Events = ({pos}) => {
     return (
-        <div className="events">
+        <div className="events" style={ {
+        
+            transform: 'translateZ('+pos+'px)',
+            
+            }}>
             <div className="events-heading">
                 Events
             </div>

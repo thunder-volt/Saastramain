@@ -1,10 +1,14 @@
-const Logo = () =>
+const Logo = ({pos}) =>
 {
 
     return(
 
         <>
-            <div className="logo">
+            <div className="logo" style={ {
+        
+        transform: 'translateZ('+pos+'px)',
+        
+        }}>
                 SHAASTRA 2023
                 <br></br>
                 January 26-29
