@@ -1774,3 +1774,7 @@ select:focus {
 .confirm {
   margin-top: 10px;
 }
+
+.new-button:hover {
+  background-color: #0b5ed7;
+}

@@ -25,7 +25,9 @@ import {
   FormLabel,
   FormControl,
   RadioGroup,
-  ModalFooter
+  ModalFooter,
+  Button as NewButton,
+  HStack,
 } from "@chakra-ui/react";
 import {MinusIcon, AddIcon} from "@chakra-ui/icons"
 
@@ -82,8 +84,66 @@ function loadScript(src) {
 function CardComponent({data: el}){
    let [triggerModal,setTriggerModal] = useState(false);
    var { isOpen, onOpen, onClose } = useDisclosure();
-   const [members, setMembers] = React.useState([]);
-   const [teamname, setTeamname] = React.useState();
+   const [members, setMembers] = React.useState([""]);
+   const [teamname, setTeamname] = React.useState("");
+
+   const handleMembers= ({index, event})=> {
+    let memberList= [...members];
+    memberList[index]= event.target.value;
+    setMembers(memberList); 
+
+   }
+
+   const handleAdd=()=> {
+    setMembers([...members, ""]);
+   }
+
+   const handleProceed= async(e)=> {
+    e.preventDefault();
+    if (members) {
+      let memberList=members.filter((member)=> member!=="");
+      if (el?.registrationFee!=='0'){
+        await teamRegistrationMutation( {
+          variables: {
+            data: {
+              eventID: el?.id,
+              name: teamname,
+              members: memberList
+            }
+          }
+        }).then((res)=> {
+          if (res.data){
+            onClose = () => {
+              window.location.reload()
+            }
+            return (
+              <ChakraProvider>
+                <Modal isOpen={true} onClose={onClose}>
+                  <ModalOverlay />
+                  <ModalContent
+                    color="black"
+                  >
+                    <ModalHeader>Registered successfully.</ModalHeader>
+                    <ModalCloseButton />
+                  </ModalContent>
+                </Modal>
+              </ChakraProvider>
+            );
+          }
+        })
+      }
+      else {
+        await teamRegistrationMutation( {
+          variables: {
+            data: {
+              eventId: el?.id,
+              name: teamname,
+              members: members
+            }
+          }
+        })
+      }
+    }}
 
    const navigate = useNavigate()
 
@@ -151,7 +211,7 @@ function CardComponent({data: el}){
     rzp1.open();
   };
 
-  if(el?.registrationFee == '0')
+  if(el?.registrationFee === '0')
    if (data || team) {
     onClose = () => {
       window.location.reload()
@@ -195,7 +255,7 @@ function CardComponent({data: el}){
         <Modal isOpen={true} onClose={onClose}>
           <ModalOverlay />
           <ModalContent color="black">
-            <ModalHeader>{error.message}</ModalHeader>
+            <ModalHeader>{error?.message}{teamError?.message}</ModalHeader>
             <ModalCloseButton />
           </ModalContent>
         </Modal>
@@ -217,8 +277,8 @@ function CardComponent({data: el}){
           <span><img className="nextIcon" src={nextImage} alt="" srcset="" /></span>
           </Button>
           <Button className="register" onClick={async () => {
-            if (el?.registrationType == 'INDIVIDUAL'){
-                if (el?.registrationFee != '0') {
+            if (el?.registrationType === 'INDIVIDUAL'){
+                if (el?.registrationFee !== '0') {
                   await registerMutation({
                     variables: {
                       id: el?.id,
@@ -234,12 +294,65 @@ function CardComponent({data: el}){
               }
              }) 
             }
-            if (el?.registrationType == 'TEAM'){
-              console.log(el?.teamSize)
+            if (el?.registrationType === 'TEAM'){
+              console.log(el?.teamSize);
+              onOpen();
             }
             
           }} >Register</Button> 
           </div>
+          <ChakraProvider>
+              <Modal
+                isOpen={isOpen}
+                onClose={onClose}
+                motionPreset='slideInRight'
+              >
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Enter Team Details</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody pb={6}>
+                <FormControl>
+                  <FormLabel>Team Name</FormLabel>
+                  <Input placeholder='Type here' marginBottom={4} value={teamname} onChange={(e)=> setTeamname(e.target.value)} />
+                </FormControl>
+                {
+                  members.map((member, index)=> {
+                    return (
+                      <FormControl key={index+1}>
+                        <FormLabel>Shaastra ID of team-mate {index+1}</FormLabel>
+                        <HStack marginBottom={4}>
+                          <Input value={member} placeholder='Type here' onChange={(event)=> handleMembers({index, event})} />
+                          {
+                            (index===el.teamSize-2) ? null : (
+                              <NewButton onClick={handleAdd}><AddIcon /></NewButton>
+                            )
+                          }
+                          {
+                            (index === 0) ? null : (
+                              <NewButton onClick={()=> {
+                                const memberList= [...members];
+                                memberList.splice(index,1);
+                                setMembers(memberList)
+                              }}><MinusIcon /></NewButton>
+                            )
+                          }
+                        </HStack>
+                      </FormControl>
+                    )
+                  })
+                }
+              </ModalBody>
+
+              <ModalFooter>
+                <NewButton colorScheme='messenger' mr={3} onClick={(e)=> handleProceed(e)}>
+                  Proceed
+                </NewButton>
+                <NewButton onClick={onClose}>Cancel</NewButton>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+          </ChakraProvider>
         </Card.Body>
       </Card>
       <div className="modal">
