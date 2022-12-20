@@ -14,6 +14,7 @@ import {
 
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+import TopBar from "./TopBar";
 
 const VERIFY = gql`
   mutation VerifyUser($otp: String!) {
@@ -101,7 +102,7 @@ const Verify = () => {
 
   return (
    <body>
-    <NavBar></NavBar>
+    <TopBar/>
     <section id="login">
       <header>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -134,9 +135,9 @@ const Verify = () => {
           </button>
         </form>
         <div id="log-out">
-          <button className="type-2" onClick={(e) => handleResend(e)}>
+          <div className="type-text" onClick={(e) => handleResend(e)}>
             RESEND OTP
-          </button>
+          </div>
         </div>
         {resend ? (
           <form className="login_form" onSubmit={handleResend}>

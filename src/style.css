@@ -393,6 +393,10 @@ button:focus {
     .signup-heading {
       font-size: 35px;
     }
+    /* .type-text{
+      position: relative;
+      top: 225px;
+    } */
 }
 @media  (max-width: 500px) {
   .signup-heading {
@@ -724,4 +728,27 @@ button:focus {
   0%{width: 0px;height: 0px}
   56% { width:1150px; height:1150px;opacity:1}
   100% { width: 2300px; height: 2300px;opacity:0}
+}
+.misc-login-signup .type-1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+.type-text{
+    position: relative;
+    top: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+    color: #ababab !important;
+    font-size: 14px !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.type-text:hover
+{
+    cursor: pointer;
+    color: aliceblue !important;
 }
