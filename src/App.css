@@ -360,6 +360,7 @@ height: 30vh;
 box-shadow: 1px 1px 15px rgb(189, 189, 189);
 padding: 10px;
 border-radius: 3% / 40px;
+width: 24%;
 }
 
 .workshop_pics img{
@@ -367,6 +368,7 @@ height: 43vh;
 box-shadow: 1px 1px 8px rgb(230, 225, 225);
 padding: 10px;
 border-radius: 1vh;
+width: 24%;
 }
 
 .exhibition_pics img{
@@ -374,6 +376,7 @@ height: 43vh;
 box-shadow: 1px 1px 8px rgb(230, 225, 225);
 padding: 10px;
 border-radius: 1vh;
+width: 24%;
 }
 
 .i1{
@@ -389,13 +392,15 @@ border-radius: 1vh;
 
 .envelope{
   --i: 30px;
-  width: 42%;
+  width: 47%;
   min-height: 30vh;
-  height: 100vh;
+  height: 118vh;
   /* background-color: #EEEEEE; */
   border: 4px solid #fff;
   background-color: #141E61;
   margin-top: 80px;
+  margin-left: 29%;
+  padding-left: 6vh;
 }
 
 /* .App-logo {
@@ -716,20 +721,21 @@ border-radius: 1vh;
 
 .envelope::before{
   content: 'SHAASTRA 2023';
-  min-height: 50vh;
-  height: 50vh;
-  text-align: center;
-  padding: 40px 0px;
-  width: 100%;
-  position: absolute;
-  top: 48.5%;
-  border: 4px solid #fff;
-  /* background-color: #EEEEEE; */
-  background-color: #141E61;
-  z-index: 3;
-  color: #EEEEEE;
-  font-size: 9vh;
-  line-height: 50vh;
+    min-height: 50vh;
+    height: 50vh;
+    text-align: center;
+    padding: 40px 0px;
+    width: 46%;
+    position: relative;
+    top: 83%;
+    left: -3%;
+    border: 4px solid #fff;
+    /* background-color: #EEEEEE; */
+    background-color: #141E61;
+    z-index: 3;
+    color: #EEEEEE;
+    font-size: 11.41vh;
+    line-height: 15vh;
 }
 
 .card1, .card2, .card3, .card4{
@@ -751,32 +757,32 @@ border-radius: 1vh;
 }
 
 .card1{
-  transform: translateY(calc(var(--i)*(13)))
+  transform: translateY(calc(var(--i)*(1)))
 }
 .card2{
-  transform: translateY(calc(var(--i)*(4)));
+  transform: translateY(calc(var(--i)*(-8)));
 }
 .card3{
-  transform: translateY(calc(var(--i)*(-5)));
+  transform: translateY(calc(var(--i)*(-17.5)));
 }
 .card4{
-  transform: translateY(calc(var(--i)*(-14)));
+  transform: translateY(calc(var(--i)*(-25.5)));
 }
 
 .card1:hover{
-  transform: translateY(calc(var(--i)*(9)));
+  transform: translateY(calc(var(--i)*(-5)));
 }
 
 .card2:hover{
-  transform: translateY(calc(var(--i)*(-1)));
+  transform: translateY(calc(var(--i)*(-16.5)));
 }
 
 .card3:hover{
-  transform: translateY(calc(var(--i)*(-10)));
+  transform: translateY(calc(var(--i)*(-25.5)));
 }
 
 .card4:hover{
-  transform: translateY(calc(var(--i)*(-21)));
+  transform: translateY(calc(var(--i)*(-35.5)));
 }
 
 @media screen and (max-width : 1200px) {

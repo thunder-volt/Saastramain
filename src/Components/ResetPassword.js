@@ -13,6 +13,7 @@ import {
   useDisclosure,
   ModalCloseButton,
 } from "@chakra-ui/react";
+import TopBar from "./TopBar";
 
 const RESET = gql`
   mutation ResetPassword($data: ResetPasswordInput!) {
@@ -70,7 +71,7 @@ const ResetPassword = () => {
   }
   return (
     <body>
-      <NavBar></NavBar>
+      <TopBar/>
     <section id="login">
       <header>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

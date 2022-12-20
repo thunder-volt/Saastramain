@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../style.css"
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+import TopBar from "./TopBar";
 const GET_OTP = gql`
   mutation GetPasswordOTP($email: String!) {
     getPasswordOTP(email: $email)
@@ -35,7 +36,7 @@ const ForgotPassword = () => {
 
   return (
     <body>
-      <NavBar />  
+      <TopBar/> 
     <section id="login">
       <header>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
