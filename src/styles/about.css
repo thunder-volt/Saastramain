@@ -14,7 +14,7 @@
 }
 
 .about-wrapper {
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -23,6 +23,7 @@
     font-size: 7vh;
     font-weight: 700;
     margin-top: 15vh;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
 }
@@ -34,14 +35,16 @@
     align-items: center;
     margin-top: 50px;
     opacity: 0;
-    animation: ani1 1s ease-out forwards;
-    /* flex-wrap: wrap; */
+    /* animation: ani1 1s ease-out forwards;
+    flex-wrap: wrap; */
     padding: 0px 34px;
     /* flex-wrap: wrap; */
 
 }
 
-
+.about p{
+    position: relative;
+}
 .about-img {
     height: 20vh;
     display: block;
@@ -51,22 +54,23 @@
 .about-article {
     width: 90%;
     margin: 30px;
-    animation: ani1 0.5s ease-out forwards;
+    /* animation: ani1 0.5s ease-out forwards; */
 }
 
 .about-article p {
     color: #fff;
     font-size: 17px;
     text-transform: uppercase;
-    margin-top: 35vh;
-    animation: ani2 0.75s ease-out 1.5s forwards;
-    opacity: 0;
+    /* margin-top: 35vh; */
+    /* animation: ani2 0.75s ease-out 1.5s forwards;
+    opacity: 0; */
+    position: relative;
 }
 
 .about-btn {
     margin-top: 35px;
     text-align: center;
-    animation: ani2 0.5s ease-out forwards;
+    /* animation: ani2 0.5s ease-out forwards; */
 }
 
 .about-article a {
@@ -78,7 +82,7 @@
     border: 1px solid #c707f7;
     border-radius: 5px;
     opacity: 0;
-    animation: ani2 0.75s ease-out 2.5s forwards;
+    /* animation: ani2 0.75s ease-out 2.5s forwards; */
 }
 
 .about-article a:hover {

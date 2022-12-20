@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+/* div{
+    position: relative !important;
+} */
+
 @font-face {
     font-family: Digital7;
     src: url(digital-7.ttf);
