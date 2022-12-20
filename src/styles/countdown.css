@@ -11,6 +11,7 @@
     justify-content: space-around;
     
   }
+  
   .flexcount{
     display: flex;
     flex-direction: row;

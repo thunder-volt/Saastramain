@@ -4,15 +4,14 @@ import Square from './components/Square';
 import './styles.css';
 import React, { useState, useEffect } from 'react';
 import Circle from './components/Circles';
-import Dummy from './components/Eventsdummy';
+import Events from './components/Events'
+import Speakers from './components/Speakers'
 import BlackScreen from './components/BlackScreen';
 import Spiral from './components/Spiral';
 import Countdown from './components/Countdownpage';
 import About from './components/About';
 import Theme from './components/Theme';
-
-
-
+import Footer from './components/Footerfirst'
 
 const App=()=> {
 
@@ -96,9 +95,6 @@ const App=()=> {
   return (
     <div className="App"  >
       
-
-
-      
       <div className='uni'>
       
 
@@ -134,15 +130,15 @@ const App=()=> {
 
           <Spiral colour={'#ff0579'} colour2={'#fee'} pos={-23000} />
 
-          <Dummy pos={-30600}/>
+          <Speakers pos={-30600}/>
 
           <Circle colour={'#fee'} colour2={'#fee'} pos={-33000}/>
 
-          <Dummy pos={-37500}/>
+          <Events pos={-37500}/>
 
           <Square colour={'#fee'} colour2={'#fee'} pos={-40000}/>
 
-          <Dummy pos={-44500}/>
+          <Footer pos={-44500}/>
          
           
 

@@ -38,8 +38,8 @@ body
     width: 100vw;
     background-color: rgb(0, 0, 0);
     font-size: 50px;
-    -webkit-perspective: 600px;
-    -webkit-perspective-origin: 50%;
+    -webkit-vendor-prefix-perspective: 600px;
+    -webkit-vendor-prefix-perspective-origin: 50%;
     overflow: hidden;
    
 }

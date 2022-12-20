@@ -9,11 +9,6 @@ const Theme = ({pos}) => {
     
 
     return (
-       
-        
-      
-
-          
                     <div className="theme-body" style={ {
         
                         transform: 'translateZ('+pos+'px)',

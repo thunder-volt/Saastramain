@@ -11,7 +11,7 @@ const Spiral = ({colour, colour2, pos, }) =>
             }}>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
-              
+                
                 rotate:'90deg',
                 
             }}></div></div>
