@@ -12,7 +12,11 @@ function Vastra() {
       <NavBar />
       <section className="vastra-section">
       <div className="banner">
-        <h1 className="vastxt">VASTRA</h1>
+      <svg class="signup-heading">
+            <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+             VASTRA
+            </text>
+          </svg>
       </div>
       <div className="aboutvastra">
         <p>

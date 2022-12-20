@@ -32,30 +32,31 @@ body{
 }
 
 .first-box{
-  background-color: #0f044c;
+  background-color: black;
   height: fit-content;
 }
 
 .second-box{
-  background-color: #0f044c;
+  background-color: #090521;
   height: 60vh;
 
 }
 
 .third-box{
-  background-color: #787A91;
+  background-color: black;
   height: fit-content;
 }
 
 .fourth-box{
-  background-color: #787A91;
+  background-color: black;
   height: fit-content;
   margin-top: 0px;
 }
 
 .content2{
-  background-color: #787A91;
+  background-color: #090521;
   color: #EEEEEE;
+  border: none;
 }
 
 .content2 p{
@@ -309,8 +310,22 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .headers{
-  color: #3b4abf;
-  font-size: 9vh;
+  color: white;
+  font-size: 5vw;
+  width: fit-content;
+  margin: auto;
+  padding-top: 6vh;
+}
+
+.first-box .title a{
+  font-size: 1vw !important;
+  color: white;
+  width: fit-content;
+  margin: auto;
+}
+
+.first-box .title a:hover, .title a:visited{
+  color: white;
 }
 
 .title-ex{
@@ -392,21 +407,21 @@ width: 24%;
 }
 
 .envelope_parent{
-  height: 163.5vh;
+  height: 140vh;
   overflow: hidden;
-	background-color: #0f044c;
+	background-color: #090521;
 }
 
 .envelope{
   --i: 30px;
-  width: 47%;
+  width: 70%;
   min-height: 30vh;
-  height: 118vh;
+  height: 95vh;
   /* background-color: #EEEEEE; */
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
   background-color: #141E61;
+  margin: auto;
   margin-top: 80px;
-  margin-left: 29%;
   padding-left: 6vh;
 }
 
@@ -699,6 +714,10 @@ a {
         margin-left: 14vh;
     } */
 
+    .first-box .title a{
+      font-size: 2vw !important;
+    }
+
     .about{
         width: 43vh;
     margin: auto;
@@ -817,21 +836,23 @@ a {
 }
 
 .envelope::before{
-  content: 'SHAASTRA 2023';
+  content: 'Testimonials';
     min-height: 50vh;
     height: 50vh;
     text-align: center;
     padding: 40px 0px;
-    width: 46%;
+    width: 80% !important;
+    padding-left: 22vw;
+    padding-right: 22vw;
     position: relative;
     top: 83%;
     left: -3%;
-    border: 4px solid #fff;
+    /* border: 4px solid #fff; */
     /* background-color: #EEEEEE; */
     background-color: #141E61;
     z-index: 3;
     color: #EEEEEE;
-    font-size: 11.41vh;
+    font-size: 8vh;
     line-height: 15vh;
 }
 
@@ -839,9 +860,9 @@ a {
   --i: 30px;
   background: linear-gradient(150deg, #EEEEEE,#EEEEEE, #787A91, #EEEEEE);
   color: #000;
-  min-height: 50vh;
-  height: fit-content;
-  width: 40vw;
+  min-height: 30vh;
+  height: 45vh;
+  width: 95%;
   padding: 30px;
   border: 2px solid rgb(255, 247, 225);
   border-radius: 10px;
@@ -985,7 +1006,7 @@ a {
   }
 
   .workshop_pics{
-    flex-direction: column;
+    flex-direction: row;
     
   }
 
@@ -1019,7 +1040,7 @@ a {
   }
 
   .exhibition_pics{
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .exhibition_pics img{
@@ -1028,22 +1049,33 @@ a {
 
   .envelope{
     width: 90%;
+    height: 85vh;
   }
 
   .envelope::before{
     font-size: 5vh;
+    padding-left: 30vw;
+    padding-right: 30vw;
   }
 
   .card1, .card2, .card3, .card4{
     width: 80vw;
     padding: 20px;
-    --i : 35px; 
+    height: 30vh;
+    --i : 15px; 
   }
 }
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 500px) {
 
   .first-box{
     width: 100%;
+    padding-top: 8vh;
+  }
+
+  .title{
+    width: 90%;
+    margin: auto;
+    text-align: center; 
   }
 
   .content2{
@@ -1068,6 +1100,10 @@ a {
     
   }
 
+  .workshop_pics img, .exhibition_pics img{
+    width: 50vw;
+  }
+
   .seminar{
     font-size: revert;
   }
@@ -1107,16 +1143,20 @@ a {
 
   .envelope{
     width: 90%;
+    padding-left: 2vw;
   }
 
   .envelope::before{
     font-size: 5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 
   .card1, .card2, .card3, .card4{
-    width: 80vw;
+    width: 86vw;
+    height: 40vh;
     padding: 20px;
-    --i : 35px; 
+    --i : 25px; 
   }
 }
 /* body 
@@ -2380,3 +2420,5 @@ select:focus {
 .new-button:hover {
   background-color: #0b5ed7;
 }
+
+

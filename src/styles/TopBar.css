@@ -29,7 +29,8 @@
     padding: 0;
 }
 .account {
-    width: 160px;
+    width: 20vw;
+    color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,6 +39,9 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 34px;
+}
+.account p{
+    margin-right: 1vw;
 }
 .signup-topbar{
     padding-inline: 1vw;

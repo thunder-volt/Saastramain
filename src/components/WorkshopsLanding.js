@@ -8,6 +8,7 @@ import { gql } from "@apollo/client";
 
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
+import TopBar from './TopBar'
 
 const GET_EVENTS = gql`
   query GetEvents($filter: String) {
@@ -52,9 +53,15 @@ function WorkshopsLanding() {
   if (data) {
     return (
       <body>
+        <TopBar />
         <NavBar />
+        <div>
         <div className="workshops-landing">
-          <h1 className="wstitle">WORKSHOPS</h1>
+        <svg class="signup-heading">
+            <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+             WORKSHOPS
+            </text>
+          </svg>
 
           <div>
             <button className="explore" oncCick="explore()">
@@ -64,11 +71,12 @@ function WorkshopsLanding() {
         </div>
         <div className="glassmorphic2">
           <div className="wrapper">
-            {data?.getEvents?.events.map((el) => {
+            {data?.getEvents?.events?.map((el) => {
               console.log(el);
               return <CardComponent data={el} key={el.id} />;
             })}
           </div>
+        </div>
         </div>
         <Footer />
       </body>

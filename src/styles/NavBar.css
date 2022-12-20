@@ -57,6 +57,7 @@ ul {
     justify-content: space-around;
     padding-inline: 10px;
     align-items: center;
+    display: flex;  
     justify-items: center ;
     font-family: 'Rubik', sans-serif !important;
     font-style: normal;

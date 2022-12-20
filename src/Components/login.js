@@ -21,6 +21,7 @@ const LOGIN_MUTATION = gql`
       id
       isVerified
       role
+      shaastraID
     }
   }
 `;
@@ -61,7 +62,7 @@ const Login = () => {
     onClose = () => {
       if (error.message === "Account Not Found") navigate("/signup");
       else {
-        navigate("/");
+        navigate("/login");
         window.location.reload();
       }
     };
@@ -69,7 +70,7 @@ const Login = () => {
       <ChakraProvider>
         <Modal isOpen={true} onClose={onClose}>
           <ModalOverlay />
-          <ModalContent backgroundColor="red" color="black">
+          <ModalContent backgroundColor="#E97451" color="black">
             <ModalHeader>{error.message}</ModalHeader>
             <ModalCloseButton />
           </ModalContent>
@@ -81,11 +82,13 @@ const Login = () => {
     if (!data.login?.isVerified) {
       navigate("/verify");
     } else {
+      
       if (data.login?.role === "ADMIN") {
         localStorage.setItem("role", "admin");
         navigate("/admin");
       } else {
         localStorage.setItem("role", "user");
+        localStorage.setItem("id", data.login?.shaastraID);
         navigate("/edit");
       }
     }

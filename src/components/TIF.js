@@ -12,12 +12,13 @@ import i9 from "../Images/i9.png";
 import Card from "./cards";
 
 import NavBar from "./navigation/NavBar";
-
+import TopBar from './TopBar'
 import Footer from "./Footer";
 
 function Tif() {
   return (
     <body>
+      <TopBar />
       <NavBar></NavBar>
       <div className="App">
       <div className="first-box">
@@ -25,6 +26,7 @@ function Tif() {
           <h1 className="headers">
             TECH<span className="and"> & </span>INNOVATION FAIR
           </h1>
+          <p><a href="https://tif.shaastra.org">Visit our website</a></p>
         </div>
         <div className="content1">
           <p>
@@ -47,7 +49,7 @@ function Tif() {
           opportunities they need to kickstart their startup journey.
         </p>
       </div>
-      <div className="second-box">
+      {/* <div className="second-box">
         <div className="title">
           <h3 className="headers">
             Our<span className="and"> Partners</span>
@@ -58,7 +60,7 @@ function Tif() {
           <img src={i2} className="i2" alt="i"></img>
           <img src={i3} className="i3" alt="i"></img>
         </div>
-      </div>
+      </div> */}
       <div className="third-box">
         <div className="title">
           <h3 className="headers">

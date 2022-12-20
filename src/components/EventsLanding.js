@@ -60,7 +60,11 @@ function EventsLanding() {
         <NavBar />
         <div>
         <div className="workshops-landing">
-          <h1 className="wstitle">EVENTS</h1>
+        <svg class="signup-heading">
+            <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+             EVENTS
+            </text>
+          </svg>
 
           <div>
             <button className="explore" oncCick="explore()">
@@ -84,7 +88,6 @@ function EventsLanding() {
             <option value="DB">DESIGN & BUILD</option>
             <option value="IGNITE">IGNITE</option>
             <option value="STRATEGISTS">STRATEGISTS</option>
-            <option value="WORKSHOPS">WORKSHOPS</option>
             <option value="OTHER">OTHER</option>
           </select>
           <div className="wrapper">

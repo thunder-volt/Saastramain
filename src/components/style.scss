@@ -41,6 +41,8 @@ section{
     p{
         padding-top: 50px;
         margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
     }
     h2{
         color: #993094;
@@ -62,6 +64,7 @@ section{
         display: flex;
         flex-direction: row;
         margin-bottom: 50px;
+        font-size: 1.2rem;
         div{
             width: calc(50% + 15vw);
             ul{
@@ -90,6 +93,7 @@ section{
     &>p{
         margin: 0;
         padding-bottom: 50px;
+        font-size: 1.2rem;
     }
     &>h3{
         font-style: italic;

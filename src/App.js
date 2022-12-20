@@ -25,6 +25,8 @@ import Shipping from './Components/policies/Shipping'
 import Terms from './Components/policies/TermsConditions'
 import Vastra from "./Components/vastra";
 
+import ProfileEdit from './Components/ProfileEdit'
+
 import Contact from "./Contact";
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/login" element={<Login />} />
-          <Route path="/edit" element={<EditUser />} />
+          <Route path="/edit" element={<ProfileEdit />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
           <Route path='/envisage' element={<Envisage />} />
