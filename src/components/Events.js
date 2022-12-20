@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const Events = ({pos}) => {
     return (
-        <div className="events" style={ {
+        <div className="events-landing" style={ {
         
             transform: 'translateZ('+pos+'px)',
             

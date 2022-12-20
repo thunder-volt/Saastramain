@@ -120,7 +120,7 @@ const App=()=> {
 
           <Theme pos={-7500}/>
 
-          <Circle colour={'#fee'} colour2={'#fee'} pos={-9750}/>
+          {/* <Circle colour={'#fee'} colour2={'#fee'} pos={-9750}/> */}
 
           <Countdown pos={-14500}/>
 
@@ -128,15 +128,15 @@ const App=()=> {
 
           <About pos={-21500}/>
 
-          <Spiral colour={'#ff0579'} colour2={'#fee'} pos={-23000} />
+          {/* <Spiral colour={'#ff0579'} colour2={'#fee'} pos={-23000} /> */}
 
           <Speakers pos={-30600}/>
 
-          <Circle colour={'#fee'} colour2={'#fee'} pos={-33000}/>
+          {/* <Circle colour={'#fee'} colour2={'#fee'} pos={-33000}/> */}
 
           <Events pos={-37500}/>
 
-          <Square colour={'#fee'} colour2={'#fee'} pos={-40000}/>
+          {/* <Square colour={'#fee'} colour2={'#fee'} pos={-40000}/> */}
 
           <Footer pos={-44500}/>
          

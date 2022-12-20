@@ -39,7 +39,6 @@ margin-top: 5vh;
     display: flex;
     font-size: 3vw;
     text-align: center;
-    
 }
 
 .neon {
@@ -76,20 +75,9 @@ margin-top: 5vh;
     justify-content: center;
     text-align: center;
     background-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: -apple-system, 
-      BlinkMacSystemFont, 
-      "Segoe UI", 
-      Roboto, 
-      Oxygen-Sans, 
-      Ubuntu, 
-      Cantarell, 
-      "Helvetica Neue", 
-      sans-serif;
+    display: block !important;
     font-size: 4rem;
-    opacity: 1;
+    opacity: 1 !important;
     z-index: 10000;
   }
 
@@ -107,12 +95,12 @@ margin-top: 5vh;
 
 .theme {
     width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    opacity: 1;
-    /* animation: ani1 1s ease-out forwards; */
+    opacity: 1 !important;
+    animation: ani1 1s ease-out forwards;
     /* flex-wrap: wrap; */
     padding: 0px 34px;
     /* flex-wrap: wrap; */
@@ -123,9 +111,9 @@ margin-top: 5vh;
     display: block;
     margin: auto;
     margin-top: -5vw;
-    opacity: 1;
+    opacity: 0;
     justify-self: center;
-    /* animation: ani2 0.75s ease-out 0.5s forwards; */
+    animation: ani2 0.75s ease-out 0.5s forwards;
 }
 
 @media screen and (max-width: 1078px) {
@@ -152,6 +140,9 @@ margin-top: 5vh;
 }
 
 @keyframes ani2 {
+    50% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
     }
@@ -165,4 +156,5 @@ margin-top: 5vh;
 
 h2, h1{
     position: relative !important;
+    display: block !important;
 }

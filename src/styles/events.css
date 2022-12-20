@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.events-landing div, .events-landing p, .events-landing h2{
+    position: relative;
+}
 
 /* .events-cont {
     position: relative;
@@ -128,13 +131,14 @@
     align-items: center;
 }
 
-.events {
+.events-landing {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: black;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .events-heading {
