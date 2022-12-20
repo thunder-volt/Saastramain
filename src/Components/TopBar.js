@@ -1,19 +1,19 @@
 import * as React from "react";
 import Logo from"./../Images/23_white logo-02.png";
 import "./../styles/TopBar.css";
-// import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import { FaUserCircle } from "react-icons/fa";
 
 
 const TopBar = () => {
 
-   // let user= JSON.parse(localStorage.getItem('user-info'))
-   // const history=useHistory();
+   let user= JSON.parse(localStorage.getItem('user-info'))
+   const history=useNavigate();
    
-   // const logOut = () => {
-   //    localStorage.clear();
-   //    history.push('./')
-   // }
+   const logOut = () => {
+      localStorage.clear();
+      history.push('./')
+   }
 
    return(
       <section className="topBar">
@@ -22,7 +22,7 @@ const TopBar = () => {
             {
                localStorage.getItem('user-info')?
                <>
-               <a className="logout-topbar" href="./lo">Logout</a>
+               <a className="logout-topbar" onClick={logOut} href="./">Logout</a>
                <a className="profile-topbar" href="./Profile"><FaUserCircle size={30}/></a>
                </>
                :

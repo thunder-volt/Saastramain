@@ -9,6 +9,7 @@ import photos from "../Team_page/photos";
 import { FaFilter, FaTimes } from "react-icons/fa";
 import NavBar from "../../navigation/NavBar";
 import Footer from "../../Footer";
+import TopBar from "../../TopBar";
 interface Props {}
 
 const Team = (props: Props) => {
@@ -336,6 +337,7 @@ const Team = (props: Props) => {
 
   return (
      <body>
+      <TopBar/>
      <NavBar></NavBar>
      <div
         style={{
