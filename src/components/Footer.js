@@ -37,7 +37,7 @@ const Footer = (props) => {
                             <li className="add">1st Floor, O/o Dean Of Students Office,</li>
                             <li className="add">IIT Madras, Guindy, Chennai,</li>
                             <li className="add">Tamil Nadu, India - 600036</li>
-                            {/* <li className="add">Mobile : +91 9952729095</li> */}
+                            <li className="add">Mobile : +91 9952729095</li>
                         </ul>
                     </div>
                     {/* <!-- Contact Us  --> */}
@@ -83,12 +83,9 @@ const Footer = (props) => {
             <div className="colBottom" style={{ paddingBottom: "2px" }}>
                 <p>
                     <span className="add">Ⓒ DEVELOPED BY {props.name} | WEB OPERATIONS | SHAASTRA | IIT MADRAS. ALL RIGHTS RESERVED
-                        •</span> 
-                    <div className="link-footer-div">
-                    <a className="linkylinks"  href="./policies/Privacy" target="_blank">PRIVACY
+                        •</span> <a className="linkylinks"  href="./policies/Privacy" target="_blank">PRIVACY
                             POLICY</a> • <a className="linkylinks" href="./policies/Terms" target="_blank">TERMS &
                                 CONDITION</a> • <a className="linkylinks"  href="./policies/Shipping" target="_blank">SHIPPING POLICY</a> • <a className="linkylinks" href="./policies/Refund" target="_blank">RETURN & REFUND POLICY</a>
-                    </div>
                 </p>
             </div>
         </div >

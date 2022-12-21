@@ -4,77 +4,26 @@ import "./../styles/TopBar.css";
 import {useNavigate} from 'react-router-dom'
 import { FaUserCircle } from "react-icons/fa";
 
-import { useMutation, useQuery, gql } from "@apollo/client";
-import {
-   ChakraProvider,
-   Modal,
-   ModalOverlay,
-   ModalContent,
-   ModalHeader,
-   useDisclosure,
-   ModalCloseButton,
- } from "@chakra-ui/react";
-
-const LOGOUT = gql`
-  mutation Mutation {
-    logoutUser
-  }
-`;
 
 const TopBar = () => {
 
-   const [logout, { data: isLogout, loading, error }] = useMutation(LOGOUT);
-   // let user= JSON.parse(localStorage.getItem('role'))
-   const navigate = useNavigate();
+   let user= JSON.parse(localStorage.getItem('user-info'))
+   const history=useNavigate();
    
    const logOut = () => {
-      logout();
+      localStorage.clear();
+      history.push('./')
    }
-
-   if (isLogout) {
-      var onClose = () => {
-         localStorage.clear();
-         navigate('/')
-      }
-      return (
-         <ChakraProvider>
-           <Modal isOpen={true} onClose={onClose}>
-             <ModalOverlay />
-             <ModalContent backgroundColor="white" color="black">
-               <ModalHeader>Logged out successfully!</ModalHeader>
-               <ModalCloseButton />
-             </ModalContent>
-           </Modal>
-         </ChakraProvider>
-       );
-    }
-
-    if (error) {
-      var onClose = () => navigate("/")
-      return (
-        <ChakraProvider>
-          <Modal isOpen={true} onClose={onClose}>
-            <ModalOverlay />
-            <ModalContent backgroundColor="red" color="black">
-              <ModalHeader>Some Error Occured</ModalHeader>
-              <ModalCloseButton />
-            </ModalContent>
-          </Modal>
-        </ChakraProvider>
-      );
-    }
-  
 
    return(
       <section className="topBar">
          <img className="logoTop" src={Logo} alt="Logo"/>
          <div className="account">
             {
-               localStorage.getItem('role')?
+               localStorage.getItem('user-info')?
                <>
-               <p>Hi, {localStorage.getItem('id')}</p>
-               <a className="profile-topbar" href="/profile"><FaUserCircle size={30}/></a>
                <a className="logout-topbar" onClick={logOut} href="./">Logout</a>
+               <a className="profile-topbar" href="./Profile"><FaUserCircle size={30}/></a>
                </>
                :
                <>

@@ -30,7 +30,7 @@
 .footer .coly .heady {
     margin: 0;
     font-family: inherit;
-    font-size: 14px !important;
+    font-size: 16px;
     line-height: 17px;
     padding: 20px 0px 10px 0px;
     color: rgba(255, 255, 255);
@@ -49,7 +49,7 @@
 
 .footer .coly ul li {
     color: #999999;
-    font-size: 12px !important;
+    font-size: 13px;
     font-family: inherit;
     font-weight: normal;
     padding: 5px 0px 5px 0px;
@@ -89,30 +89,13 @@
     color: #999999 !important;
     text-decoration: white !important;
     width: fit-content;
-    font-size: 12px !important;
-    line-height: 2;
-    font-family: inherit;
-    font-weight: normal;
+    font-size: 0.9vw;
 }
 .linkylinks :hover{
     color: white !important; 
     text-decoration: white !important;
 }
 
-
-.colBottom .linkylinks{
-    color: #999999 !important;
-    text-decoration: white !important;
-    width: fit-content;
-    font-size: 10px !important;
-    line-height: 2;
-    font-family: inherit;
-    font-weight: normal;
-}
-.colBottom .linkylinks :hover{
-    color: white !important; 
-    text-decoration: white !important;
-}
 .link-footer-div{
     display: flex;
     flex-direction: row;
@@ -132,9 +115,11 @@
     -moz-transition: .1s;
     text-decoration: none;
 }
+
 .emails .quickLinks .followUs .footer .colBottom .linkylinks:visited {
     color: #999999 !important;
 }
+
 .emails .quickLinks .followUs .footer .colBottom:hover {
     color: #ffffff !important;
     transition: .1s;
@@ -150,7 +135,7 @@
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-    font-size: 10px !important;
+    font-size: 10px;
     text-align: center;
     background-color: #080519 !important;
     color: #999999 !important ;
@@ -223,7 +208,7 @@
         width: fit-content !important;
     }
     .linkylinks{
-        /* font-size: 1vw; */
+        font-size: 1vw;
     }
 }
 
@@ -251,7 +236,7 @@
         margin-left: 0;
     }
     .add{
-        /* font-size: 1vw; */
+        font-size: 1vw;
     }
     .colBottom{
         padding-bottom: 8vh !important;
@@ -277,7 +262,7 @@
         text-align: center;
         justify-content: center;
         position: relative;
-        margin: 0 0 0 !important;
+        margin: 0% auto;
         left: 0;
         right: 0;
     }
@@ -311,12 +296,18 @@
     }
 
     .linkylinks{
-        /* font-size: 4vw; */
+        font-size: 4vw;
         margin: auto;
         text-align: center;
     }
+    .colBottom .linkylinks{
+        font-size: 2vw;
+    }
     .link-footer-div{
         width: 80vw;
+    }
+    .colBottom span{
+        font-size: 2vw
     }
 
     .colBottom{
