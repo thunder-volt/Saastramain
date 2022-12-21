@@ -1,9 +1,9 @@
 
-* {
+.env * {
     font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0 !important;
+    box-sizing: border-box !important;
     position: absolute;
 }
 
@@ -19,13 +19,14 @@
 }
 
 .about-title h1 {
-    color: #fff;
-    font-size: 7vh;
-    font-weight: 700;
-    margin-top: 15vh;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
+    
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 10vh;
+        font-weight: 700;
+        margin-top: 10vh;
+        position: relative;
+        text-align: center;
 }
 
 .about {
@@ -41,7 +42,8 @@
     position: relative;
 }
 
-.about p{
+.about-p{
+    text-transform: lowercase;
     position: relative;
     color: #fff;
 
@@ -109,6 +111,10 @@
 @media screen and (max-width: 1078px) {
     .about {
         flex-direction: column;
+    }
+    .about-title h1{
+        font-size: 8vh;
+        margin-top: 5vh;
     }
 
 

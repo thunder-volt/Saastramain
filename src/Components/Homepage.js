@@ -12,6 +12,7 @@ import Countdown from './Countdownpage';
 import About from './About';
 import Theme from './Theme';
 import Footer from './Footerfirst'
+import NavBar from './navLandingPage/NavBar'
 
 const Homepage=()=> {
   
@@ -90,8 +91,7 @@ const Homepage=()=> {
 
 
   return (
-    <div className="App"  >
-      
+    <div className="App home"  >
       <div className='uni'>
       
 
@@ -108,7 +108,6 @@ const Homepage=()=> {
           </div>
 
         <div className='env' style={envStyle} >
-
           
           
           <Logo pos={0}/>

@@ -55,6 +55,7 @@ const Signup = () => {
           },
         },
       }).then((res) => {
+        console.log(res)
         if (res.data?.createUser) {
           navigate("/verify");
         }
