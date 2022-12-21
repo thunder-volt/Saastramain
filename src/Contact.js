@@ -9,7 +9,7 @@ function Contact() {
    <body>
     <TopBar />
     <NavBar />
-     <div className="contact">
+     <div className="contact-uspage">
   <div class="contact-us-heading">
     Contact Us
   </div>
@@ -22,9 +22,9 @@ function Contact() {
       </div>
       <div class="content-container email-align">
         <div>
-          <a href="#">sponsorship@shaastra.org ➜</a><br />
-          <a href="#">outreach@shaastra.org ➜</a><br />
-          <a href="#">sec_cocur@shaastra.org ➜</a>
+          <a href="mailto:sponsorship@shaastra.org">sponsorship@shaastra.org ➜</a><br />
+          <a href="mailto:outreach@shaastra.org">outreach@shaastra.org ➜</a><br />
+          <a href="mailto:sec_cocur@smail.iitm.ac.in">sec_cocur@shaastra.org ➜</a>
         </div>
       </div>
     </div>
