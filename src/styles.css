@@ -593,17 +593,17 @@ body
     opacity: 0.3;
     height: 100vh;
     width: 100%;
-    left: 50vw;
-    right: 50vw;
+    
 }
 
 .back-btn {
     color: #db3eb1;
-    border: 6px solid #db3eb1;
+    border: 3px solid #db3eb1;
     border-radius:15px;
     text-align: center;
     align-items: center;
-    padding-top: 8px;
+    padding-top: 2px;
+    padding-top: 2px;
     font-size: 30px;
     font-family: Rubik;
     letter-spacing:5px;
@@ -611,9 +611,9 @@ body
     font-weight: bold;
     filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
     transition: .5s;
-    height: 8vh;
-    margin: 5vh;
-    width: 9vw;
+    height: 6vh;
+    margin: 4vh;
+    width: 7vw;
   }
   
   .back-btn:hover {
@@ -822,6 +822,17 @@ body
     .square div, .spiral-sqr div, .circle div{
        width: 100vw;
        height: 150vh;
+       top: 0%;
+       left: 0%;
+
+    }
+    .back-btn{
+    height: 4vh;
+    margin: 4vh;
+    width: 9.5vw;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 2.5vw;
     }
     @keyframes spin 
     {

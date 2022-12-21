@@ -18,13 +18,21 @@
 }
 
 .about-title h1 {
-    color: #fff;
-    font-size: 7vh;
-    font-weight: 700;
-    margin-top: 15vh;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
+    
+        /* text-transform: uppercase;
+          background-image: linear-gradient(to right top,#EE82EE, #FF00FF, #BA55D3, #FF00FF, #9400D3, #9932CC);
+         background-size: 50% auto;
+          -webkit-venfor-prefix-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8vw;
+        animation: gradientAnim 7.5s ease  alternate infinite; */
+        color: white;
+        font-size: 7vh;
+        font-weight: 700;
+        margin-top: 15vh;
+        position: relative;
+        text-align: center;
 }
 
 .about {
@@ -40,7 +48,8 @@
     position: relative;
 }
 
-.about p{
+.about-p{
+    text-transform: lowercase;
     position: relative;
     color: #fff;
 

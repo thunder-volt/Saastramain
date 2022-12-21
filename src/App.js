@@ -122,7 +122,7 @@ const App=()=> {
 
           {/* <Circle colour={'#fee'} colour2={'#fee'} pos={-9750}/> */}
 
-          <Countdown pos={-14500}/>
+          <BlackScreen pos={-14500}/>
 
           <Square colour={'#fee'} colour2={'#fee'} pos={-17000}/>
 

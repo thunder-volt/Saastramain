@@ -9,7 +9,7 @@ const Footer = ({pos}) => {
             transform: 'translateZ('+pos+'px)',
             
             }}>
-            <div className="footer-cards">
+            {/* <div className="footer-cards">
                 <div className="footer-card">
                     <h3>Address</h3>
                     <ul><li>IITM STUDENTS ACTIVITIES TRUST SHAASTRA.</li>
@@ -36,11 +36,11 @@ const Footer = ({pos}) => {
 
                     </ul>
                 </div>
-            </div>
+            </div> */}
 
             <div className="footer-cont">
                
-                <ul className="social-icons">
+                {/* <ul className="social-icons">
                     <li><a href=""><FaInstagram /></a></li>
                     <li><a href=""><FaLinkedin /></a></li>
                     <li><a href=""><FaYoutube /></a></li>
@@ -51,7 +51,7 @@ const Footer = ({pos}) => {
                     <li ><a href="">Terms & Condition</a> </li>
                     <li ><a href="">Shipping Policy</a> </li>
                     <li ><a href="">Return & Refund Policy</a> </li>
-                </ul>
+                </ul> */}
                 <p>Developed by Someone | Web Operations | Shaastra | IIT MADRAS All Rights Reserved</p>
             </div>
         </div>
