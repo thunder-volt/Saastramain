@@ -24,7 +24,7 @@ import Refund from './Components/policies/Refund'
 import Shipping from './Components/policies/Shipping'
 import Terms from './Components/policies/TermsConditions'
 import Vastra from "./Components/vastra";
-
+import Homepage from './Components/Homepage'
 import ProfileEdit from './Components/ProfileEdit'
 
 import Contact from "./Contact";
@@ -34,6 +34,7 @@ function App() {
     <div>
       <Router>
         <Routes>
+        <Route exact path="/" element={<Homepage />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<ProfileEdit />} />
           <Route path="/contact" element={<Contact />} />
