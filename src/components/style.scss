@@ -1,6 +1,4 @@
-section{
-    // min-height: 200vh;
-}
+
 .vastra-section{
     background-color: black;
 }
@@ -75,7 +73,6 @@ section{
             background: url(../../public/IMG_2082.jpg) no-repeat center center;
             background-size: cover;
             border-radius: 10%;
-            // height: 400px;
             width: calc(40% - 5vw);
             margin-left: 5%;
             margin-top: -80px;
@@ -84,10 +81,8 @@ section{
             background: url(../../public/IMG20221019113455.jpg) no-repeat center center;
             background-size: cover;
             border-radius: 10%;
-            // height: 400px;
             width: calc(40% - 5vw);
             margin-right: 5%;
-            // margin-top: -60px;
         }
     }
     &>p{

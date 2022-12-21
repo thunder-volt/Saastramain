@@ -31,6 +31,7 @@ import {
 } from "@chakra-ui/react";
 import {MinusIcon, AddIcon} from "@chakra-ui/icons"
 
+
 const REGISTER = gql`
   mutation register($id: String!, $referral: String!){
     register(EventID: $id, referral: $referral){
@@ -235,7 +236,7 @@ function CardComponent({data: el}){
 
     return(
         <>
-        <Card style={{ maxWidth: '30rem' }}>
+        <Card style={{ maxWidth: '30rem'}}>
         <Card.Img variant="top" src={el?.pic} />
         <Card.Body>
           <Card.Title>{el?.name}</Card.Title>
@@ -247,8 +248,13 @@ function CardComponent({data: el}){
           <span><img className="nextIcon" src={nextImage} alt="" srcset="" /></span>
           </Button>
           <Button className="register" onClick={async () => {
+            console.log(el?.registrationfee)
+            if(el?.registrationfee == "0")
+            {
+              window.location.href = el?.requirements
+            }
             if (el?.registrationType === 'INDIVIDUAL'){
-                if (el?.registrationFee !== '0') {
+                if (el?.registrationfee !== '0') {
                   await registerMutation({
                     variables: {
                       id: el?.id,
@@ -256,19 +262,11 @@ function CardComponent({data: el}){
                     }
                    }).then(() => loadRazorpay(data.register.eventPay))
                 }
-                else
-             await registerMutation({
-              variables: {
-                id: el?.id,
-                referral: ''
-              }
-             }) 
-            }
             if (el?.registrationType === 'TEAM'){
               console.log(el?.teamSize);
               onOpen();
             }
-            
+          }
           }} >Register</Button> 
           </div>
           <ChakraProvider>

@@ -1,12 +1,13 @@
 .speakers-cont {
     background-color: black;
-    height: 100vh;
+    height: 120vh;
     width: 110vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
     flex-direction: column;
+    margin-top: -20vh !important;
 }
 
 .speakers-cont div, .speakers-cont h2, .speakers-cont h3{
@@ -20,7 +21,7 @@
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
     margin-left: -5vw;
-    margin-top: -10vh !important;
+    margin-top: -40vh !important;
 }
 
 @keyframes rotate {
@@ -74,7 +75,7 @@
 
     .speakers-slider {
         width: 150px;
-        height: 150px;
+        height: 300px;
     }
 }
 
@@ -123,13 +124,14 @@
 }
 
 .overlay{
-    margin-top: 30vh !important;
+    margin-top: 35vh !important;
 }
 
 .speakers-content h2, .speakers-content h3{
     color: white !important;
     font-size: 1vw;
     text-align: center;
+    background-color: black
 }
 
 .speaker-heading {
@@ -137,4 +139,16 @@
     font-size: 60px;
     font-weight: 700;
     color: #fff;
+}
+
+@media only screen and (max-width: 700px){
+    .speakers-content h2, .speakers-content h3{
+        font-size: 4vw;
+        width: 40vw;
+        text-align: center;
+    }
+    .overlay{
+        margin-top: 50vh !important;
+    }
+    
 }

@@ -27,6 +27,8 @@ import Vastra from "./Components/vastra";
 import Homepage from './Components/Homepage'
 import ProfileEdit from './Components/ProfileEdit'
 
+import Temp from './Components/tempHome'
+
 import Contact from "./Contact";
 
 function App() {
@@ -34,7 +36,8 @@ function App() {
     <div>
       <Router>
         <Routes>
-        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/" element={<Temp />} />
+        <Route exact path="/homepage" element={<Homepage />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<ProfileEdit />} />
           <Route path="/contact" element={<Contact />} />

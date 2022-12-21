@@ -56,8 +56,8 @@ export const items = [
         url:'./',
         subitems: [
             {
-                title: 'Social Endeavors',
-                url:'./',
+                title: 'Vastra',
+                url:'/socialendeavours',
             },
             // {
             //     title: 'Debunk',

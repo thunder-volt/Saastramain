@@ -1,8 +1,5 @@
-/* {
-    width: 100vw;
-} */
+
 body {
-  /* background-color: black !important; */
   width: 100vw;
   min-height: 100vh;
 }
@@ -17,12 +14,6 @@ html {
   width: 100%;
     z-index: 999;
     background-color: transparent;
-    /* background: url(../public/meta-1\ 1.png) no-repeat center center fixed;
-    box-shadow: inset 0 0 0 2000px rgb(123 30 101 / 61%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
 }
 #login{
   min-height: 100vh;
@@ -33,17 +24,7 @@ html {
   background-size: cover;
   background-color: transparent;
 }
-  
-  /* #schedule{
-    min-height: 100vh;
-    width: 100%;
-    background: url(../public/meta4\ 1.png) no-repeat center center fixed;
-    box-shadow: inset 0 0 0 2000px rgb(123 30 101 / 61%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
+ 
 .misc-login-signup{
   position: relative;
     display: flex;
@@ -171,8 +152,6 @@ html {
   margin: auto;
   height: 100%;
   width: 100%;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .login_form input {
@@ -193,18 +172,13 @@ html {
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
-    /* padding-left: 1rem; */
 
 
-/* input:focus,
-button:focus {
-    outline: none; */
 }
 
 .type-2 {
     width: 100%;
     margin: 20px;
-    /* padding: 15px; */
     background-color:#5f4388;
     border-radius: 5px;
     outline: none;
@@ -225,27 +199,14 @@ button:focus {
 
 
 
-/* #section center{
-    height: 260px;
-    display: flex;
-    z-index: 1;
-} */
-
 .circle-wrapperAcc{
     overflow: hidden;
     display: block;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background: url(https://img.freepik.com/free-vector/realistic-galaxy-background_23-2148991322.jpg?w=1380&t=st=1671200102~exp=1671200702~hmac=2823a5d063e5cbeee1a2c20e252ba4d8a56dd8040a87d55a96c89b882bf329df) no-repeat center center fixed; */
-    /* background: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg) no-repeat center center fixed; */
-    /* background: url(./Images/471823.jpg) no-repeat center center fixed; */
-    /* background-image: url(https://i.pinimg.com/originals/6c/db/2c/6cdb2cdc8cbd80788c34f831ef6b682c.gif); */
-    /* background: url(https://i.pngimg.me/thumb/f/720/5452123026227200.jpg) no-repeat center center fixed; */
-    /* background: url(./Images/bg\ signup.jpeg) no-repeat center center fixed; */
     background-color: black;
     background-size: cover;
-    /* box-shadow: inset 0 0 0 2000px rgba(157, 117, 148, 0.452); */
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -259,7 +220,6 @@ button:focus {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     user-select: none;
-    /* filter: drop-shadow(0px 0px 3px white); */
   }
 
 
@@ -402,10 +362,6 @@ button:focus {
     .signup-heading {
       font-size: 35px;
     }
-    /* .type-text{
-      position: relative;
-      top: 225px;
-    } */
 }
 @media  (max-width: 500px) {
   .signup-heading {
@@ -419,12 +375,6 @@ button:focus {
 }
 
 .page{
-  /* display:flex;
-  align-items:center;
-  justify-content:center;
-  height: 100vh;
-  width: 100vw;
-  z-index: -999; */
   overflow: hidden;
   display: block;
   padding: 0;
@@ -434,7 +384,6 @@ button:focus {
   width: 100%;
   height: 100vh;
   position: absolute;
-  /* z-index: -1; */
   top: 0;
   }
   .circle {
@@ -445,7 +394,6 @@ button:focus {
     border-radius: 50%;
     user-select: none;
     z-index: 20;
-    /* filter: drop-shadow(0px 0px 3px white); */
   }
 .type-2 {
     min-width: 317px;

@@ -17,8 +17,9 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                             <div className="overlay">
                                 <h2>Thiru R. N.Ravi</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3>Governor of Tamil Nadu</h3>
+                                <h3>22/01/2023</h3>
+                                </div>
                             </div>
                         </div>
 
@@ -28,8 +29,9 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                             <div className="overlay">
                                 <h2>Dr. M.S. Valiathan</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3>Padma Vibhushan <br/> Eminent Cardiac Surgeon <br/> Inventor-Chitra Heart Valve</h3>
+                                <h3>22/01/2023</h3>
+                                </div>
                             </div>
                         </div>
                     </span>
@@ -38,8 +40,8 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                                 <div className="overlay">
                                 <h2>Dr. Rajagopala Chidambaram</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3>Padma Vibushan, Former Principal Scientific Advisor to the Government of India </h3>
+                                <h3>22/01/2023</h3></div>
                             </div>
                         </div>
                     </span>
@@ -48,8 +50,8 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                                 <div className="overlay">
                                 <h2>Mr. Srinivas Mohan</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3>VFX Designer for RRR and Baahubali</h3>
+                                <h3>22/01/2023</h3></div>
                             </div>
                         </div>
                     </span>
@@ -58,8 +60,8 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                             <div className="overlay">
                                 <h2>Dr. A. Sivathanu Pillai</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3>Padma Bhushan, Founder-CEO of BrahMos Aerospace</h3>
+                                <h3>22/01/2023</h3></div>
                             </div>
                         </div>
                     </span>
@@ -68,8 +70,8 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                             <div className="overlay">
                                 <h2>Dr. Montek Singh Ahluwalia</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3> Former Deputy Chairman, Planning Commission, Former Director of the Independent Evaluation Office at IMF</h3>
+                                <h3>22/01/2023</h3></div>
                             </div>
                         </div></span>
                         <span style={{ "--i": 7 }}><img src="https://pbs.twimg.com/profile_images/1473706332104663048/mYM4x-7Q_400x400.jpg" alt="" />
@@ -77,8 +79,8 @@ const Speakers = ({pos}) => {
                             <div className='speakers-info'>
                             <div className="overlay">
                                 <h2>Mrs. Vineeta Singh</h2>
-                                <h3>Jounalist</h3>
-                                <h3>Date of Lecture: 22/01/2023</h3></div>
+                                <h3> CEO, Sugar Cosmetics <br /> Judge at Shark Tank</h3>
+                                <h3>22/01/2023</h3></div>
                             </div>
                         </div></span>
                 </div>

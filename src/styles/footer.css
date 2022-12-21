@@ -96,6 +96,35 @@
     text-decoration: white !important;
 }
 
+
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+    font-family: inherit;
+    font-weight: normal;
+}
+.colBottom .linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+    font-family: inherit;
+    font-weight: normal;
+}
+.colBottom .linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
 .link-footer-div{
     display: flex;
     flex-direction: row;
@@ -135,7 +164,7 @@
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-    font-size: 10px;
+    font-size: 10px !important;
     text-align: center;
     background-color: #080519 !important;
     color: #999999 !important ;
@@ -203,6 +232,7 @@
     .logoFooter img {
         position: relative;
         top: 20px;
+        top: 20px;
     }
     .logothing{
         width: fit-content !important;
@@ -241,6 +271,7 @@
     .colBottom{
         padding-bottom: 8vh !important;
         top: 5px !important;
+        top: 5px !important;
     }
 }
 
@@ -262,7 +293,7 @@
         text-align: center;
         justify-content: center;
         position: relative;
-        margin: 0% auto;
+        margin: 0 0 0 !important;
         left: 0;
         right: 0;
     }
@@ -288,6 +319,7 @@
     .logoFooter img {
         position: relative;
         top: 5px;
+        top: 5px;
         margin: 0% auto;
         left: 0;
         right: 0;
@@ -296,12 +328,20 @@
     }
 
     .linkylinks{
-        font-size: 4vw;
+        /* font-size: 4vw; */
+        /* font-size: 4vw; */
         margin: auto;
         text-align: center;
     }
     .colBottom .linkylinks{
         font-size: 2vw;
+        /* font-size: 2vw; */
+    }
+    .link-footer-div{
+        width: 80vw;
+    }
+    .colBottom span{
+        /* font-size: 2vw */
     }
     .link-footer-div{
         width: 80vw;

@@ -12,7 +12,8 @@ import Countdown from './Countdownpage';
 import About from './About';
 import Theme from './Theme';
 import Footer from './Footerfirst'
-import NavBar from './navLandingPage/NavBar'
+import NavBar from './navigation/NavBar'
+import TopBar from './TopBar'
 
 const Homepage=()=> {
   
@@ -92,6 +93,8 @@ const Homepage=()=> {
 
   return (
     <div className="App home"  >
+      <TopBar />
+      <NavBar />
       <div className='uni'>
       
 
@@ -110,7 +113,7 @@ const Homepage=()=> {
         <div className='env' style={envStyle} >
           
           
-          <Logo pos={0}/>
+          {/* <Logo pos={0}/> */}
 
           <Spiral colour={'#ff0579'} colour2={'#fee'} pos={0} />
 
@@ -134,7 +137,7 @@ const Homepage=()=> {
 
           {/* <Square colour={'#fee'} colour2={'#fee'} pos={-40000}/> */}
 
-          <Footer pos={-44500}/>
+          {/* <Footer pos={-44500}/> */}
          
           
 
