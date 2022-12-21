@@ -7,7 +7,8 @@ import { useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
 import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
-import TopBar from './TopBar'
+import TopBar from "./TopBar";
+import { Button, ChakraProvider } from "@chakra-ui/react";
 
 const GET_EVENTS = gql`
   query GetEvents($filter: String) {
@@ -59,44 +60,62 @@ function EventsLanding() {
         <TopBar />
         <NavBar />
         <div>
-        <div className="workshops-landing">
-        <svg class="signup-heading">
-            <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
-             EVENTS
-            </text>
-          </svg>
+          <div className="workshops-landing">
+            <svg class="signup-heading">
+              <text
+                x="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                y="50%"
+              >
+                EVENTS
+              </text>
+            </svg>
 
-          <div>
-            <button className="explore" oncCick="explore()">
-              Explore Events{" "}
-            </button>{" "}
+            <div>
+              <button className="explore" oncCick="explore()">
+                Explore Events{" "}
+              </button>{" "}
+            </div>
           </div>
-        </div>
-        <div className="glassmorphic2">
-          <select
-            name="Vertical"
-            className="select-events"
-            onChange={(e) => {
-              setVertical(e.target.value);
-              refetch({ filter: vertical });
-            }}
-          >
-            <option value="AEROFEST">AEROFEST</option>
-            <option value="BIOGEN">BIOGEN</option>
-            <option value="BEVENTS">BUISNESS EVENTS</option>
-            <option value="CL">CODING & LOGIC</option>
-            <option value="DB">DESIGN & BUILD</option>
-            <option value="IGNITE">IGNITE</option>
-            <option value="STRATEGISTS">STRATEGISTS</option>
-            <option value="OTHER">OTHER</option>
-          </select>
-          <div className="wrapper">
-            {data?.getEvents?.events?.map((el) => {
-              console.log(el);
-              return <CardComponent data={el} key={el.id} />;
-            })}
+          <div className="glassmorphic2">
+            <div>
+              <select
+                name="Vertical"
+                className="select-events"
+                onChange={(e) => {
+                  setVertical(e.target.value);
+                }}
+              >
+                <option value="AEROFEST">AEROFEST</option>
+                <option value="BIOGEN">BIOGEN</option>
+                <option value="BEVENTS">BUISNESS EVENTS</option>
+                <option value="CL">CODING & LOGIC</option>
+                <option value="DB">DESIGN & BUILD</option>
+                <option value="IGNITE">IGNITE</option>
+                <option value="STRATEGISTS">STRATEGISTS</option>
+                <option value="OTHER">OTHER</option>
+              </select>
+              <ChakraProvider>
+                <Button
+                  colorScheme="messenger"
+                  ml={3}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    refetch({ filter: vertical });
+                  }}
+                >
+                  Apply
+                </Button>
+              </ChakraProvider>
+            </div>
+            <div className="wrapper">
+              {data?.getEvents?.events?.map((el) => {
+                console.log(el);
+                return <CardComponent data={el} key={el.id} />;
+              })}
+            </div>
           </div>
-        </div>
         </div>
         <Footer />
       </body>
