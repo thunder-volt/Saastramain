@@ -99,7 +99,8 @@ const Signup = () => {
   }
 
   return (
-    <><TopBar /><body>
+    <body>
+      <TopBar />
       <section id="signup">
         <header>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -230,7 +231,7 @@ const Signup = () => {
         </div>
       </section>
       <Footer />
-    </body></>
+    </body>
   );
 };
 
