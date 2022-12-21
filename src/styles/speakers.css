@@ -97,8 +97,12 @@
     border-radius: 50%;
 }
 
-.speakers-slider:hover .speakers-content {
+.overlay , .speakers-info {
     opacity: 0.3;
+    position: relative;
+}
+.overlay h2{
+    color: aliceblue;
 }
 
 .speakers-info {
