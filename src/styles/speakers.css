@@ -15,10 +15,12 @@
 
 .speakers-slider {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
+    margin-left: -5vw;
+    margin-top: -10vh !important;
 }
 
 @keyframes rotate {
@@ -39,7 +41,7 @@
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*60deg)) translateZ(350px);
+    transform: rotateY(calc(var(--i)*52deg)) translateZ(350px);
 }
 
 .speakers-slider span img {
@@ -81,7 +83,7 @@
 } */
 
 .speakers-content {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -95,10 +97,21 @@
     opacity: 0;
     transition: 2s;
     border-radius: 50%;
+    z-index: 5000;
+    background-color: yellow */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    color: white !important;
+    opacity: 1;
+    z-index: 10000 !important;
 }
 
 .overlay , .speakers-info {
-    opacity: 0.3;
     position: relative;
 }
 .overlay h2{
@@ -107,6 +120,16 @@
 
 .speakers-info {
     font-size: 8px;
+}
+
+.overlay{
+    margin-top: 30vh !important;
+}
+
+.speakers-content h2, .speakers-content h3{
+    color: white !important;
+    font-size: 1vw;
+    text-align: center;
 }
 
 .speaker-heading {

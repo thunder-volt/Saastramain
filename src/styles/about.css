@@ -1,7 +1,7 @@
 
 .env * {
     font-family: 'Rubik', sans-serif;
-    margin: 0 !important;
+    margin: 0;
     padding: 0 !important;
     box-sizing: border-box !important;
     position: absolute;

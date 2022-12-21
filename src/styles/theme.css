@@ -26,11 +26,10 @@
 .theme-wrapper img{
 position: relative;
 height: 20vh;
-margin-top: -45vh !important;
 }
 
 .theme-wrapper h2{
-    margin-bottom: 70vh;
+    margin-bottom: 20vh;
     color: whitesmoke;
     font-family: 'Rubik', sans-serif;
     display: flex;
@@ -87,9 +86,9 @@ margin-top: -45vh !important;
     margin-top: 20vh !important; 
   }
 
-  *{
+  /* *{
     color: #fff !important;
-  }
+  } */
   
  .theme-body h1 {
    font-size: 6vw;
@@ -118,16 +117,16 @@ margin-top: -45vh !important;
     align-items: center;
     font-size: 3vw;
 }
-.theme-img {
+/* .theme-img {
     height: 20vh;
     display: block;
     margin: auto;
-    margin-top: -5vw;
     opacity: 0;
     justify-self: center;
-}
+} */
 .theme-wrapper img{
     width: 20vw !important;
+    margin-top: -50vh !important; 
 }
 
 @media screen and (max-width: 1078px) {
