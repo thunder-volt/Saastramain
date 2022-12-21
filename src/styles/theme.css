@@ -1,9 +1,9 @@
-* {
+/* * {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 .theme-body {
 
@@ -26,11 +26,11 @@
 .theme-wrapper img{
 position: relative;
 height: 20vh;
-margin-top: 5vh;
+margin-top: -45vh !important;
 }
 
 .theme-wrapper h2{
-    margin-top: 0vh;
+    margin-top: -25vh !important;
     position: relative;
     color: whitesmoke;
     font-family: 'Rubik', sans-serif;
@@ -59,10 +59,10 @@ margin-top: 5vh;
 
   
   /* general styling */
-  :root {
+  /* :root {
     font-size: calc(3vw + 1vh + 1vmin);
   }
-  
+   */
  
   
  .theme-body .heading {
@@ -77,6 +77,8 @@ margin-top: 5vh;
     font-size: 4rem;
     opacity: 1 !important;
     z-index: 10000;
+    margin-left: 0vw !important;
+    margin-top: 20vh !important; 
   }
 
   *{
@@ -154,8 +156,8 @@ margin-top: 5vh;
         opacity: 1;
     }
 }
-
+/* 
 h2, h1{
     position: relative !important;
     display: block !important;
-}
+} */

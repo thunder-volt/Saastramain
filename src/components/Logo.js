@@ -1,10 +1,12 @@
+import "../styles.css"
+
 const Logo = ({pos}) =>
 {
 
     return(
 
         <>
-            <div className="logo" style={ {
+            <div className="logo-landing" style={ {
         
         transform: 'translateZ('+pos+'px)',
         

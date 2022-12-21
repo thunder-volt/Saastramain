@@ -19,6 +19,7 @@ body {
  margin-top: 63px;
  display: flex;
  justify-content: center;
+ position: relative;
  padding-left: 68px;
 }
 
