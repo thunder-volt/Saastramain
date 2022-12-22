@@ -96,14 +96,6 @@ const Homepage=()=> {
       <TopBar />
       <NavBar />
       <div className='uni'>
-      
-
-                <div class="star-field">
-          <div class="layer"></div>
-          <div class="layer"></div>
-          <div class="layer"></div>
-          <div class="layer"></div>
-          </div>
           
           <div className='control-btns'>
           <div className='forward-btn' onClick={(e)=>handleNavigationForward(e)}></div>

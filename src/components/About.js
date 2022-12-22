@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/about.css"
-import imgabout from "../Images/23_white logo-01.png"
+import imgabout from "./shaastra2.png"
+
 const About = ({pos}) => {
     return (
         <div className="about-body" style={ {

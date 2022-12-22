@@ -7,7 +7,7 @@ const Speakers = ({pos}) => {
             transform: 'translateZ('+pos+'px)',
             
             }}>
-            <div className="speaker-heading">Speakers</div>
+            <div className="speaker-heading">SPEAKERS</div>
             <div className=''>
 
                 <div className='speakers-slider'>

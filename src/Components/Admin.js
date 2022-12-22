@@ -4,7 +4,8 @@ import {
   Flex,
   SimpleGrid,
   Modal,
-  ModalOverlay,  ModalContent,
+  ModalOverlay,
+  ModalContent,
   ModalHeader,
   useDisclosure,
   ModalCloseButton,
@@ -40,7 +41,7 @@ function EditEvents() {
   const [buttonText, setButtonText] = useState("Add Filter");
   const [subbuttonText, setsubButtonText] = useState("Events");
   const [eorw, seteorw] = useState("Events");
- 
+
   const { data, error, loading, refetch } = useQuery(GET_EVENTS, {
     variables: {
       filter: vertical,
@@ -88,54 +89,56 @@ function EditEvents() {
   );
 
   return (
-    <ChakraProvider className="App">
-      <div onLoad={() => refetch({ filter: "" })}>
-        <Flex
-          minWidth="100%"
-          backgroundImage={bg}
-          backgroundAttachment="fixed"
-          flexDirection="column"
-        >
-          {/* <Navbar /> */}
-          <SecondRow
-            eorw={eorw}
-            seteorw={seteorw}
-            refetch={refetch}
-            buttonText={setButtonText}
-            setButtonText={setButtonText}
-            subbuttonText={subbuttonText}
-            setsubButtonText={setsubButtonText}
-          />
-          <ThirdRow
-            search={search}
-            setSearch={setSearch}
-            filter={filtered}
-            setFilter={setFiltered}
-            refetch={refetch}
-            buttonText={buttonText}
-            setButtonText={setButtonText}
-            subbuttonText={subbuttonText}
-            setsubButtonText={setsubButtonText}
-          />
-          <SimpleGrid className="item-grid" spacing={2}>
-            {searchedEvents.map((event, index) => {
-              return (
-                <div key={index}>
-                  <CardTemplate
-                    name={event.name}
-                    index={index}
-                    events={searchedEvents}
-                    desc={event.description}
-                    id={event.id}
-                    refetch={refetch}
-                  />
-                </div>
-              );
-            })}
-          </SimpleGrid>
-        </Flex>
-      </div>
-    </ChakraProvider>
+    <body>
+      <ChakraProvider className="App">
+        <div onLoad={() => refetch({ filter: "" })}>
+          <Flex
+            minWidth="100%"
+            backgroundImage={bg}
+            backgroundAttachment="fixed"
+            flexDirection="column"
+          >
+            {/* <Navbar /> */}
+            <SecondRow
+              eorw={eorw}
+              seteorw={seteorw}
+              refetch={refetch}
+              buttonText={setButtonText}
+              setButtonText={setButtonText}
+              subbuttonText={subbuttonText}
+              setsubButtonText={setsubButtonText}
+            />
+            <ThirdRow
+              search={search}
+              setSearch={setSearch}
+              filter={filtered}
+              setFilter={setFiltered}
+              refetch={refetch}
+              buttonText={buttonText}
+              setButtonText={setButtonText}
+              subbuttonText={subbuttonText}
+              setsubButtonText={setsubButtonText}
+            />
+            <SimpleGrid className="item-grid" spacing={2}>
+              {searchedEvents.map((event, index) => {
+                return (
+                  <div key={index}>
+                    <CardTemplate
+                      name={event.name}
+                      index={index}
+                      events={searchedEvents}
+                      desc={event.description}
+                      id={event.id}
+                      refetch={refetch}
+                    />
+                  </div>
+                );
+              })}
+            </SimpleGrid>
+          </Flex>
+        </div>
+      </ChakraProvider>
+    </body>
   );
 }
 

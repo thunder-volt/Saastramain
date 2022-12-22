@@ -14,7 +14,7 @@ const Events = ({pos}) => {
             
             }}>
             <div className="events-heading">
-                Events
+                EVENT HIGHLIGHTS
             </div>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
