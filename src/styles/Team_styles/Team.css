@@ -291,7 +291,7 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: black;
+    color: black !important;
     outline: none;
     border: 2px solid #8210b0e0;
     border-radius: 5px;

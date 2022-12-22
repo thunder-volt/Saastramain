@@ -67,7 +67,7 @@ const TopBar = () => {
 
    return(
       <section className="topBar">
-         <img className="logoTop" src={Logo} alt="Logo"/>
+         <img className="logoTop" src={Logo} alt="Logo" onClick={()=> window.open("./")}/>
          <div className="account">
             {
                localStorage.getItem('role')?

@@ -26,8 +26,8 @@ const NavBar = () => {
             </button>
             {open?
             <div className="menuItems">
-               {items.map((items,index) =>{
-                  return <MainItemsMob items={items} key={index}/>;
+               {items.map((items) =>{
+                  return <MainItemsMob items={items} key={items.id}/>;
                })}
             </div>
             :""}

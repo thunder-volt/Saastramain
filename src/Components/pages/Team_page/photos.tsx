@@ -9,6 +9,7 @@ import envisage_shihad from "../../../Images/profiles/envisage_shihad.jpg";
 import evolve_mahboob from "../../../Images/profiles/evolve_mahboob.jpeg";
 import evolve_pranav from "../../../Images/profiles/evolve_pranav.jpeg";
 import finance_soumya from "../../../Images/profiles/finance_soumya.jpg";
+import finance_mahesh from "../../../Images/profiles/finance_mahesh.jpg";
 import oandip_anchal from "../../../Images/profiles/oandip_anchal.jpeg";
 import oandip_tushar from "../../../Images/profiles/oandip_tushar.jpeg";
 import qms_rupa from "../../../Images/profiles/qms_rupa.jpg";
@@ -31,6 +32,7 @@ export default {
   evolve_mahboob,
   evolve_pranav,
   finance_soumya,
+  finance_mahesh,
   oandip_anchal,
   oandip_tushar,
   qms_rupa,

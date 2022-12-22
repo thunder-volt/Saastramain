@@ -201,7 +201,7 @@ const Team = (props: Props) => {
         instagram: "https://www.instagram.com/mahesh_ram_",
       },
       //desc: "",
-      imgURL: photos.finance_soumya,
+      imgURL: photos.finance_mahesh,
     },
     {
       id:14,

@@ -48,7 +48,7 @@ html {
     stroke-width: 1px;
     stroke: aliceblue !important;
     animation: dash 7.2s linear forwards, filling 3s ease-in forwards, infinite;
-    font-size: 5vw;
+    font-size: 40px;
     justify-content: center;
     align-items: center;
     padding-top: 5vh;
@@ -365,7 +365,7 @@ html {
 }
 @media  (max-width: 500px) {
   .signup-heading {
-    font-size: 28px;
+    font-size: 35px;
   }
 }
 .center {

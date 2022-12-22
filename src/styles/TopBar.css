@@ -28,6 +28,7 @@
 .logoTop{
     width: 110px;
     padding: 0;
+    cursor:pointer;
 }
 .account {
     width: 150px;
@@ -35,7 +36,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -43,6 +44,9 @@
 }
 .account p{
     margin-right: 1vw;
+}
+.account a{
+    margin: 0px !important;
 }
 .signup-topbar{
     padding-inline: 1vw;
@@ -64,12 +68,20 @@
         font-size: 4vw;
     }
 } */
+@media screen and (max-width: 1100px) {
+    .account{
+        width: 140px;
+    }
+}
 @media only screen and(max-width: 750px) {
     .logoTop{
         width: 90px;
     }
     .topBar a{
         font-size: 16px;
+    }
+    .account{
+        width: 120px;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -80,6 +92,6 @@
         font-size: 15px;
     }
     .account{
-        width: 100px;
+        width: 110px;
     }
 }
