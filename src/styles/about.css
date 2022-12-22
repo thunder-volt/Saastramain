@@ -15,7 +15,7 @@
 
 .about-wrapper {
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .about-title h1 {
@@ -24,7 +24,8 @@
         color: white;
         font-size: 10vh;
         font-weight: 700;
-        margin-top: 10vh;
+        margin-top: 0vh;
+        margin-bottom: 3vh;
         position: relative;
         text-align: center;
 }
