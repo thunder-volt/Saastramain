@@ -89,7 +89,8 @@
     color: #999999 !important;
     text-decoration: white !important;
     width: fit-content;
-    font-size: 0.9vw;
+    font-size: 13px !important;
+    line-height: 2;
 }
 .linkylinks :hover{
     color: white !important; 
@@ -238,7 +239,7 @@
         width: fit-content !important;
     }
     .linkylinks{
-        font-size: 1vw;
+        /* font-size: 1vw; */
     }
 }
 
@@ -266,7 +267,7 @@
         margin-left: 0;
     }
     .add{
-        font-size: 1vw;
+        /* font-size: 1vw; */
     }
     .colBottom{
         padding-bottom: 8vh !important;
@@ -303,12 +304,12 @@
     }
 
     .footer .coly .heady {
-        font-size: 14px;
+        font-size: 14px !important;
         width: 100%;
     }
 
     .footer .coly ul li {
-        font-size: 13px;
+        font-size: 13px !important;
         width: 100%;
     }
 
@@ -334,7 +335,6 @@
         text-align: center;
     }
     .colBottom .linkylinks{
-        font-size: 2vw;
         /* font-size: 2vw; */
     }
     .link-footer-div{
@@ -344,10 +344,7 @@
         /* font-size: 2vw */
     }
     .link-footer-div{
-        width: 80vw;
-    }
-    .colBottom span{
-        font-size: 2vw
+        /* width: 80vw; */
     }
 
     .colBottom{
