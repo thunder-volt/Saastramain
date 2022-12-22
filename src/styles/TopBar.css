@@ -30,7 +30,7 @@
     padding: 0;
 }
 .account {
-    width: 20vw;
+    width: 150px;
     color: white;
     display: flex;
     flex-direction: row;

@@ -1,13 +1,14 @@
-.Card {
+.Card-team {
   width: 250px;
   height: 380px;
+  margin: 20px;
   background-color: #fff;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
   transition: 0.1s;
 }
-.Card .imageBox {
+.Card-team .imageBox {
   width: 100%;
   height: 250px;
   overflow: hidden;
@@ -15,16 +16,17 @@
   display: block;
   position: relative;
 }
-.Card .imageBox img {
+.Card-team .imageBox img {
+  object-fit: contain;
   position: relative;
   top: 0;
   transition: 0.75s cubic-bezier(0.49, 1.51, 0, 0.98);
   transition-delay: 0.75s;
 }
-/*.Card:hover .imageBox img {
+/*.Card-team:hover .imageBox img {
   top: -100%;
 }
-.Card .imageBox #cursor {
+.Card-team .imageBox #cursor {
   position: absolute;
   height: 300px;
   min-width: 300px;
@@ -32,10 +34,10 @@
   transform: translate(-70%, -50%);
   transition: 0.5s ease-in-out;
 }
-.Card .imageBox:hover #cursor {
+.Card-team .imageBox:hover #cursor {
   transform: translate(-70%, -50%);
 }
-.Card .imageBox .profileDescription {
+.Card-team .imageBox .profileDescription {
   display: flex;
   align-items: center;
   width: 100%;
@@ -51,16 +53,16 @@
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
-.Card:hover .imageBox .profileDescription {
+.Card-team:hover .imageBox .profileDescription {
   top: -100%;
 }
-.Card .imageBox .profileDescription p {
+.Card-team .imageBox .profileDescription p {
   text-indent: 30px;
   position: relative;
   text-align: justify;
   height: 100%;
 }
-.Card .imageBox .profileDescription svg {
+.Card-team .imageBox .profileDescription svg {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -69,17 +71,17 @@
   transition: 0.5s ease;
   transition-delay: 1.5s;
 }
-.Card .imageBox .profileDescription svg:nth-of-type(2) {
+.Card-team .imageBox .profileDescription svg:nth-of-type(2) {
   bottom: 15px;
   right: 15px;
   left: auto;
   top: auto;
 }
-.Card:hover .imageBox .profileDescription svg {
+.Card-team:hover .imageBox .profileDescription svg {
   font-size: 30px;
 }
 */
-.Card .profileCard {
+.Card-team .profileCard {
   position: relative;
   width: 100%;
   height: 130px;
@@ -90,7 +92,7 @@
   align-items: center;
   justify-content: center;
 }
-.Card .profileCard::before {
+.Card-team .profileCard::before {
   content: "";
   width: 100%;
   height: 4px;
@@ -101,24 +103,32 @@
   z-index: 1;
   transition: 0.75s cubic-bezier(1, -0.88, 0, 1.41);
 }
-.Card .profileCard div {
+.Card-team .profileCard div {
   z-index: 3;
   transition: 0.75s;
 }
-.Card:hover .profileCard::before {
+.Card-team:hover .profileCard::before {
   height: 130px;
 }
-.Card:hover .profileCard div {
+.Card-team:hover .profileCard div {
   color: #fff;
 }
-.Card .profileCard div h2 {
+.Card-team .profileCard div h2 {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.Card .profileCard div p {
+.Card-team .profileCard div p {
   text-align: center;
   font-size: 13px;
   font-weight: 700;
+}
+.Card-team .profileCard a {
+  color: #000;
+  transition: 0.75s;
+
+}
+.Card-team:hover .profileCard a {
+  color: #fff;
 }

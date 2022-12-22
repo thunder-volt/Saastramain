@@ -21,6 +21,7 @@ const Team = (props: Props) => {
 
   let Profiles = [
     {
+      id:1,
       name: "Baibhabi Patnaik",
       role: "Core",
       dept: "Co-Curricular Affairs Secretary",
@@ -35,6 +36,7 @@ const Team = (props: Props) => {
       imgURL: photos.cocas_baibhabi,
     },
     {
+      id:2,
       mailId: "mailto:be20b020@smail.iitm.ac.in",
       name: "Krithikaa",
       dept: "Webops",
@@ -48,6 +50,7 @@ const Team = (props: Props) => {
       imgURL: photos.webops_krithikaa,
     },
     {
+      id:3,
       mailId: "mailto:nikithakrishna.ark@gmail.com",
       name: "Nikitha Krishna A",
       dept: "Concept & Design",
@@ -61,6 +64,7 @@ const Team = (props: Props) => {
       imgURL: photos.candd_nikitha,
     },
     {
+      id:4,
       mailId: "mailto:koyyeprashanth@gmail.com",
       name: "Prashanth K",
       dept: "Concept & Design",
@@ -74,6 +78,7 @@ const Team = (props: Props) => {
       imgURL: photos.candd_prashanth,
     },
     {
+      id:5,
       mailId: "mailto:me19b061@smail.iitm.ac.in",
       name: "Pavithra Mohan",
       dept: "Envisage",
@@ -87,6 +92,7 @@ const Team = (props: Props) => {
       imgURL: photos.envisage_pavithra,
     },
     {
+      id:6,
       mailId: "mailto:shihad080601@gmail.com",
       name: "Mohamed Shihad P",
       dept: "Envisage",
@@ -100,6 +106,7 @@ const Team = (props: Props) => {
       imgURL: photos.envisage_shihad,
     },
     {
+      id:7,
       mailId: "mailto:ee19b036@smail.iitm.ac.in",
       name: "Hema Landa",
       dept: "Events & Workshops",
@@ -113,6 +120,7 @@ const Team = (props: Props) => {
       imgURL: photos.eandw_hema,
     },
     {
+      id:8,
       mailId: "mailto:kudaripavani27@gmail.com",
       name: "Kudari Pavani",
       dept: "Events & Workshops",
@@ -126,6 +134,7 @@ const Team = (props: Props) => {
       imgURL: photos.eandw_kudari,
     },
     {
+      id:9,
       mailId: "mailto:me19b042@smail.iitm.ac.in",
       name: "Nithin",
       dept: "Events & Workshops",
@@ -139,6 +148,7 @@ const Team = (props: Props) => {
       imgURL: photos.eandw_nithin,
     },
     {
+      id:10,
       mailId: "mailto:mahboob@smail.iitm.ac.in",
       name: "Mahboob Ali",
       dept: "Evolve",
@@ -152,6 +162,7 @@ const Team = (props: Props) => {
       imgURL: photos.evolve_mahboob,
     },
     {
+      id:11,
       mailId: "mailto:pranavsrichinta@smail.iitm.ac.in",
       name: "Pranav Srichinta",
       dept: "Evolve",
@@ -165,6 +176,7 @@ const Team = (props: Props) => {
       imgURL: photos.evolve_pranav,
     },
     {
+      id:12,
       mailId: "mailto:be19b026@smail.iitm.ac.in",
       name: "Papisetty Lakshmi Sowmya Sri",
       dept: "Finance",
@@ -178,6 +190,7 @@ const Team = (props: Props) => {
       imgURL: photos.finance_soumya,
     },
     {
+      id:13,
       mailId: "mailto:ch19b102@smail.iitm.ac.in",
       name: "Mahesh R",
       dept: "Finance",
@@ -191,6 +204,7 @@ const Team = (props: Props) => {
       imgURL: photos.finance_soumya,
     },
     {
+      id:14,
       mailId: "mailto:bs19b004@smail.iitm.ac.in",
       name: "Anchal Pandey",
       dept: "Operations & Infrastructure Planning",
@@ -204,6 +218,7 @@ const Team = (props: Props) => {
       imgURL: photos.oandip_anchal,
     },
     {
+      id:15,
       mailId: "mailto:bs19b030@smail.iitm.ac.in",
       name: "Tushar",
       dept: "Operations & Infrastructure Planning",
@@ -217,6 +232,21 @@ const Team = (props: Props) => {
       imgURL: photos.oandip_tushar,
     },
     {
+      id:16,
+      mailId: "mailto:me19b124@smail.iitm.ac.in",
+      name: "Rupa Lakshmi",
+      dept: "Publicity",
+      social_links: {
+        whatsapp:"https://wa.me/6301308213",
+        mailid: "mailto:me19b124@smail.iitm.ac.in",
+        linkedIn: "https://www.linkedin.com/in/rupa-kashameni-1495831b0",
+        instagram: "https://www.instagram.com/rupa_lucky07",
+      },
+      //desc: "",
+      imgURL: photos.qms_rupa,
+    },
+    {
+      id:17,
       mailId: "mailto:me19b124@smail.iitm.ac.in",
       name: "Rupa Lakshmi",
       dept: "Quality Management System",
@@ -230,6 +260,7 @@ const Team = (props: Props) => {
       imgURL: photos.qms_rupa,
     },
     {
+      id:18,
       mailId: "mailto:ch19b023@smail.iitm.ac.in",
       name: "S U Mrinalini",
       dept: "Shows & Exhibitions",
@@ -243,6 +274,7 @@ const Team = (props: Props) => {
       imgURL: photos.sande_mrinalini,
     },
     {
+      id:19,
       mailId: "mailto:sauban.asharaf@gmail.com",
       name: "Sauban Asharaf",
       dept: "Shows & Exhibitions",
@@ -256,6 +288,7 @@ const Team = (props: Props) => {
       imgURL: photos.sande_sauban,
     },
     {
+      id:20,
       mailId: "mailto:ed19b002@smail.iitm.ac.in",
       name: "Anushka Pillai",
       dept: "Sponsorship and PR",
@@ -332,7 +365,7 @@ const Team = (props: Props) => {
               // );
               return (
                 <>
-                  <div className="col">
+                  <div className="col-team">
                     <SliderImgBox profile={Profiles[i]} />
                     <SliderImgBox profile={Profiles[(i + 1) % 22]} />
                   </div>
@@ -340,7 +373,7 @@ const Team = (props: Props) => {
               );
             })}
             {
-              <div className="col">
+              <div className="col-team">
                 <SliderImgBox profile={Profiles[22]} />
                 <SliderImgBox profile={Profiles[12]} />
               </div>
@@ -358,7 +391,7 @@ const Team = (props: Props) => {
               // );
               return (
                 <>
-                  <div className="col">
+                  <div className="col-team">
                     <SliderImgBox profile={Profiles[i]} />
                     <SliderImgBox profile={Profiles[(i + 1) % 22]} />
                   </div>
@@ -366,7 +399,7 @@ const Team = (props: Props) => {
               );
             })}
             {
-              <div className="col">
+              <div className="col-team">
                 <SliderImgBox profile={Profiles[11]} />
                 <SliderImgBox profile={Profiles[22]} />
               </div>
@@ -384,7 +417,7 @@ const Team = (props: Props) => {
               // );
               return (
                 <>
-                  <div className="col">
+                  <div className="col-team">
                     <SliderImgBox profile={Profiles[i]} />
                     <SliderImgBox profile={Profiles[(i + 1) % 22]} />
                   </div>
@@ -392,7 +425,7 @@ const Team = (props: Props) => {
               );
             })}
             {
-              <div className="col">
+              <div className="col-team">
                 <SliderImgBox profile={Profiles[22]} />
                 <SliderImgBox profile={Profiles[12]} />
               </div>
@@ -410,7 +443,7 @@ const Team = (props: Props) => {
             </button>
           )}
           <div
-            className="navbar"
+            className="navbar-team"
             style={{
               display: navbar ? "flex" : "none",
             }}
@@ -548,7 +581,7 @@ const Team = (props: Props) => {
           </div>
           <div className="CardBox">
             {Profiles.map((profile) => {
-              return <Card type={type} profile={profile} />;
+              return <Card key={profile.id} type={type} profile={profile} />;
             })}
           </div>
         </div>

@@ -35,7 +35,7 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <div
-      className="Card"
+      className="Card-team"
       style={
         props.type === "all" || props.type === props.profile.dept
           ? { transform: "scale(1)", display: "block" }

@@ -2,20 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 140px;
-  height: 140px;
+  width: 140px !important;
+  height: 140px !important;
   transform: rotate(45deg);
 }
 .sliderImgBox .profileCard {
   transform: scale(0) rotate(-45deg);
   position: absolute;
-  top: -163%;
+  top: -155%;
   transition: 0.5s;
   transform-origin: bottom;
   display: block;
-  width: 30vw;
-  height: 180px;
-  justify-content:space-between;
+  width: 220px;
+  height: 130px;
+  justify-content:space-evenly;
   padding: 20px 30px;
   overflow: hidden;
   color: #fff;
@@ -24,7 +24,8 @@
   box-shadow: 0px 14px 34px 4px #7e10b38a;
 }
 .sliderImgBox .profileCard h2 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 15px;
   width: 20vw;
 }
 .sliderImgBox .profileCard p {
@@ -52,8 +53,8 @@
 } */
 .sliderImgBox .imgCover {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 140px !important;
+  height: 140px !important;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -61,7 +62,11 @@
   transform: scale(0.8);
 }
 .sliderImgBox .imgCover img {
-  width: 197.989898732px;
-  max-width: 197.989898732px;
-  transform: rotate(-45deg) translate(10%, -10%);
+
+  object-fit: cover !important;
+  width: 197.989898732px !important;
+  max-width: 197.989898732px !important;
+  max-height: 197.989898732px !important;
+  height: 197.989898732px !important;
+  transform: rotate(-45deg) translate(10%, -10%) !important;
 }
