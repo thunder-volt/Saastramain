@@ -1135,7 +1135,7 @@ color: #FFFFFF;
 }
 
  .card-text{
-  width: 100vh !important;
+  width: 100%;
 
 }
 .glassmorphic2 .modal-content p, .close-ws-btn{
@@ -1199,7 +1199,7 @@ color: #FFFFFF;
     height: 5vh;
   }
   p.card-text{
-    width: 100vh !important;
+    width: 100% !important;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1647,7 +1647,7 @@ input[type="text"] {
 .events-card-body {
   display: flex;
   flex-direction: column;
-  height: 25vh !important;
+  height: fit-content !important;
   align-items: center;
 }
 
