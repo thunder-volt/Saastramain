@@ -28,7 +28,7 @@ function Contact() {
         </div>
       </div>
     </div>
-    <div class="right-side">
+    {/* <div class="right-side">
       <div class="icon-container">
         <div class="icon-box">
          <BsTelephone class="icon"/>
@@ -78,7 +78,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
     </div>
     <Footer />
