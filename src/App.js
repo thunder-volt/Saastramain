@@ -36,7 +36,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-        <Route exact path="/" element={<Temp />} />
+        <Route exact path="/" element={<Homepage />} />
         <Route exact path="/homepage" element={<Homepage />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="/edit" element={<ProfileEdit />} />
