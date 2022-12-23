@@ -89,8 +89,10 @@
     color: #999999 !important;
     text-decoration: white !important;
     width: fit-content;
-    font-size: 13px !important;
+    font-size: 12px !important;
     line-height: 2;
+    font-family: inherit;
+    font-weight: normal;
 }
 .linkylinks :hover{
     color: white !important; 
@@ -287,12 +289,12 @@
     }
 
     .footer .coly .heady {
-        font-size: 14px !important;
+        font-size: 14px;
         width: 100%;
     }
 
     .footer .coly ul li {
-        font-size: 13px !important;
+        font-size: 13px;
         width: 100%;
     }
 
@@ -323,9 +325,6 @@
     }
     .colBottom span{
         /* font-size: 2vw */
-    }
-    .link-footer-div{
-        /* width: 80vw; */
     }
 
     .colBottom{

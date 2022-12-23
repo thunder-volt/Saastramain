@@ -26,15 +26,14 @@ interface Props {
 }
 
 const SliderImgBox = (props: Props) => {
-  console.log(props)
   return (
     <div className="sliderImgBox">
       <div className="profileCard">
         <div className="profileCard_header">
           <div>
-            <h2>{props.profile?.name}</h2>
-            <p>{props.profile?.role}</p>
-            <p>{props.profile?.dept}</p>
+            <h2>{props.profile.name}</h2>
+            <p>{props.profile.role}</p>
+            <p>{props.profile.dept}</p>
           </div>
         </div>
           {/* <Flex
@@ -59,7 +58,7 @@ const SliderImgBox = (props: Props) => {
         {/*<div className="profileDescription">{props.profile.desc}</div>*/}
       </div>
       <div className="imgCover">
-        <img src={props.profile?.imgURL} alt={props.profile?.imgURL} />
+        <img src={props.profile.imgURL} alt={props.profile.imgURL} />
       </div>
     </div>
   );
