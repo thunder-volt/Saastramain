@@ -244,9 +244,7 @@ function CardComponent({data: el}){
       {el?.description}
           </Card.Text>
           <div className="cardButtonsContainer">
-          <Button className="cardKnowMoreButton" onClick={()=>setTriggerModal(true)}>Know more
-          <span><img className="nextIcon" src={nextImage} alt="" srcset="" /></span>
-          </Button>
+          <Button className="cardKnowMoreButton" onClick={()=>setTriggerModal(true)}>Know more</Button>
           <Button className="register" onClick={async () => {
             console.log(el?.registrationfee)
             if(el?.registrationfee == "0")

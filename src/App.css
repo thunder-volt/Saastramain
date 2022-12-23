@@ -1120,10 +1120,12 @@ color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   margin-top: 4vh !important;
+  align-self: baseline;
 }
 
-.glassmorphic2 .card-text{
-  width: 20vw !important;
+ .card-text{
+  width: 100vh !important;
+
 }
 .glassmorphic2 .modal-content p, .close-ws-btn{
   width: 20vw !important;
@@ -1173,8 +1175,25 @@ color: #FFFFFF;
     margin-left: 9vh;
   }
   .card{
-    width: max-content;
+    width: 100%;
     margin-bottom: 5vh;
+  }
+  .cardKnowMoreButton{
+   
+    width: 45% !important;
+    height: 5vh;
+  }
+  .register{
+    width: 45% !important;
+    height: 5vh;
+  }
+  p.card-text{
+    width: 100vh !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-body{
+    min-width: 20vh;
   }
   .glassmorphic2{
     width: fit-content;
@@ -1268,6 +1287,19 @@ h2 {
   #forgot-pwd:hover {
     color: yellow;
     cursor: pointer;
+  }
+  .cardKnowMoreButton{
+   
+    width: 45%;
+    height: 5vh;
+  }
+  .register{
+    width: 45%;
+    height: 5vh;
+  }
+  .card-text p{
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -1370,6 +1402,19 @@ h2 {
 }
 
 @media screen and (max-width: 400px) {
+  .cardKnowMoreButton{
+   
+    width: 45%;
+    height: 5vh;
+  }
+  .register{
+    width: 45%;
+    height: 5vh;
+  }
+  .card-text{
+    width: 100%;
+    margin-right: 0;
+  }
   .second-row {
     display: flex;
     flex-direction: column;
@@ -1591,6 +1636,7 @@ input[type="text"] {
 .events-card-body {
   display: flex;
   flex-direction: column;
+  height: 25vh !important;
   align-items: center;
 }
 
