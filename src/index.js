@@ -12,7 +12,7 @@ import {
 } from "@apollo/client";
 
 const link = new HttpLink({
-  uri: "https://api.events.shaastra.org",
+  uri: "https://api.events.shaastra.org/",
   credentials: "include",
 });
 

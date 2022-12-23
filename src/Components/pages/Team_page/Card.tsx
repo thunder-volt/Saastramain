@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Flex } from "@chakra-ui/react";
 import {
-  FaGithub,
-  FaTwitter,
+  FaWhatsapp,
+  FaInstagram,
   FaLinkedin,
   FaEnvelope,
   FaQuoteLeft,
@@ -19,10 +19,10 @@ interface Props {
     desc?: string;
     imgURL?: string;
     social_links: {
-      twitter?: string;
+      whatsapp?: string;
       linkedIn?: string;
       instagram?: string;
-      shastraMailId?: string;
+      mailid?: string;
       github?: string;
       contact?: string;
       facebook?: string;
@@ -62,16 +62,16 @@ const Card = (props: Props) => {
           color="#111"
           justifyContent="space-evenly"
         >
-          <a target="_blank" href={props.profile.social_links.twitter}>
-            <FaTwitter />
+          <a target="_blank" href={props.profile.social_links.whatsapp} rel="noreferrer">
+            <FaWhatsapp />
           </a>
-          <a target="_blank" href={props.profile.social_links.linkedIn}>
+          <a target="_blank" href={props.profile.social_links.instagram} rel="noreferrer">
+            <FaInstagram />
+          </a>
+          <a target="_blank" href={props.profile.social_links.linkedIn} rel="noreferrer">
             <FaLinkedin />
           </a>
-          <a target="_blank" href={props.profile.social_links.github}>
-            <FaGithub />
-          </a>
-          <a target="_blank" href={props.profile.social_links.shastraMailId}>
+          <a target="_blank" href={props.profile.social_links.mailid} rel="noreferrer">
             <FaEnvelope />
           </a>
         </Flex>

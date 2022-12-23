@@ -1,48 +1,41 @@
-import be17b022 from "../../../Images/profiles/be17b022.jpg";
-import be18b013 from "../../../Images/profiles/be18b013.jpeg";
-import be18b026 from "../../../Images/profiles/be18b026.jpeg";
-import be19b012 from "../../../Images/profiles/be19b012.jpeg";
-import ce18b003 from "../../../Images/profiles/ce18b003.jpeg";
-import ce18b112 from "../../../Images/profiles/ce18b112.jpg";
-import ce19b029 from "../../../Images/profiles/ce19b029.jpg";
-import ch18b020 from "../../../Images/profiles/ch18b020.jpg";
-import ch18b036 from "../../../Images/profiles/ch18b036.jpg";
-import ch18b037 from "../../../Images/profiles/ch18b037.jpeg";
-import cs18b050 from "../../../Images/profiles/cs18b050.jpeg";
-import ed18b031 from "../../../Images/profiles/ed18b031.jpeg";
-import ed18b050 from "../../../Images/profiles/ed18b050.jpg";
-import ed18b053 from "../../../Images/profiles/ed18b053.jpg";
-import ed18b057 from "../../../Images/profiles/ed18b057.jpg";
-import ee18b022 from "../../../Images/profiles/ee18b022.jpg";
-import ee18b054 from "../../../Images/profiles/ee18b054.jpeg";
-import ee18b138 from "../../../Images/profiles/ee18b138.jpg";
-import ep18b005 from "../../../Images/profiles/ep18b005.jpg";
-import ep18b006 from "../../../Images/profiles/ep18b006.jpg";
-import me18b145 from "../../../Images/profiles/me18b145.jpg";
+import candd_nikitha from "../../../Images/profiles/candd_nikitha.jpeg";
+import candd_prashanth from "../../../Images/profiles/candd_prashanth.jpeg";
+import cocas_baibhabi from "../../../Images/profiles/cocas_baibhabi.jpeg";
+import eandw_hema from "../../../Images/profiles/eandw_hema.jpeg";
+import eandw_kudari from "../../../Images/profiles/eandw_hema.jpeg";
+import eandw_nithin from "../../../Images/profiles/eandw_nithin.jpeg";
+import envisage_pavithra from "../../../Images/profiles/envisage_pavithra.png";
+import envisage_shihad from "../../../Images/profiles/envisage_shihad.jpg";
+import evolve_mahboob from "../../../Images/profiles/evolve_mahboob.jpeg";
+import evolve_pranav from "../../../Images/profiles/evolve_pranav.jpeg";
+import finance_soumya from "../../../Images/profiles/finance_soumya.jpg";
+import oandip_anchal from "../../../Images/profiles/oandip_anchal.jpeg";
+import oandip_tushar from "../../../Images/profiles/oandip_tushar.jpeg";
+import qms_rupa from "../../../Images/profiles/qms_rupa.jpg";
+import sande_mrinalini from "../../../Images/profiles/sande_mrinalini.jpg";
+import sande_sauban from "../../../Images/profiles/sande_sauban.jpeg";
+import sandp_anushka from "../../../Images/profiles/sandp_anushka.jpeg";
+import webops_krithikaa from "../../../Images/profiles/webops_krithikaa.jpeg"
 
-import dummy from "../../../Images/profile.jpg";
+// import dummy from "../../../Images/profile.jpg";
 
 export default {
-  dummy,
-  be17b022,
-  be18b013,
-  be18b026,
-  be19b012,
-  ce18b003,
-  ce18b112,
-  ce19b029,
-  ch18b020,
-  ch18b036,
-  ch18b037,
-  cs18b050,
-  ed18b031,
-  ed18b050,
-  ed18b053,
-  ed18b057,
-  ee18b022,
-  ee18b054,
-  ee18b138,
-  ep18b005,
-  ep18b006,
-  me18b145,
+  candd_nikitha,
+  candd_prashanth,
+  cocas_baibhabi,
+  eandw_hema,
+  eandw_kudari,
+  eandw_nithin,
+  envisage_pavithra,
+  envisage_shihad,
+  evolve_mahboob,
+  evolve_pranav,
+  finance_soumya,
+  oandip_anchal,
+  oandip_tushar,
+  qms_rupa,
+  sande_mrinalini,
+  sande_sauban,
+  sandp_anushka,
+  webops_krithikaa,
 };
