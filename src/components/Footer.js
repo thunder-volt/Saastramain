@@ -82,7 +82,15 @@ const Footer = (props) => {
             {/* <!-- The bottom text thingy whatever you call it idk  --> */}
             <div className="colBottom" style={{ paddingBottom: "2px" }}>
                 <p>
-                    <span className="add">Ⓒ DEVELOPED BY {props.name} | WEB OPERATIONS | SHAASTRA | IIT MADRAS. ALL RIGHTS RESERVED
+                    <span className="add">Ⓒ DEVELOPED BY 
+                    {props.designed.map((item, key) => {
+                                    if (key === 0) {
+                                    return <a className="designedby" href={item.mail}>{item.name}</a> ;
+                                    } else {
+                                    return <a className="designedby" href={item.mail}>{' , '}{item.name}</a>;
+                                    }
+                                })}{" "}
+                        | WEB OPERATIONS | SHAASTRA | IIT MADRAS. ALL RIGHTS RESERVED
                         •</span> 
                     <div className="link-footer-div">
                     <a className="linkylinks"  href="./policies/Privacy" target="_blank">PRIVACY
