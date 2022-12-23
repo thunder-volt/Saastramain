@@ -546,42 +546,36 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .control-btns
 {
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
 }
+
 .forward-btn
 {
     opacity: 0.3;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     
 }
 
-.back-btn {
+
+ .back-btn {
+
+    position: absolute;
     color: #db3eb1;
     border: 3px solid #db3eb1;
+    display: flex;
     border-radius:15px;
     text-align: center;
     align-items: center;
     padding-top: 2px;
-    padding-top: 2px;
-    font-size: 30px;
+    padding-left: 10px;
+    margin-left: 3vh;
+    font-size: 25px;
     font-family: Rubik;
     letter-spacing:5px;
     cursor: pointer;
@@ -589,8 +583,7 @@
     filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
     transition: .5s;
     height: 6vh;
-    margin: 4vh;
-    width: 7vw;
+    width: 6vw;
   }
   
   .back-btn:hover {
@@ -711,6 +704,8 @@
 
     }
     .back-btn{
+        margin-left: 3vh;
+    margin-top: -35vh;
     height: 4vh;
     margin: 4vh;
     width: 9.5vw;

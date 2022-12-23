@@ -5,7 +5,7 @@ body{
   overflow-y: scroll;
 }
 
-.DetailCards .navbar button{
+.DetailCards .navbar-team button{
   background-color: transparent;
   border: none;
 }
@@ -27,6 +27,7 @@ body{
 }
 .ContentBox p {
   max-width: 700px;
+  font-size: 1em;
   color: white;
 }
 .imageContainer {
@@ -56,7 +57,7 @@ body{
     left: -1200px;
   }
 }
-.imageSlider .col {
+.imageSlider .col-team {
   width: 140px;
   height: 340px;
   display: flex;
@@ -65,10 +66,10 @@ body{
   margin: 0 -20px;
   z-index: 0;
 }
-.imageSlider .col:hover {
+.imageSlider .col-team:hover {
   z-index: 2;
 }
-.imageSlider .col:nth-of-type(even) {
+.imageSlider .col-team:nth-of-type(even) {
   transform: translateY(80px);
 }
 .DetailCards {
@@ -87,7 +88,7 @@ body{
 .FilterBtn {
   display: none;
 }
-.DetailCards .navbar {
+.DetailCards .navbar-team {
   width: 315px;
   position: relative;
   display: flex;
@@ -97,10 +98,10 @@ body{
   transition: 0.5s;
 }
 
-.DetailCards .navbar {
+.DetailCards .navbar-team {
   background-color:#0F044C;
 }
-.DetailCards .navbar::before {
+.DetailCards .navbar-team::before {
   content: "";
   width: 5px;
   height: 598px;
@@ -110,10 +111,10 @@ body{
   transform: translateY(-50%);
   border-radius: 5px;
 }
-.DetailCards .navbar::before {
+.DetailCards .navbar-team::before {
   background-color: #141E61;
 }
-.DetailCards .navbar button {
+.DetailCards .navbar-team button {
   padding: 8px 0px;
   margin: 3px 0;
   padding-left: 15px;
@@ -129,10 +130,10 @@ body{
   transition: 0;
   transition-delay: 0.4s;
 }
-.DetailCards .navbar button {
+.DetailCards .navbar-team button {
   color: #fff !important;
 }
-.DetailCards .navbar #marker {
+.DetailCards .navbar-team #marker {
   position: absolute;
   /* top: calc(44px + 0 * 46px); */
   left: 25;
@@ -143,10 +144,10 @@ body{
   transition: 0.5s cubic-bezier(1, -0.43, 0, 1.4);
 }
 
-.DetailCards .navbar #marker {
+.DetailCards .navbar-team #marker {
   background-color: #141E61;
 }
-.DetailCards .navbar #marker span {
+.DetailCards .navbar-team #marker span {
   display: inline-block;
   width: 50px;
   height: 10px;
@@ -155,10 +156,10 @@ body{
   top: -10px;
 }
 
-.DetailCards .navbar #marker span {
+.DetailCards .navbar-team #marker span {
   background-color: #141E61;
 }
-.DetailCards .navbar #marker span::before {
+.DetailCards .navbar-team #marker span::before {
   content: "";
   display: inline-block;
   width: 50px;
@@ -169,14 +170,14 @@ body{
   border-bottom-right-radius: 7px;
 }
 
-.DetailCards .navbar #marker span::before {
+.DetailCards .navbar-team #marker span::before {
   background-color: #0F044C;
 }
-.DetailCards .navbar #marker span:nth-of-type(2) {
+.DetailCards .navbar-team #marker span:nth-of-type(2) {
   top: auto;
   bottom: -10px;
 }
-.DetailCards .navbar #marker span:nth-of-type(2)::before {
+.DetailCards .navbar-team #marker span:nth-of-type(2)::before {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 0px;
 }
@@ -212,36 +213,36 @@ body{
   margin: 20px 30px;
 }
 
-.imageSlider .col:nth-of-type(2) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(8) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(14) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(20) .sliderImgBox .profileCard {
+.imageSlider .col-team:nth-of-type(2) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(8) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(14) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(20) .sliderImgBox .profileCard {
   background-color: #7d10b3;
   box-shadow: 0px 14px 34px 4px #7d10b38a;
 }
-.imageSlider .col:nth-of-type(3) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(9) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(15) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(21) .sliderImgBox .profileCard {
+.imageSlider .col-team:nth-of-type(3) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(9) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(15) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(21) .sliderImgBox .profileCard {
   background-color: #94008e;
   box-shadow: 0px 14px 34px 4px #94008f8a;
 }
-.imageSlider .col:nth-of-type(4) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(10) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(16) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(22) .sliderImgBox .profileCard {
+.imageSlider .col-team:nth-of-type(4) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(10) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(16) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(22) .sliderImgBox .profileCard {
   background-color: #5f00ad;
   box-shadow: 0px 14px 34px 4px #5f00ad8a;
 }
-.imageSlider .col:nth-of-type(5) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(11) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(17) .sliderImgBox .profileCard {
+.imageSlider .col-team:nth-of-type(5) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(11) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(17) .sliderImgBox .profileCard {
   background-color: #a2119c;
   box-shadow: 0px 14px 34px 4px #a2119d8a;
 }
-.imageSlider .col:nth-of-type(6) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(12) .sliderImgBox .profileCard,
-.imageSlider .col:nth-of-type(18) .sliderImgBox .profileCard {
+.imageSlider .col-team:nth-of-type(6) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(12) .sliderImgBox .profileCard,
+.imageSlider .col-team:nth-of-type(18) .sliderImgBox .profileCard {
   background-color: #b84cc2;
   box-shadow: 0px 14px 34px 4px #b84cc28a;
 }
@@ -290,7 +291,7 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: black;
+    color: black !important;
     outline: none;
     border: 2px solid #8210b0e0;
     border-radius: 5px;
@@ -324,7 +325,7 @@ body{
   .DetailCards {
     background-color: transparent;
   }
-  .DetailCards .navbar {
+  .DetailCards .navbar-team {
     width: 300px;
     padding: 10px 0;
     position: absolute;
@@ -332,10 +333,10 @@ body{
     z-index: 2;
   }
 
-  .DetailCards .navbar {
+  .DetailCards .navbar-team {
     background-color: #0F044C;
   }
-  .DetailCards .navbar::before {
+  .DetailCards .navbar-team::before {
     left: 0px;
     height: 100%;
     border-radius: 0;
@@ -346,18 +347,18 @@ body{
       #8210b0e0 90.31%,
       #a2119cd1 101.2%);
   }
-  .DetailCards .navbar::before {
+  .DetailCards .navbar-team::before {
     background: linear-gradient(
       180deg,
       #7E10B3 70.6%,
       #8210b0e0 90.31%,
       #a2119cd1 101.2%);;
   }
-  .DetailCards .navbar button {
+  .DetailCards .navbar-team button {
     color: #fff !important;
   }
 
-  .DetailCards .navbar #marker {
+  .DetailCards .navbar-team #marker {
     background: linear-gradient(
       270deg,
       #0B0454 1.63%,
@@ -366,7 +367,7 @@ body{
       #a2119cd1 101.2%);
     border-radius: 0;
   }
-  .DetailCards .navbar #marker span {
+  .DetailCards .navbar-team #marker span {
     display: none;
   }
   .DetailCards .CardBox {

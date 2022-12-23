@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2057d7f3.css",
-    "main.js": "/static/js/main.a98295df.js",
+    "main.css": "/static/css/main.021ec9f4.css",
+    "main.js": "/static/js/main.dd167cf9.js",
     "static/js/377.a49414a6.chunk.js": "/static/js/377.a49414a6.chunk.js",
     "static/media/i2.png": "/static/media/i2.60e1a55f5f8978501491.png",
     "static/media/IMG20221019113455.jpg": "/static/media/IMG20221019113455.78bd208df78d76c78eed.jpg",
@@ -91,18 +91,19 @@
     "static/media/capermint.0b96d822.png": "/static/media/capermint.0b96d822.0b96d82209cae56e5587.png",
     "static/media/Boeing.63b212fe.png": "/static/media/Boeing.63b212fe.855dd80fe44dbd2a1f5f.png",
     "static/media/MW.3a56a8d5.png": "/static/media/MW.3a56a8d5.3a56a8d579fb7aef5fb0.png",
+    "static/media/shaastra2.png": "/static/media/shaastra2.1949f60fbca66de3f46a.png",
     "static/media/WC.5de40956.png": "/static/media/WC.5de40956.5de40956e8756016125f.png",
     "static/media/KLA.6b2bfd91.png": "/static/media/KLA.6b2bfd91.cf39f8b6a29365a0ea02.png",
     "static/media/CAT.9fc50504.png": "/static/media/CAT.9fc50504.335530c32788f02af5b3.png",
     "static/media/background.jpg": "/static/media/background.075a0aede306830a5f36.jpg",
     "static/media/Wells_Fargo.b3210ca8.png": "/static/media/Wells_Fargo.b3210ca8.0004a93bab06c98b9f4f.png",
     "index.html": "/index.html",
-    "main.2057d7f3.css.map": "/static/css/main.2057d7f3.css.map",
-    "main.a98295df.js.map": "/static/js/main.a98295df.js.map",
+    "main.021ec9f4.css.map": "/static/css/main.021ec9f4.css.map",
+    "main.dd167cf9.js.map": "/static/js/main.dd167cf9.js.map",
     "377.a49414a6.chunk.js.map": "/static/js/377.a49414a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2057d7f3.css",
-    "static/js/main.a98295df.js"
+    "static/css/main.021ec9f4.css",
+    "static/js/main.dd167cf9.js"
   ]
 }

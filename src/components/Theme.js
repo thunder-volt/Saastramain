@@ -1,5 +1,5 @@
 import "../styles/theme.css"
-import imgabout from "../Images/23_white logo-01.png"
+import imgabout from "./shaastra2.png"
 
 
 

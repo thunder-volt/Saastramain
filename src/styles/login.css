@@ -276,7 +276,7 @@ body {
     stroke-width: 1px;
     stroke: aliceblue;
     animation: dash 7.2s linear forwards, filling 3s ease-in forwards, infinite;
-    font-size: 5vw;
+    font-size: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -285,7 +285,7 @@ body {
     top: -47px;
     font-family: 'Rubik', sans-serif;
     color: #d4d4d4 !important;
-    font-size: 1vw !important;
+    font-size: 13px !important;
     transition: 0.5s;
 }
 
@@ -483,7 +483,10 @@ body {
 
 @media  (max-width: 500px) {
     .text-line {
-      font-size: 28px;
+      font-size: 35px;
+    }
+    .hovertext{
+        font-size: 12px;
     }
   }
 

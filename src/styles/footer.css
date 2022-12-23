@@ -68,8 +68,7 @@
 
 /* logoshit */
 .logothing {
-    margin-right: 5%;
-    margin-left: 5%;
+    align-items: center;
 }
 
 
@@ -309,7 +308,7 @@
         left: 0;
         right: 0;
         margin-bottom: 5vh;
-        width: 50vw !important;
+        width: 200px !important;
     }
 
     .linkylinks{

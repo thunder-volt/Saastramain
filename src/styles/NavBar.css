@@ -19,7 +19,8 @@
     box-sizing: border-box;
     height: 57px;
     bottom: 20px;
-    background: rgba(15, 4, 76, 0.95);
+    /* background: rgba(0,0,0); */
+    background: transparent;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
     0 2px 2px rgba(0,0,0,0.12), 
     0 4px 4px rgba(0,0,0,0.12), 
@@ -51,7 +52,8 @@ ul {
     text-decoration: none;
 }
 .items a{
-    font-size: 17px;
+    font-size: 16px;
+    padding: 10px;
 }
 .items{
     justify-content: space-around;
@@ -62,7 +64,7 @@ ul {
     font-family: 'Rubik', sans-serif !important;
     font-style: normal;
     font-weight: 500 !important;
-    font-size: 17px !important;
+    font-size: 16px !important;
     /* font-size: 1.2vw; */
     color: white;
     /* border: none;
@@ -107,7 +109,8 @@ button.items{
     align-items: center;
     text-align: Left;
     box-sizing: border-box;
-    background: rgba(15, 4, 76, 0.75);
+    /* background: rgba(0,0,0,0.75); */
+    background: transparent;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
     0 2px 2px rgba(0,0,0,0.12), 
     0 4px 4px rgba(0,0,0,0.12), 
@@ -124,7 +127,12 @@ button.items{
     width: 90%;
     padding-left: 10px !important;
 }
-
+.subitems a {
+    font-size: 15px;
+}
+.subitems a:hover {
+    font-size: 16px;
+}
 .dropup{
     position: absolute;
     top: -2.5px !important;
@@ -132,7 +140,7 @@ button.items{
     /* width: fit-content; */
 }
 .items :hover {
-    font-size: 18px;
+    font-size: 17px;
 }
 /* .subitems :hover {
     font-size: 16px;
@@ -143,31 +151,46 @@ button.items{
     border-radius: 5px;
 } */
 @media screen and (max-width: 1200px) {
-    .items{
+    .items a{
         font-size: 15px;
     }
+    button.items{
+        font-size: 15px !important;
+    }
     .items :hover {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
-@media screen and (max-width: 1040px) {
-    .items{
+@media screen and (max-width: 1080px) {
+    .items a{
         font-size: 14px;
+        padding-inline: 5px;
+    }
+    button.items{
+        font-size: 14px !important;
         padding-inline: 5px;
     }
     .items :hover {
         font-size: 16px;
     }
 }
-@media screen and (max-width:830px) {
-    .navitems{
-        font-size: 13px;
+@media screen and (max-width:900px) {
+    .items a{
+        font-size: 14px;
+        padding: 2px !important;
+    }
+    button.items{
+        font-size: 14px !important;
+        padding: 2px !important;
     }
     .items :hover {
         font-size: 15px;
     }
+    .subitems {
+        padding: 10px;
+    }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 835px) {
     .navBar{
         width: 50px;
         bottom: 15px;
@@ -202,7 +225,8 @@ button.items{
         right: 0;
         left:-45px;
         padding: 10px;
-        background: rgba(15, 4, 76, 0.75);
+        /* background: rgba(0, 0, 0, 0.75); */
+        background: transparent;
         box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
         0 2px 2px rgba(0,0,0,0.12), 
         0 4px 4px rgba(0,0,0,0.12), 
@@ -224,7 +248,17 @@ button.items{
         background-color: transparent;
         border: none;
     }
-    .itemsmob .itemsmob {
+    .menuItems a{
+        font-size: 17px;
+        padding: 10px;
+        padding-left: 5px;
+    }
+    button.itemsmob{
+        font-size: 17px;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    button.itemsmob {
         display: flex;
         flex-direction: row;
     }
@@ -242,12 +276,12 @@ button.items{
         width: 130px;
         padding: 10px;
         /* height: 175px; */
-        bottom: 80px;
+        bottom: 150px;
         color: #FFFFFF;
         align-items: center;
         text-align: center;
         box-sizing: border-box;
-        background: rgba(15, 4, 76, 0.75);
+        background: rgba(0, 0, 0, 0.75);
         box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
         0 2px 2px rgba(0,0,0,0.12), 
         0 4px 4px rgba(0,0,0,0.12), 
@@ -257,7 +291,7 @@ button.items{
     }
     .subitemsmob {
         font-family: 'Rubik', sans-serif;
-        font-size: 15px;
+        font-size: 15px !important;
         font-style: normal;
         font-weight: 500;
         width: fit-content;
@@ -266,11 +300,12 @@ button.items{
     }
     .subitemsmob a{
         width: fit-content;
+        font-size: 15px !important;
     }
     .itemsmob :hover {
         font-size: 18px;
     }
-    .subitemsmob :hover {
+    .subitemsmob a :hover {
         font-size: 16px;
     }
 }

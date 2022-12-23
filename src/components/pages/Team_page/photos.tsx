@@ -2,13 +2,14 @@ import candd_nikitha from "../../../Images/profiles/candd_nikitha.jpeg";
 import candd_prashanth from "../../../Images/profiles/candd_prashanth.jpeg";
 import cocas_baibhabi from "../../../Images/profiles/cocas_baibhabi.jpeg";
 import eandw_hema from "../../../Images/profiles/eandw_hema.jpeg";
-import eandw_kudari from "../../../Images/profiles/eandw_hema.jpeg";
+import eandw_kudari from "../../../Images/profiles/eandw_kudari.jpeg";
 import eandw_nithin from "../../../Images/profiles/eandw_nithin.jpeg";
 import envisage_pavithra from "../../../Images/profiles/envisage_pavithra.png";
 import envisage_shihad from "../../../Images/profiles/envisage_shihad.jpg";
 import evolve_mahboob from "../../../Images/profiles/evolve_mahboob.jpeg";
 import evolve_pranav from "../../../Images/profiles/evolve_pranav.jpeg";
 import finance_soumya from "../../../Images/profiles/finance_soumya.jpg";
+import finance_mahesh from "../../../Images/profiles/finance_mahesh.jpg";
 import oandip_anchal from "../../../Images/profiles/oandip_anchal.jpeg";
 import oandip_tushar from "../../../Images/profiles/oandip_tushar.jpeg";
 import qms_rupa from "../../../Images/profiles/qms_rupa.jpg";
@@ -31,6 +32,7 @@ export default {
   evolve_mahboob,
   evolve_pranav,
   finance_soumya,
+  finance_mahesh,
   oandip_anchal,
   oandip_tushar,
   qms_rupa,
