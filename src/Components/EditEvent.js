@@ -219,7 +219,7 @@ const Edit = () => {
         <ChakraProvider>
           <div className="edit-page-main-container">
             <div className="heading">Edit Event</div>
-            <div className="input-labels">{id}</div>
+            {/* <div className="input-labels">{id}</div> */}
             <div className="fields-container">
               <div className="container-right">
                 {imageUrl && selectedImage && (

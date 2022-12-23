@@ -112,12 +112,19 @@ function EventsLanding() {
             <div className="wrapper">
               {data?.getEvents?.events?.map((el) => {
                 console.log(el);
-                return <CardComponent data={el} key={el.id} />;
+                if (el.vertical !== "WORKSHOPS") {
+                  return <CardComponent data={el} key={el.id} />;
+                }
+                return null;
               })}
             </div>
           </div>
         </div>
-        <Footer designed={[{name: "Jyotsna", mail:"mailto:ed21b031@smail.iitm.ac.in "}]} />
+        <Footer
+          designed={[
+            { name: "Jyotsna", mail: "mailto:ed21b031@smail.iitm.ac.in " },
+          ]}
+        />
       </body>
     );
   } else <></>;
