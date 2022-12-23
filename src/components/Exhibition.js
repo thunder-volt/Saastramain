@@ -127,7 +127,7 @@ function Exhibition() {
       </div>
       </div>
       </div>
-      <Footer />
+      <Footer designed={[{name: "Jainav", mail:"mailto:ce21b062@smail.iitm.ac.in "}]} />
     </body>
     // </div>
   );

@@ -114,7 +114,7 @@ function Vastra() {
         </p>
       </div>
     </section>
-    <Footer />
+    <Footer designed={[{name: "Arnav", mail:"mailto:Cs21b009@smail.IITM.AC.in "}]} />
     </body>
   );
 }

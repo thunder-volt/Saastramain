@@ -142,7 +142,7 @@ const ResetPassword = () => {
         <div class="c19 circle"></div>
         </div>
     </section>
-    <Footer />
+    <Footer designed={[{name: "Arnav", mail:"mailto:Cs21b009@smail.IITM.AC.in"}, {name: "Joel", mail: "mailto:"}]} />
     </body>
   );
 };

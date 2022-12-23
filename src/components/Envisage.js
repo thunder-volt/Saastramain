@@ -301,7 +301,7 @@ const Envisage = () => {
           </Swiper>
         </div>
       </div>
-      <Footer />
+      <Footer designed={[{name: " Akshay",mail:"mailto:ce21b006@smail.iitm.ac.in"}]}/>
     </body>
   )
 }

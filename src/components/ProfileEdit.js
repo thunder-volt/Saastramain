@@ -226,7 +226,7 @@ const Profile = () => {
             </div>
           </div>
         </section>
-        <Footer></Footer>
+        <Footer designed={[{name: " Akshay",mail:"mailto:ce21b006@smail.iitm.ac.in"}]}/>
       </body>
     );
   }

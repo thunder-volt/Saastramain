@@ -211,7 +211,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    <Footer/>
+      <Footer designed={[ {name: "Juana", mail: "mailto:ce21b065@smail.iitm.ac.in"},{name: "Jahaan", mail:"mailto:"}]} />
     </body>
     </> 
   );

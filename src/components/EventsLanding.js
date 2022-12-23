@@ -117,7 +117,7 @@ function EventsLanding() {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer designed={[{name: "Jyotsna", mail:"mailto:ed21b031@smail.iitm.ac.in "}]} />
       </body>
     );
   } else <></>;

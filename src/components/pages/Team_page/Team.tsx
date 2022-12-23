@@ -586,7 +586,7 @@ const Team = (props: Props) => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer designed={[{name: " ROHIT",mail:"mailto:ce21b065@smail.iitm.ac.in"},{name: " JUANA ",mail:"mailto:ce21b065@smail.iitm.ac.in"}]}/>
      </body>
   );
 };

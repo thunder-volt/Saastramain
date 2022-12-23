@@ -231,7 +231,7 @@ const Signup = () => {
           <div class="circleAcc12 circleAcc" />
         </div>
       </section>
-      <Footer />
+      <Footer designed={[{name: "Arnav", mail:"mailto:Cs21b009@smail.IITM.AC.in"}, {name: "Juana", mail: "mailto:ce21b065@smail.iitm.ac.in"}]} />
     </body>
   );
 };
