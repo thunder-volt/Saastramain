@@ -30,7 +30,7 @@
 .footer .coly .heady {
     margin: 0;
     font-family: inherit;
-    font-size: 14px !important;
+    font-size: 16px;
     line-height: 17px;
     padding: 20px 0px 10px 0px;
     color: rgba(255, 255, 255);
@@ -49,7 +49,7 @@
 
 .footer .coly ul li {
     color: #999999;
-    font-size: 12px !important;
+    font-size: 13px;
     font-family: inherit;
     font-weight: normal;
     padding: 5px 0px 5px 0px;
@@ -88,16 +88,29 @@
     color: #999999 !important;
     text-decoration: white !important;
     width: fit-content;
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 2;
-    font-family: inherit;
-    font-weight: normal;
 }
 .linkylinks :hover{
     color: white !important; 
     text-decoration: white !important;
 }
 
+
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+    font-family: inherit;
+    font-weight: normal;
+}
+.colBottom .linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
 
 .colBottom .linkylinks{
     color: #999999 !important;
@@ -219,6 +232,7 @@
     .logoFooter img {
         position: relative;
         top: 20px;
+        top: 20px;
     }
     .logothing{
         width: fit-content !important;
@@ -257,6 +271,7 @@
     .colBottom{
         padding-bottom: 8vh !important;
         top: 5px !important;
+        top: 5px !important;
     }
 }
 
@@ -288,12 +303,12 @@
     }
 
     .footer .coly .heady {
-        font-size: 14px;
+        font-size: 14px !important;
         width: 100%;
     }
 
     .footer .coly ul li {
-        font-size: 13px;
+        font-size: 13px !important;
         width: 100%;
     }
 
@@ -304,6 +319,7 @@
     .logoFooter img {
         position: relative;
         top: 5px;
+        top: 5px;
         margin: 0% auto;
         left: 0;
         right: 0;
@@ -312,6 +328,7 @@
     }
 
     .linkylinks{
+        /* font-size: 4vw; */
         /* font-size: 4vw; */
         margin: auto;
         text-align: center;
@@ -324,6 +341,9 @@
     }
     .colBottom span{
         /* font-size: 2vw */
+    }
+    .link-footer-div{
+        /* width: 80vw; */
     }
 
     .colBottom{
