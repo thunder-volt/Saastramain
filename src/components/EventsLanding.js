@@ -72,7 +72,7 @@ function EventsLanding() {
               </text>
             </svg>
 
-            <div>
+            <div class="explorebutton">
               <button className="explore" oncCick="explore()">
                 Explore Events{" "}
               </button>{" "}

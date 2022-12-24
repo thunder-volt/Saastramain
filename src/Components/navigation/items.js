@@ -24,11 +24,11 @@ export const items = [
                 title: 'Exhibitions',
                 url:'/exhibition',
             },
-            {   
-                id: 4,
-                title: 'Blitz Chess',
-                url:'./',
-            },
+            // {   
+            //     id: 4,
+            //     title: 'Blitz Chess',
+            //     url:'./',
+            // },
             {
                 id: 5,
                 title: 'Summit',
@@ -98,7 +98,7 @@ export const items = [
     {
         id: 6,
         title: 'Sponsors',
-        url:'/sponsors',
+        url:'/',
     },
     {
         id: 7,
@@ -108,7 +108,7 @@ export const items = [
     {
         id: 8,
         title: 'Contact Us',
-        url:'/contact',
+        url:'/',
     }
 
 ]
