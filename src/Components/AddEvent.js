@@ -178,7 +178,7 @@ const Add = () => {
                         Key: selectedImage.name,
                         ContentType: selectedImage.type,
                         Body: selectedImage,
-                        Permissions: "Public",
+                        ACL: "public-read",
                       };
                       await s3.upload(s3params).promise();
                     } catch (error) {

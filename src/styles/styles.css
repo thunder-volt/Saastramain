@@ -82,13 +82,13 @@ img:hover {
 
 .slider::before {
     left: 0;
-    background: linear-gradient(to right, rgb(69, 10, 132) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(117, 15, 171) 0%, rgba(255, 255, 255, 0) 100%);
     top: 0;
     transform: rotateZ(0deg);
 }
 
 .slider::after {
-    background: linear-gradient(to right, rgb(31, 6, 101) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(128, 20, 180) 0%, rgba(255, 255, 255, 0) 100%);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -112,7 +112,7 @@ img:hover {
 }
 
 .slider1::after {
-    background: linear-gradient(to right, rgb(60, 9, 125) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(129, 20, 180) 0%, rgba(255, 255, 255, 0) 100%);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -121,6 +121,14 @@ img:hover {
 .title {
     font-size: 20px;
     color: #ece3f0;
+}
+
+.spons-intro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .spons-heading {
@@ -231,8 +239,8 @@ img:hover {
 }
 
 .imp-spons1 {
-    height: 60px;
-    /* width: 362px; */
+    height: 75px;
+    width: 211px;
 }
 
 .imp-spons2 {
@@ -247,8 +255,8 @@ img:hover {
 }
 
 .imp-o {
-    height: 90px;
-    width: 90px;
+    height: 106px;
+    width: 124px;
 }
 
 .imp-sales {
