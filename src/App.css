@@ -7,6 +7,11 @@
   min-height: 100vh;
 }
 
+.ws-modal-a a{
+  font-size: 1vw;
+  font-weight: 400
+}
+
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
 * {
@@ -652,7 +657,8 @@ a {
 }
 
 @media screen and (max-width : 900px) {
-
+  
+  
 
   .first-box .title a {
     font-size: 2vw !important;
@@ -703,10 +709,25 @@ a {
     width: auto;
     height: 37vh;
   }
+  .glassmorphic2 .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    gap: 2vh;
+  
+  }
+  .cardButtonsContainer .btn{
+    width: fit-content !important;
+  }
+  
 }
 
 @media screen and (max-width : 400px) {
-
+  .ws-modal-a a{
+    font-size: 3vw;
+    font-weight: 400
+  }
   .about {
     width: 43vh;
     margin: auto;
@@ -752,6 +773,15 @@ a {
     width: auto;
     height: 37vh;
   }
+  .glassmorphic2 .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    gap: 2vh;
+  
+  }
+  
 }
 
 .envelope::before {

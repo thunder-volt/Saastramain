@@ -41,7 +41,8 @@ function KnowMoreModal(props) {
             moment(parseInt(props.data?.eventTimeTo)).format().replace('T', ' ').slice(0,19).split(' ')[1] 
             : 'TBD'} IST</p>
           <p><b>Venue/Platform: </b> {props.data?.platform}</p>
-          <p><b>Requirements: </b> {props.data?.requirements}</p>
+          <p className="ws-modal-a"><b>Requirements: </b> {props.data?.registrationfee ? <a href={props.data?.requirements.split(" ")[2]}>{props.data?.requirements.split(" ")[2]}</a> : <p>{props.data?.requirements}</p>}
+          </p>
           <br></br>
          {
           props.data?.faqs &&  <h4>FAQS</h4>
