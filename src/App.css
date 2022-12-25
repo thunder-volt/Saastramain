@@ -1184,8 +1184,10 @@ a {
 }
 
 .card-text {
-  width: 100%;
-
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .glassmorphic2 .modal-content p,
@@ -1193,7 +1195,8 @@ a {
   width: 20vw !important;
 }
 
-.glassmorphic2 .card{
+
+.glassmorphic2 .card {
   margin-right: 0px !important;
 }
 
