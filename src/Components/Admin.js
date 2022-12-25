@@ -130,6 +130,7 @@ function EditEvents() {
                       desc={event.description}
                       id={event.id}
                       refetch={refetch}
+                      pic={event.pic}
                     />
                   </div>
                 );
