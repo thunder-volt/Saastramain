@@ -234,7 +234,7 @@ const Team = (props: Props) => {
     {
       id:16,
       mailId: "mailto:me19b124@smail.iitm.ac.in",
-      name: "Rupa Lakshmi",
+      name: "Vyashnavi",
       dept: "Publicity",
       social_links: {
         whatsapp:"https://wa.me/6301308213",
@@ -243,7 +243,7 @@ const Team = (props: Props) => {
         instagram: "https://www.instagram.com/rupa_lucky07",
       },
       //desc: "",
-      imgURL: photos.qms_rupa,
+      imgURL: "",
     },
     {
       id:17,
