@@ -1888,7 +1888,8 @@ select:focus {
 
 .container-left input[type="text"],
 [type="date"],
-[type="number"] {
+[type="number"],
+[type="datetime-local"] {
   background-color: rgba(198, 177, 211, 0.48);
   border-radius: 10px;
   font-size: 1em;

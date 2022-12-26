@@ -22,11 +22,7 @@ function KnowMoreModal(props) {
             {props.data?.description}
           </p>
           <br></br>
-          <p><b>Registration Period: </b> {moment(
-                    parseInt(props.data?.registrationOpenTime)
-                  ).format("MMMM Do YYYY")} - {moment(
-                    parseInt(props.data?.registrationCloseTime)
-                  ).format("MMMM Do YYYY")}  </p>
+          <p><b>Registration Period: </b> {moment(parseInt(props?.data.registrationOpenTime)).format().replace('T', '@').slice(0,19)} - {moment(parseInt(props?.data.registrationCloseTime)).format().replace('T', '@').slice(0,19)} IST </p>
           <p><b>Registration Type: </b> {props.data?.registrationType}</p>
           {
             props.data?.registrationType == 'TEAM' && <p><b>Team Size: </b> {props.data?.teamSize} </p>

@@ -285,7 +285,7 @@ const Add = () => {
                   </label>
                   <br />
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="reg-start"
                     value={event.regStart}
                     onChange={(e) =>
@@ -300,7 +300,7 @@ const Add = () => {
                   </label>
                   <br />
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="reg-end"
                     value={event.regEnd}
                     onChange={(e) =>
@@ -318,7 +318,7 @@ const Add = () => {
                   </label>
                   <br />
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="ev-start"
                     value={event.evStart}
                     onChange={(e) =>
@@ -333,7 +333,7 @@ const Add = () => {
                   </label>
                   <br />
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="ev-end"
                     value={event.evEnd}
                     onChange={(e) =>
@@ -557,12 +557,8 @@ const Add = () => {
                         data: {
                           name: event.name,
                           description: event.desc,
-                          eventTimeFrom: event.evStart
-                            ? new Date(event.evStart).toDateString()
-                            : null,
-                          eventTimeTo: event.evEnd
-                            ? new Date(event.evEnd).toDateString()
-                            : null,
+                          eventTimeFrom: event.evStart ? event.evStart : null,
+                          eventTimeTo: event.evEnd ? event.evEnd : null,
                           registrationType: event.participation,
                           platform: event.platform,
                           requirements: event.requirements,
@@ -575,10 +571,10 @@ const Add = () => {
                           thirdplace: event.third_pos_points.toString(),
                           teamSize: parseInt(event.teamSize),
                           registrationCloseTime: event.regEnd
-                            ? new Date(event.regEnd).toDateString()
+                            ? event.regEnd
                             : null,
                           registrationOpenTime: event.regStart
-                            ? new Date(event.regStart).toDateString()
+                            ? event.regStart
                             : null,
                           registrationfee: event.fee.toString(),
                         },

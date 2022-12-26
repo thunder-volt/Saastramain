@@ -92,6 +92,7 @@ function EventsLanding() {
                 <option value="BEVENTS">BUISNESS EVENTS</option>
                 <option value="CL">CODING & LOGIC</option>
                 <option value="DB">DESIGN & BUILD</option>
+                <option value="ELECFEST">ELECFEST</option>
                 <option value="IGNITE">IGNITE</option>
                 <option value="STRATEGISTS">STRATEGISTS</option>
                 <option value="OTHER">OTHER</option>
