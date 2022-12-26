@@ -14,7 +14,7 @@ const Footer = (props) => {
     const quickLinks = [
         { name: "About", link: "./EventsLanding" },
         { name: "Events", link: "./" },
-        { name: "Team", link: "./" },
+        { name: "Team", link: "./team" },
         { name: "Contact Us", link: "./" }
     ]
 
