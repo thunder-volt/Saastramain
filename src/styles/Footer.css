@@ -30,7 +30,7 @@
 .footer .coly .heady {
     margin: 0;
     font-family: inherit;
-    font-size: 16px !important;
+    font-size: 14px !important; 
     line-height: 17px;
     padding: 20px 0px 10px 0px;
     color: rgba(255, 255, 255);
@@ -49,7 +49,7 @@
 
 .footer .coly ul li {
     color: #999999;
-    font-size: 13px !important;
+    font-size: 13px;
     font-family: inherit;
     font-weight: normal;
     padding: 5px 0px 5px 0px;
@@ -97,6 +97,44 @@
 }
 
 
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+}
+.linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
+
+
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+}
+.linkylinks :hover{
+    color: white !important; 
+    text-decoration: white !important;
+}
+
+
+
+.colBottom .linkylinks{
+    color: #999999 !important;
+    text-decoration: white !important;
+    width: fit-content;
+    font-size: 10px !important;
+    line-height: 2;
+    font-family: inherit;
+    font-weight: normal;
+}
 .colBottom .linkylinks :hover{
     color: white !important; 
     text-decoration: white !important;
@@ -345,6 +383,7 @@ span.add{
     }
 
     .linkylinks{
+
         margin: auto;
         text-align: center;
     }
@@ -363,8 +402,11 @@ span.add{
     .link-footer-div{
         justify-content: center !important;
     }
-    .colBottom .linkylinks{
-        font-size: 8px !important
+    .colBottom span{
+        /* font-size: 2vw */
     }
 
+    .colBottom{
+        padding-bottom: 8vh !important;
+    }
 }
