@@ -72,7 +72,7 @@ function EventsLanding() {
               </text>
             </svg>
 
-            <div>
+            <div class="explorebutton">
               <button className="explore" oncCick="explore()">
                 Explore Events{" "}
               </button>{" "}
@@ -92,6 +92,7 @@ function EventsLanding() {
                 <option value="BEVENTS">BUISNESS EVENTS</option>
                 <option value="CL">CODING & LOGIC</option>
                 <option value="DB">DESIGN & BUILD</option>
+                <option value="ELECFEST">ELECFEST</option>
                 <option value="IGNITE">IGNITE</option>
                 <option value="STRATEGISTS">STRATEGISTS</option>
                 <option value="OTHER">OTHER</option>
@@ -112,12 +113,19 @@ function EventsLanding() {
             <div className="wrapper">
               {data?.getEvents?.events?.map((el) => {
                 console.log(el);
-                return <CardComponent data={el} key={el.id} />;
+                if (el.vertical !== "WORKSHOPS") {
+                  return <CardComponent data={el} key={el.id} />;
+                }
+                return null;
               })}
             </div>
           </div>
         </div>
-        <Footer designed={[{name: "Jyotsna", mail:"mailto:ed21b031@smail.iitm.ac.in "}]} />
+        <Footer
+          designed={[
+            { name: "Jyotsna", mail: "mailto:ed21b031@smail.iitm.ac.in " },
+          ]}
+        />
       </body>
     );
   } else <></>;

@@ -18,6 +18,7 @@ const CardTemplate = ({
   setEvents,
   desc,
   id,
+  pic,
   refetch,
 }) => {
   const [deleteEvent] = useMutation(DELETE_EVENT);
@@ -48,7 +49,7 @@ const CardTemplate = ({
           width="100%"
           alt="event_img"
           objectFit="contain"
-          src={require("./cardimg.png")}
+          src={pic}
         />
         <div className="text-conatiner-events">
           <Text className="events-card-body-text">{desc}</Text>

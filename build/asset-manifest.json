@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30ff6f88.css",
-    "main.js": "/static/js/main.77dd3ae5.js",
+    "main.css": "/static/css/main.547a8f41.css",
+    "main.js": "/static/js/main.b6239b92.js",
     "static/js/377.a49414a6.chunk.js": "/static/js/377.a49414a6.chunk.js",
     "static/media/i2.png": "/static/media/i2.60e1a55f5f8978501491.png",
     "static/media/IMG20221019113455.jpg": "/static/media/IMG20221019113455.78bd208df78d76c78eed.jpg",
@@ -43,6 +43,7 @@
     "static/media/sande_sauban.jpeg": "/static/media/sande_sauban.61f0533dc90cd790af6e.jpeg",
     "static/media/eandw_nithin.jpeg": "/static/media/eandw_nithin.9e30fed4a57a6eb0bd3d.jpeg",
     "static/media/Ambience5.jpg": "/static/media/Ambience5.60c0af961590c6235fe2.jpg",
+    "static/media/Juspay.png": "/static/media/Juspay.cdb5f7ac5d555547c3ed.png",
     "static/media/eandw_kudari.jpeg": "/static/media/eandw_kudari.4a70b2ebb054eba7e5ef.jpeg",
     "static/media/candd_nikitha.jpeg": "/static/media/candd_nikitha.1e45fc3f943da47f45a1.jpeg",
     "static/media/Gamedev2.jpg": "/static/media/Gamedev2.a5cc419f1bac926204e5.jpg",
@@ -50,7 +51,6 @@
     "static/media/sandp_anushka.jpeg": "/static/media/sandp_anushka.cf6f9e1057419ceb0d21.jpeg",
     "static/media/finance_soumya.jpg": "/static/media/finance_soumya.8ab9fdd40d16abc1b462.jpg",
     "static/media/evolve_mahboob.jpeg": "/static/media/evolve_mahboob.13b6adcfc398e357a34c.jpeg",
-    "static/media/TPL.6c79fa68.png": "/static/media/TPL.6c79fa68.6c79fa680c2c1183da50.png",
     "static/media/oandip_tushar.jpeg": "/static/media/oandip_tushar.96b06ce0206498ef47f7.jpeg",
     "static/media/UC.b58fb217.png": "/static/media/UC.b58fb217.b58fb217c5b5e9115aaa.png",
     "static/media/cocas_baibhabi.jpeg": "/static/media/cocas_baibhabi.e1e3f39d1f76dd10226a.jpeg",
@@ -68,15 +68,12 @@
     "static/media/BSC.7a613ba2.png": "/static/media/BSC.7a613ba2.7a613ba2ab271a7d6d5f.png",
     "static/media/eandw_hema.jpeg": "/static/media/eandw_hema.5fa8dfb3877d32667cc9.jpeg",
     "static/media/ME-B.2510110f.png": "/static/media/ME-B.2510110f.2510110f5b7331d444bd.png",
-    "static/media/BS.8ba78323.png": "/static/media/BS.8ba78323.8ba78323aa4638480104.png",
     "static/media/CL.6f6509b9.png": "/static/media/CL.6f6509b9.6f6509b96c98d30080d9.png",
     "static/media/L&T.fe1eb41c.png": "/static/media/L&T.fe1eb41c.fe1eb41cc407fe24bf1e.png",
     "static/media/23_white logo-01.png": "/static/media/23_white logo-01.91f2a0c467cf63d9174c.png",
-    "static/media/HW.53c89b19.png": "/static/media/HW.53c89b19.53c89b19df9c56392785.png",
     "static/media/23_white logo-02.png": "/static/media/23_white logo-02.928b091f8c80b55c22f8.png",
     "static/media/digital-7.ttf": "/static/media/digital-7.93911ab167c943140756.ttf",
     "static/media/Nescafe.0d3d1306.png": "/static/media/Nescafe.0d3d1306.0d3d1306a51aef1dcb2b.png",
-    "static/media/Salesforce.2faba4a5.png": "/static/media/Salesforce.2faba4a5.277d9ed5712a0385691b.png",
     "static/media/Astra.92adb9d4.png": "/static/media/Astra.92adb9d4.1674ef13afa3a50d4268.png",
     "static/media/games-logo.jpeg": "/static/media/games-logo.e5140d3ce4f0f56fba56.jpeg",
     "static/media/ACR.9e438039.png": "/static/media/ACR.9e438039.9e4380394ac67257aa3d.png",
@@ -90,17 +87,20 @@
     "static/media/MW.3a56a8d5.png": "/static/media/MW.3a56a8d5.3a56a8d579fb7aef5fb0.png",
     "static/media/shaastra2.png": "/static/media/shaastra2.1949f60fbca66de3f46a.png",
     "static/media/WC.5de40956.png": "/static/media/WC.5de40956.5de40956e8756016125f.png",
+    "static/media/MouserElectronics.jpeg": "/static/media/MouserElectronics.4f26c67ac3948d47200c.jpeg",
+    "static/media/caterpillar.jpeg": "/static/media/caterpillar.71369db5d5585c5c9dc3.jpeg",
     "static/media/KLA.6b2bfd91.png": "/static/media/KLA.6b2bfd91.cf39f8b6a29365a0ea02.png",
     "static/media/CAT.9fc50504.png": "/static/media/CAT.9fc50504.335530c32788f02af5b3.png",
     "static/media/background.jpg": "/static/media/background.075a0aede306830a5f36.jpg",
     "static/media/Wells_Fargo.b3210ca8.png": "/static/media/Wells_Fargo.b3210ca8.0004a93bab06c98b9f4f.png",
+    "static/media/Bajaj.png": "/static/media/Bajaj.4d368850fe57f98095a9.png",
     "index.html": "/index.html",
-    "main.30ff6f88.css.map": "/static/css/main.30ff6f88.css.map",
-    "main.77dd3ae5.js.map": "/static/js/main.77dd3ae5.js.map",
+    "main.547a8f41.css.map": "/static/css/main.547a8f41.css.map",
+    "main.b6239b92.js.map": "/static/js/main.b6239b92.js.map",
     "377.a49414a6.chunk.js.map": "/static/js/377.a49414a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ff6f88.css",
-    "static/js/main.77dd3ae5.js"
+    "static/css/main.547a8f41.css",
+    "static/js/main.b6239b92.js"
   ]
 }

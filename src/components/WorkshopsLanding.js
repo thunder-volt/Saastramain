@@ -57,18 +57,23 @@ function WorkshopsLanding() {
         <NavBar />
         <div>
         <div className="workshops-landing">
-        <svg class="signup-heading">
-            <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
-             WORKSHOPS
-            </text>
-          </svg>
+            <svg class="signup-heading">
+              <text
+                x="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                y="50%"
+              >
+                WORKSHOPS
+              </text>
+            </svg>
 
-          <div>
-            <button className="explore" oncCick="explore()">
-              Explore Workshops{" "}
-            </button>{" "}
+            <div class="explorebutton">
+              <button className="explore" oncCick="explore()">
+                Explore Workshops{" "}
+              </button>{" "}
+            </div>
           </div>
-        </div>
         <div className="glassmorphic2">
           <div className="wrapper">
             {data?.getEvents?.events?.map((el) => {

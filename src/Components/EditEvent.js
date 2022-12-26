@@ -219,7 +219,7 @@ const Edit = () => {
         <ChakraProvider>
           <div className="edit-page-main-container">
             <div className="heading">Edit Event</div>
-            <div className="input-labels">{id}</div>
+            {/* <div className="input-labels">{id}</div> */}
             <div className="fields-container">
               <div className="container-right">
                 {imageUrl && selectedImage && (
@@ -257,7 +257,7 @@ const Edit = () => {
                           Key: selectedImage.name,
                           ContentType: selectedImage.type,
                           Body: selectedImage,
-                          Permissions: "Public",
+                          ACL: "public-read",
                         };
                         await s3.upload(s3params).promise();
                       } catch (error) {
@@ -367,7 +367,7 @@ const Edit = () => {
                     </label>
                     <br />
                     <input
-                      type="date"
+                      type="datetime-local"
                       id="reg-start"
                       value={event.regStart}
                       onChange={(e) =>
@@ -382,7 +382,7 @@ const Edit = () => {
                     </label>
                     <br />
                     <input
-                      type="date"
+                      type="datetime-local"
                       id="reg-end"
                       value={event.regEnd}
                       onChange={(e) =>
@@ -400,7 +400,7 @@ const Edit = () => {
                     </label>
                     <br />
                     <input
-                      type="date"
+                      type="datetime-local"
                       id="ev-start"
                       value={event.evStart}
                       onChange={(e) =>
@@ -415,7 +415,7 @@ const Edit = () => {
                     </label>
                     <br />
                     <input
-                      type="date"
+                      type="datetime-local"
                       id="ev-end"
                       value={event.evEnd}
                       onChange={(e) =>
@@ -572,10 +572,10 @@ const Edit = () => {
                               ? event.desc
                               : data.getEvent.description,
                             eventTimeFrom: event.evStart
-                              ? new Date(event.evStart).toDateString()
-                              : Date.parse(data.getEvent.eventTimeFrom),
+                              ? event.evStart
+                              : data.getEvent.eventTimeFrom,
                             eventTimeTo: event.evEnd
-                              ? new Date(event.evEnd).toDateString()
+                              ? event.evEnd
                               : data.getEvent.eventTimeTo,
                             registrationType: event.participation
                               ? event.participation
@@ -607,10 +607,10 @@ const Edit = () => {
                               ? parseInt(event.teamSize)
                               : data.getEvent.teamSize,
                             registrationCloseTime: event.regEnd
-                              ? new Date(event.regEnd).toDateString()
+                              ? event.regEnd
                               : data.getEvent.registrationCloseTime,
                             registrationOpenTime: event.regStart
-                              ? new Date(event.regStart).toDateString()
+                              ? event.regStart
                               : data.getEvent.registrationOpenTime,
                             registrationfee: event.fee
                               ? event.fee.toString()
