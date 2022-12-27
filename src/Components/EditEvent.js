@@ -198,14 +198,21 @@ const Edit = () => {
 
   if (isData) {
     onClose = () => {
-      navigate("/admin");
+      if (
+        data.getEvent.vertical === "WORKSHOPS" ||
+        event.vertical === "WORKSHOPS"
+      ) {
+        navigate("/admin/workshops");
+      } else {
+        navigate("/admin");
+      }
     };
     return (
       <ChakraProvider>
         <Modal isOpen={true} onClose={onClose}>
           <ModalOverlay />
           <ModalContent backgroundColor="#addfd0" color="black">
-            <ModalHeader>Event Edited</ModalHeader>
+            <ModalHeader>Item Edited</ModalHeader>
             <ModalCloseButton />
           </ModalContent>
         </Modal>
@@ -218,7 +225,7 @@ const Edit = () => {
       <body className="edit-page-main-container_new">
         <ChakraProvider>
           <div className="edit-page-main-container">
-            <div className="heading">Edit Event</div>
+            <div className="heading">Edit Item</div>
             {/* <div className="input-labels">{id}</div> */}
             <div className="fields-container">
               <div className="container-right">

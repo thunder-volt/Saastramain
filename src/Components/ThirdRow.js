@@ -96,6 +96,7 @@ const ThirdRow = ({
                 } else {
                   setButtonText(value);
                 }
+                setFilter(true);
                 handleClose(e);
               }}
             >

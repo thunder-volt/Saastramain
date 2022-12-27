@@ -20,7 +20,7 @@ const SecondRow = () => {
     navigate("/admin/addevent");
   };
   const handleVisit = () => {
-    navigate("/admin/workshops");
+    navigate("/admin");
   };
 
   return (
@@ -28,14 +28,14 @@ const SecondRow = () => {
       <button className="third-row-buttons" onClick={() => handleVisit()}>
         <HStack alignItems="center" className="events-workshops-filter">
           <BsArrowBarRight color="#FFFFFF" size="2rem" />
-          <Text className="main-filter-text">Workshops</Text>
+          <Text className="main-filter-text">Events</Text>
         </HStack>
       </button>
       <Spacer />
       <button onClick={handleAdd} className="third-row-buttons">
         <HStack alignItems="center" className="add-event-container">
           <AiOutlinePlus color="#000000" size="2rem" />
-          <Text className="add-event">Add Event</Text>
+          <Text className="add-event">Add Workshop</Text>
         </HStack>
       </button>
       <Spacer />

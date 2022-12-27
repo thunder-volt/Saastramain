@@ -12,8 +12,8 @@ import {
 } from "@chakra-ui/react";
 import "../App.css";
 import bg from "./bg.png";
-import SecondRow from "./SecondRow";
-import ThirdRow from "./ThirdRow";
+import SecondRow from "./SecondRoww";
+import ThirdRow from "./ThirdRoww";
 import CardTemplate from "./CardTemplate";
 import { useQuery, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
@@ -35,9 +35,8 @@ const GET_EVENTS = gql`
 function EditEvents() {
   const [search, setSearch] = useState("");
   var { isOpen, onOpen, onClose } = useDisclosure();
-  const vertical = "AEROFEST";
+  const vertical = "WORKSHOPS";
   const navigate = useNavigate();
-  const [subbuttonText, setsubButtonText] = useState("Events");
   const [filtered, setFiltered] = useState(false);
   const [buttonText, setButtonText] = useState("AEROFEST");
   const [eorw, seteorw] = useState("Events");
@@ -93,9 +92,7 @@ function EditEvents() {
       <ChakraProvider className="App">
         <div
           onLoad={() => {
-            if (!filtered) {
-              refetch({ filter: "AEROFEST" });
-            }
+            refetch({ filter: "WORKSHOPS" });
           }}
         >
           <Flex

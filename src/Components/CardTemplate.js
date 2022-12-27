@@ -20,6 +20,8 @@ const CardTemplate = ({
   id,
   pic,
   refetch,
+  filter,
+  setFilter,
 }) => {
   const [deleteEvent] = useMutation(DELETE_EVENT);
   const handleDelete = async (e) => {
@@ -45,12 +47,7 @@ const CardTemplate = ({
         <Text className="events-card-heading-text">{name}</Text>
       </div>
       <div className="events-card-body">
-        <Image
-          width="100%"
-          alt="event_img"
-          objectFit="contain"
-          src={pic}
-        />
+        <Image width="100%" alt="event_img" objectFit="contain" src={pic} />
         <div className="text-conatiner-events">
           <Text className="events-card-body-text">{desc}</Text>
         </div>

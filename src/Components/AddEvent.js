@@ -140,7 +140,7 @@ const Add = () => {
     <body className="edit-page-main-container_new">
       <ChakraProvider>
         <div className="edit-page-main-container">
-          <div className="heading">Add Event</div>
+          <div className="heading">Add Item</div>
           <div className="fields-container">
             <div className="container-right">
               {imageUrl && selectedImage && (
