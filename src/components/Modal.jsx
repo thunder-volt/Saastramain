@@ -1,5 +1,5 @@
 import {Modal,Button} from "react-bootstrap";
-import moment from "moment";
+import moment from "moment-timezone";
 
 
 function KnowMoreModal(props) {
@@ -22,19 +22,19 @@ function KnowMoreModal(props) {
             {props.data?.description}
           </p>
           <br></br>
-          <p><b>Registration Period: </b> {moment(parseInt(props?.data.registrationOpenTime)).format().replace('T', '@').slice(0,19)} - {moment(parseInt(props?.data.registrationCloseTime)).format().replace('T', '@').slice(0,19)} IST </p>
+          <p><b>Registration Period: </b> {moment(parseInt(props?.data.registrationOpenTime)).clone().tz("Europe/London").format().replace('T', '@').slice(0,19)} - {moment(parseInt(props?.data.registrationCloseTime)).clone().tz("Europe/London").format().replace('T', '@').slice(0,19)} IST </p>
           <p><b>Registration Type: </b> {props.data?.registrationType}</p>
           {
             props.data?.registrationType == 'TEAM' && <p><b>Team Size: </b> {props.data?.teamSize} </p>
           }
           <p><b>Registration Fee: </b> {props.data?.registrationfee? props.data?.registrationfee : 'None'}</p>
           <p><b>Event Date: </b>{props.data?.eventTimeFrom ? 
-          moment(parseInt(props.data?.eventTimeFrom)).format().replace('T', ' ').slice(0,19).split(' ')[0]
+          moment(parseInt(props.data?.eventTimeFrom)).clone().tz("Europe/London").format().replace('T', ' ').slice(0,19).split(' ')[0]
           : 'TBD'}</p>
           <p><b>Event Timings: </b>{props.data?.eventTimeFrom ? 
-          moment(parseInt(props.data?.eventTimeFrom)).format().replace('T', ' ').slice(0,19).split(' ')[1]
+          moment(parseInt(props.data?.eventTimeFrom)).clone().tz("Europe/London").format().replace('T', ' ').slice(0,19).split(' ')[1]
           : 'TBD'} - {props.data?.eventTimeTo ? 
-            moment(parseInt(props.data?.eventTimeTo)).format().replace('T', ' ').slice(0,19).split(' ')[1] 
+            moment(parseInt(props.data?.eventTimeTo)).clone().tz("Europe/London").format().replace('T', ' ').slice(0,19).split(' ')[1] 
             : 'TBD'} IST</p>
           <p><b>Venue/Platform: </b> {props.data?.platform}</p>
           <p className="ws-modal-a"><b>Requirements: </b> {props.data?.registrationfee ? <a href={props.data?.requirements.split(" ")[2]}>{props.data?.requirements.split(" ")[2]}</a> : <p>{props.data?.requirements}</p>}
