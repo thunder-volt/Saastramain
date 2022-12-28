@@ -9,6 +9,7 @@ import {
   ModalHeader,
   useDisclosure,
   ModalCloseButton,
+  Button,
 } from "@chakra-ui/react";
 import "../App.css";
 import bg from "./bg.png";
@@ -74,7 +75,7 @@ function EditEvents() {
         <Modal isOpen={true} onClose={onClose}>
           <ModalOverlay />
           <ModalContent backgroundColor="red" color="black">
-            <ModalHeader>{error.message}</ModalHeader>
+            <ModalHeader>{error?.message}</ModalHeader>
             <ModalCloseButton />
           </ModalContent>
         </Modal>
@@ -87,6 +88,7 @@ function EditEvents() {
     event.name.toLowerCase().includes(search.toLowerCase())
   );
 
+  // console.log(getData?.getPaidUsersCount);
   return (
     <body>
       <ChakraProvider className="App">
@@ -121,6 +123,7 @@ function EditEvents() {
               buttonText={buttonText}
               setButtonText={setButtonText}
             />
+            {/* <Button onClick={() => handleClick()}>Fetch</Button> */}
             <SimpleGrid className="item-grid" spacing={2}>
               {searchedEvents.map((event, index) => {
                 return (

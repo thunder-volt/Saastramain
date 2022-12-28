@@ -21,7 +21,7 @@ const CardTemplate = ({
   pic,
   refetch,
   filter,
-  setFilter,
+  setFiltered,
 }) => {
   const [deleteEvent] = useMutation(DELETE_EVENT);
   const handleDelete = async (e) => {

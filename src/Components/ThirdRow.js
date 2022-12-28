@@ -39,9 +39,7 @@ const ThirdRow = ({
   const handleClose = async (e) => {
     e.preventDefault();
     console.log(value);
-    await refetch({ filter: value })
-      .then(() => onClose())
-      .then(() => setsubButtonText("Events"));
+    await refetch({ filter: value }).then(() => onClose());
   };
 
   return (

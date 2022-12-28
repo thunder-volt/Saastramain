@@ -35,16 +35,16 @@ const GET_EVENTS = gql`
 function EditEvents() {
   const [search, setSearch] = useState("");
   var { isOpen, onOpen, onClose } = useDisclosure();
-  const vertical = "AEROFEST";
+  // const vertical = "";
   const navigate = useNavigate();
   const [subbuttonText, setsubButtonText] = useState("Events");
   const [filtered, setFiltered] = useState(false);
-  const [buttonText, setButtonText] = useState("AEROFEST");
+  const [buttonText, setButtonText] = useState("ADD FILTER");
   const [eorw, seteorw] = useState("Events");
 
   const { data, error, loading, refetch } = useQuery(GET_EVENTS, {
     variables: {
-      filter: vertical,
+      filter: "",
     },
   });
 
@@ -91,13 +91,7 @@ function EditEvents() {
   return (
     <body>
       <ChakraProvider className="App">
-        <div
-          onLoad={() => {
-            if (!filtered) {
-              refetch({ filter: "AEROFEST" });
-            }
-          }}
-        >
+        <div onLoad={() => refetch({ filter: "" })}>
           <Flex
             minWidth="100%"
             backgroundImage={bg}
