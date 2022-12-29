@@ -69,60 +69,60 @@ const Spons = () => {
     return (
         <body>
             <NavBar />
-            <div className='body'>
+            <div className='spons-body'>
                 <div className='spons-intro'>
                     <h2 className='spons-heading'>Our Sponsor</h2>
                     <div className='spons-info'>Shaastra, ever since it's conception has been growing by leaps and bounds and this wouldn't have been achieved without the support of the student community and our corporate partners. We are continuously on the look out for long-term and mutually beneficial associations with reputed organizations from around the globe. In case your organization shares and believes in Shaastra’s vision, we would love to work out an association. We always welcome ideas, queries and criticism of any kind and hence, do feel free to contact us.</div>
                 </div>
                 <div className="slider">
-                    <div className='slide-track'>
-                        <div className="slide ">
-                            <img src={img1} alt="" />
-                            <h2 class="title">Title Sponser</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img2} alt="" />
-                            <h2 class="title">Associate Title Sponser</h2>
-
-                        </div>
-                        <div className="slide">
-                            <img src={img3} alt="" />
-                            <h2 class="title">Powered By</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img4} alt="" />
-                            <h2 class="title">Gold Sponsor</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img5} alt="" />
-                            <h2 class="title">Silver Sponsor</h2>
-                        </div>
-
-                        {/* 5 slides doubled up for the infinite loop */}
-                        <div className="slide ">
-                            <img src={img1} alt="" />
-                            <h2 class="title">Title Sponser</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img2} alt="" />
-                            <h2 class="title">Associate Title Sponser</h2>
-
-                        </div>
-                        <div className="slide">
-                            <img src={img3} alt="" />
-                            <h2 class="title">Powered By</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img4} alt="" />
-                            <h2 class="title">Gold Sponsor</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img5} alt="" />
-                            <h2 class="title">Silver Sponsor</h2>
-                        </div>
+                    {/* <div className='slide-track'> */}
+                    <div className="slide ">
+                        <img src={img1} alt="" />
+                        <h2 class="title">Title Sponser</h2>
                     </div>
+                    {/* <div className="slide">
+                            <img src={img2} alt="" />
+                            <h2 class="title">Associate Title Sponser</h2>
 
+                        </div>
+                        <div className="slide">
+                            <img src={img3} alt="" />
+                            <h2 class="title">Powered By</h2>
+                        </div>
+                        <div className="slide">
+                            <img src={img4} alt="" />
+                            <h2 class="title">Gold Sponsor</h2>
+                        </div>
+                        <div className="slide">
+                            <img src={img5} alt="" />
+                            <h2 class="title">Silver Sponsor</h2>
+                        </div> */}
+
+                    {/* 5 slides doubled up for the infinite loop */}
+                    {/* <div className="slide ">
+                        <img src={img1} alt="" />
+                        <h2 class="title">Title Sponser</h2>
+                    </div> */}
+                    {/* <div className="slide">
+                            <img src={img2} alt="" />
+                            <h2 class="title">Associate Title Sponser</h2>
+
+                        </div>
+                        <div className="slide">
+                            <img src={img3} alt="" />
+                            <h2 class="title">Powered By</h2>
+                        </div>
+                        <div className="slide">
+                            <img src={img4} alt="" />
+                            <h2 class="title">Gold Sponsor</h2>
+                        </div>
+                        <div className="slide">
+                            <img src={img5} alt="" />
+                            <h2 class="title">Silver Sponsor</h2>
+                        </div> */}
                 </div>
+
+                {/* </div> */}
                 <div className='spons-events'>Events Sponsor</div>
                 <section class="container-main">
                     {/* <div class="cards-events">
@@ -150,9 +150,9 @@ const Spons = () => {
                         {/* <h2 class="title-1">Prize Money Sponsor</h2> */}
                     </div>
                 </section>
-                <div className="slider1">
-                    <div className='slide-track'>
-                        <div className="slide ">
+                {/* <div className="slider1"> */}
+                {/* <div className='slide-track'> */}
+                {/* <div className="slide ">
                             <img src={img6} alt="" />
                             <h2 className="title-1">Technology Sponsor</h2>
                         </div>
@@ -168,14 +168,14 @@ const Spons = () => {
                         <div className="slide">
                             <img src={img9} alt="" />
                             <h2 className="title-1">Co Sponsor</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img10} alt="" />
-                            <h2 className="title-1">IDP Sponsor</h2>
-                        </div>
+                        </div> */}
+                {/* <div className="slide">
+                    <img src={img10} alt="" />
+                    <h2 className="title-1">IDP Sponsor</h2>
+                </div> */}
 
-                        {/* 5 slides doubled up for the infinite loop */}
-                        <div className="slide ">
+                {/* 5 slides doubled up for the infinite loop */}
+                {/* <div className="slide ">
                             <img src={img6} alt="" />
                             <h2 className="title-1">Technology Sponsor</h2>
                         </div>
@@ -191,14 +191,14 @@ const Spons = () => {
                         <div className="slide">
                             <img src={img9} alt="" />
                             <h2 className="title-1">Co Sponsor</h2>
-                        </div>
-                        <div className="slide">
-                            <img src={img10} alt="" />
-                            <h2 className="title-1">IDP Sponsor</h2>
-                        </div>
-                    </div>
+                        </div> */}
+                {/* <div className="slide">
+                        <img src={img10} alt="" />
+                        <h2 className="title-1">IDP Sponsor</h2>
+                    </div> */}
+                {/* </div> */}
 
-                </div>
+                {/* </div> */}
                 {/* <div className='spons-extra'>
                 <div className="cards">
                     <img src={img6} alt="" className='imp-spons' />
@@ -225,7 +225,7 @@ const Spons = () => {
                     <h2 className="title-1">Prize Money Sponsor</h2>
                 </div>
             </div> */}
-                <section class="container-main">
+                {/* <section class="container-main">
                     <div class="cards-events">
                         <img src={img12} alt="" className='imp-spons1' />
                         <h2 class="title-1">Juniors Sponsor</h2>
@@ -251,9 +251,9 @@ const Spons = () => {
                         <h2 class="title-1">Workshop Sponsor</h2>
                     </div>
 
-                </section>
-                <div className='spons-events'>Other Sponsor</div>
-                <div class="container-main">
+                </section> */}
+                {/* <div className='spons-events'>Other Sponsor</div> */}
+                {/* <div class="container-main">
                     <div class="cards-events1">
                         <img src={img24} alt="" className='imp-spons2' />
                         <h2 class="title-1">Beverage Sponsor</h2>
@@ -275,8 +275,8 @@ const Spons = () => {
                         <img src={img34} alt="" className='imp-spons2' />
                         <h2 class="title-1">Eatery Sponsor</h2>
                     </div>
-                </div>
-                <div className="container-main">
+                </div> */}
+                {/* <div className="container-main">
                     <div class="cards-events1">
                         <img src={img28} alt="" className='imp-spons2' />
                         <h2 class="title-1">Grooming Sponsor</h2>
@@ -301,14 +301,10 @@ const Spons = () => {
                         <img src={img33} alt="" className='imp-spons2' />
                         <h2 class="title-1">Gifting Sponsor</h2>
                     </div>
-                    <div class="cards-events1">
-                        {/* <img src={img33} alt="" className='imp-spons2' /> */}
-                        {/* <h2 class="title-1">Gifting Sponsor</h2> */}
-                    </div>
-                </div>
+                </div> */}
 
             </div>
-            <Footer designed={[{name: " Akshay",mail:"mailto:ce21b006@smail.iitm.ac.in"}]}/>
+            <Footer designed={[{ name: " Akshay", mail: "mailto:ce21b006@smail.iitm.ac.in" }]} />
         </body>
     )
 }

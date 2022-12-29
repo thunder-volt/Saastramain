@@ -1,10 +1,10 @@
-.body {
+.spons-body {
     min-height: 100vh;
     height: fit-content;
     display: grid;
     place-items: center;
     overflow-y: scroll;
-    background: linear-gradient(224.52deg, #0B0454 1.63%, #7E10B3 70.6%, rgba(130, 16, 176, 0.88) 90.31%, rgba(162, 17, 156, 0.82) 101.2%);
+    background: linear-gradient(68.6deg, #72E0F2 1.8%, #F498F7 100.5%);
 }
 
 .slider {
@@ -49,7 +49,7 @@
 
 .slide {
     height: 150px;
-    width: 221px;
+    width: 164px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -82,13 +82,13 @@ img:hover {
 
 .slider::before {
     left: 0;
-    background: linear-gradient(to right, rgb(117, 15, 171) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(158, 200, 244) 0%, rgba(255, 255, 255, 0) 100%);
     top: 0;
     transform: rotateZ(0deg);
 }
 
 .slider::after {
-    background: linear-gradient(to right, rgb(128, 20, 180) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(207, 172, 246) 0%, rgba(255, 255, 255, 0) 100%);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -134,6 +134,7 @@ img:hover {
 .spons-heading {
     font-size: 51px;
     color: #fff;
+    margin-top: 65px;
 }
 
 .spons-info {
@@ -143,7 +144,7 @@ img:hover {
     margin: 20px;
     margin-bottom: 20px;
     margin-bottom: 48px;
-    color: #a9b1b3;
+    color: #5d5f60;
 }
 
 #root {
