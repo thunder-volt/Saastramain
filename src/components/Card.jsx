@@ -33,8 +33,8 @@ import {MinusIcon, AddIcon} from "@chakra-ui/icons"
 
 
 const REGISTER = gql`
-  mutation register($id: String!, $referral: String!){
-    register(EventID: $id, referral: $referral){
+  mutation register($eventId: String!, $referral: String!){
+    register(EventID: $eventId, referral: $referral){
       eventPay{
     amount
     orderId
@@ -63,8 +63,8 @@ const TEAM_REGISTER = gql`
 `
 
 const PAY = gql`
-  mutation pay($id: String!, $data: updateEventPayInput!, $referral: String!){
-  updateEventPay(EventId: $id,data:$data, referral: $referral)
+  mutation pay($eventId: String!, $data: UpdateEventPayInput!, $referral: String!){
+  updateEventPay(EventId: $eventId,data:$data, referral: $referral)
 }
 `
 
@@ -107,7 +107,7 @@ function CardComponent({data: el}){
         await teamRegistrationMutation( {
           variables: {
             data: {
-              eventID: el?.id,
+              id: el?.id,
               name: teamname,
               members: memberList
             }
@@ -147,6 +147,7 @@ function CardComponent({data: el}){
       handler: async function (response) {
         console.log(data.orderId, response.razorpay_order_id)
         try {
+          console.log(response.razorpay_signature);
           await updateEventPayMutation({
             variables: {
               eventId: el?.id,
@@ -255,7 +256,7 @@ function CardComponent({data: el}){
                 if (el?.registrationfee !== '0') {
                   await registerMutation({
                     variables: {
-                      id: el?.id,
+                      eventId: el?.id,
                       referral: ''
                     }
                    }).then(() => loadRazorpay(data.register.eventPay))
