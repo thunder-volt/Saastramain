@@ -2427,3 +2427,172 @@ select:focus {
 .new-button:hover {
   background-color: #0b5ed7;
 }
+
+.offer-card {
+  border-style: solid !important;
+  border-right-width: 1.5px !important;
+  border-color: white !important;
+  /* animation: flash 2s ease-out infinite !important; */
+}
+
+@keyframes flash {
+  to {
+    background: linear-gradient(360deg, #E4D54F -34.03%, rgba(217, 217, 217, 0) 54.17%);
+  }
+}
+
+.offers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-inline: 10px;
+}
+
+@media screen and (max-width: 1016px) {
+  .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@keyframes firework {
+  0% {
+    transform: translate(30vh, 60vh);
+    width: 0.5vmin;
+    opacity: 1;
+  }
+
+  50% {
+    width: 0.5vmin;
+    opacity: 1;
+  }
+
+  100% {
+    width: 45vmin;
+    opacity: 0;
+  }
+}
+
+@keyframes firework-alt {
+  0% {
+    transform: translate(-30vh, 50vh);
+    width: 0.5vmin;
+    opacity: 1;
+  }
+
+  50% {
+    width: 0.5vmin;
+    opacity: 1;
+  }
+
+  100% {
+    width: 45vh;
+    opacity: 0;
+  }
+}
+
+.firework {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 0%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 0% 50%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 13% 24%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+  animation: firework-alt 2s infinite;
+}
+
+.firework-new {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, rgb(255,153,0) 0.2vmin, #0000 0) 50% 0%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.3vmin, #0000 0) 0% 50%,
+    radial-gradient(circle, rgb(255,153,0) 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, rgb(255,153,0) 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, rgb(255,153,0) 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, rgb(255,153,0) 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, rgb(255,153,0) 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, rgb(255,153,0) 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, rgb(255,153,0) 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, rgb(255,153,0) 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, rgb(255,153,0) 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, rgb(255,153,0) 0.5vmin, #0000 0) 13% 24%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+  animation: firework 2s infinite;
+}
+
+.firework-new-r {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, rgb(255, 153, 0) 0.2vmin, #0000 0) 50% 0%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.3vmin, #0000 0) 0% 50%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, rgb(255, 153, 0) 0.5vmin, #0000 0) 13% 24%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+  animation: firework 2s infinite;
+}
+
+.firework-r {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 0%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 0% 50%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 13% 24%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+  animation: firework-alt 2s infinite;
+}

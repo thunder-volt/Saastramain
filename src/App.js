@@ -48,7 +48,7 @@ function App() {
           <Route path="/tif" element={<TIF />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/events" element={<EventsLanding />} />
-          {/* <Route path="/workshops" element={<WorkshopsLanding />} /> */}
+          <Route path="/workshops" element={<WorkshopsLanding />} />
           <Route path="/team" element={<Team />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />

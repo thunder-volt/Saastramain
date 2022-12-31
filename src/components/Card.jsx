@@ -182,6 +182,25 @@ function CardComponent({data: el}){
     rzp1.open();
   };
 
+  if (el?.registrationFee!=='0'){
+    if (updateEventPayData) {
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="white"
+            color="black"
+          >
+            <ModalHeader>Registered Successfully</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
+  }
+  }
+
   if(el?.registrationFee === '0' || el.registrationType==="TEAM")
    if (data || team) {
     console.log(team, "from success");
@@ -259,7 +278,11 @@ function CardComponent({data: el}){
                       eventId: el?.id,
                       referral: ''
                     }
-                   }).then(() => loadRazorpay(data.register.eventPay))
+                   }).then((res) => {
+                    if (res) {
+                      loadRazorpay(data?.register.eventPay)
+                    }
+                   })
                 }
             if (el?.registrationType === 'TEAM'){
               console.log(el?.teamSize);
