@@ -13,6 +13,7 @@ import {
 
 const link = new HttpLink({
   uri: "https://api.events.shaastra.org/",
+  // uri: "http://localhost:4000/graphql",
   credentials: "include",
 });
 

@@ -206,7 +206,7 @@ function Combo({events}) {
       <Card.Body>
         <Card.Title>Merry Combo</Card.Title>
         <Card.Text>
-          Choose any <strong>Two</strong> workshops with INDIVIDUAL registrations from the List and get a free Dino T-shirt at just <strong>Rs. 999</strong> only
+          Choose any <strong>Two</strong> workshops with INDIVIDUAL registrations from the List and get a free Discovery T-shirt at just <strong>Rs. 999</strong>
         </Card.Text>
         <div className='cardButtonsContainer'>
           <Button className="cardKnowMoreButton" onClick={()=> setTriggerModal(true)}>Show List</Button>
@@ -330,7 +330,7 @@ function Combo({events}) {
                         address: address,
                         city: city,
                         pincode: code,
-                        shirt: "Dino T-shirt",
+                        shirt: "Discovery T-shirt",
                         size: value,
                         state: state,
                       },

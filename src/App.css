@@ -2433,6 +2433,9 @@ select:focus {
   border-right-width: 1.5px !important;
   border-color: white !important;
   /* animation: flash 2s ease-out infinite !important; */
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100% !important;
 }
 
 @keyframes flash {
@@ -2446,9 +2449,10 @@ select:focus {
   flex-direction: row;
   align-items: center;
   margin-inline: 10px;
+  margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1016px) {
+@media screen and (max-width: 1496px) {
   .offers {
     display: flex;
     flex-direction: column;
@@ -2460,17 +2464,17 @@ select:focus {
 @keyframes firework {
   0% {
     transform: translate(30vh, 60vh);
-    width: 0.5vmin;
+    width: 0.5vh;
     opacity: 1;
   }
 
   50% {
-    width: 0.5vmin;
+    width: 0.5vh;
     opacity: 1;
   }
 
   100% {
-    width: 45vmin;
+    width: 45vh;
     opacity: 0;
   }
 }
@@ -2478,12 +2482,12 @@ select:focus {
 @keyframes firework-alt {
   0% {
     transform: translate(-30vh, 50vh);
-    width: 0.5vmin;
+    width: 0.5vh;
     opacity: 1;
   }
 
   50% {
-    width: 0.5vmin;
+    width: 0.5vh;
     opacity: 1;
   }
 
@@ -2595,4 +2599,48 @@ select:focus {
   background-size: 0.5vmin 0.5vmin;
   background-repeat: no-repeat;
   animation: firework-alt 2s infinite;
+}
+
+@keyframes firework-mid {
+  0% {
+    transform: translate(100%, 50vh);
+    width: 0.5vh;
+    opacity: 1;
+  }
+
+  50% {
+    width: 0.5vh;
+    opacity: 1;
+  }
+
+  100% {
+    width: 45vh;
+    opacity: 0;
+  }
+}
+
+.firework-mid {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 0.5vmin;
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 0%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 0% 50%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, #ff0 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, #ff0 0.5vmin, #0000 0) 13% 24%;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+  animation: firework-mid 2s infinite;
 }
