@@ -17,7 +17,7 @@ export const items = [
       {
         id: 2,
         title: "Workshops",
-        url: "/",
+        url: "/workshops",
       },
       {
         id: 3,
