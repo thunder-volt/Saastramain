@@ -267,7 +267,7 @@ function CardComponent({data: el}){
           <Button className="cardKnowMoreButton" onClick={()=>setTriggerModal(true)}>Know more</Button>
           <Button className="register" onClick={async () => {
             console.log(el?.registrationfee)
-            if(el?.registrationfee == "0")
+            if(el?.registrationfee == "0" || el?.id == "clcey3ysk001ey1oz1z0g43y4")
             {
               window.location.href = el?.requirements
             }
