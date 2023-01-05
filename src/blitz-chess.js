@@ -67,11 +67,25 @@ function ChessBlitz() {
   }, [isAlert]);
 
   return (
-    <div>
+   <div>
       <div className={`ChessBlitz ${theme}`}>
         <div className="ChessBlitz_landing">
           <div className="contentBox">
-            <h1>BLITZ CHESS</h1>
+            <div className="checkboard">
+              <div className="checkboard-tile-1">
+                <div>BLITZ</div>
+              </div>
+              <div className="checkboard-tile-2">
+
+              </div>
+              <div className="checkboard-tile-2">
+
+              </div>
+              <div className="checkboard-tile-1">
+                <div>CHESS</div>
+              </div>
+              
+            </div>
             <h2>SHAASTRA 2023</h2>
             <p>
               This year, Shaastra, IIT Madras, is hosting the Online Blitz Open
