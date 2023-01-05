@@ -31,6 +31,7 @@ const TopBar = () => {
   };
 
   if (isLogout) {
+    console.log(isLogout);
     var onClose = () => {
       localStorage.clear();
       navigate("/");
@@ -78,9 +79,13 @@ const TopBar = () => {
             <a className="profile-topbar" href="/profile">
               <FaUserCircle size={30} />
             </a>
-            <a className="logout-topbar" onClick={logOut} href="./">
+            <p
+              className="logout-topbar"
+              onClick={logOut}
+              style={{ cursor: "pointer" }}
+            >
               Logout
-            </a>
+            </p>
           </>
         ) : (
           <>

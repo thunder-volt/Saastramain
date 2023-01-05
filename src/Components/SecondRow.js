@@ -42,6 +42,7 @@ const SecondRow = () => {
       <button
         onClick={async (e) => {
           e.preventDefault();
+          localStorage.clear();
           await logout().then(navigate("/"));
         }}
       >

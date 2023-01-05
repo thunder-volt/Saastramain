@@ -203,7 +203,7 @@ function CardComponent({data: el}){
 
   if(el?.registrationFee === '0' || el.registrationType==="TEAM")
    if (data || team) {
-    console.log(team, "from success");
+    // console.log(team, "from success");
     onClose = () => {
       window.location.reload()
     }
@@ -287,7 +287,7 @@ function CardComponent({data: el}){
                     }
                    }).then((res) => {
                     if (res) {
-                      loadRazorpay(data?.register.eventPay)
+                      loadRazorpay(res.data?.register.eventPay)
                     }
                    })
                 }

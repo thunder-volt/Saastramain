@@ -27,12 +27,22 @@ import Vastra from "./Components/vastra";
 import Homepage from "./Components/Homepage";
 import ProfileEdit from "./Components/ProfileEdit";
 import Workshop from "./Components/Workshop";
+// import GetCSV from "./Components/GetCSV";
 
 import Temp from "./Components/tempHome";
 
 import Contact from "./Contact";
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [auth, setAuth] = useState("");
+  const verifier = localStorage.getItem("role") || "";
+
+  useEffect(() => {
+    setAuth(localStorage.getItem("role"));
+    console.log(verifier);
+  }, [verifier]);
+
   return (
     <div>
       <Router>
@@ -56,19 +66,24 @@ function App() {
             path="/forgotpassword/resetpassword"
             element={<ResetPassword />}
           />
-          <Route path="/admin/workshops" element={<Workshop />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/policies/Privacy" element={<Privacy />} />
           <Route path="/policies/Shipping" element={<Shipping />} />
           <Route path="/policies/Terms" element={<Terms />} />
           <Route path="/policies/Refund" element={<Refund />} />
           <Route path="/verify" element={<Verify />} />
-          <Route path="/admin" element={<Admin />} />
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
-          <Route path="/admin/addevent" element={<AddEvent />} />
-          <Route path="/admin/edit/:id" element={<EditEvent />} />
           <Route path="/socialendeavours" element={<Vastra />} />
+          {/* <Route path="/get" element={<GetCSV />} /> */}
         </Routes>
+        {auth === "admin" && (
+          <Routes>
+            <Route path="/admin/workshops" element={<Workshop />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/admin/addevent" element={<AddEvent />} />
+            <Route path="/admin/edit/:id" element={<EditEvent />} />
+          </Routes>
+        )}
       </Router>
     </div>
   );
