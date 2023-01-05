@@ -1,0 +1,481 @@
+.ChessBlitz {
+    width: 100%;
+  }
+  .ChessBlitz.white * {
+    color: #fff;
+  }
+  .ChessBlitz_landing {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #0d0305 45%, rgba(22, 6, 19, 0) 80%),
+      url("https://raw.githubusercontent.com/ShaastraWebops/shaastra-general-website/master/src/images/ChessBlitz/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+  }
+  .ChessBlitz_landing * {
+    font-family: "Poppins";
+  }
+  .ChessBlitz_landing .contentBox h1 {
+    font-size: 4.5em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  .ChessBlitz_landing .contentBox h2 {
+    font-size: 3.3em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  .ChessBlitz_landing .contentBox p {
+    max-width: 750px;
+    margin: 10px 0 20px 0;
+  }
+  .ChessBlitz_landing .contentBox button {
+    padding: 10px 24px 12px 24px;
+    line-height: 1em;
+    /* background-color: #311c1b; */
+    background-color: #ff0630;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .ChessBlitz_landing .contentBox button:hover {
+    background: #bd0029;
+  }
+  .ChessBlitz_Overview {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-90deg, #160613 50%, rgba(27, 6, 21, 0) 70%),
+      url("https://raw.githubusercontent.com/ShaastraWebops/shaastra-general-website/master/src/images/ChessBlitz/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 100px;
+  }
+  .ChessBlitz_Overview * {
+    font-family: "Poppins";
+  }
+  .ChessBlitz_Overview .contentBox {
+    width: 100%;
+    max-width: 600px;
+  }
+  .ChessBlitz_Overview .contentBox .card {
+    margin-bottom: 6px;
+  }
+  .ChessBlitz_Overview .contentBox .card h4 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.747);
+  }
+  .ChessBlitz_Overview .contentBox .card h2 {
+    font-size: 2.4em;
+    line-height: 1.3em;
+    font-weight: 750;
+    letter-spacing: 2px;
+  }
+  .ChessBlitz_Overview .contentBox .card h2 span {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .ChessBlitz_PrizeDistribution * {
+    font-family: "Poppins";
+  }
+  .ChessBlitz_PrizeDistribution {
+    padding: 50px 100px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #060102 0%, #210d0f 100%);
+  }
+  .ChessBlitz_PrizeDistribution h2 {
+    font-size: 3.3em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .ChessBlitz_PrizeDistribution .main_category {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .ChessBlitz_PrizeDistribution h4 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .ChessBlitz_PrizeDistribution .main_category .cardBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .ChessBlitz_PrizeDistribution .main_category .cardBox .card {
+    background: #311c1b;
+    padding: 20px 36px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+  .ChessBlitz_PrizeDistribution .main_category .cardBox .card h4 {
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .ChessBlitz_PrizeDistribution .main_category .cardBox .card h3 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category {
+    margin: 60px 0;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category h4 {
+    letter-spacing: 2px;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category .twrapper {
+    width: 100%;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category table tr:nth-child(1) td {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .ChessBlitz_PrizeDistribution .rated_category table tr td {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    text-align: center;
+  }
+  .ChessBlitz_Contact * {
+    font-family: "Poppins";
+  }
+  .ChessBlitz_Contact {
+    width: 100%;
+    padding: 0px 100px 40px;
+    background: #210d0f;
+  }
+  .ChessBlitz_Contact h2 {
+    font-size: 3.3em;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  .ChessBlitz_Contact .ContactBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0 20px;
+  }
+  .ChessBlitz_Contact .ContactBox .emailBox:nth-child(1) {
+    margin-right: 40px;
+  }
+  .ChessBlitz_Contact .ContactBox .emailBox h4 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #fff9;
+  }
+  .ChessBlitz_Contact .ContactBox .emailBox p {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .ChessBlitz .Footer .top {
+    background: #160613;
+  }
+  .ChessBlitz .Footer .bottom {
+    background: #0d0305;
+  }
+  .ChessBlitz_Popup * {
+    font-family: "Poppins";
+  }
+  .ChessBlitz_Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s ease-in-out;
+    z-index: 99;
+  }
+  .ChessBlitz_Popup.active {
+    display: flex;
+    transition: 0.7s ease-in-out;
+  }
+  .ChessBlitz_Popup .formWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
+    background-color: #210d0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  .ChessBlitz_Popup .formWrapper .closeBtn {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-size: 32px;
+  }
+  .ChessBlitz_Popup .formWrapper form {
+    width: calc(100% - 80px);
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+  }
+  .ChessBlitz_Popup .formWrapper form h2 {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .ChessBlitz_Popup .formWrapper form label {
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .ChessBlitz_Popup .formWrapper form input::placeholder {
+    color: #0009;
+    font-weight: 500;
+  }
+  .ChessBlitz_Popup .formWrapper form input {
+    font-weight: 500;
+    padding: 7px 14px;
+    margin: 10px 0 20px 0;
+    outline: none;
+    border: 2px solid #fff;
+    background: #fff9;
+    color: #000;
+  }
+  .ChessBlitz_Popup .formWrapper form button {
+    padding: 7px 24px;
+    width: fit-content;
+    background-color: #311c1b;
+    border-radius: 4px;
+  }
+  .ChessBlitz_Popup .formWrapper form button:hover {
+    transform: scale(0.95);
+  }
+  .AlertPopupsContainer {
+    width: 400px;
+    min-height: 80px;
+    padding: 15px 20px;
+    height: fit-content;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -120%;
+    background-color: #0d0305;
+    border: 1px solid #fff3;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    z-index: 999;
+  }
+  .AlertPopupsContainer.active {
+    top: 20px;
+  }
+  .AlertPopupsContainer button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .AlertPopupsContainer .alertBox {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Poppins";
+  }
+  @media screen and (max-width: 800px) {
+    .ChessBlitz_landing {
+      padding: 60px 30px;
+      background: linear-gradient(0deg, #0d0305 45%, rgba(22, 6, 19, 0) 75%),
+        url("https://raw.githubusercontent.com/ShaastraWebops/shaastra-general-website/master/src/images/ChessBlitz/bg1.jpg");
+      background-repeat: no-repeat;
+      background-size: 140% auto;
+      background-position: top;
+      align-items: flex-end;
+    }
+    .ChessBlitz_landing .contentBox h1 {
+      font-size: 2em;
+      line-height: 1.6em;
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_landing .contentBox h2 {
+      font-size: 1.6em;
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_landing .contentBox p {
+      width: 100%;
+      font-size: 14px;
+    }
+    .ChessBlitz_Overview {
+      padding: 20px 20px;
+      background: linear-gradient(0deg, #160613 60%, rgba(27, 6, 21, 0.2) 90%),
+        url("https://raw.githubusercontent.com/ShaastraWebops/shaastra-general-website/master/src/images/ChessBlitz/bg2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: top;
+    }
+    .ChessBlitz_Overview .contentBox {
+      width: 100%;
+      max-width: 600px;
+    }
+    .ChessBlitz_Overview .contentBox .card {
+      padding: 15px 0;
+      border-bottom: 2px dashed #fff6;
+      margin: 0;
+    }
+    .ChessBlitz_Overview .contentBox .card:last-child {
+      border-bottom: none;
+    }
+    .ChessBlitz_Overview .contentBox .card h4 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.747);
+    }
+    .ChessBlitz_Overview .contentBox .card h2 {
+      font-size: 1.8em;
+      line-height: 1.3em;
+      font-weight: 750;
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .ChessBlitz_Overview .contentBox .card h2 span {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.1em;
+      letter-spacing: 0.5px;
+    }
+    .ChessBlitz_PrizeDistribution {
+      padding: 40px 20px 20px 20px;
+    }
+    .ChessBlitz_PrizeDistribution h2 {
+      font-size: 1.6em;
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_PrizeDistribution .main_category {
+      margin: 20px 0;
+      justify-content: space-between;
+    }
+    .ChessBlitz_PrizeDistribution h4 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_PrizeDistribution .main_category .cardBox {
+      padding: 15px 8px 0 8px;
+      justify-content: space-between;
+    }
+    .ChessBlitz_PrizeDistribution .main_category .cardBox .card {
+      width: 150px;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .ChessBlitz_PrizeDistribution .main_category .cardBox .card h3 {
+      font-size: 1.3em;
+      line-height: 1.2em;
+    }
+    .ChessBlitz_PrizeDistribution .rated_category {
+      margin: 30px 0;
+    }
+    .ChessBlitz_PrizeDistribution .rated_category h4 {
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_PrizeDistribution .rated_category table {
+      width: 1200px;
+      margin: 20px 0;
+    }
+    .ChessBlitz_PrizeDistribution .rated_category .twrapper {
+      width: 100%;
+      overflow-x: scroll;
+    }
+    .ChessBlitz_Contact {
+      padding: 0px 20px 40px;
+    }
+    .ChessBlitz_Contact h2 {
+      font-size: 1.6em;
+      letter-spacing: 2px;
+    }
+    .ChessBlitz_Contact .ContactBox {
+      flex-direction: column;
+      margin: 30px 0 20px;
+    }
+    .ChessBlitz_Contact .ContactBox .emailBox:nth-child(1) {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .ChessBlitz_Contact .ContactBox .emailBox h4 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+    .ChessBlitz_Contact .ContactBox .emailBox p {
+      margin-top: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+    }
+    .ChessBlitz_Contact .ContactBox .emailBox p span:first-child {
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 3px;
+    }
+    .ChessBlitz_Popup .formWrapper {
+      height: 100%;
+      max-height: 100%;
+    }
+    .ChessBlitz_Popup .formWrapper .closeBtn {
+      right: 20px;
+    }
+    .ChessBlitz_Popup .formWrapper form {
+      width: calc(100% - 40px);
+      justify-content: center;
+    }
+    .ChessBlitz_Popup .formWrapper form h2 {
+      margin-bottom: 20px;
+    }
+    .ChessBlitz_Popup .formWrapper form label {
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .ChessBlitz_Popup .formWrapper form button:hover {
+      transform: scale(1);
+    }
+    .AlertPopupsContainer {
+      width: calc(100% - 20px);
+    }
+  }
