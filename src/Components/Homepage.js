@@ -101,7 +101,9 @@ const Homepage=()=> {
           <div className='forward-btn' onClick={(e)=>handleNavigationForward(e)}></div>
           <div className='back-btn' onClick={(e)=>handleNavigationBackward(e)}>back</div>
           </div>
-
+          <div className='text-phrase'>
+            <h3>Enroll for workshops now!</h3>
+          </div>
         <div className='env' style={envStyle} >
           
           
