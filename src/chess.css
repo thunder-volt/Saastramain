@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
 .ChessBlitz {
-    width: 100%;
+    width: 100vw;
   }
   .ChessBlitz.white * {
     color: #fff;
@@ -17,37 +19,91 @@
     padding: 0 80px;
   }
   .ChessBlitz_landing * {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
   }
-  .ChessBlitz_landing .contentBox h1 {
-    font-size: 4.5em;
-    line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 5px;
+
+  
+  .checkboard
+  {
+    font-size: 1.9em;
+    justify-self: center;
+    height: 40vh;
+    width: 40vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
   }
-  .ChessBlitz_landing .contentBox h2 {
-    font-size: 3.3em;
-    line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 5px;
+  .checkboard-tile-1
+  {
+     height: 20vh;
+     width: 20vh;
+     display: flex;
+     align-items: center;
+     z-index: 10;
   }
+  .checkboard-tile-1:nth-child(1) div
+  {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+  }
+  .checkboard-tile-1:nth-child(4) div
+  {
+    width: 100%;
+    height: fit-content;
+    text-align:center;
+  }
+  .checkboard-tile-2
+  {
+     height: 20vh;
+     width: 20vh;
+     background-color: #fff;
+     box-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #f008e9,
+      0 0 40px #f008e9,
+      0 0 80px #f008e9,
+      0 0 90px #9124c2,
+      0 0 100px #9124c2,
+      0 0 150px #7824c2;
+      
+  }
+  
   .ChessBlitz_landing .contentBox p {
-    max-width: 750px;
-    margin: 10px 0 20px 0;
+    max-width: 700px;
+    height: 100%;
+    
+    margin: 50px 0 20px 0;
   }
   .ChessBlitz_landing .contentBox button {
     padding: 10px 24px 12px 24px;
     line-height: 1em;
+    width: 30vh;
+    height: 6vh;
     /* background-color: #311c1b; */
-    background-color: #ff0630;
+    background-color: #fff;
     border-radius: 4px;
-    color: #fff;
+    color: black;
+    transition: 0.5s;
+    border: none;
   }
   .ChessBlitz_landing .contentBox button:hover {
-    background: #bd0029;
+    background: #fee;
+    box-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #f008e9,
+      0 0 10px #f008e9,
+      0 0 20px #f008e9,
+      0 0 30px #9124c2,
+      0 0 40px #9124c2,
+      0 0 50px #7824c2;
+
   }
   .ChessBlitz_Overview {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background: linear-gradient(-90deg, #160613 50%, rgba(27, 6, 21, 0) 70%),
       url("https://raw.githubusercontent.com/ShaastraWebops/shaastra-general-website/master/src/images/ChessBlitz/bg2.jpg");
@@ -58,13 +114,14 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 100px;
+    
   }
   .ChessBlitz_Overview * {
     font-family: "Poppins";
   }
   .ChessBlitz_Overview .contentBox {
-    width: 100%;
-    max-width: 600px;
+    width: 50%;
+    
   }
   .ChessBlitz_Overview .contentBox .card {
     margin-bottom: 6px;
