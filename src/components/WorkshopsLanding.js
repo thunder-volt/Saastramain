@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import TopBar from "./TopBar";
 import Combo1 from "./Combo1";
 import Combo2 from "./Combo2";
+import Combo3 from "./Combo3";
 
 const GET_EVENTS = gql`
   query GetEvents($filter: String) {
@@ -74,6 +75,8 @@ function WorkshopsLanding() {
               <Combo1 events={data?.getEvents?.events} />
               <Spacer />
               <Combo2 events={data?.getEvents?.events} />
+              <Spacer />
+              <Combo3 events={data?.getEvents?.events} />
             </div>
             <div class="explorebutton">
               <button
@@ -91,6 +94,7 @@ function WorkshopsLanding() {
             <div className="firework-new"></div>
             <div className="firework-r"></div>
             <div className="firework-new-r"></div>
+            <div className="firework-mid"></div>
           </div>
           <div className="glassmorphic2" id="list">
             <div className="wrapper">

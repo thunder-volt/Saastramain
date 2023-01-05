@@ -204,7 +204,7 @@ function Combo({events}) {
       <Card.Body>
         <Card.Title>Mayhem Combo</Card.Title>
         <Card.Text>
-          Choose any <strong>Three</strong> workshops with INDIVIDUAL registrations from the List at just <strong>Rs. 1199</strong> only
+          Choose any <strong>Three</strong> workshops with INDIVIDUAL registrations from the List at just <strong>Rs. 1199</strong>
         </Card.Text>
         <div className='cardButtonsContainer'>
           <Button className="cardKnowMoreButton" onClick={()=> setTriggerModal(true)}>Show List</Button>

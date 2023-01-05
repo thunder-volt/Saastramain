@@ -264,10 +264,17 @@ function CardComponent({data: el}){
       {el?.description}
           </Card.Text>
           <div className="cardButtonsContainer">
-          <Button className="cardKnowMoreButton" onClick={()=>setTriggerModal(true)}>Know more</Button>
+          <Button className="cardKnowMoreButton" onClick={()=> {
+            if (el.id==="clbzd2fyk0009vnozfydl51jl") {
+              window.location.assign("https://shaastra23.sfo3.digitaloceanspaces.com/Playto.pdf");
+            }
+            else {
+              setTriggerModal(true);
+            }
+          }}>Know more</Button>
           <Button className="register" onClick={async () => {
             console.log(el?.registrationfee)
-            if(el?.registrationfee == "0")
+            if(el?.registrationfee === "0" || el?.id === "clcey3ysk001ey1oz1z0g43y4")
             {
               window.location.href = el?.requirements
             }
