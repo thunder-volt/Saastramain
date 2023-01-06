@@ -278,7 +278,7 @@ function CardComponent({data: el}){
             {
               window.location.href = el?.requirements
             }
-            if (el?.registrationType === 'INDIVIDUAL'){
+            else if (el?.registrationType === 'INDIVIDUAL'){
                 if (el?.registrationfee !== '0') {
                   await registerMutation({
                     variables: {
@@ -291,7 +291,7 @@ function CardComponent({data: el}){
                     }
                    })
                 }
-            if (el?.registrationType === 'TEAM'){
+            else if (el?.registrationType === 'TEAM'){
               console.log(el?.teamSize);
               onOpen();
             }
