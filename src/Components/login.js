@@ -82,11 +82,12 @@ const Login = () => {
     } else {
       if (data.login?.role === "ADMIN") {
         localStorage.setItem("role", "admin");
-        navigate("/admin");
+        localStorage.setItem("id", data.login?.shaastraID);
+        navigate("/events");
       } else {
         localStorage.setItem("role", "user");
         localStorage.setItem("id", data.login?.shaastraID);
-        navigate("/edit");
+        navigate("/events");
       }
     }
   }

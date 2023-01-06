@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "./../Images/23_logo_R-02.png";
+import Logo from "./../Images/23_white logo-02.png";
 import "./../styles/TopBar.css";
 import { useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
@@ -31,7 +31,6 @@ const TopBar = () => {
   };
 
   if (isLogout) {
-    console.log(isLogout);
     var onClose = () => {
       localStorage.clear();
       navigate("/");
