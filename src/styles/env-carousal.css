@@ -1,0 +1,10 @@
+.cont-corousal {
+    padding: 20px;
+    width: 80vw;
+}
+
+@media(max-width: 850px) {
+    .cont-carousal {
+        width: 80%;
+    }
+}

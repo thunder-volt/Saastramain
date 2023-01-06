@@ -1,0 +1,87 @@
+ .countdown {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+ /* .countdown span {
+  position: relative;
+
+  width: 2px;
+  height: calc(100% - 40px);
+  border-radius: 2px;
+  background-color: rgb(103, 13, 13);
+  margin: 0 25px;
+} */
+ .countdown .card {
+  position: relative;
+  background-color: transparent;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+}
+ .countdown .card .card-top {
+  position: relative;
+  color: white !important;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 1em;
+}
+ .countdown .card .card-bottom p {
+  position: relative !important;
+  color: white !important;
+  margin-top: 5px;
+  font-size: 3vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1em;
+}
+.card-bottom p{
+  margin-top: 30vh !important;
+}
+@media screen and (max-width: 600px) {
+  
+  .imgBox {
+    width: calc(100% - 40px);
+  }
+  .countdown {
+    width: 290px;
+    flex-wrap: wrap;
+    margin: 10px 0 25px 0;
+  }
+  .countdown span {
+    height: 72px;
+    margin: 0 15px;
+  }
+  .countdown span:nth-of-type(2) {
+    display: none;
+  }
+  .countdown .card {
+    margin: 0 10px;
+    width: 100px;
+  }
+  .countdown .card .card-top {
+    font-size: 84px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+  .countdown .card .card-bottom p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .card-bottom p {
+      font-size: 5vh;
+  }
+  
+
+
+}

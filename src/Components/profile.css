@@ -1,0 +1,315 @@
+.profilecont {
+    text-align: center;
+    background: linear-gradient(224.52deg, #0B0454 1.63%, #7E10B3 70.6%, rgba(130, 16, 176, 0.88) 90.31%, rgba(162, 17, 156, 0.82) 101.2%);
+    /* height: 100vh; */
+  }
+  
+  .profilecont-header {
+    /* background-color: #282c34; */
+    background: linear-gradient(224.52deg, #0B0454 1.63%, #7E10B3 70.6%, rgba(130, 16, 176, 0.88) 90.31%, rgba(162, 17, 156, 0.82) 101.2%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+
+.pcontainer {
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pcontainer-image {
+    background-color: rgba(238, 245, 245, 0.12);
+    width: 41%;
+    height: 90vh;
+    /* margin: 32px; */
+    border-radius: 10px 0px 0px 10px;
+    /* cursor: pointer; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pcontainer-info {
+    background-color: rgba(238, 245, 245, 0.12);
+    width: 53%;
+    height: 90vh;
+    /* margin: 32px; */
+    border-radius: 0px 10px 10px 0px;
+    /* cursor: pointer; */
+    min-width: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    padding: 32px;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container-info1 {
+    background-color: rgba(238, 245, 245, 0.12);
+    width: 53%;
+    height: 90vh;
+    /* margin: 32px; */
+    border-radius: 0px 10px 10px 0px;
+    /* cursor: pointer; */
+    min-width: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png');
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    margin: 15px;
+}
+
+.name {
+    margin: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.id-title {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    width: 177px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(198, 177, 211, 0.5);
+}
+
+.shaastra-id {
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.college-info {
+    margin: 10px;
+    width: 425px;
+    color: #FEC6F2;
+    background: rgba(198, 177, 211, 0.5);
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.college {
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.address {
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.address-info {
+    margin: 10px;
+    width: 425px;
+    color: #FEC6F2;
+    background: rgba(198, 177, 211, 0.5);
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.events {
+    width: 80%;
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.events-info {
+    margin: 10px;
+    width: 425px;
+    color: #FEC6F2;
+    background: rgba(198, 177, 211, 0.5);
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.edit {
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #D62CC5;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    z-index: 1;
+    padding: 15px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.name-edit {
+    width: 60%;
+    height: 9%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.college-edit {
+    width: 60%;
+    height: 9%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.address-edit {
+    width: 60%;
+    height: 22%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.college-info {
+    width: 60%;
+}
+
+.address-info {
+    width: 60%;
+}
+
+.events-info {
+    width: 60%;
+}
+
+.save {
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #D62CC5;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    z-index: 1;
+    padding: 15px;
+    cursor: pointer;
+    width: 115px;
+}
+
+@media (max-width:910px) {
+    .pcontainer {
+        height: fit-content;
+    }
+
+    .pcontainer-image {
+        width: 80vw;
+        height: 50vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .college-info {
+        width: 80%;
+    }
+
+    .address-info {
+        width: 80%;
+    }
+
+    .events-info {
+        width: 80%;
+    }
+
+    .pcontainer-info {
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .container-info1 {
+        height: 55vh;
+        width: 80vw;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:500px) {
+    .name-edit {
+        width: 90%;
+    }
+
+    .college-edit {
+        width: 90%;
+    }
+
+    .address-edit {
+        width: 90%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .save{
+        height: 40px;
+        padding: 10px;
+    }
+    .edit{
+        height: 40px;
+        padding: 5px 10px;
+    }
+}
