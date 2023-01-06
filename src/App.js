@@ -27,7 +27,7 @@ import Vastra from "./Components/vastra";
 import Homepage from "./Components/Homepage";
 import ProfileEdit from "./Components/ProfileEdit";
 import Workshop from "./Components/Workshop";
-// import GetCSV from "./Components/GetCSV";
+import GetCSV from "./Components/Getcsv";
 
 import Temp from "./Components/tempHome";
 
@@ -74,7 +74,7 @@ function App() {
           <Route path="/verify" element={<Verify />} />
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
           <Route path="/socialendeavours" element={<Vastra />} />
-          {/* <Route path="/get" element={<GetCSV />} /> */}
+          {/* <Route path="/getcsv" element={<GetCSV />} /> */}
         </Routes>
         {auth === "admin" && (
           <Routes>

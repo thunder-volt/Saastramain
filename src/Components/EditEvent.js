@@ -119,6 +119,7 @@ const Edit = () => {
       third_pos_points: data ? parseInt(data.getEvent.thirdplace) : 0,
       requirements: data ? data.getEvent.requirements : "",
     });
+    setContainer(data?.getEvent.pic);
   }, [data]);
 
   useEffect(() => {

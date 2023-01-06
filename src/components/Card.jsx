@@ -268,6 +268,9 @@ function CardComponent({data: el}){
             if (el.id==="clbzd2fyk0009vnozfydl51jl") {
               window.location.assign("https://shaastra23.sfo3.digitaloceanspaces.com/Playto.pdf");
             }
+            else if (el.id==="clcku8wqa001hz5oz34803ieb"){
+              window.location.assign("https://www.rntbci-hack-cidents.com/home");
+            }
             else {
               setTriggerModal(true);
             }
