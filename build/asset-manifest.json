@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d897f894.css",
-    "main.js": "/static/js/main.31d37722.js",
+    "main.js": "/static/js/main.b4419174.js",
     "static/js/377.a49414a6.chunk.js": "/static/js/377.a49414a6.chunk.js",
     "static/media/i2.png": "/static/media/i2.60e1a55f5f8978501491.png",
     "static/media/IMG20221019113455.jpg": "/static/media/IMG20221019113455.78bd208df78d76c78eed.jpg",
@@ -60,6 +60,7 @@
     "static/media/oandip_anchal.jpeg": "/static/media/oandip_anchal.27d31a781ca4e676c95c.jpeg",
     "static/media/Times.1a73488a.jpg": "/static/media/Times.1a73488a.1a73488ad9151bc00415.jpg",
     "static/media/envisage_shihad.jpg": "/static/media/envisage_shihad.d4bb1b2d239a40975fb7.jpg",
+    "static/media/23_logo_R-05.png": "/static/media/23_logo_R-05.29d84e9f6b7c82e7484d.png",
     "static/media/GOB.d8c56021.png": "/static/media/GOB.d8c56021.d8c560214fce11043763.png",
     "static/media/bg3.jpg": "/static/media/bg3.4dfc47ee361a169b93c0.jpg",
     "static/media/bg2.jpg": "/static/media/bg2.3ef707a07dd269f6c79d.jpg",
@@ -96,11 +97,11 @@
     "static/media/Bajaj.png": "/static/media/Bajaj.4d368850fe57f98095a9.png",
     "index.html": "/index.html",
     "main.d897f894.css.map": "/static/css/main.d897f894.css.map",
-    "main.31d37722.js.map": "/static/js/main.31d37722.js.map",
+    "main.b4419174.js.map": "/static/js/main.b4419174.js.map",
     "377.a49414a6.chunk.js.map": "/static/js/377.a49414a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d897f894.css",
-    "static/js/main.31d37722.js"
+    "static/js/main.b4419174.js"
   ]
 }
