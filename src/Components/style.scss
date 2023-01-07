@@ -1,0 +1,160 @@
+
+.vastra-section{
+    background-color: black;
+}
+
+.banner{
+    background: url(../../public/banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        content: "";
+        background: hwb(0 0% 100% / 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 45vh;
+    }
+    h1{
+        color: #F182EB;
+        font-size: calc(4rem + 4vw);
+        font-weight: 700;
+        letter-spacing: 2px;
+        z-index: 2;
+        text-shadow: calc(6px + 0.5vw) calc(6px + 0.5vw) 0px #993094;
+    }
+}
+
+.aboutvastra{
+    width: 75%;
+    margin: auto;
+    color: white;
+    text-align: left;
+    background-color: black;
+    p{
+        padding-top: 50px;
+        margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    h2{
+        color: #993094;
+        font-size: 3rem;
+        margin-bottom: -20px;
+    }
+}
+
+.vastrainit{
+    color: white;
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    h2{
+        color: #993094;
+        font-size: 3rem;
+    }
+    .vasin{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        div{
+            width: calc(50% + 15vw);
+            ul{
+                color: #F182EB;
+            }
+        }
+        #vasimg1{
+            background: url(../../public/IMG_2082.jpg) no-repeat center center;
+            background-size: cover;
+            border-radius: 10%;
+            width: calc(40% - 5vw);
+            margin-left: 5%;
+            margin-top: -80px;
+        }
+        #vasimg2{
+            background: url(../../public/IMG20221019113455.jpg) no-repeat center center;
+            background-size: cover;
+            border-radius: 10%;
+            width: calc(40% - 5vw);
+            margin-right: 5%;
+        }
+    }
+    &>p{
+        margin: 0;
+        padding-bottom: 50px;
+        font-size: 1.2rem;
+    }
+    &>h3{
+        font-style: italic;
+        text-indent: 2em;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 960px){
+    p,ul>li{
+        font-size: 12px;
+    }
+    .aboutvastra h2{
+        font-size: 2.5rem;
+    }
+    .vastrainit{
+        h2{
+            font-size: 2.5rem;
+        }
+        h3{
+            font-size: 16px; 
+        }
+    }
+}
+
+@media (max-width: 800px){
+    p,ul>li{
+        font-size: 10px;
+    }
+    .aboutvastra h2{
+        font-size: 2rem;
+    }
+    .vastrainit{
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 12px; 
+        }
+    }
+}
+@media (max-width: 650px){
+    .banner{
+        height: 30vh;
+        &::after{
+            height: 30vh;
+        }
+    }
+    .vasin{
+        margin-bottom: 20px !important;
+        flex-direction: column !important;
+        div{
+            width: 100% !important;
+        }
+        #vasimg1{
+            width: 100% !important;
+            height: 160px;
+            margin: 0 !important;
+        }
+        #vasimg2{
+            width: 100% !important;
+            height: 160px;
+            margin: 0 !important;
+        }
+    }
+    .vasin2{
+        flex-direction: column-reverse !important;
+    }
+}

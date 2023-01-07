@@ -73,19 +73,12 @@ function EventsLanding() {
             </svg>
 
             <div class="explorebutton">
-              <button
-                className="explore"
-                onClick={() => {
-                  document
-                    .getElementById("list")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
+              <button className="explore" oncCick="explore()">
                 Explore Events{" "}
               </button>{" "}
             </div>
           </div>
-          <div className="glassmorphic2" id="list">
+          <div className="glassmorphic2">
             <div>
               <select
                 name="Vertical"

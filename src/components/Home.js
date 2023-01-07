@@ -9,12 +9,12 @@ import Theme from './Theme';
 const Home = () => {
     return (
         <div className='Home'>
-            
             <Theme />
             <Countdown />
             <About />
             <Events/>
             <Speakers />
+            
             <Footer />
         </div>
     )

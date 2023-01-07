@@ -20,6 +20,41 @@ import { useColorModeValue } from "@chakra-ui/color-mode";
 // import fileDownload from "js-file-download";
 // import dotenv from "dotenv";
 import { FaTimes } from "react-icons/fa";
+import NavBar from "./Components/Navbar";
+import TopBar from "./Components/TopBar";
+import {
+  ChakraProvider,
+  Flex,
+  SimpleGrid,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
+  ModalCloseButton,
+  ModalBody,
+  Input,
+  Radio,
+  FormLabel,
+  FormControl,
+  RadioGroup,
+  ModalFooter,
+  Button as NewButton,
+  HStack,
+  Tooltip as NewTooltip,
+  Spacer,
+  Select,
+  Textarea,
+  PinInput,
+  PinInputField,
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+} from "@chakra-ui/react";
+import { MinusIcon, AddIcon } from "@chakra-ui/icons";
+import { useMutation, gql } from "@apollo/client";
 
 // dotenv.config();
 
@@ -37,14 +72,69 @@ import { FaTimes } from "react-icons/fa";
 //   });
 // }
 
+const REGISTER_CHESS = gql`
+  mutation RegisterChess($data: registerBlitzChessInput!) {
+    registerChess(data: $data) {
+      id
+      isPaid
+      orderId
+      payementId
+      paymentSignature
+      rating
+      title
+      username
+      user {
+        name
+        email
+        address
+        mobile
+      }
+    }
+  }
+`;
+
+const PAY_CHESS = gql`
+  mutation CapturePaymentChess($input: CapturePaymentChessInput!) {
+    capturePaymentChess(Input: $input)
+  }
+`;
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
+
 function ChessBlitz() {
   const theme = useColorModeValue("white", "black");
   const [isAlert, setIsAlert] = useState({
     isVisible: false,
     message: "",
   });
-//   const { data: data1 } = useGetChessDetailsCsvQuery();
+  //   const { data: data1 } = useGetChessDetailsCsvQuery();
   const [isAdmin, setIsAdmin] = useState(false);
+  var { isOpen, onOpen, onClose } = useDisclosure();
+  const [username, setUsername] = useState("");
+  const [rating, setRating] = useState("");
+  const [title, setTitle] = useState("");
+  const [registerchess, { data, loading, error }] = useMutation(REGISTER_CHESS);
+  const [
+    updateEventPayMutation,
+    {
+      data: updateEventPayData,
+      loading: updateEventPayLoading,
+      error: updateEventPayError,
+    },
+  ] = useMutation(PAY_CHESS);
+
   useEffect(() => {
     if (localStorage.getItem("role") === "Admin") {
       setIsAdmin(true);
@@ -66,8 +156,113 @@ function ChessBlitz() {
     };
   }, [isAlert]);
 
+  const loadRazorpay = async (data) => {
+    /******** Load Razorpay Script ********/
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+    if (!res) {
+      alert("Razorpay SDK failed to load");
+      return;
+    }
+    console.log(data);
+    /******** Razorpay Options ********/
+    const options = {
+      key: "rzp_live_WQ7VB5TIMbvijH",
+      amount: 20000,
+      currency: "INR",
+      name: "Blitz chess",
+      image: "", //TODO: Add the shaastra link here
+      order_id: data?.orderId,
+
+      /******** Handler function to update the payment details ********/
+      handler: async function (response) {
+        console.log(data.orderId, response.razorpay_order_id);
+        try {
+          console.log(response.razorpay_signature);
+          await updateEventPayMutation({
+            variables: {
+              input: {
+                orderId: response.razorpay_order_id,
+                payementId: response.razorpay_payment_id,
+                paymentSignature: response.razorpay_signature,
+              },
+            },
+          });
+        } catch (e) {
+          console.log(e);
+        }
+      },
+      prefill: {
+        name: data?.user.name,
+        email: data?.user.email,
+        contact: data?.user.mobile,
+      },
+      notes: {
+        address: data?.user.address,
+        type: "BLITZ-CHESS",
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+
+    /******** Open Razorpay ********/
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+  };
+
+  if (updateEventPayData) {
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent backgroundColor="white" color="black">
+            <ModalHeader>Registered Successfully</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
+  }
+
+  if (loading) {
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent
+            backgroundColor="rgba(198, 177, 211, 0.8)"
+            color="black"
+          >
+            <ModalHeader>Loading...</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
+  }
+  if (error) {
+    onClose = () => {
+      window.location.reload();
+    };
+    return (
+      <ChakraProvider>
+        <Modal isOpen={true} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent color="black">
+            <ModalHeader>{error?.message}</ModalHeader>
+            <ModalCloseButton />
+          </ModalContent>
+        </Modal>
+      </ChakraProvider>
+    );
+  }
+
   return (
-   <div>
+    <body>
+      {/* <TopBar />
+      <NavBar /> */}
       <div className={`ChessBlitz ${theme}`}>
         <div className="ChessBlitz_landing">
           <div className="contentBox">
@@ -75,16 +270,11 @@ function ChessBlitz() {
               <div className="checkboard-tile-1">
                 <div>BLITZ</div>
               </div>
-              <div className="checkboard-tile-2">
-
-              </div>
-              <div className="checkboard-tile-2">
-
-              </div>
+              <div className="checkboard-tile-2"></div>
+              <div className="checkboard-tile-2"></div>
               <div className="checkboard-tile-1">
                 <div>CHESS</div>
               </div>
-              
             </div>
             <h2>SHAASTRA 2023</h2>
             <p>
@@ -96,16 +286,90 @@ function ChessBlitz() {
               pool of INR 85000, as well as various goodies. Don't miss out on
               your chance to play in the year's largest online blitz tournament!
             </p>
-            <button
-              onClick={() =>
-                setIsAlert({
-                  isVisible: true,
-                  message: "Registration has been closed!!",
-                })
-              }
-            >
-              Registration Closed
-            </button>
+            <HStack>
+              <button
+                onClick={() =>
+                  setIsAlert({
+                    isVisible: true,
+                    message: "Registration has been closed!!",
+                  })
+                }
+              >
+                Registration Closed
+              </button>
+              <Spacer />
+              <button
+                onClick={() => {
+                  onOpen();
+                }}
+              >
+                Register Now
+              </button>
+            </HStack>
+            <ChakraProvider>
+              <Modal
+                isOpen={isOpen}
+                onClose={onClose}
+                motionPreset="slideInRight"
+              >
+                <ModalOverlay />
+                <ModalContent>
+                  <ModalHeader>Enter Details</ModalHeader>
+                  <ModalCloseButton />
+                  <ModalBody pb={6}>
+                    <FormControl>
+                      <FormLabel>Enter Username</FormLabel>
+                      <Input
+                        placeholder="Type here"
+                        marginBottom={4}
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                      />
+                      <FormLabel>Enter Fide Rating</FormLabel>
+                      <Input
+                        placeholder="Type here"
+                        marginBottom={4}
+                        value={rating}
+                        onChange={(e) => setRating(e.target.value)}
+                      />
+                      <FormLabel>Enter Fide Title</FormLabel>
+                      <Input
+                        placeholder="Type here"
+                        marginBottom={4}
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                      />
+                    </FormControl>
+                  </ModalBody>
+                  <ModalFooter>
+                    <NewButton
+                      colorScheme="messenger"
+                      mr={3}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        console.log(username, title, rating);
+                        await registerchess({
+                          variables: {
+                            data: {
+                              rating: rating,
+                              username: username,
+                              title: title,
+                            },
+                          },
+                        }).then((res) => {
+                          if (res) {
+                            loadRazorpay(res?.data?.registerChess);
+                          }
+                        });
+                      }}
+                    >
+                      Proceed
+                    </NewButton>
+                    <NewButton onClick={onClose}>Cancel</NewButton>
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
+            </ChakraProvider>
             {/* {isAdmin === true ? (
               <button
                 style={{
@@ -345,7 +609,7 @@ function ChessBlitz() {
           <div className="alertBox">{isAlert.message}</div>
         </div>
       </div>
-    </div>
+    </body>
   );
 }
 

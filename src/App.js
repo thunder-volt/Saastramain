@@ -27,12 +27,16 @@ import Vastra from "./Components/vastra";
 import Homepage from "./Components/Homepage";
 import ProfileEdit from "./Components/ProfileEdit";
 import Workshop from "./Components/Workshop";
-import GetCSV from "./Components/Getcsv";
+// import GetCSV from "./Components/Getcsv";
+import ChessBlitz from "./blitz-chess";
 
 import Temp from "./Components/tempHome";
 
 import Contact from "./Contact";
 import React, { useState, useEffect } from "react";
+
+import { Modal2 } from "./Components/Modal2";
+import { Container, ButtonModal } from "./Components/modalContainer";
 
 function App() {
   const [auth, setAuth] = useState("");
@@ -42,9 +46,18 @@ function App() {
     setAuth(localStorage.getItem("role"));
     console.log(verifier);
   }, [verifier]);
+  const [showModal2, setShowModal2] = useState(false);
+  const openModal2 = () => {
+    setShowModal2((prev) => !prev);
+  };
 
   return (
     <div>
+      <ButtonModal onClick={openModal2}>SALES!</ButtonModal>
+      <Container>
+        <Modal2 showModal2={showModal2} setShowModal2={setShowModal2} />
+      </Container>
+
       <Router>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
@@ -74,6 +87,7 @@ function App() {
           <Route path="/verify" element={<Verify />} />
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
           <Route path="/socialendeavours" element={<Vastra />} />
+          <Route path="/blitzchess" element={<ChessBlitz />} />
           {/* <Route path="/getcsv" element={<GetCSV />} /> */}
         </Routes>
         {auth === "admin" && (
