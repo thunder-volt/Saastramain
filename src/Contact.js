@@ -1,9 +1,9 @@
 import './App.css';
 import {AiOutlineMail} from "react-icons/ai";
 import {BsTelephone} from "react-icons/bs";
-import TopBar from './Components/TopBar';
-import NavBar from './Components/navigation/NavBar';
-import Footer from './Components/Footer';
+import TopBar from './components/TopBar';
+import NavBar from './components/navigation/NavBar';
+import Footer from './components/Footer';
 function Contact() {
   return (
    <body>

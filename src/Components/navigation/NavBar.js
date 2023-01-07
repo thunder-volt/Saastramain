@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Logo from"../../Images/23_white logo-02.png";
 import "./../../styles/NavBar.css";
-import { items } from './items';
+import { items } from '../items';
 import {MainItems, MainItemsMob} from "./MainItems";
 import { FaBars, FaTimes } from "react-icons/fa";
 
