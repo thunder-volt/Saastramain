@@ -3,7 +3,7 @@ import * as React from "react";
 //import { ReactComponent as DiceOutlineDarkAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Dark_animated.svg";
 //import { ReactComponent as DiceOutlineLightAnimated } from "./../../../images/logo/animated/non-looped/Text_Outline_Light_animated.svg";
 import "../../../styles/Team_styles/Team.css";
-import Card from '../../../Components/pages/Team_page/Card'
+import Card from '../../../components/pages/Team_page/Card';
 import SliderImgBox from "./SliderImgBox";
 import photos from "../Team_page/photos";
 import { FaFilter, FaTimes } from "react-icons/fa";
@@ -23,7 +23,7 @@ const Team = (props: Props) => {
     {
       id:1,
       name: "Baibhabi Patnaik",
-      role: "Core",
+      // role: "Core",
       dept: "Co-Curricular Affairs Secretary",
       mailId: "maitto:sec_cocur@smail.iitm.ac.in",
       social_links: {
@@ -300,6 +300,20 @@ const Team = (props: Props) => {
       },
       //desc: "",
       imgURL: photos.sandp_anushka,
+    },
+    {
+      id:20,
+      mailId: "mailto:ed19b065@smail.iitm.ac.in",
+      name: "Saicharan",
+      dept: "Sponsorship and PR",
+      social_links: {
+        whatsapp:"https://wa.me/8123719967",
+        mailid: "mailto:ed19b065@smail.iitm.ac.in",
+        linkedIn: "https://www.linkedin.com/in/saicharan-g-1b59b91b3",
+        instagram: "https://www.instagram.com/saic2804",
+      },
+      //desc: "",
+      imgURL: photos.sandp_saicharan,
     },
   ];
   let i = 0;

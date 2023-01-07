@@ -16,6 +16,7 @@ import qms_rupa from "../../../Images/profiles/qms_rupa.jpg";
 import sande_mrinalini from "../../../Images/profiles/sande_mrinalini.jpg";
 import sande_sauban from "../../../Images/profiles/sande_sauban.jpeg";
 import sandp_anushka from "../../../Images/profiles/sandp_anushka.jpeg";
+import sandp_saicharan from "../../../Images/profiles/sandp_saicharan.jpeg"
 import webops_krithikaa from "../../../Images/profiles/webops_krithikaa.jpeg"
 
 // import dummy from "../../../Images/profile.jpg";
@@ -39,5 +40,6 @@ export default {
   sande_mrinalini,
   sande_sauban,
   sandp_anushka,
+  sandp_saicharan,
   webops_krithikaa,
 };

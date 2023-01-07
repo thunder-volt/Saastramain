@@ -155,7 +155,7 @@ const Verify = () => {
         ) : null}
       </center>
       <div class="page">
-        <div class="c1 circle"></div>
+        {/* <div class="c1 circle"></div>
         <div class="c2 circle"></div>
         <div class="c3 circle"></div>
         <div class="c4 circle"></div>
@@ -173,7 +173,7 @@ const Verify = () => {
         <div class="c16 circle"></div>
         <div class="c17 circle"></div>
         <div class="c18 circle"></div>
-        <div class="c19 circle"></div>
+        <div class="c19 circle"></div> */}
         </div>
     </section>
     <Footer designed={[{name: "Arnav", mail:"mailto:Cs21b009@smail.IITM.AC.in"}, {name: "Joel", mail: "mailto:"}]} />

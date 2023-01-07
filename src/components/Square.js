@@ -55,7 +55,52 @@ const Square = ({colour, colour2, pos}) =>
                 
             }}></div>
 
+            {/* </div>
+            <div className="square" >
+               
+               <div style={ {
+                borderColor: colour2,
+                
+                
+            }}></div>
+
             </div>
+            <div className="square" >
+               
+               <div style={ {
+                borderColor: colour2,
+                
+                
+            }}></div>
+
+            </div>
+            <div className="square" >
+               
+               <div style={ {
+                borderColor: colour2,
+                
+                
+            }}></div>
+
+            </div>
+            <div className="square" >
+               
+               <div style={ {
+                borderColor: colour2,
+                
+                
+            }}></div>
+
+            </div>
+            <div className="square" >
+               
+               <div style={ {
+                borderColor: colour2,
+                
+                
+            }}></div> */}
+
+            {/* </div>
             <div className="square" >
                
                <div style={ {
@@ -143,52 +188,7 @@ const Square = ({colour, colour2, pos}) =>
                 borderColor: colour2,
                 
                 
-            }}></div>
-
-            </div>
-            <div className="square" >
-               
-               <div style={ {
-                borderColor: colour2,
-                
-                
-            }}></div>
-
-            </div>
-            <div className="square" >
-               
-               <div style={ {
-                borderColor: colour2,
-                
-                
-            }}></div>
-
-            </div>
-            <div className="square" >
-               
-               <div style={ {
-                borderColor: colour2,
-                
-                
-            }}></div>
-
-            </div>
-            <div className="square" >
-               
-               <div style={ {
-                borderColor: colour2,
-                
-                
-            }}></div>
-
-            </div>
-            <div className="square" >
-               
-               <div style={ {
-                borderColor: colour2,
-                
-                
-            }}></div>
+            }}></div> */}
 
             </div>
 

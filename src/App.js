@@ -7,6 +7,7 @@ import Admin from "./components/Admin";
 import EditUser from "./components/EditUser";
 import AddEvent from "./components/AddEvent";
 import EditEvent from "./components/EditEvent";
+
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PayRegister from "./components/payRegister";
@@ -27,7 +28,8 @@ import Vastra from "./components/vastra";
 import Homepage from "./components/Homepage";
 import ProfileEdit from "./components/ProfileEdit";
 import Workshop from "./components/Workshop";
-// import GetCSV from "./components/Getcsv";
+import WorkshopsLanding from "./components/WorkshopsLanding"
+import GetCSV from "./components/Getcsv";
 import ChessBlitz from "./blitz-chess";
 
 import Temp from "./components/tempHome";
@@ -53,10 +55,7 @@ function App() {
 
   return (
     <div>
-      <ButtonModal onClick={openModal2}>SALES!</ButtonModal>
-      <Container>
-        <Modal2 showModal2={showModal2} setShowModal2={setShowModal2} />
-      </Container>
+
 
       <Router>
         <Routes>
@@ -88,10 +87,10 @@ function App() {
           {/* <Route path="/pay/:id" element={<PayRegister />} /> */}
           <Route path="/socialendeavours" element={<Vastra />} />
           <Route path="/blitzchess" element={<ChessBlitz />} />
-          {/* <Route path="/getcsv" element={<GetCSV />} /> */}
         </Routes>
         {auth === "admin" && (
           <Routes>
+            <Route path="/getcsv" element={<GetCSV />} />
             <Route path="/admin/workshops" element={<Workshop />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/admin/addevent" element={<AddEvent />} />

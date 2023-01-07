@@ -2,11 +2,15 @@ import React from 'react'
 import "../styles/speakers.css"
 const Speakers = ({pos}) => {
     return (
+        
         <div className='speakers-cont' style={ {
         
             transform: 'translateZ('+pos+'px)',
             
             }}>
+                {/* <div className='tap-phrase'>
+            Tap to see more!
+        </div> */}
             <div className="speaker-heading">SPEAKERS</div>
             <div className=''>
 

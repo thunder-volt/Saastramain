@@ -20,8 +20,8 @@ import { useColorModeValue } from "@chakra-ui/color-mode";
 // import fileDownload from "js-file-download";
 // import dotenv from "dotenv";
 import { FaTimes } from "react-icons/fa";
-import NavBar from "./Components/Navbar";
-import TopBar from "./Components/TopBar";
+import NavBar from "./components/Navbar";
+import TopBar from "./components/TopBar";
 import {
   ChakraProvider,
   Flex,

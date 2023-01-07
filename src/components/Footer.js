@@ -1,7 +1,7 @@
 import React from 'react';
-//import "./../styles/footer.css";
+import "./../styles/footer.css";
 import { FaYoutubeSquare, FaInstagramSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import Logo from "../Images/23_white logo-02.png";
+import Logo from "./shaastra2.png";
 
 const Footer = (props) => {
 
@@ -82,7 +82,7 @@ const Footer = (props) => {
             {/* <!-- The bottom text thingy whatever you call it idk  --> */}
             <div className="colBottom" style={{ paddingBottom: "2px" }}>
                 <p>
-                    <span className="add">Ⓒ DEVELOPED BY 
+                    <span className="add">Ⓒ DEVELOPED BY &nbsp;
                     {props.designed.map((item, key) => {
                                     if (key === 0) {
                                     return <a className="designedby" href={item.mail}>{item.name}</a> ;
