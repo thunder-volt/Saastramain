@@ -4,6 +4,9 @@ const Spiral = ({colour, colour2, pos, }) =>
     return(
 
         <>
+                  <div className='tap-phrase' >
+            Tap to see more!
+          </div>
             <div className="spiral"style={ {
                 transform: 'translateZ('+pos+'px)',
                 
@@ -57,7 +60,7 @@ const Spiral = ({colour, colour2, pos, }) =>
                
                 rotate:'55deg',
                 
-            }}></div></div>
+            }}></div></div> */}
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
@@ -82,7 +85,7 @@ const Spiral = ({colour, colour2, pos, }) =>
                
                 rotate:'35deg',
                 
-            }}></div></div> */}
+            }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
@@ -130,56 +133,50 @@ const Spiral = ({colour, colour2, pos, }) =>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'90deg',
+                rotate:'5deg',
                 
             }}></div></div>
             
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'85deg',
+                rotate:'10deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'80deg',
+                rotate:'15deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'75deg',
+                rotate:'20deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'70deg',
+                rotate:'25deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'65deg',
+                rotate:'30deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'60deg',
+                rotate:'35deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'55deg',
-                
-            }}></div></div>
-            {/* <div className="spiral-sqr"><div style={ {
-                borderColor: colour2,
-               
-                rotate:'50deg',
+                rotate:'40deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
@@ -191,20 +188,26 @@ const Spiral = ({colour, colour2, pos, }) =>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'40deg',
+                rotate:'50deg',
+                
+            }}></div></div>
+            {/* <div className="spiral-sqr"><div style={ {
+                borderColor: colour2,
+               
+                rotate:'55deg',
                 
             }}></div></div>
             
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'35deg',
+                rotate:'60deg',
                 
             }}></div></div>
             <div className="spiral-sqr"><div style={ {
                 borderColor: colour2,
                
-                rotate:'30deg',
+                rotate:'65deg',
                 
             }}></div></div> */}
             {/* <div className="spiral-sqr"><div style={ {

@@ -38,11 +38,15 @@ const Countdown = ({pos}) => {
    
 
     return (
+      
           <div className="theme-body" style={ {
         
             transform: 'translateZ('+pos+'px)',
             
-            }}>            
+            }}>   
+            {/* <div className='tap-phrase'>
+            Tap to see more!
+        </div>          */}
                     <div className="countdown">
             <div className="card">
               <div className="card-top" id="days">

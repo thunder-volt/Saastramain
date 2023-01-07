@@ -12,7 +12,7 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 
-import NavBar from "../navigation/NavBar";
+import NavBar from "./navigation/NavBar";
 import Footer from "./Footer";
 import TopBar from "./TopBar";
 

@@ -313,7 +313,7 @@ const Team = (props: Props) => {
         instagram: "https://www.instagram.com/saic2804",
       },
       //desc: "",
-      imgURL: photos.sandp_anushka,
+      imgURL: photos.sandp_saicharan,
     },
   ];
   let i = 0;
