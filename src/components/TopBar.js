@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from"./../Images/23_white logo-02.png";
+import Logo from"./shaastra2.png";
 import "./../styles/TopBar.css";
 import {useNavigate} from 'react-router-dom'
 import { FaUserCircle,FaAngleUp, FaAngleDown } from "react-icons/fa";
@@ -23,35 +23,34 @@ const LOGOUT = gql`
 `;
 
 const TopBar = () => {
+ const [logout, { data: isLogout, loading, error }] = useMutation(LOGOUT);
+ // let user= JSON.parse(localStorage.getItem('role'))
+ const navigate = useNavigate();
 
-   const [logout, { data: isLogout, loading, error }] = useMutation(LOGOUT);
-   // let user= JSON.parse(localStorage.getItem('role'))
-   const navigate = useNavigate();
-   
-   const logOut = () => {
-      logout();
-   }
+ const logOut = () => {
+   logout();
+ };
 
-   if (isLogout) {
-      var onClose = () => {
-         localStorage.clear();
-         navigate('/')
-      }
-      return (
-         <ChakraProvider>
-           <Modal isOpen={true} onClose={onClose}>
-             <ModalOverlay />
-             <ModalContent backgroundColor="white" color="black">
-               <ModalHeader>Logged out successfully!</ModalHeader>
-               <ModalCloseButton />
-             </ModalContent>
-           </Modal>
-         </ChakraProvider>
-       );
-    }
+ if (isLogout) {
+   var onClose = () => {
+     localStorage.clear();
+     navigate("/");
+   };
+   return (
+     <ChakraProvider>
+       <Modal isOpen={true} onClose={onClose}>
+         <ModalOverlay />
+         <ModalContent backgroundColor="white" color="black">
+           <ModalHeader>Logged out successfully!</ModalHeader>
+           <ModalCloseButton />
+         </ModalContent>
+       </Modal>
+     </ChakraProvider>
+   );
+ }
 
     if (error) {
-      var onClose = () => navigate("/")
+      var onClose = () => navigate("/");
       return (
         <ChakraProvider>
           <Modal isOpen={true} onClose={onClose}>

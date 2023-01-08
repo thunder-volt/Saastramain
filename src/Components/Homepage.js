@@ -15,6 +15,9 @@ import Footer from './Footerfirst'
 import NavBar from './navigation/NavBar.js'
 import TopBar from './TopBar'
 
+import { Modal2 } from "./Modal2";
+import { Container, ButtonModal } from "./modalContainer";
+
 const Homepage=()=> {
   
   const [cpCount, setCpCount]=useState(1);
@@ -70,12 +73,19 @@ const Homepage=()=> {
       });
     }
   };
-
+  const [showModal2, setShowModal2] = useState(false);
+  const openModal2 = () => {
+    setShowModal2((prev) => !prev);
+  };
 
   return (
     <div className="App home">
       <TopBar />
       <NavBar />
+      <ButtonModal onClick={openModal2}>SALES!</ButtonModal>
+      <Container>
+        <Modal2 showModal2={showModal2} setShowModal2={setShowModal2} />
+      </Container>
       <div className='uni'>
           
           <div className='control-btns'>
