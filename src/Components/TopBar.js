@@ -2,8 +2,8 @@ import * as React from "react";
 import Logo from"./../Images/23_white logo-02.png";
 import "./../styles/TopBar.css";
 import {useNavigate} from 'react-router-dom'
-import { FaUserCircle } from "react-icons/fa";
-
+import { FaUserCircle,FaAngleUp, FaAngleDown } from "react-icons/fa";
+// import { Select } from '@chakra-ui/react';
 import { useMutation, useQuery, gql } from "@apollo/client";
 import {
    ChakraProvider,
@@ -14,6 +14,7 @@ import {
    useDisclosure,
    ModalCloseButton,
  } from "@chakra-ui/react";
+
 
 const LOGOUT = gql`
   mutation Mutation {
@@ -71,11 +72,21 @@ const TopBar = () => {
          <div className="account">
             {
                localStorage.getItem('role')?
-               <>
-               <p>Hi, {localStorage.getItem('id')}</p>
+               <div className="loggedin">
+               <div className="myprofile">
+               <p className="id-topbar">Hi, {localStorage.getItem('id')}</p>
                <a className="profile-topbar" href="/profile"><FaUserCircle size={30}/></a>
+               </div>
                <a className="logout-topbar" onClick={logOut} href="./">Logout</a>
-               </>
+               {/* <Select variant="flushed" className="profile-icon" placeholder={<FaUserCircle size={30}/>} icon={<FaAngleDown />} >
+                <option>
+                <a className="profile-topbar" href="/profile">My Profile</a>
+                </option>
+                <option>
+                <a className="logout-topbar" onClick={logOut} href="./">Logout</a>
+                </option>
+               </Select> */}
+               </div>
                :
                <>
                <a className="login-topbar" href="./login">Login</a>

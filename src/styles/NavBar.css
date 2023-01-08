@@ -29,7 +29,7 @@
     border-radius: 5px;
     z-index: 1000;
     /* width: 75vw; */
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 .navItems {
     display: flex;

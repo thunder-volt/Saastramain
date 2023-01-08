@@ -15,7 +15,7 @@
     padding-right: 10px;
     padding-left: 10px;
     /* margin: 15px; */
-    margin-top: 3vh;
+    margin-top: 2vh;
     z-index: 1000;
 }
 
@@ -27,11 +27,12 @@
 
 .logoTop{
     width: 110px;
-    padding: 0;
+    padding: 10px;
     cursor:pointer;
+    align-self: flex-start;
 }
 .account {
-    width: 150px;
+    width: min-content;
     color: white;
     display: flex;
     flex-direction: row;
@@ -40,11 +41,11 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    line-height: 34px;
+    /* line-height: 34px; */
 }
-.account p{
+/* .account p{
     margin-right: 1vw;
-}
+} */
 .account a{
     margin: 0px !important;
 }
@@ -59,7 +60,36 @@
     margin-left: 2vw;
     margin-right: 2vw;
 }
-
+.loggedin{
+    display: flex;
+    flex-direction: column;
+}
+.myprofile{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}
+.profile-topbar{
+    padding: 10px;
+    width: 57px;
+    justify-content: center;
+    display: flex;
+}
+.logout-topbar{
+    padding: 5px;
+    font-size: 14px !important;
+    align-self: flex-end;
+}
+.id-topbar{
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: max-content;
+}
 /* @media screen and (max-width: 400px) {
     .logoTop{
         width: 20vw;
@@ -69,29 +99,29 @@
     }
 } */
 @media screen and (max-width: 1100px) {
-    .account{
+    /* .account{
         width: 140px;
-    }
+    } */
 }
 @media only screen and(max-width: 750px) {
     .logoTop{
         width: 90px;
     }
-    .topBar a{
+    .topBar a, .id-topbar{
         font-size: 16px;
     }
-    .account{
+    /* .account{
         width: 120px;
-    }
+    } */
 }
 @media only screen and (max-width: 550px) {
     .logoTop{
         width: 85px;
     }
-    .topBar a{
+    .topBar a, .id-topbar{
         font-size: 15px;
     }
-    .account{
+    /* .account{
         width: 110px;
-    }
+    } */
 }
