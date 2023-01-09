@@ -50,7 +50,7 @@
     margin: 0px !important;
 }
 .signup-topbar{
-    padding-inline: 1vw;
+    padding-inline: 10px;
     box-sizing: border-box;
     background: linear-gradient(117.5deg, rgba(255, 255, 255, 0.15) -69.92%, rgba(255, 255, 255, 0.17) -69.92%, rgba(255, 255, 255, 0.21) -69.9%, rgba(255, 255, 255, 0.13) -48.83%, rgba(255, 255, 255, 0.09) 82.65%);
     border: 1px solid #FFFFFF;
@@ -59,6 +59,9 @@
     border-radius: 10px;
     margin-left: 2vw;
     margin-right: 2vw;
+}
+.login-topbar{
+    padding: 10px;
 }
 .loggedin{
     display: flex;
