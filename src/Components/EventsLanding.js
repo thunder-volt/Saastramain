@@ -87,12 +87,14 @@ function EventsLanding() {
                   setVertical(e.target.value);
                 }}
               >
+                <option value="ALL">ALL</option>
                 <option value="AEROFEST">AEROFEST</option>
                 <option value="BIOGEN">BIOGEN</option>
                 <option value="BEVENTS">BUISNESS EVENTS</option>
                 <option value="CL">CODING & LOGIC</option>
                 <option value="DB">DESIGN & BUILD</option>
                 <option value="ELECFEST">ELECFEST</option>
+                <option value="HACKATHON">HACKATHON</option>
                 <option value="IGNITE">IGNITE</option>
                 <option value="STRATEGISTS">STRATEGISTS</option>
                 <option value="OTHER">OTHER</option>
@@ -104,6 +106,7 @@ function EventsLanding() {
                   onClick={(e) => {
                     e.preventDefault();
                     refetch({ filter: vertical });
+                    if (vertical==="ALL") {refetch({filter: ""})}
                   }}
                 >
                   Apply
