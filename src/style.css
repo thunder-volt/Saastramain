@@ -49,7 +49,7 @@ html {
   stroke-width: 1px;
   stroke: aliceblue !important;
   animation: dash 7.2s linear forwards, filling 3s ease-in forwards, infinite;
-  font-size: 8vw;
+  font-size: 4vw;
   justify-content: center;
   align-items: center;
   padding-top: 5vh;
@@ -112,7 +112,8 @@ html {
   flex-direction: column;
   margin-top: 2px;
   width: 85vw;
-  height: 565px;
+  min-height: 565px;
+  height: fit-content;
   animation: 9s fadeIn ease-in;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -604,7 +605,7 @@ html {
   top: 0;
 }
 
-.circle {
+/* .circle {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -612,7 +613,7 @@ html {
   border-radius: 50%;
   user-select: none;
   z-index: 20;
-}
+} */
 
 .type-2 {
   min-width: 317px;
@@ -777,7 +778,7 @@ html {
   position: absolute;
   box-shadow: 0px 0px 5px 3px #02198B, inset 0 0 5px 3px #132a9cdc;
   border-radius: 50%;
-  animation: mymove11 12s ease-in forwards;
+  /* animation: mymove11 12s ease-in forwards; */
 }
 
 .c18 {
@@ -787,6 +788,17 @@ html {
   box-shadow: 0px 0px 5px 3px #7E10B2, inset 0 0 5px 3px #9047b3c0;
   animation: mymove10 12s ease-in forwards;
   border-radius: 50%;
+}
+
+.page  div{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    user-select: none;
+    z-index: 20;
+    /* filter: drop-shadow(0px 0px 3px white); */
 }
 
 @keyframes mymove1 {
@@ -1162,7 +1174,7 @@ html {
 
 .type-text {
   position: relative;
-  top: 240px;
+  top: 300px;
   display: flex;
   justify-content: space-between;
   padding: 5px;

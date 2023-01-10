@@ -182,28 +182,9 @@ function CardComponent({data: el}){
     rzp1.open();
   };
 
-  if (el?.registrationFee!=='0'){
-    if (updateEventPayData) {
-    return (
-      <ChakraProvider>
-        <Modal isOpen={true} onClose={onClose}>
-          <ModalOverlay />
-          <ModalContent
-            backgroundColor="white"
-            color="black"
-          >
-            <ModalHeader>Registered Successfully</ModalHeader>
-            <ModalCloseButton />
-          </ModalContent>
-        </Modal>
-      </ChakraProvider>
-    );
-  }
-  }
-
   if(el?.registrationFee === '0' || el.registrationType==="TEAM")
    if (data || team) {
-    // console.log(team, "from success");
+    console.log(team, "from success");
     onClose = () => {
       window.location.reload()
     }
@@ -264,34 +245,23 @@ function CardComponent({data: el}){
       {el?.description}
           </Card.Text>
           <div className="cardButtonsContainer">
-          <Button className="cardKnowMoreButton" onClick={()=> {
-            if (el.id==="clbzd2fyk0009vnozfydl51jl") {
-              window.location.assign("https://shaastra23.sfo3.digitaloceanspaces.com/Playto.pdf");
-            }
-            else {
-              setTriggerModal(true);
-            }
-          }}>Know more</Button>
+          <Button className="cardKnowMoreButton" onClick={()=>setTriggerModal(true)}>Know more</Button>
           <Button className="register" onClick={async () => {
             console.log(el?.registrationfee)
-            if(el?.registrationfee === "0" || el?.id === "clcey3ysk001ey1oz1z0g43y4")
+            if(el?.registrationfee == "0")
             {
               window.location.href = el?.requirements
             }
-            else if (el?.registrationType === 'INDIVIDUAL'){
+            if (el?.registrationType === 'INDIVIDUAL'){
                 if (el?.registrationfee !== '0') {
                   await registerMutation({
                     variables: {
                       eventId: el?.id,
                       referral: ''
                     }
-                   }).then((res) => {
-                    if (res) {
-                      loadRazorpay(res.data?.register.eventPay)
-                    }
-                   })
+                   }).then(() => loadRazorpay(data.register.eventPay))
                 }
-            else if (el?.registrationType === 'TEAM'){
+            if (el?.registrationType === 'TEAM'){
               console.log(el?.teamSize);
               onOpen();
             }

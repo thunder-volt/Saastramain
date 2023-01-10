@@ -37,6 +37,28 @@ const ForgotPassword = () => {
   return (
     <body>
       <TopBar/> 
+      <div class="page">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div class="c6"></div>
+        <div class="c7"></div>
+        <div class="c8"></div>
+        <div class="c9"></div>
+        <div class="c10"></div>
+        <div class="c11"></div>
+        <div class="c12"></div>
+        <div class="c13"></div>
+        <div class="c14"></div>
+        <div class="c15"></div>
+        <div class="c16"></div>
+        <div class="c17"></div>
+        <div class="c18"></div>
+        <div class="c19"></div>
+        </div>
+   
     <section id="login">
       <header>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,6 +70,7 @@ const ForgotPassword = () => {
         <link rel="stylesheet" href="/static/styles/styles.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
       </header>
+      
       <center className="misc-login-signup">
       <svg class="signup-heading">
             <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
@@ -69,27 +92,6 @@ const ForgotPassword = () => {
           </button>
         </form>
       </center>
-      <div class="page">
-        {/* <div class="c1 circle"></div>
-        <div class="c2 circle"></div>
-        <div class="c3 circle"></div>
-        <div class="c4 circle"></div>
-        <div class="c5 circle"></div>
-        <div class="c6 circle"></div>
-        <div class="c7 circle"></div>
-        <div class="c8 circle"></div>
-        <div class="c9 circle"></div>
-        <div class="c10 circle"></div>
-        <div class="c11 circle"></div>
-        <div class="c12 circle"></div>
-        <div class="c13 circle"></div>
-        <div class="c14 circle"></div>
-        <div class="c15 circle"></div>
-        <div class="c16 circle"></div>
-        <div class="c17 circle"></div>
-        <div class="c18 circle"></div>
-        <div class="c19 circle"></div> */}
-        </div>
     </section>
     <Footer designed={[{name: "Arnav", mail:"mailto:Cs21b009@smail.IITM.AC.in"}, {name: "Joel", mail: "mailto:"}]} />
       </body>
