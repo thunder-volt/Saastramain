@@ -97,13 +97,16 @@ function WorkshopsLanding() {
             <div className="firework-mid"></div>
           </div>
           <div className="glassmorphic2" id="list">
+          <div class="card text-white bg-dark mb-3">
+
             <div className="wrapper">
+              
               {data?.getEvents?.events?.map((el) => {
                 console.log(el);
                 return <CardComponent data={el} key={el.id} />;
               })}
             </div>
-          </div>
+          </div></div>
         </div>
         <Footer
           designed={[

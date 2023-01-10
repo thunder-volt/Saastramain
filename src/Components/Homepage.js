@@ -138,7 +138,7 @@ const Homepage=()=> {
 
 
           {/* <Speakers pos={-9000}/> */}
-          <Events pos={-9000}/>
+          {/* <Events pos={-9000}/> */}
           
           {/* <Events pos={-37500}/> */}
           {/* <Events pos={-28190}/> */}

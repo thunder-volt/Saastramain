@@ -47,6 +47,8 @@ const Countdown = ({pos}) => {
             {/* <div className='tap-phrase'>
             Tap to see more!
         </div>          */}
+                              <h1>COUNTDOWN</h1>
+
                     <div className="countdown">
             <div className="card">
               <div className="card-top" id="days">

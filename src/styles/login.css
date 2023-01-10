@@ -18,6 +18,7 @@ body {
 .main-login {
  margin-top: 63px;
  display: flex;
+
  justify-content: center;
  position: relative;
  padding-left: 68px;
@@ -31,7 +32,7 @@ body {
     display: flex;
     position: relative;
     transform: skewY(-27deg);
-    background-color: #351c4a;
+    background-color: #e976fd;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -44,10 +45,11 @@ body {
     content: "";
     width: 72px;
     height: 100%;
+    
     position: absolute;
     top: 72;
     left: -72px;
-    background:  #59316f;
+    background:  #704f89;
     border-radius: 5px;
     transform-origin: right;
     transform: skewY(45deg);
@@ -191,12 +193,18 @@ body {
     height: 100%;
     width: 100%;
     font-size: 24px;
-    border: none;
+    border: transparent;
+    border-radius: 20px;
     outline: none;
     background: none;
     transition: 0.5s;
-    
+    color: #2d0141;
+
 }
+.field-login ::placeholder {
+    color: purple;
+  }
+  
 
 .right-login:hover .field-login
 {
@@ -204,14 +212,14 @@ body {
 }
 .right-login:hover .input-login  
 {
-    background: #c0a2d7;
+    background: #dd93ea;
     transform-origin: right;
     width: 200px;
-    border: 2px  rgb(255, 255, 255) solid  ;
-    border-top: 6px  rgb(255, 255, 255) solid ;
+    /* border: 2px  rgb(255, 255, 255) solid  ; */
+    /* border-top: 6px  rgb(255, 255, 255) solid ; */
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 0 0 10px #bababa,0 0 40px #bababa,0 0 80px #bababa ;
+    box-shadow: 0 0 10px #f4a6f4,0 0 40px #f57fe5,0 0 80px #f56fd6 ;
 }
 
 .right-login:hover  .dot-login-cont-right .dot-login
@@ -284,8 +292,9 @@ body {
     position: relative;
     top: -47px;
     font-family: 'Rubik', sans-serif;
-    color: #d4d4d4 !important;
-    font-size: 13px !important;
+    color: #f504b5 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
     transition: 0.5s;
 }
 

@@ -5,6 +5,9 @@
   align-items: center;
   margin: 10px 0 20px 0;
 }
+ h1{
+  font-size: 40vh;
+}
  /* .countdown span {
   position: relative;
 
@@ -49,12 +52,19 @@
     width: calc(100% - 40px);
   }
   .countdown {
-    width: 290px;
+    width: 238px;
+    height: 80vh;
+    row-gap: 2vh;
     flex-wrap: wrap;
     margin: 10px 0 25px 0;
   }
+  .card-bottom{
+    height: 1vh !important;
+    top: 0!important ;
+    margin-top: -20vh !important ;
+    }
   .countdown span {
-    height: 72px;
+    height: 52px;
     margin: 0 15px;
   }
   .countdown span:nth-of-type(2) {
@@ -62,18 +72,26 @@
   }
   .countdown .card {
     margin: 0 10px;
+    
     width: 100px;
   }
   .countdown .card .card-top {
     font-size: 84px;
     font-weight: 500;
     line-height: 1.2em;
+    justify-content: center;
+  }
+  .card-top{
+    margin-bottom: 2vh;
   }
   .countdown .card .card-bottom p {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.2em;
+  }
+  .card-bottom p{
+    padding-bottom: 10vh;
   }
 }
 
