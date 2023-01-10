@@ -758,6 +758,9 @@
     .text-phrase h3{
     font-size: 15px;
     }
+    .tap-phrase{
+        font-size: 13px;
+    }
     .back-btn{
         margin-left: 3vh;
     margin-top: -35vh;

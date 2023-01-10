@@ -27,7 +27,7 @@
 
 .logoTop{
     width: 110px;
-    padding: 10px;
+    /* padding: 10px; */
     cursor:pointer;
     align-self: flex-start;
 }
@@ -63,7 +63,7 @@
 .login-topbar{
     padding: 10px;
 }
-.loggedin{
+/* .loggedin{
     display: flex;
     flex-direction: column;
 }
@@ -73,8 +73,8 @@
     width: max-content;
     justify-content: center;
     align-items: center;
-}
-.profile-topbar{
+} */
+/* .profile-topbar{
     padding: 10px;
     width: 57px;
     justify-content: center;
@@ -84,15 +84,38 @@
     padding: 5px;
     font-size: 14px !important;
     align-self: flex-end;
-}
-.id-topbar{
+} */
+/* .id-topbar{
     margin: 0;
     font-size: 16px;
     display: flex;
     flex-direction: row;
     padding: 5px;
     width: max-content;
+} */
+
+.id-topbar{
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
+.id-topbar:hover{
+    box-shadow: 0 0 2px #bababa,0 0 5px #bababa,0 0 10px #bababa ;
+}
+.logout-topbar .dropdown-item :hover{
+    color: yellowgreen;
+}
+/* .loggedin dropdown-menu show {
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+} */
+
+
+
+
 /* @media screen and (max-width: 400px) {
     .logoTop{
         width: 20vw;
