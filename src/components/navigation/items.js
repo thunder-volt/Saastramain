@@ -36,6 +36,11 @@ export const items = [
             },
             {
                 id: 6,
+                title: "Symbiosis '23",
+                url: 'https://symbiosis.shaastra.org',
+            },
+            {
+                id: 7,
                 title: 'Tech & Innovation Fair',
                 url:'/tif',
             }

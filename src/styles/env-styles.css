@@ -2,8 +2,7 @@
 
 .env-container {
     font-family: Rubik;
-    background-image: url('../Images/bg6.jpg');
-    background-repeat: repeat;
+    background-image: url('https://www.maxpixel.net/static/photo/1x/Corridor-Neon-Lights-Club-Background-6773024.jpg');
     background-size: auto;
     height: 100vh;
     background-repeat: no-repeat;
@@ -13,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     /* background: rgba(0, 0, 0, 0.5); */
-    padding-top: 8vh;
+    padding-top: 18vh;
     padding-bottom: 5vh;
 }
 
@@ -67,8 +66,7 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
+border: none;}
 
 .vision-heading {
     font-size: 38px;
@@ -101,8 +99,7 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
+border: none;}
 
 .env-games {
     /* height: 44vh; */
@@ -120,14 +117,12 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
+border: none;}
 
 .env-shows {
     /* height: 44vh; */
     color: white;
     width: 80%;
-    background-color: rgba(158, 135, 221, 0.47);
     display: flex;
     align-items: center;
     border-radius: 23px;
@@ -139,27 +134,23 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
+border: none;}
 
 .env-ambience {
     /* height: 44vh; */
     color: white;
     width: 80%;
-    background-color: rgba(158, 135, 221, 0.47);
     display: flex;
     align-items: center;
     border-radius: 23px;
     justify-content: space-around;
     /* flex-direction: column; */
     margin: 25px;
-    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
+border: none;}
 
 .env-ambience-logo {
     background: url("../Images/ambience.jpeg");
@@ -192,13 +183,11 @@
     width: 80%;
     margin: 25px;
     color: #fff;
-    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    font-size: 1.2vw;
+border: none;    font-size: 1.2vw;
 }
 
 .env-ambience-heading {
@@ -295,7 +284,7 @@
     font-family: Rubik;
     background-color: rgba(242, 170, 241, 0.24);
     width: 350px;
-    height: 500px;
+    height: fit-content;
     margin: 10px;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
@@ -392,6 +381,9 @@
         font-size: 4vw;
     }
     .cards-envisage{
-        height: 75vh;
+        height: fit-content
+    }
+    .env-games-content{
+        text-align: center;
     }
 }

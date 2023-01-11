@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8cc75b1.css",
-    "main.js": "/static/js/main.731911f7.js",
+    "main.css": "/static/css/main.e60681b9.css",
+    "main.js": "/static/js/main.fa09572b.js",
     "static/js/377.a49414a6.chunk.js": "/static/js/377.a49414a6.chunk.js",
     "static/media/i2.png": "/static/media/i2.60e1a55f5f8978501491.png",
     "static/media/IMG20221019113455.jpg": "/static/media/IMG20221019113455.78bd208df78d76c78eed.jpg",
@@ -80,7 +80,6 @@
     "static/media/games-logo.jpeg": "/static/media/games-logo.e5140d3ce4f0f56fba56.jpeg",
     "static/media/ACR.9e438039.png": "/static/media/ACR.9e438039.9e4380394ac67257aa3d.png",
     "static/media/Chess.ce0418f5.png": "/static/media/Chess.ce0418f5.ce0418f55b2b5121fb54.png",
-    "static/media/bg6.jpg": "/static/media/bg6.e979136fe6bb137aebd9.jpg",
     "static/media/ES.d5de8fee.png": "/static/media/ES.d5de8fee.d5de8feebbab71a906e2.png",
     "static/media/ambience.jpeg": "/static/media/ambience.cc63e415d77c5b1cd2a5.jpeg",
     "static/media/wrapcart.e8a02718.jpg": "/static/media/wrapcart.e8a02718.e8a0271803fd16194df7.jpg",
@@ -97,12 +96,12 @@
     "static/media/Wells_Fargo.b3210ca8.png": "/static/media/Wells_Fargo.b3210ca8.0004a93bab06c98b9f4f.png",
     "static/media/Bajaj.png": "/static/media/Bajaj.4d368850fe57f98095a9.png",
     "index.html": "/index.html",
-    "main.f8cc75b1.css.map": "/static/css/main.f8cc75b1.css.map",
-    "main.731911f7.js.map": "/static/js/main.731911f7.js.map",
+    "main.e60681b9.css.map": "/static/css/main.e60681b9.css.map",
+    "main.fa09572b.js.map": "/static/js/main.fa09572b.js.map",
     "377.a49414a6.chunk.js.map": "/static/js/377.a49414a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8cc75b1.css",
-    "static/js/main.731911f7.js"
+    "static/css/main.e60681b9.css",
+    "static/js/main.fa09572b.js"
   ]
 }

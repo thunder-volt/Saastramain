@@ -119,7 +119,7 @@ const Login = () => {
                 LOGIN
               </text>
             </svg>
-            <div className="hovertext">Hover to enter the fields</div>
+            <div className="hovertext">Hover to enter details</div>
           </div>
 
           <div class="main-login">
@@ -131,7 +131,6 @@ const Login = () => {
                     <br />
                     ID
                   </h2>
-
                   <div class="dot-login-cont-left">
                     <div class="dot-login"></div>
                     <div class="dot-login"></div>

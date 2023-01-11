@@ -187,6 +187,8 @@ body {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  color: white !important;
+    background-color: rgba(0, 0, 0, 0.405)!important;
   width: 100%;
   height: 300px;
 }
@@ -385,6 +387,10 @@ body {
   overflow: hidden;
   background-color: #090521;
 }
+.chakra-ui-light{
+  background-color: #000;
+}
+
 
 .envelope {
   --i: 30px;
@@ -708,6 +714,8 @@ a {
     background-size: cover;
     width: auto;
     height: 37vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.405);
   }
   .glassmorphic2 .wrapper {
     display: grid;
@@ -715,10 +723,14 @@ a {
     margin-left: 2vw;
     margin-right: 2vw;
     gap: 2vh;
+    background-color: #000 !important;
+    color: white !important;
   
   }
   .cardButtonsContainer .btn{
     width: fit-content !important;
+    background-color: #000;
+    color: white;
   }
   
 }
@@ -774,6 +786,8 @@ a {
     height: 37vh;
   }
   .glassmorphic2 .wrapper {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.405);
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
     margin-left: 2vw;

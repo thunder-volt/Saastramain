@@ -226,6 +226,7 @@ const Add = () => {
                     <option value="CL">Coding & Logic</option>
                     <option value="DB">Design & Build</option>
                     <option value="ELECFEST">ElecFest</option>
+                    <option value="HACKATHON">Hackathon</option>
                     <option value="IGNITE">Ignite</option>
                     <option value="STRATEGISTS">Strategists</option>
                     <option value="WORKSHOPS">Workshops</option>

@@ -22,7 +22,8 @@ const Homepage=()=> {
   
   const [cpCount, setCpCount]=useState(1);
   // const [checkPoint, setCheckPoint]=useState([0,7480,14480,21480,30580,37480,44480]);
-  const [checkPoint, setCheckPoint]=useState([0,2380,4980,6980,8980,9980]);
+  // const [checkPoint, setCheckPoint]=useState([0,2380,4980,6980,8980,9980]);
+  const [checkPoint, setCheckPoint]=useState([0,2380,4980,6980,8980]);
   const [depth, setDepth]=useState(checkPoint[cpCount]);
   const [envStyle, setEnvStyle]=useState({
 
@@ -134,12 +135,17 @@ const Homepage=()=> {
           {/* <Speakers pos={-30600}/> */}
           {/* <Speakers pos={-21290}/> */}
           {/* <Square colour={'#fee'} colour2={'#fee'} pos={-5000}/> */}
-          <Speakers pos={-9000}/>
+
+
+          {/* <Speakers pos={-9000}/> */}
+          {/* <Events pos={-9000}/> */}
           
           {/* <Events pos={-37500}/> */}
           {/* <Events pos={-28190}/> */}
           {/* <Square colour={'#fee'} colour2={'#fee'} pos={-7000}/> */}
-          <Events pos={-10000}/>
+
+
+          {/* <Events pos={-10000}/> */}
 
           {/* <Footer pos={-44500}/> */}
         </div>
