@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e60681b9.css",
-    "main.js": "/static/js/main.3ea2adab.js",
+    "main.css": "/static/css/main.1a1e8af5.css",
+    "main.js": "/static/js/main.0e009ac6.js",
     "static/js/377.a49414a6.chunk.js": "/static/js/377.a49414a6.chunk.js",
     "static/media/i2.png": "/static/media/i2.60e1a55f5f8978501491.png",
     "static/media/IMG20221019113455.jpg": "/static/media/IMG20221019113455.78bd208df78d76c78eed.jpg",
@@ -96,12 +96,12 @@
     "static/media/Wells_Fargo.b3210ca8.png": "/static/media/Wells_Fargo.b3210ca8.0004a93bab06c98b9f4f.png",
     "static/media/Bajaj.png": "/static/media/Bajaj.4d368850fe57f98095a9.png",
     "index.html": "/index.html",
-    "main.e60681b9.css.map": "/static/css/main.e60681b9.css.map",
-    "main.3ea2adab.js.map": "/static/js/main.3ea2adab.js.map",
+    "main.1a1e8af5.css.map": "/static/css/main.1a1e8af5.css.map",
+    "main.0e009ac6.js.map": "/static/js/main.0e009ac6.js.map",
     "377.a49414a6.chunk.js.map": "/static/js/377.a49414a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e60681b9.css",
-    "static/js/main.3ea2adab.js"
+    "static/css/main.1a1e8af5.css",
+    "static/js/main.0e009ac6.js"
   ]
 }

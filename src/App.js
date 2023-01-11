@@ -36,13 +36,21 @@ import Temp from "./components/tempHome";
 
 import Contact from "./Contact";
 import React, { useState, useEffect } from "react";
+import ReactGA from 'react-ga';
 
 import { Modal2 } from "./components/Modal2";
 import { Container, ButtonModal } from "./components/modalContainer";
 
+const TRACKING_ID = "UA-220438183-5";
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   const [auth, setAuth] = useState("");
   const verifier = localStorage.getItem("role") || "";
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   useEffect(() => {
     setAuth(localStorage.getItem("role"));
