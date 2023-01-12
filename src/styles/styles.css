@@ -29,11 +29,21 @@
 
 .slide-track {
     display: flex;
-    width: calc(250px * 10);
+    width: calc(250px * 12);
     animation: scroll 40s linear infinite;
 }
 
 .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide-track1 {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll1 40s linear infinite;
+}
+
+.slide-track1:hover {
     animation-play-state: paused;
 }
 
@@ -43,6 +53,16 @@
     }
 
     100% {
+        transform: translateX(calc(-250px * 5));
+    }
+}
+
+@keyframes scroll1 {
+    100% {
+        transform: translateX(0);
+    }
+
+    0% {
         transform: translateX(calc(-250px * 5));
     }
 }
@@ -106,13 +126,21 @@ img:hover {
 
 .slider1::before {
     left: 0;
-    background: linear-gradient(to right, rgb(109, 14, 165) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(129, 213, 242) 0%, rgba(255, 255, 255, 0) 100%);
     top: 0;
     transform: rotateZ(0deg);
 }
 
+.slider a {
+    text-decoration: none;
+}
+
+.slider1 a {
+    text-decoration: none;
+}
+
 .slider1::after {
-    background: linear-gradient(to right, rgb(129, 20, 180) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(231, 159, 246) 0%, rgba(255, 255, 255, 0) 100%);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
